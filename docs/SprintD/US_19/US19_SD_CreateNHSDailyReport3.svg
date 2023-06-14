@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1405px" preserveAspectRatio="none" style="width:2714px;height:1405px;" version="1.1" viewBox="0 0 2714 1405" width="2714px" zoomAndPan="magnify"><defs><filter height="300%" id="f1toxznmerjaxo" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="320" x="1194.75" y="30.6855">SD_createNHSDailyReport(typeOfData)</text><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="1141.7891" style="stroke:#A80036;stroke-width:1.0;" width="10" x="320" y="128.2109"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="166.5625"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="89.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="239.9141"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="105.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="615.7266"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="89.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="972.5391"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="366.3203"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="426.6719"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="487.0234"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="547.375"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="783.4844"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="843.8359"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="904.1875"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="1123.9453"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="1184.2969"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="97.4063" style="stroke:#000000;stroke-width:2.0;" width="391.5" x="3" y="1229.2969"/><rect fill="#FFFFFF" height="48.7031" style="stroke:none;stroke-width:1.0;" width="391.5" x="3" y="1278"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="324.5" x2="324.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1060.5" x2="1060.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1207.5" x2="1207.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1354.5" x2="1354.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1489.5" x2="1489.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1619.5" x2="1619.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1755.5" x2="1755.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1879.5" x2="1879.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="2009.5" x2="2009.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="2153.5" x2="2153.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="2308.5" x2="2308.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="2444.5" x2="2444.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="2550.5" x2="2550.5" y1="95.8594" y2="1343.7031"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="2660.5" x2="2660.5" y1="95.8594" y2="1343.7031"/><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="115" x="265.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="272.5" y="63.1738">nhsReportTask:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="272.5" y="80.7832">NHSReportTask</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="115" x="265.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="272.5" y="1364.2363">nhsReportTask:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="272.5" y="1381.8457">NHSReportTask</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="123" x="997.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="1004.5" y="63.1738">regressionModel:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="1016.5" y="80.7832">MathCalculus</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="123" x="997.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="1004.5" y="1364.2363">regressionModel:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="1016.5" y="1381.8457">MathCalculus</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="143" x="1134.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1179" y="63.1738">dataList:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1141.5" y="80.7832">List&lt; List&lt;Double&gt; &gt;</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="143" x="1134.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1179" y="1364.2363">dataList:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1141.5" y="1381.8457">List&lt; List&lt;Double&gt; &gt;</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="122" x="1291.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="1302.5" y="63.1738">nhsReportStore</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="1298.5" y="80.7832">:NHSReportStore</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="122" x="1291.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="1302.5" y="1364.2363">nhsReportStore</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="1298.5" y="1381.8457">:NHSReportStore</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="120" x="1427.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="1434.5" y="63.1738">covidTestsArray:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1462" y="80.7832">double[]</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="120" x="1427.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="1434.5" y="1364.2363">covidTestsArray:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1462" y="1381.8457">double[]</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="112" x="1561.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="1568.5" y="63.1738">meanAgeArray:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1592" y="80.7832">double[]</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="112" x="1561.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="1568.5" y="1364.2363">meanAgeArray:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1592" y="1381.8457">double[]</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="133" x="1687.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="1694.5" y="63.1738">observedPositives:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1728.5" y="80.7832">double[]</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="133" x="1687.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="1694.5" y="1364.2363">observedPositives:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1728.5" y="1381.8457">double[]</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="86" x="1834.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="1841.5" y="63.1738">bestXIndex:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="1855.5" y="80.7832">Integer</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="86" x="1834.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="1841.5" y="1364.2363">bestXIndex:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="1855.5" y="1381.8457">Integer</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="146" x="1934.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="1941.5" y="63.1738">myRegressionModel:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="1943.5" y="80.7832">MyRegressionModel</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="146" x="1934.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="1941.5" y="1364.2363">myRegressionModel:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="1943.5" y="1381.8457">MyRegressionModel</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="114" x="2094.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="2101.5" y="63.1738">hypothesisTest:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="2103" y="80.7832">HypothesisTest</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="114" x="2094.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="2101.5" y="1364.2363">hypothesisTest:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="2103" y="1381.8457">HypothesisTest</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="168" x="2222.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="2265.5" y="63.1738">modelAnova:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="2229.5" y="80.7832">SignificanceModelAnova</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="168" x="2222.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="2265.5" y="1364.2363">modelAnova:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="2229.5" y="1381.8457">SignificanceModelAnova</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="76" x="2404.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="2411.5" y="63.1738">startDate:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="2427.5" y="80.7832">Date</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="76" x="2404.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="2411.5" y="1364.2363">startDate:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="2427.5" y="1381.8457">Date</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="108" x="2494.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="2502" y="63.1738">tableOfValues:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="2501.5" y="80.7832">TableOfValues</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="108" x="2494.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="2502" y="1364.2363">tableOfValues:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="2501.5" y="1381.8457">TableOfValues</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="84" x="2616.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="2623.5" y="63.1738">nhsReport:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="2623.5" y="80.7832">NHSReport</text><rect fill="#FEFECE" filter="url(#f1toxznmerjaxo)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="84" x="2616.5" y="1342.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="2623.5" y="1364.2363">nhsReport:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="2623.5" y="1381.8457">NHSReport</text><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="1141.7891" style="stroke:#A80036;stroke-width:1.0;" width="10" x="320" y="128.2109"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="166.5625"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="89.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="239.9141"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="105.4063" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="615.7266"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="89.0547" style="stroke:#A80036;stroke-width:1.0;" width="10" x="325" y="972.5391"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="366.3203"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="426.6719"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="487.0234"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="547.375"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="783.4844"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="843.8359"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="904.1875"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="1123.9453"/><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1349.5" y="1184.2969"/><ellipse cx="7.5" cy="127.4609" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><polygon fill="#A80036" points="308,124.2109,318,128.2109,308,132.2109,312,128.2109" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="12" x2="314" y1="128.2109" y2="128.2109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="203" x="15" y="123.3545">createNHSDailyReport(typeOfData)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="335" x2="377" y1="158.5625" y2="158.5625"/><line style="stroke:#A80036;stroke-width:1.0;" x1="377" x2="377" y1="158.5625" y2="171.5625"/><line style="stroke:#A80036;stroke-width:1.0;" x1="336" x2="377" y1="171.5625" y2="171.5625"/><polygon fill="#A80036" points="346,167.5625,336,171.5625,346,175.5625,342,171.5625" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="365" x="342" y="153.7061">regressionModel = getRegressionModel(regressionModelClass)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="377" y1="226.9141" y2="226.9141"/><line style="stroke:#A80036;stroke-width:1.0;" x1="377" x2="377" y1="226.9141" y2="239.9141"/><line style="stroke:#A80036;stroke-width:1.0;" x1="336" x2="377" y1="239.9141" y2="239.9141"/><polygon fill="#A80036" points="346,235.9141,336,239.9141,346,243.9141,342,239.9141" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159" x="342" y="222.0576">getDataListToFitTheModel()</text><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="42.7031" style="stroke:#000000;stroke-width:2.0;" width="192" x="262.5" y="252.9141"/><polygon fill="#EEEEEE" points="262.5,252.9141,324.5,252.9141,324.5,260.9141,314.5,270.9141,262.5,270.9141,262.5,252.9141" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="275.5" y="268.4092">ref</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="184" x="268.5" y="288.4092">SD_getDataListToFitTheModel()</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="335" x2="377" y1="327.9688" y2="327.9688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="377" x2="377" y1="327.9688" y2="340.9688"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="330" x2="377" y1="340.9688" y2="340.9688"/><polygon fill="#A80036" points="340,336.9688,330,340.9688,340,344.9688,336,340.9688" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="342" y="323.1123">dataList</text><polygon fill="#A80036" points="1337.5,362.3203,1347.5,366.3203,1337.5,370.3203,1341.5,366.3203" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="366.3203" y2="366.3203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="320" x="337" y="361.4639">covidTestsArray = getDoubleArrayWithData(dataList, 0)</text><polygon fill="#A80036" points="1337.5,422.6719,1347.5,426.6719,1337.5,430.6719,1341.5,426.6719" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="426.6719" y2="426.6719"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="314" x="337" y="421.8154">meanAgeArray = getDoubleArrayWithData(dataList, 1)</text><polygon fill="#A80036" points="1337.5,483.0234,1347.5,487.0234,1337.5,491.0234,1341.5,487.0234" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="487.0234" y2="487.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="331" x="337" y="482.167">observedPositives = getDoubleArrayWithData(dataList, 2)</text><polygon fill="#A80036" points="1337.5,543.375,1347.5,547.375,1337.5,551.375,1341.5,547.375" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="547.375" y2="547.375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="570" x="337" y="542.5186">bestXIndex = getBestXIndex(regressionModel, covidTestsArray, meanAgeArray, observedPositives)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="377" y1="602.7266" y2="602.7266"/><line style="stroke:#A80036;stroke-width:1.0;" x1="377" x2="377" y1="602.7266" y2="615.7266"/><line style="stroke:#A80036;stroke-width:1.0;" x1="336" x2="377" y1="615.7266" y2="615.7266"/><polygon fill="#A80036" points="346,611.7266,336,615.7266,346,619.7266,342,615.7266" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="712" x="342" y="597.8701">getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)</text><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="59.0547" style="stroke:#000000;stroke-width:2.0;" width="466" x="262.5" y="628.7266"/><polygon fill="#EEEEEE" points="262.5,628.7266,324.5,628.7266,324.5,636.7266,314.5,646.7266,262.5,646.7266,262.5,628.7266" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="275.5" y="644.2217">ref</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="435" x="268.5" y="664.2217">SD_getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="298" x="428.5" y="680.5732">meanAgeArray, observedPositives, historicalPoints)</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="335" x2="377" y1="720.1328" y2="720.1328"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="377" x2="377" y1="720.1328" y2="733.1328"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="330" x2="377" y1="733.1328" y2="733.1328"/><polygon fill="#A80036" points="340,729.1328,330,733.1328,340,737.1328,336,733.1328" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="342" y="715.2764">myRegressionModel</text><polygon fill="#A80036" points="1337.5,779.4844,1347.5,783.4844,1337.5,787.4844,1341.5,783.4844" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="783.4844" y2="783.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="564" x="337" y="778.6279">hypothesisTest = createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)</text><polygon fill="#A80036" points="1337.5,839.8359,1347.5,843.8359,1337.5,847.8359,1341.5,843.8359" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="843.8359" y2="843.8359"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="596" x="337" y="838.9795">modelAnova = createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)</text><polygon fill="#A80036" points="1337.5,900.1875,1347.5,904.1875,1337.5,908.1875,1341.5,904.1875" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="904.1875" y2="904.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="150" x="337" y="899.3311">startDate = getStartDate()</text><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="377" y1="959.5391" y2="959.5391"/><line style="stroke:#A80036;stroke-width:1.0;" x1="377" x2="377" y1="959.5391" y2="972.5391"/><line style="stroke:#A80036;stroke-width:1.0;" x1="336" x2="377" y1="972.5391" y2="972.5391"/><polygon fill="#A80036" points="346,968.5391,336,972.5391,346,976.5391,342,972.5391" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="457" x="342" y="954.6826">getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)</text><rect fill="#FFFFFF" filter="url(#f1toxznmerjaxo)" height="42.7031" style="stroke:#000000;stroke-width:2.0;" width="490" x="262.5" y="985.5391"/><polygon fill="#EEEEEE" points="262.5,985.5391,324.5,985.5391,324.5,993.5391,314.5,1003.5391,262.5,1003.5391,262.5,985.5391" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="275.5" y="1001.0342">ref</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="482" x="268.5" y="1021.0342">SD_getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="335" x2="377" y1="1060.5938" y2="1060.5938"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="377" x2="377" y1="1060.5938" y2="1073.5938"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="330" x2="377" y1="1073.5938" y2="1073.5938"/><polygon fill="#A80036" points="340,1069.5938,330,1073.5938,340,1077.5938,336,1073.5938" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="342" y="1055.7373">tableOfValues</text><polygon fill="#A80036" points="1337.5,1119.9453,1347.5,1123.9453,1337.5,1127.9453,1341.5,1123.9453" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="1123.9453" y2="1123.9453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="582" x="337" y="1119.0889">nhsReport = createNHSDailyReport(myRegressionModel,hypothesisTest,modelAnova,tableOfValues)</text><polygon fill="#A80036" points="1337.5,1180.2969,1347.5,1184.2969,1337.5,1188.2969,1341.5,1184.2969" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="330" x2="1343.5" y1="1184.2969" y2="1184.2969"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="204" x="337" y="1179.4404">validateNHSDailyReport(nhsReport)</text><path d="M3,1229.2969 L64,1229.2969 L64,1237.2969 L54,1247.2969 L3,1247.2969 L3,1229.2969 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="97.4063" style="stroke:#000000;stroke-width:2.0;" width="391.5" x="3" y="1229.2969"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="18" y="1243.792">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="131" x="79" y="1242.7158">[nhsReport is validated]</text><polygon fill="#A80036" points="11,1266,1,1270,11,1274,7,1270" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="5" x2="324" y1="1270" y2="1270"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="17" y="1265.1436">nhsReport</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="3" x2="394.5" y1="1279" y2="1279"/><polygon fill="#A80036" points="11,1314.7031,1,1318.7031,11,1322.7031,7,1318.7031" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="5" x2="324" y1="1318.7031" y2="1318.7031"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="151" x="17" y="1297.4951">IllegalArgumentException(</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="294" x="17" y="1313.8467">"The Report must be validated in order to be sent!")</text><!--MD5=[7ddcfa66aacd25347558644721dc3737]
+@startuml
+
+title SD_createNHSDailyReport(typeOfData)
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "regressionModel:\nMathCalculus" as REGRESSION_MODEL
+participant "dataList:\nList< List<Double> >"
+participant "nhsReportStore\n:NHSReportStore" as NHS_REPORT_STORE
+participant "covidTestsArray:\ndouble[]" as TESTS_ARRAY
+participant "meanAgeArray:\ndouble[]" as MEAN_AGE_ARRAY
+participant "observedPositives:\ndouble[]" as OBSERVED_POSITIVES_ARRAY
+participant "bestXIndex:\nInteger" as BEST_X
+participant "myRegressionModel:\nMyRegressionModel" as MY_REGRESSION_MODEL
+participant "hypothesisTest:\nHypothesisTest" as HYPOTHESIS_TEST
+participant "modelAnova:\nSignificanceModelAnova" as MODEL_ANOVA
+participant "startDate:\nDate" as START_DATE
+participant "tableOfValues:\nTableOfValues"
+participant "nhsReport:\nNHSReport"
+
+[o-> TASK : createNHSDailyReport(typeOfData)
+
+activate TASK
+TASK -> TASK : regressionModel = getRegressionModel(regressionModelClass)
+activate TASK
+deactivate TASK
+
+TASK -> TASK : getDataListToFitTheModel()
+activate TASK
+ref over TASK
+SD_getDataListToFitTheModel()
+end
+TASK - -> TASK : dataList
+deactivate TASK
+
+TASK -> NHS_REPORT_STORE : covidTestsArray = getDoubleArrayWithData(dataList, 0)
+activate NHS_REPORT_STORE
+/'ref over NHS_REPORT_STORE
+SD_getDoubleArrayWithData(dataList, index)
+end'/
+/'NHS_REPORT_STORE - -> TASK : covidTestsArray'/
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : meanAgeArray = getDoubleArrayWithData(dataList, 1)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : observedPositives = getDoubleArrayWithData(dataList, 2)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : bestXIndex = getBestXIndex(regressionModel, covidTestsArray, meanAgeArray, observedPositives)
+activate NHS_REPORT_STORE
+'TALVEZ VALE A PENA DIAGRAMA PARCIAL?
+/'ref over NHS_REPORT_STORE
+SD_getBestXIndex(regressionModel, covidTestsArray, meanAgeArray, observedPositives)
+end'/
+/'NHS_REPORT_STORE - -> TASK : bestXIndex'/
+deactivate NHS_REPORT_STORE
+
+TASK -> TASK : getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
+activate TASK
+ref over TASK
+SD_getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray,
+                                        meanAgeArray, observedPositives, historicalPoints)
+end
+TASK - -> TASK : myRegressionModel
+deactivate TASK
+|||
+TASK -> NHS_REPORT_STORE : hypothesisTest = createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)
+activate NHS_REPORT_STORE
+/'ref over NHS_REPORT_STORE
+SD_createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)
+end'/
+/'NHS_REPORT_STORE - -> TASK : hypothesisTest'/
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : modelAnova = createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)
+activate NHS_REPORT_STORE
+/'ref over NHS_REPORT_STORE
+SD_createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)
+end'/
+/'NHS_REPORT_STORE - -> TASK : modelAnova'/
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : startDate = getStartDate()
+activate NHS_REPORT_STORE
+/'ref over NHS_REPORT_STORE
+SD_getStartDate()
+end'/
+/'NHS_REPORT_STORE - -> TASK : startDate'/
+deactivate NHS_REPORT_STORE
+
+TASK -> TASK : getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)
+activate TASK
+ref over TASK
+SD_getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)
+end
+TASK - -> TASK : tableOfValues
+deactivate TASK
+|||
+TASK -> NHS_REPORT_STORE : nhsReport = createNHSDailyReport(myRegressionModel,hypothesisTest,modelAnova,tableOfValues)
+activate NHS_REPORT_STORE
+/'ref over NHS_REPORT_STORE
+SD_createNHSDailyReport(myRegressionModel,hypothesisTest,modelAnova,tableOfValues)
+end'/
+/'NHS_REPORT_STORE - -> TASK : nhsReport'/
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : validateNHSDailyReport(nhsReport)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+alt nhsReport is validated
+[<- - TASK : nhsReport
+deactivate TASK
+else
+[<- - TASK : IllegalArgumentException(\n"The Report must be validated in order to be sent!")
+deactivate TASK
+end
+
+
+
+
+
+
+
+@enduml
+
+@startuml
+
+title SD_createNHSDailyReport(typeOfData)
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "regressionModel:\nMathCalculus" as REGRESSION_MODEL
+participant "dataList:\nList< List<Double> >"
+participant "nhsReportStore\n:NHSReportStore" as NHS_REPORT_STORE
+participant "covidTestsArray:\ndouble[]" as TESTS_ARRAY
+participant "meanAgeArray:\ndouble[]" as MEAN_AGE_ARRAY
+participant "observedPositives:\ndouble[]" as OBSERVED_POSITIVES_ARRAY
+participant "bestXIndex:\nInteger" as BEST_X
+participant "myRegressionModel:\nMyRegressionModel" as MY_REGRESSION_MODEL
+participant "hypothesisTest:\nHypothesisTest" as HYPOTHESIS_TEST
+participant "modelAnova:\nSignificanceModelAnova" as MODEL_ANOVA
+participant "startDate:\nDate" as START_DATE
+participant "tableOfValues:\nTableOfValues"
+participant "nhsReport:\nNHSReport"
+
+[o-> TASK : createNHSDailyReport(typeOfData)
+
+activate TASK
+TASK -> TASK : regressionModel = getRegressionModel(regressionModelClass)
+activate TASK
+deactivate TASK
+
+TASK -> TASK : getDataListToFitTheModel()
+activate TASK
+ref over TASK
+SD_getDataListToFitTheModel()
+end
+TASK - -> TASK : dataList
+deactivate TASK
+
+TASK -> NHS_REPORT_STORE : covidTestsArray = getDoubleArrayWithData(dataList, 0)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : meanAgeArray = getDoubleArrayWithData(dataList, 1)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : observedPositives = getDoubleArrayWithData(dataList, 2)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : bestXIndex = getBestXIndex(regressionModel, covidTestsArray, meanAgeArray, observedPositives)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> TASK : getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
+activate TASK
+ref over TASK
+SD_getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray,
+                                        meanAgeArray, observedPositives, historicalPoints)
+end
+TASK - -> TASK : myRegressionModel
+deactivate TASK
+|||
+TASK -> NHS_REPORT_STORE : hypothesisTest = createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : modelAnova = createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : startDate = getStartDate()
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> TASK : getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)
+activate TASK
+ref over TASK
+SD_getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)
+end
+TASK - -> TASK : tableOfValues
+deactivate TASK
+|||
+TASK -> NHS_REPORT_STORE : nhsReport = createNHSDailyReport(myRegressionModel,hypothesisTest,modelAnova,tableOfValues)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> NHS_REPORT_STORE : validateNHSDailyReport(nhsReport)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+alt nhsReport is validated
+[<- - TASK : nhsReport
+deactivate TASK
+else
+[<- - TASK : IllegalArgumentException(\n"The Report must be validated in order to be sent!")
+deactivate TASK
+end
+
+
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 09:49:39 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

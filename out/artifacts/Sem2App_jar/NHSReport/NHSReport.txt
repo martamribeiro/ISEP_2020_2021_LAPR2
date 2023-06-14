@@ -1,0 +1,36 @@
+The regression model fitted using data from the interval
+^y=0,8535x + -15,7382
+//
+Other statistics
+R2 = 0,9999
+R2 adjusted = 0,9999
+R = 1,0000
+//
+
+Hypothesis tests for regression coefficients
+
+--> Significance Level: 0,05
+
+H0:a=0 H1:a<>0
+t_obs=-16,9888
+Decision: 
+Reject H0
+//
+
+Significance model with Anova
+H0: b=0  H1:b<>0
+                    df                  SS                  MS                  F                   
+Regression          1                   3340,4701           3340,4701           33992,7426          
+Residual            2                   0,1965              0,0983              
+Total               3                   3340,6667           
+
+Decision: f
+33992,7426 > f0,05,(1,2)=18,5128
+Reject H0
+The regression model is significant.
+
+Date                     Number of OBSERVED positive cases                 Number of ESTIMATED/EXPECTED positive cases                    95.0% intervals                                   
+24/05/2021-29/05/2021                   27                                                26,0817                                          22,7868-29,3766                    
+17/05/2021-22/05/2021                   79                                                81,5571                                          79,2690-83,8451                    
+10/05/2021-15/05/2021                   118                                               119,9631                                         117,6672-122,2590                  
+03/05/2021-08/05/2021                   175                                               178,8523                                         175,4513-182,2533                  

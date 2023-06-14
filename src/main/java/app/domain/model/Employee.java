@@ -1,6 +1,8 @@
 package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
+
+import java.io.Serializable;
 import java.util.regex.Pattern;
 
 /**
@@ -8,7 +10,7 @@ import java.util.regex.Pattern;
  * an employee ID, a name, an address, a phone number, an email,
  * a SOC code and a role.
  */
-public class Employee {
+public class Employee implements Serializable {
 
     /**
      * The employee ID.

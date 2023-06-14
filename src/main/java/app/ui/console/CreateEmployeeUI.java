@@ -27,7 +27,7 @@ public class CreateEmployeeUI implements Runnable{
             int index = Utils.showAndSelectIndex(menu, "");
             success = (index == -1) ? true : createEmployee();
         }while (!success);
-        System.out.println("\nEmployee successfully created!");
+        System.out.println("\nOperation finished!");
     }
 
     private boolean createEmployee(){
@@ -61,11 +61,12 @@ public class CreateEmployeeUI implements Runnable{
                                 "%nOrganization role: %s%nName: %s%nAddress: %s%nPhone Number: %s%nEmail: %s%nSOC number: %s%n",
                         roleDesignation, name, address, phoneNumber, email, socNumber));
             }
-            if(!confirm) throw new Exception("Please, insert again the data you wish.");
+            if(!confirm) throw new IllegalArgumentException("Please, insert again the data you wish.");
             success = ctrl.saveEmployee();
-            if(!success) throw new Exception("Error: Employee either already existent or null, please try again");
+            if(!success) throw new IllegalArgumentException("Error: Employee either already existent or null, please try again");
             success = ctrl.makeEmployeeAnUserAndSendPassword();
-            if(!success) throw new Exception("Error: Employee is already an user of the system");
+            if(!success) throw new UnsupportedOperationException("Error: Employee is already an user of the system");
+
         }catch (IllegalArgumentException exception){
             System.out.println(exception.getMessage());
             success = false;
@@ -73,6 +74,8 @@ public class CreateEmployeeUI implements Runnable{
             System.out.println(e.getMessage());
             success = false;
         }
+        if(success)
+            System.out.println("\nEmployee successfully created!");
         return success;
     }
 }

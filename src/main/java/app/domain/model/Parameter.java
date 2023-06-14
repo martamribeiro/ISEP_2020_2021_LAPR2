@@ -2,6 +2,8 @@ package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * Represents a Parameter through:
  * a code, a name, a description and a parameter category.
@@ -9,7 +11,7 @@ import org.apache.commons.lang3.StringUtils;
  * @author Marta Ribeiro 1201592
  */
 
-public class Parameter {
+public class Parameter implements Serializable {
 
     /**
      * Reference value for checking parameter code length.

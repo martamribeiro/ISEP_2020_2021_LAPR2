@@ -5,10 +5,19 @@ import app.domain.model.Test;
 import app.domain.model.TestType;
 import app.mappers.dto.ClinicalAnalysisLaboratoryDTO;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClinicalAnalysisLaboratoryStore {
+/**
+ * Represents the Clinical Analysis Laboratory Store
+ *
+ * @author Ana Albergaria
+ */
+public class ClinicalAnalysisLaboratoryStore implements Serializable {
+    /**
+     * The Company's list of Clinical Analysis Laboratories
+     */
     private List<ClinicalAnalysisLaboratory> calList = new ArrayList<>();
 
     /**
@@ -79,22 +88,6 @@ public class ClinicalAnalysisLaboratoryStore {
         return new ArrayList<>(calList);
     }
 
-    /**
-     * Method for getting list of tests in the store list with no samples collected.
-     *
-     *
-     * @return list of tests with no samples
-     */
-    public List<Test> getTestsWithNoSamples(String laboratoryID) {
-        ClinicalAnalysisLaboratory selectedCal = getCalByCode(laboratoryID);
-        List<Test> listTestsNoSamples = new ArrayList<>();
-
-        for (Test test : selectedCal.getCalTestList()) {
-            if (!test.hasSamples())
-                listTestsNoSamples.add(test);
-        }
-        return listTestsNoSamples;
-    }
 
     /**
      * Method for getting the Clinical Analysis Laboratory by its laboratory ID.

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="588.75px" preserveAspectRatio="none" style="width:547px;height:588px;" version="1.1" viewBox="0 0 547 588" width="547.5px" zoomAndPan="magnify"><defs><filter height="300%" id="f4o8g2v3c0jcp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="3.0" dy="3.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ed6624c6556d5e7b1bd23032162d20b7]
+class Client--><rect codeLine="3" fill="#FEFECE" filter="url(#f4o8g2v3c0jcp)" height="139.7695" id="Client" style="stroke:#A80036;stroke-width:1.125;" width="213" x="105.375" y="438.75"/><ellipse cx="196.6875" cy="450.75" fill="#ADD1B2" rx="8.25" ry="8.25" style="stroke:#A80036;stroke-width:0.75;"/><path d="M198.1875,448.125 Q198.3398,447.75 198.5156,447.5625 Q198.6914,447.375 198.8906,447.375 Q199.2422,447.375 199.4648,447.5859 Q199.6875,447.7969 199.6875,448.2891 L199.6875,449.4609 Q199.6875,449.9531 199.4766,450.1641 Q199.2656,450.375 198.9375,450.375 Q198.6445,450.375 198.457,450.2461 Q198.2695,450.1172 198.1875,449.7773 Q198.1523,449.543 198.0234,449.4141 Q197.7891,449.168 197.3672,449.0273 Q196.9453,448.875 196.5234,448.875 Q195.9961,448.875 195.5508,449.0859 Q195.1172,449.2969 194.7773,449.7656 Q194.4375,450.2344 194.4375,450.8789 L194.4375,451.5703 Q194.4375,452.3438 195.0703,452.8594 Q195.7031,453.375 196.8281,453.375 Q197.4961,453.375 197.9648,453.2227 Q198.2344,453.1406 198.5391,452.8711 Q198.7383,452.7188 198.8438,452.6719 Q198.9492,452.625 199.0781,452.625 Q199.3242,452.625 199.5,452.8242 Q199.6875,453.0117 199.6875,453.2813 Q199.6875,453.5391 199.4297,453.8438 Q199.0547,454.2891 198.457,454.5352 Q197.6719,454.875 196.7109,454.875 Q195.5859,454.875 194.6836,454.4297 Q193.957,454.0781 193.4414,453.3164 Q192.9375,452.5547 192.9375,451.6523 L192.9375,450.832 Q192.9375,449.8945 193.3828,449.0742 Q193.8398,448.2539 194.625,447.8203 Q195.4219,447.375 196.3125,447.375 Q196.8516,447.375 197.3203,447.5625 Q197.7891,447.75 198.1875,448.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="24" x="212.0625" y="454.4326">Client</text><line style="stroke:#A80036;stroke-width:1.125;" x1="106.125" x2="317.625" y1="462.75" y2="462.75"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="118.5" x="109.875" y="474.3142">-String clientsCitizenCardNumber</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="67.5" x="109.875" y="484.6912">-String nhsNumber</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="54" x="109.875" y="495.0681">-Date birthDate</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="39.75" x="109.875" y="505.4451">-String sex</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="62.25" x="109.875" y="515.822">-String tinNumber</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="44.25" x="109.875" y="526.199">-String email</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="45.75" x="109.875" y="536.5759">-String name</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="76.5" x="109.875" y="546.9529">-String phoneNumber</text><line style="stroke:#A80036;stroke-width:1.125;" x1="106.125" x2="317.625" y1="551.7656" y2="551.7656"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="201.75" x="109.875" y="563.3298">+Client(clientsCitizenCardNumber, nhsNumber, birthDate</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="165" x="109.875" y="573.7068">, sex, tinNumber, email, name, phoneNumber )</text><!--MD5=[55cb992be19579b505cea3c5691093cb]
+class ClientStore--><rect codeLine="15" fill="#FEFECE" filter="url(#f4o8g2v3c0jcp)" height="77.5078" id="ClientStore" style="stroke:#A80036;stroke-width:1.125;" width="240.75" x="5.25" y="315.75"/><ellipse cx="99.5625" cy="327.75" fill="#ADD1B2" rx="8.25" ry="8.25" style="stroke:#A80036;stroke-width:0.75;"/><path d="M101.0625,325.125 Q101.2148,324.75 101.3906,324.5625 Q101.5664,324.375 101.7656,324.375 Q102.1172,324.375 102.3398,324.5859 Q102.5625,324.7969 102.5625,325.2891 L102.5625,326.4609 Q102.5625,326.9531 102.3516,327.1641 Q102.1406,327.375 101.8125,327.375 Q101.5195,327.375 101.332,327.2461 Q101.1445,327.1172 101.0625,326.7773 Q101.0273,326.543 100.8984,326.4141 Q100.6641,326.168 100.2422,326.0273 Q99.8203,325.875 99.3984,325.875 Q98.8711,325.875 98.4258,326.0859 Q97.9922,326.2969 97.6523,326.7656 Q97.3125,327.2344 97.3125,327.8789 L97.3125,328.5703 Q97.3125,329.3438 97.9453,329.8594 Q98.5781,330.375 99.7031,330.375 Q100.3711,330.375 100.8398,330.2227 Q101.1094,330.1406 101.4141,329.8711 Q101.6133,329.7188 101.7188,329.6719 Q101.8242,329.625 101.9531,329.625 Q102.1992,329.625 102.375,329.8242 Q102.5625,330.0117 102.5625,330.2813 Q102.5625,330.5391 102.3047,330.8438 Q101.9297,331.2891 101.332,331.5352 Q100.5469,331.875 99.5859,331.875 Q98.4609,331.875 97.5586,331.4297 Q96.832,331.0781 96.3164,330.3164 Q95.8125,329.5547 95.8125,328.6523 L95.8125,327.832 Q95.8125,326.8945 96.2578,326.0742 Q96.7148,325.2539 97.5,324.8203 Q98.2969,324.375 99.1875,324.375 Q99.7266,324.375 100.1953,324.5625 Q100.6641,324.75 101.0625,325.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="45.75" x="114.9375" y="331.4326">ClientStore</text><line style="stroke:#A80036;stroke-width:1.125;" x1="6" x2="245.25" y1="339.75" y2="339.75"/><line style="stroke:#A80036;stroke-width:1.125;" x1="6" x2="245.25" y1="345.75" y2="345.75"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="229.5" x="9.75" y="357.3142">+registerClient(clientsCitizenCardNumber, nhsNumber, birthDate</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="162.75" x="9.75" y="367.6912">, sex, tinNumber, email, name, phoneNumber)</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="63.75" x="9.75" y="378.0681">+validateClient(cl)</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="54" x="9.75" y="388.4451">+saveClient(cl)</text><!--MD5=[8ae808d068a8995f06b9b3ec51357f0b]
+class AuthFacade--><rect codeLine="22" fill="#FEFECE" filter="url(#f4o8g2v3c0jcp)" height="56.7539" id="AuthFacade" style="stroke:#A80036;stroke-width:1.125;" width="183" x="354.375" y="325.875"/><ellipse cx="418.3125" cy="337.875" fill="#ADD1B2" rx="8.25" ry="8.25" style="stroke:#A80036;stroke-width:0.75;"/><path d="M419.8125,335.25 Q419.9648,334.875 420.1406,334.6875 Q420.3164,334.5 420.5156,334.5 Q420.8672,334.5 421.0898,334.7109 Q421.3125,334.9219 421.3125,335.4141 L421.3125,336.5859 Q421.3125,337.0781 421.1016,337.2891 Q420.8906,337.5 420.5625,337.5 Q420.2695,337.5 420.082,337.3711 Q419.8945,337.2422 419.8125,336.9023 Q419.7773,336.668 419.6484,336.5391 Q419.4141,336.293 418.9922,336.1523 Q418.5703,336 418.1484,336 Q417.6211,336 417.1758,336.2109 Q416.7422,336.4219 416.4023,336.8906 Q416.0625,337.3594 416.0625,338.0039 L416.0625,338.6953 Q416.0625,339.4688 416.6953,339.9844 Q417.3281,340.5 418.4531,340.5 Q419.1211,340.5 419.5898,340.3477 Q419.8594,340.2656 420.1641,339.9961 Q420.3633,339.8438 420.4688,339.7969 Q420.5742,339.75 420.7031,339.75 Q420.9492,339.75 421.125,339.9492 Q421.3125,340.1367 421.3125,340.4063 Q421.3125,340.6641 421.0547,340.9688 Q420.6797,341.4141 420.082,341.6602 Q419.2969,342 418.3359,342 Q417.2109,342 416.3086,341.5547 Q415.582,341.2031 415.0664,340.4414 Q414.5625,339.6797 414.5625,338.7773 L414.5625,337.957 Q414.5625,337.0195 415.0078,336.1992 Q415.4648,335.3789 416.25,334.9453 Q417.0469,334.5 417.9375,334.5 Q418.4766,334.5 418.9453,334.6875 Q419.4141,334.875 419.8125,335.25 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="48.75" x="433.6875" y="341.5576">AuthFacade</text><line style="stroke:#A80036;stroke-width:1.125;" x1="355.125" x2="536.625" y1="349.875" y2="349.875"/><line style="stroke:#A80036;stroke-width:1.125;" x1="355.125" x2="536.625" y1="355.875" y2="355.875"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="174" x="358.875" y="367.4392">+addUser(String name, String email, String pwd)</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="90.75" x="358.875" y="377.8162">+existsUser(String email)</text><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="29" fill="#FEFECE" filter="url(#f4o8g2v3c0jcp)" height="56.7539" id="Company" style="stroke:#A80036;stroke-width:1.125;" width="84" x="256.875" y="200.25"/><ellipse cx="277.2375" cy="212.25" fill="#ADD1B2" rx="8.25" ry="8.25" style="stroke:#A80036;stroke-width:0.75;"/><path d="M278.7375,209.625 Q278.8898,209.25 279.0656,209.0625 Q279.2414,208.875 279.4406,208.875 Q279.7922,208.875 280.0148,209.0859 Q280.2375,209.2969 280.2375,209.7891 L280.2375,210.9609 Q280.2375,211.4531 280.0266,211.6641 Q279.8156,211.875 279.4875,211.875 Q279.1945,211.875 279.007,211.7461 Q278.8195,211.6172 278.7375,211.2773 Q278.7023,211.043 278.5734,210.9141 Q278.3391,210.668 277.9172,210.5273 Q277.4953,210.375 277.0734,210.375 Q276.5461,210.375 276.1008,210.5859 Q275.6672,210.7969 275.3273,211.2656 Q274.9875,211.7344 274.9875,212.3789 L274.9875,213.0703 Q274.9875,213.8438 275.6203,214.3594 Q276.2531,214.875 277.3781,214.875 Q278.0461,214.875 278.5148,214.7227 Q278.7844,214.6406 279.0891,214.3711 Q279.2883,214.2188 279.3937,214.1719 Q279.4992,214.125 279.6281,214.125 Q279.8742,214.125 280.05,214.3242 Q280.2375,214.5117 280.2375,214.7813 Q280.2375,215.0391 279.9797,215.3438 Q279.6047,215.7891 279.007,216.0352 Q278.2219,216.375 277.2609,216.375 Q276.1359,216.375 275.2336,215.9297 Q274.507,215.5781 273.9914,214.8164 Q273.4875,214.0547 273.4875,213.1523 L273.4875,212.332 Q273.4875,211.3945 273.9328,210.5742 Q274.3898,209.7539 275.175,209.3203 Q275.9719,208.875 276.8625,208.875 Q277.4016,208.875 277.8703,209.0625 Q278.3391,209.25 278.7375,209.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="39.75" x="289.7625" y="215.9326">Company</text><line style="stroke:#A80036;stroke-width:1.125;" x1="257.625" x2="340.125" y1="224.25" y2="224.25"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="67.5" x="261.375" y="235.8142">-String designation</text><line style="stroke:#A80036;stroke-width:1.125;" x1="257.625" x2="340.125" y1="240.627" y2="240.627"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="75" x="261.375" y="252.1912">+getTestTypeStore()</text><!--MD5=[51de5e7b448e98e1f71289edad994864]
+class CreateTaskController--><rect codeLine="38" fill="#FEFECE" filter="url(#f4o8g2v3c0jcp)" height="67.1309" id="CreateTaskController" style="stroke:#A80036;stroke-width:1.125;" width="240.75" x="178.5" y="87"/><ellipse cx="251.4375" cy="99" fill="#ADD1B2" rx="8.25" ry="8.25" style="stroke:#A80036;stroke-width:0.75;"/><path d="M252.9375,96.375 Q253.0898,96 253.2656,95.8125 Q253.4414,95.625 253.6406,95.625 Q253.9922,95.625 254.2148,95.8359 Q254.4375,96.0469 254.4375,96.5391 L254.4375,97.7109 Q254.4375,98.2031 254.2266,98.4141 Q254.0156,98.625 253.6875,98.625 Q253.3945,98.625 253.207,98.4961 Q253.0195,98.3672 252.9375,98.0273 Q252.9023,97.793 252.7734,97.6641 Q252.5391,97.418 252.1172,97.2773 Q251.6953,97.125 251.2734,97.125 Q250.7461,97.125 250.3008,97.3359 Q249.8672,97.5469 249.5273,98.0156 Q249.1875,98.4844 249.1875,99.1289 L249.1875,99.8203 Q249.1875,100.5938 249.8203,101.1094 Q250.4531,101.625 251.5781,101.625 Q252.2461,101.625 252.7148,101.4727 Q252.9844,101.3906 253.2891,101.1211 Q253.4883,100.9688 253.5938,100.9219 Q253.6992,100.875 253.8281,100.875 Q254.0742,100.875 254.25,101.0742 Q254.4375,101.2617 254.4375,101.5313 Q254.4375,101.7891 254.1797,102.0938 Q253.8047,102.5391 253.207,102.7852 Q252.4219,103.125 251.4609,103.125 Q250.3359,103.125 249.4336,102.6797 Q248.707,102.3281 248.1914,101.5664 Q247.6875,100.8047 247.6875,99.9023 L247.6875,99.082 Q247.6875,98.1445 248.1328,97.3242 Q248.5898,96.5039 249.375,96.0703 Q250.1719,95.625 251.0625,95.625 Q251.6016,95.625 252.0703,95.8125 Q252.5391,96 252.9375,96.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="88.5" x="266.8125" y="102.6826">CreateTaskController</text><line style="stroke:#A80036;stroke-width:1.125;" x1="179.25" x2="418.5" y1="111" y2="111"/><line style="stroke:#A80036;stroke-width:1.125;" x1="179.25" x2="418.5" y1="117" y2="117"/><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="229.5" x="183" y="128.5642">+registerClient(clientsCitizenCardNumber, nhsNumber, birthDate</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="162.75" x="183" y="138.9412">, sex, tinNumber, email, name, phoneNumber)</text><text fill="#000000" font-family="sans-serif" font-size="8.25" lengthAdjust="spacing" textLength="48" x="183" y="149.3181">+saveClient()</text><!--MD5=[788566af22260aef45bcb38e0a2dd266]
+class CreateTaskUI--><rect codeLine="43" fill="#FEFECE" filter="url(#f4o8g2v3c0jcp)" height="36" id="CreateTaskUI" style="stroke:#A80036;stroke-width:1.125;" width="81" x="258.375" y="5.25"/><ellipse cx="269.625" cy="17.25" fill="#ADD1B2" rx="8.25" ry="8.25" style="stroke:#A80036;stroke-width:0.75;"/><path d="M271.125,14.625 Q271.2773,14.25 271.4531,14.0625 Q271.6289,13.875 271.8281,13.875 Q272.1797,13.875 272.4023,14.0859 Q272.625,14.2969 272.625,14.7891 L272.625,15.9609 Q272.625,16.4531 272.4141,16.6641 Q272.2031,16.875 271.875,16.875 Q271.582,16.875 271.3945,16.7461 Q271.207,16.6172 271.125,16.2773 Q271.0898,16.043 270.9609,15.9141 Q270.7266,15.668 270.3047,15.5273 Q269.8828,15.375 269.4609,15.375 Q268.9336,15.375 268.4883,15.5859 Q268.0547,15.7969 267.7148,16.2656 Q267.375,16.7344 267.375,17.3789 L267.375,18.0703 Q267.375,18.8438 268.0078,19.3594 Q268.6406,19.875 269.7656,19.875 Q270.4336,19.875 270.9023,19.7227 Q271.1719,19.6406 271.4766,19.3711 Q271.6758,19.2188 271.7813,19.1719 Q271.8867,19.125 272.0156,19.125 Q272.2617,19.125 272.4375,19.3242 Q272.625,19.5117 272.625,19.7813 Q272.625,20.0391 272.3672,20.3438 Q271.9922,20.7891 271.3945,21.0352 Q270.6094,21.375 269.6484,21.375 Q268.5234,21.375 267.6211,20.9297 Q266.8945,20.5781 266.3789,19.8164 Q265.875,19.0547 265.875,18.1523 L265.875,17.332 Q265.875,16.3945 266.3203,15.5742 Q266.7773,14.7539 267.5625,14.3203 Q268.3594,13.875 269.25,13.875 Q269.7891,13.875 270.2578,14.0625 Q270.7266,14.25 271.125,14.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="57" x="280.125" y="20.9326">CreateTaskUI</text><line style="stroke:#A80036;stroke-width:1.125;" x1="259.125" x2="338.625" y1="29.25" y2="29.25"/><line style="stroke:#A80036;stroke-width:1.125;" x1="259.125" x2="338.625" y1="35.25" y2="35.25"/><!--MD5=[3c2021faa4730756a46abeb810188647]
+link CreateTaskUI to CreateTaskController--><path codeLine="47" d="M298.875,41.385 C298.875,52.9425 298.875,68.565 298.875,82.8375 " fill="none" id="CreateTaskUI-to-CreateTaskController" style="stroke:#A80036;stroke-width:0.75;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="298.875,86.82,301.875,80.07,298.875,83.07,295.875,80.07,298.875,86.82" style="stroke:#A80036;stroke-width:0.75;"/><!--MD5=[7f979c8575d10bb1687e6dd5e09a77c6]
+link CreateTaskController to Company--><path codeLine="48" d="M298.875,154.6125 C298.875,167.7825 298.875,182.88 298.875,195.945 " fill="none" id="CreateTaskController-to-Company" style="stroke:#A80036;stroke-width:0.75;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="298.875,199.9275,301.875,193.1775,298.875,196.1775,295.875,193.1775,298.875,199.9275" style="stroke:#A80036;stroke-width:0.75;"/><!--MD5=[f4eb6a96b895e16e44f8e68ee381c25b]
+link CreateTaskController to AuthFacade--><path codeLine="49" d="M327.8775,154.5225 C353.85,185.3175 391.695,233.355 417.375,279.75 C424.74,293.055 431.055,308.6475 435.8625,322.08 " fill="none" id="CreateTaskController-to-AuthFacade" style="stroke:#A80036;stroke-width:0.75;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="437.175,325.8,437.7668,318.4371,435.9314,322.2622,432.1063,320.4268,437.175,325.8" style="stroke:#A80036;stroke-width:0.75;"/><!--MD5=[ff0d091702d9b1d4a3d4b8e5ac544a41]
+link CreateTaskController to ClientStore--><path codeLine="50" d="M274.2375,154.515 C243.2175,196.0725 189.93,267.465 156.3075,312.5175 " fill="none" id="CreateTaskController-to-ClientStore" style="stroke:#A80036;stroke-width:0.75;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="153.915,315.72,160.3588,312.109,156.1599,312.7162,155.5527,308.5172,153.915,315.72" style="stroke:#A80036;stroke-width:0.75;"/><!--MD5=[6eee883fdf517d3604e8bd0f2058e9aa]
+link Company to Client--><path codeLine="52" d="M293.4525,257.34 C286.755,290.1675 274.3575,346.1925 259.125,393 C254.64,406.785 249.2475,421.2525 243.735,435.0975 " fill="none" id="Company-to-Client" style="stroke:#A80036;stroke-width:0.75;"/><polygon fill="#A80036" points="242.3325,438.6,247.6248,433.447,243.7252,435.1182,242.054,431.2186,242.3325,438.6" style="stroke:#A80036;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="27.75" x="281.625" y="358.4963">knows</text><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="5.25" x="286.8696" y="273.2325">1</text><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="3.75" x="240.8602" y="430.6728">*</text><!--MD5=[a11230341c8e65219708844feaa40162]
+link Company to ClientStore--><path codeLine="53" d="M259.995,257.355 C235.95,274.5825 204.7725,296.9175 178.5,315.7425 " fill="none" id="Company-ClientStore" style="stroke:#A80036;stroke-width:0.75;"/><polygon fill="#000000" points="229.0766,288.8159,235.8749,286.6567,233.3074,283.0731,229.0766,288.8159" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="21" x="238.875" y="290.6213">uses</text><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="5.25" x="248.1301" y="273.0321">1</text><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="5.25" x="180.3164" y="307.5878">1</text><!--MD5=[717d4b03d3c4372f4eafe5e342a0a7dd]
+link Company to AuthFacade--><path codeLine="54" d="M331.8675,257.355 C356.0775,277.8 388.815,305.445 412.995,325.86 " fill="none" id="Company-AuthFacade" style="stroke:#A80036;stroke-width:0.75;"/><polygon fill="#000000" points="378.9902,289.0512,375.2291,282.9904,372.385,286.3586,378.9902,289.0512" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="9.75" lengthAdjust="spacing" textLength="27.75" x="382.875" y="290.6213">knows</text><!--MD5=[1d934105a045dbf126514c6917bd5072]
+link ClientStore to Client--><path codeLine="55" d="M147.0525,393.045 C154.29,405.855 162.63,420.6075 170.865,435.18 " fill="none" id="ClientStore-to-Client" style="stroke:#A80036;stroke-width:0.75;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="172.7325,438.48,172.03,431.1268,170.8905,435.2136,166.8037,434.0741,172.7325,438.48" style="stroke:#A80036;stroke-width:0.75;"/><!--MD5=[3ba9951ae3011af8378fd4945df6f600]
+@startuml
+skinparam classAttributeIconSize 0
+
+class Client {
+-String clientsCitizenCardNumber
+-String nhsNumber
+-Date birthDate
+-String sex
+-String tinNumber
+-String email
+-String name
+-String phoneNumber
++Client(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber )
+}
+
+class ClientStore{
++registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
++validateClient(cl)
++saveClient(cl)
+}
+
+
+class AuthFacade{
++addUser(String name, String email, String pwd)
++existsUser(String email)
+}
+
+
+
+class Company {
+-String designation
++getTestTypeStore()
+}
+
+
+
+
+
+class CreateTaskController {
+  +registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
+  +saveClient()
+}
+
+class CreateTaskUI {
+
+}
+
+CreateTaskUI ..> CreateTaskController
+CreateTaskController ..> Company
+CreateTaskController ..> AuthFacade
+CreateTaskController ..> ClientStore
+'/Client ..> UserSession'/
+Company "1" - -> "*" Client : knows
+Company "1" - - "1" ClientStore : uses >
+Company  - -  AuthFacade : knows >
+ClientStore ..> Client
+
+@enduml
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class Client {
+-String clientsCitizenCardNumber
+-String nhsNumber
+-Date birthDate
+-String sex
+-String tinNumber
+-String email
+-String name
+-String phoneNumber
++Client(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber )
+}
+
+class ClientStore{
++registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
++validateClient(cl)
++saveClient(cl)
+}
+
+
+class AuthFacade{
++addUser(String name, String email, String pwd)
++existsUser(String email)
+}
+
+
+
+class Company {
+-String designation
++getTestTypeStore()
+}
+
+
+
+
+
+class CreateTaskController {
+  +registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
+  +saveClient()
+}
+
+class CreateTaskUI {
+
+}
+
+CreateTaskUI ..> CreateTaskController
+CreateTaskController ..> Company
+CreateTaskController ..> AuthFacade
+CreateTaskController ..> ClientStore
+Company "1" - -> "*" Client : knows
+Company "1" - - "1" ClientStore : uses >
+Company  - -  AuthFacade : knows >
+ClientStore ..> Client
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 10:25:05 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: BR
+--></g></svg>

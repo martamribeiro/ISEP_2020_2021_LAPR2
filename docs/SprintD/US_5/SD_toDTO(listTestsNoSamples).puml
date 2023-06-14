@@ -1,0 +1,40 @@
+@startuml
+title SD_toDTO(listTestsNoSamples)
+
+autonumber
+
+participant ": TestMapper" as MAPPER
+participant "listTestsNoSamples\n: List<Test>" as LIST
+participant "listTestsNoSamplesDto\n:List<TestDto>" as LIST_DTO
+participant "objDto\n: TestDto" as OBJ_DTO
+participant "obj\n :Test" as TEST_OBJ
+
+[o-> MAPPER : toDTO(listTestsNoSamples)
+activate MAPPER
+
+MAPPER --> LIST_DTO** : create()
+
+loop for each object in listTestsNoSamples
+MAPPER -> LIST : obj = get(i)
+activate LIST
+deactivate LIST
+
+MAPPER -> MAPPER : objDto = toDTO(obj)
+activate MAPPER
+
+/'ADICIONAR ATRIBUTOS AO CREATE!!!!!'/
+MAPPER --> OBJ_DTO** : create(code, nhsCode, client, testType, parameters, samples)
+deactivate MAPPER
+
+MAPPER -> LIST_DTO : add(objDto)
+activate LIST_DTO
+deactivate LIST_DTO
+end
+
+
+[<-- MAPPER : listTestsNoSamplesDto
+
+
+
+
+@enduml

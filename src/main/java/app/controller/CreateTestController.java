@@ -33,11 +33,15 @@ public class CreateTestController {
      */
     private ClinicalAnalysisLaboratory currentCal;
 
+    public CreateTestController() {
+        this(App.getInstance().getCompany(), null);
+    }
+
     /**
      * Empty constructor for having the actual instance of the company when instantiated.
      */
-    public CreateTestController() {
-        this(App.getInstance().getCompany());
+    public CreateTestController(String currentCalCode) {
+        this(App.getInstance().getCompany(), currentCalCode);
     }
 
     /**
@@ -45,9 +49,10 @@ public class CreateTestController {
      *
      * @param company instance of company to be used
      */
-    public CreateTestController(Company company) {
+    public CreateTestController(Company company, String currentCalCode) {
         this.company = company;
         this.test = null;
+        this.currentCal = getCalByCode(currentCalCode);
     }
 
     /**
@@ -67,7 +72,7 @@ public class CreateTestController {
         TestType testType = testTypeStore.getSingleTestTypeByCode(selectedTestTypeCode);
         List<Parameter> parameters = parameterStore.getParamsByCodes(selectedParamsCodes);
 
-        this.test = testStore.createTest(nhsCode, associatedClient, testType, parameters);
+        this.test = testStore.createTest(nhsCode, associatedClient, testType, parameters, currentCal);
 
         return testStore.validateTest(test);
     }
@@ -79,7 +84,7 @@ public class CreateTestController {
      */
     public boolean saveTest() {
         TestStore testStore = this.company.getTestStore();
-        return testStore.saveTest(test) && currentCal.addTest(test);
+        return testStore.saveTest(test);
     }
 
     /**
@@ -88,8 +93,6 @@ public class CreateTestController {
      * @return test types list
      */
     private List<TestType> getTestTypes(String selectedCalCode) {
-        ClinicalAnalysisLaboratoryStore calStore = this.company.getCalStore();
-        currentCal = calStore.getCalByCode(selectedCalCode);
         return currentCal.getSelectedTT();
     }
 
@@ -121,6 +124,17 @@ public class CreateTestController {
     public List<CategoriesDTO> getCategoriesListOfTestTypeDTO(String selectedTestTypeCode) {
         CategoriesMapper mapper = new CategoriesMapper();
         return mapper.toDTO(getCategoriesListOfTestType(selectedTestTypeCode));
+    }
+
+    /**
+     * Method for getting the clinical analysis laboratory by its code
+     * @param currentCalCode code of the CAL to be found
+     * @return the found CAL
+     */
+    public ClinicalAnalysisLaboratory getCalByCode(String currentCalCode){
+        if(currentCalCode == null) return null;
+        ClinicalAnalysisLaboratoryStore calStore = this.company.getCalStore();
+        return calStore.getCalByCode(currentCalCode);
     }
 
     /**

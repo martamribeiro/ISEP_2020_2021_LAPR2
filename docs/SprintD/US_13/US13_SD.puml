@@ -1,0 +1,92 @@
+@startuml
+
+autonumber
+
+actor "Medical Lab Technician" as MLT
+
+participant ":SelectClientUI  " as UI
+participant ":ConsultTestsByClient" as CTRL
+participant ":Company" as COMPANY
+participant "clientStore\n:ClientStore" as CLIENT_STORE
+participant "sortAlgorithm\n:SortAlgorithm" as SORTA
+participant "testStore\n:TestStore" as TEST_STORE
+participant ":clientMapper" as CLIENT_MAPPER
+participant ":TestMapper" as TEST_MAPPER
+
+
+activate MLT
+MLT -> UI : asks to consult the historical tests performed by a particular client
+activate UI
+
+UI --> MLT : asks to choose if clients should be ordered by tin or by name
+deactivate UI
+
+
+MLT -> UI : selects requested data
+activate UI
+UI -> CTRL : clientsListInOrder(sortOption)
+activate CTRL
+
+CTRL -> COMPANY : testStore = getTestStore()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> CLIENT_STORE : clientsList  = getClientsWithValidatedTests()
+activate TEST_STORE
+deactivate TEST_STORE
+
+CTRL -> COMPANY : sortAlgorithm = getSortAlgorithm()
+activate COMPANY
+deactivate COMPANY
+
+alt sortOption is tin
+CTRL -> SORTA : sortAlgorithm.sort(clientsList, tinComparator)
+activate SORTA
+deactivate SORTA
+
+
+CTRL -> CLIENT_MAPPER : clientListDto = clientMapper.toDto(clientList)
+activate CLIENT_MAPPER
+deactivate CLIENT_MAPPER
+
+CTRL -> UI : clientsListDto
+
+deactivate CTRL
+
+
+UI --> MLT : shows list of clients and asks to select one
+deactivate UI
+
+MLT -> UI : selects requested data
+activate UI
+
+
+UI -> CTRL : getValidatedTestsByClient(tin)
+activate CTRL
+
+CTRL -> COMPANY : getTestStore()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> TEST_STORE : getValidatedTestsByClient(tin)
+activate TEST_STORE
+deactivate TEST_STORE
+
+CTRL -> TEST_MAPPER : toDTO(validatedTestsOfClient)
+activate TEST_MAPPER
+deactivate TEST_MAPPER
+
+CTRL -> UI : validatedTestsOfClientDTO
+deactivate CTRL
+
+
+UI --> MLT : shows historical tests performed by the client in details
+deactivate UI
+
+
+/'colocar requests confirmation
+e confirms the data em cima'/
+
+
+
+@enduml

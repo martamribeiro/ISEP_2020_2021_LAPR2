@@ -1,9 +1,11 @@
 package app.domain.model;
 
+import java.io.Serializable;
+
 /**
  * Class of the generalized reference value class.
  */
-public class MyReferenceValue {
+public class MyReferenceValue implements Serializable {
     /**
      * Reference value for minimum acceptable value of a parameter
      */

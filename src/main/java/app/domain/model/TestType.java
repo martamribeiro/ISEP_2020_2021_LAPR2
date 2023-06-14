@@ -2,10 +2,12 @@ package app.domain.model;
 
 import app.domain.interfaces.ExternalModule;
 import org.apache.commons.lang3.StringUtils;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestType {
+public class TestType implements Serializable {
 
     /**
      * Max lenght of description field
@@ -98,6 +100,10 @@ public class TestType {
         return selectedCategories;
     }
 
+    public String getClassNameOfApi() {
+        return classNameOfApi;
+    }
+
     /**
      * It returns the textual description of the Test Type.
      *
@@ -183,7 +189,7 @@ public class TestType {
      * @throws IllegalAccessException if there's a method invoked does not have access to the class representing the API
      * @throws InstantiationException if the class object of the external API cannot be instantiated
      */
-    public ExternalModule getExternalModule() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public ExternalModule   getExternalModule() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Class<?> oClass = Class.forName(classNameOfApi);
         return (ExternalModule) oClass.newInstance();
     }

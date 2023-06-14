@@ -1,0 +1,74 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":CreateFileTestController" as TEST_CTRL
+participant "testFileDto\n:TestFIleDTO" as DTO
+participant ":Company" as PLAT
+participant "clientStore\n:ClientStore" as CLIENT_STORE
+participant "testTypeStore\n:TestTypeStore" as TEST_TYPE_STORE
+participant "parameterStore\n:ParameterStore" as PARAM_STORE
+participant "calStore\n:CalStore" as CAL_STORE
+
+
+activate TEST_CTRL
+
+TEST_CTRL -> PLAT : clientStore = getClientStore()
+activate PLAT
+deactivate PLAT
+
+
+TEST_CTRL -> PLAT : testTypeStore = getTestTypeStore()
+activate PLAT
+deactivate PLAT
+
+TEST_CTRL -> PLAT : parameterStore = getParameterStore()
+activate PLAT
+deactivate PLAT
+
+TEST_CTRL -> PLAT : calStore = getClinicalAnalysisLaboratoryStore()
+activate PLAT
+deactivate PLAT
+
+TEST_CTRL -> CLIENT_STORE : associatedClient = getClientByTinNumber(testFileDTO.getClientDTO().getTinNumber)
+activate CLIENT_STORE
+deactivate CLIENT_STORE
+
+TEST_CTRL -> TEST_TYPE_STORE : selectedTestType = getTestTypeByCode(TestFileDTO.getTestTypeCode)
+activate TEST_TYPE_STORE
+deactivate TEST_TYPE_STORE
+
+
+
+TEST_CTRL -> PARAM_STORE : selectedParamsList = getParamsByCodes(TestFileDTO.getParamsCodes)
+activate PARAM_STORE
+deactivate PARAM_STORE
+
+TEST_CTRL -> CAL_STORE : cal = getCalByCode(TestFileDTO.getCalId)
+activate CAL_STORE
+deactivate CAL_STORE
+
+TEST_CTRL -> DTO: nhsCode = testFileDto.getNhsCode()
+activate DTO
+deactivate DTO
+
+TEST_CTRL -> DTO: testRegDate = testFileDto.getTestRegDate()
+activate DTO
+deactivate DTO
+
+TEST_CTRL -> DTO: testChemDate = testFileDto.getTestChemDate()
+activate DTO
+deactivate DTO
+
+TEST_CTRL -> DTO: testDiagnosisDate = testFileDto.getDiagnosisDate()
+activate DTO
+deactivate DTO
+
+TEST_CTRL -> DTO: testValidationDate = testFileDto.getValidationDate()
+activate DTO
+deactivate DTO
+
+deactivate TEST_CTRL
+
+@enduml

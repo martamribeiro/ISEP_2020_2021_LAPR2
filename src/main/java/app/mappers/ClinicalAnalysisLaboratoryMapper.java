@@ -1,6 +1,7 @@
 package app.mappers;
 
 import app.domain.model.ClinicalAnalysisLaboratory;
+import app.domain.model.TestType;
 import app.mappers.dto.ClinicalAnalysisLaboratoryDTO;
 
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class ClinicalAnalysisLaboratoryMapper {
      */
     public ClinicalAnalysisLaboratoryDTO toDTO(ClinicalAnalysisLaboratory cal) {
         return new ClinicalAnalysisLaboratoryDTO(cal.getLaboratoryID(), cal.getName(), cal.getAddress(),
-                cal.getPhoneNumber(), cal.getNumTIN(), cal.getSelectedTT(), cal.getCalTestList());
+                cal.getPhoneNumber(), cal.getNumTIN(), getTestTypeCodes(cal));
     }
 
     /**
@@ -34,6 +35,14 @@ public class ClinicalAnalysisLaboratoryMapper {
             calTestListDTOS.add(this.toDTO(cal));
         }
         return calTestListDTOS;
+    }
+
+    private List<String> getTestTypeCodes(ClinicalAnalysisLaboratory cal){
+        List<String> testTypeCodes = new ArrayList<>();
+        for(TestType tt : cal.getSelectedTT()){
+            testTypeCodes.add(tt.getCode());
+        }
+        return testTypeCodes;
     }
 }
 

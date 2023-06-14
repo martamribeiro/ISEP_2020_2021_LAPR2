@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":RegisterClientController" as CTRL
+participant ": ClientStore" as CS
+
+participant "cl:\n Client" as CL
+
+
+activate CTRL
+CTRL -> CS : cl = createClient(clientDto)
+activate CS
+
+CS -->  CL** : create(citizenCardNumber, nhsNumber,  birthDate, tinNumber, email, name, phoneNumber)
+deactivate CS
+
+CTRL -> CS : validateClient(cl)
+activate CS
+
+deactivate CS
+deactivate CTRL
+
+@enduml

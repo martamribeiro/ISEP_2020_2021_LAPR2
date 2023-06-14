@@ -5,13 +5,14 @@ import auth.domain.model.UserRole;
 import auth.domain.store.UserRoleStore;
 import auth.domain.store.UserStore;
 
+import java.io.Serializable;
 import java.util.Optional;
 
 /**
  *
  * @author Paulo Maio <pam@isep.ipp.pt>
  */
-public class AuthFacade {
+public class AuthFacade implements Serializable {
     private UserSession userSession;
 
     private UserRoleStore roles ;

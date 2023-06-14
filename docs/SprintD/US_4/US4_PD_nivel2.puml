@@ -1,0 +1,177 @@
+@startuml
+hide empty methods
+hide empty attributes
+'left to right direction
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Model {
+
+class Report{}
+
+        class ClinicalAnalysisLaboratory{
+        - laboratoryID
+        }
+
+        class TestParameter{
+            +TestParameter(parameter: Parameter)
+        }
+        class TestParameterResult{
+        - createdAt
+        - value
+        - metric
+        }
+        class TestType {
+        - code : String
+        - description : String
+        - collectingMethod : String
+        }
+
+        class Test{
+            - code
+            - NhsCode
+            - dateOfTestRegistration
+            - dateOfSamplesCollection
+            - dateOfChemicalAnalysis
+            - dateOfDiagnosis
+        }
+
+        class Sample{
+            - barCode
+        }
+
+        class Parameter {
+          -code
+          -shortName
+          -description
+        }
+
+        class Company {
+            -designation : String
+            +getTestTypeStore()
+            +getParameterStore()
+            +getTestStore()
+        }
+
+        class ParameterCategory{
+            -code
+            -name
+        }
+        class Client{
+        - name
+        - citizenCardNum
+        - nhsNum
+        - birthDate
+        - sex
+        - taxIdNum
+        - phoneNum
+        - email
+        }
+
+}
+
+package Stores {
+
+    class ParameterStore {
+    +getParamsByCategories(List<String> selectedCategoriesCodes)
+    +getParamsByCategory(String category)
+    getParamsByCodes(selectedParamsCodes)
+    }
+
+    class TestTypeStore {
+       +getTestTypes()
+       +getTestTypeByCode(String code)
+       +getCategoriesByTestTypeCode(String selectedTestTypeCode)
+    }
+
+    class ClientStore {
+    +getClientByTinNumber(tinNumber)
+    }
+
+
+    class TestStore {
+        +createTest(String NHScode, Client associatedClient,\n TestType selectedTestType, List<Parameter>selectedParamsList)
+        +validateTest(test)
+        +saveTest(test)
+    }
+
+
+    class ClinicalAnalysisLaboratoryStore {
+            +getCalByCode(clinicalAnalysisLabCode)
+        }
+
+}
+
+}
+
+package Mappers {
+
+class TestTypeMapper {
+    +List<TestTypeDTO> toDTO(List<TestType> testTypes)
+    +TestTypeDTO toDTO(TestType tt)
+}
+class CategoryMapper{
+    +List<CategoryDto> toDTO(List<Category> parameterCategories)
+    +CategoryDto toDTO(Category category)
+}
+class ParameterMapper {
+    +List<ParameterDTO> toDTO(List<Parameter> parameters)
+    +ParameterDTO toDTO(Parameter parameter)
+}
+}
+
+package DTO {
+
+    class TestTypeDTO {
+        -code
+        -description
+        -collectingMethod
+        -List<Category> selectedCategories
+        +TestTypeDTO(code, description, collectingMethod, selectedCategories)
+    }
+
+    class CategoryDto {
+        -code
+        -name
+        +CategoryDto(code, name)
+    }
+
+    class ParameterDTO {
+        -code
+        -shortName
+        -description
+        -ParameterCategory
+        +ParameterDTO(code, shortName, description, ParameterCategory)
+    }
+}
+
+package Controllers {
+
+class CreateTestControler{
+    +createTest(NHScode, tinNumber,selectedTestTypeCode, selectedParamCodes)
+    +saveTest(test)
+    +getTestTypesDTO() : TestTypeDTO
+    +getCategoriesListOfTestTypeDTO(selectedTestTypeCode): CategoriesDTO
+    +getParametersOfCategoriesDTO(selectedCategoriesCodes): ParametersDTO
+    }
+
+}
+
+}
+
+package UI {
+
+package Console {
+
+ class CreateTestUI{
+ -selectedCal: String
+  }
+
+}
+
+}
+
+@enduml

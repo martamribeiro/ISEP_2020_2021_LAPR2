@@ -1,0 +1,35 @@
+@startuml
+title US14_SD_TestParameterMapper_toDTO_List
+autonumber
+
+participant ":TestParameterMapper" as TPMAPPER
+participant "objDTO\n:TestParametersDTO" as OBJ_DTO
+participant "listTestParams\n:List<TestParams>" as LTP
+participant "listTestParamsDTO\n:List<TestParamsDTO>" as LIST_DTO
+
+[o-> TPMAPPER : listTestParamsDTO = toDTO(listTestParams)
+activate TPMAPPER
+
+loop for each object in listTestParams
+TPMAPPER --> LIST_DTO** : create()
+TPMAPPER -> LTP : obj = get(i)
+activate LTP
+|||
+deactivate LTP
+
+TPMAPPER -> TPMAPPER : objDTO = toDTO(obj)
+activate TPMAPPER
+|||
+deactivate TPMAPPER
+
+TPMAPPER --> OBJ_DTO** : create(parameter, testResult)
+
+TPMAPPER --> LTP : add(objDTO)
+activate LTP
+|||
+deactivate LTP
+end
+
+[<-- TPMAPPER : listTestParamsDTO
+
+@enduml

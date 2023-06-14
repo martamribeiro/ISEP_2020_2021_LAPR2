@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":RegisterClientController" as CTRL
+participant ": ClientStore" as CS
+participant "Auth\n:AuthFacade" as SESSAO
+participant "cl:\n Client" as CL
+
+
+activate CTRL
+CTRL -> CS : saveClient(cl)
+activate CS
+
+CS -> CS : validateClient(cl)
+activate CS
+deactivate CS
+
+CS -> CS : generatedPassword = generatedPassword()
+activate CS
+deactivate CS
+
+
+CS -> CS : addClient(cl)
+activate CS
+deactivate CS
+
+
+CS -> SESSAO : addUser(String name, String email, String generatedPassword)
+
+activate SESSAO
+
+SESSAO -> SESSAO : existsUser(String email)
+activate SESSAO
+deactivate SESSAO
+deactivate SESSAO
+
+CS -> CS : writePassword(generatedPassword)
+activate CS
+deactivate CS
+deactivate CTRL
+
+@enduml

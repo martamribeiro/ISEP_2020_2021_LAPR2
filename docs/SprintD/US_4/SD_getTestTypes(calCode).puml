@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+
+participant ":CreateTestController" as CTRL
+participant ":Company" as PLAT
+participant "store: \nClinical Analysis Laboratory" as CALSTORE
+participant ": TestTypeMapper" as TT_MAPPER
+participant "currentCal\n:ClinicalAnalisysLaboratory" as CAL
+
+activate CTRL
+CTRL -> PLAT : clinicalAnalysisLaboratoryStore = getCalStore()
+activate PLAT
+|||
+deactivate PLAT
+
+
+CTRL -> CALSTORE : currentCal = getCalByCode(clinicalAnalysisLabCode)
+activate CALSTORE
+deactivate CALSTORE
+
+CTRL -> CAL : testTypesList = currentCal.getSelectedTT()
+activate CALSTORE
+deactivate CALSTORE
+
+CTRL -> TT_MAPPER : toDTO(testTypesList)
+activate TT_MAPPER
+
+CTRL<-- TT_MAPPER : testTypesListDto
+deactivate TT_MAPPER
+deactivate CTRL
+
+@enduml

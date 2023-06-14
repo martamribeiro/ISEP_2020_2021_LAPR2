@@ -1,6 +1,12 @@
 package app.domain.store;
 
 import app.domain.model.Client;
+import app.domain.shared.utils.PasswordUtils;
+import app.mappers.dto.ClientDTO;
+import auth.AuthFacade;
+
+import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Date;
@@ -10,7 +16,17 @@ import java.util.Date;
  *
  * @author João Wolff and Alexandre Dias
  */
-public class ClientStore {
+public class ClientStore implements Serializable {
+
+    private AuthFacade auth;
+
+    public ClientStore(AuthFacade auth){
+        this.auth = auth;
+    }
+
+    public ClientStore(){
+        this.auth = new AuthFacade();
+    }
 
     /**
      * List of clients
@@ -35,21 +51,10 @@ public class ClientStore {
                 tinNumber, email, name, phoneNumber);
     }
 
-    /**
-     * Creates an client instance with all arguments but sex(optional)
-     * @param clientsCitizenCardNumber clients Citizen Card Number.
-     * @param nhsNumber                clients NHS Number.
-     * @param birthDate                clients Birth Date
-     * @param tinNumber                clients TIN Number.
-     * @param email                    clients E-mail.
-     * @param name                     clients Name.
-     * @param phoneNumber              clients Phone Number.
-     * @return the created client
-     */
-    public Client registerClient(String clientsCitizenCardNumber, String nhsNumber, Date birthDate,
-                                                  String tinNumber, String email, String name, String phoneNumber) {
-        return new Client(clientsCitizenCardNumber, nhsNumber, birthDate,
-                tinNumber, email, name, phoneNumber);
+
+    public Client registerClient(ClientDTO clientDTO) {
+        return new Client(clientDTO.getClientsCitizenCardNumber(),clientDTO.getNhsNumber(), clientDTO.getBirthDate(),
+                clientDTO.getTinNumber(), clientDTO.getEmail(), clientDTO.getName(), clientDTO.getPhoneNumber());
     }
 
     /**
@@ -60,7 +65,8 @@ public class ClientStore {
     public boolean validateClient(Client cl) {
         if (cl == null)
             return false;
-
+        if(auth.existsUser(cl.getEmail()))
+            throw new IllegalArgumentException("Client's email already registered in the system.: " + cl.getEmail());
         return !this.clientList.contains(cl);
     }
 
@@ -72,7 +78,37 @@ public class ClientStore {
     public boolean saveClient(Client cl) {
         if (!validateClient(cl))
             return false;
-        return this.clientList.add(cl);
+        String generatedPassword = PasswordUtils.generateRandomPassword();
+        if(this.clientList.add(cl)) {
+            return makeClientAnUserAndSendPassword(cl.getName(),cl.getEmail(), generatedPassword);
+        }
+        return false;
+    }
+
+    /**
+     * Makes an client and user of the system and writes its generated password to a file.
+     *
+     * @return true if success and false if fails.
+     * @throws IOException if cannot write into the file.
+     */
+    public boolean makeClientAnUserAndSendPassword(String name, String email, String pwd) {
+        if (makeClientAnUser(name, email, pwd))
+            try {
+                return PasswordUtils.writePassword(pwd, email);
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        return false;
+    }
+
+
+    /**
+     * Makes the client an user of the system
+     *
+     * @return true if success and false if fails.
+     */
+    private boolean makeClientAnUser(String name,String email, String pwd) {
+        return auth.addUserWithRole(name, email, pwd, "CLIENT");
     }
 
     public Client getClientByTinNumber(String tinNumber){
@@ -82,6 +118,15 @@ public class ClientStore {
             }
         }
         throw new UnsupportedOperationException("There are no client registered with given TIN number: " + tinNumber);
+    }
+
+    public Client getClientByEmail(String email){
+        for (Client client : clientList){
+            if(client.getEmail().equals(email)){
+                return client;
+            }
+        }
+        throw new UnsupportedOperationException("There are no client registered with given email: " + email);
     }
 
     public List<Client> getClients() {

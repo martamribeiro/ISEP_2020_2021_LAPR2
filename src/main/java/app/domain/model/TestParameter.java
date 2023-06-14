@@ -1,14 +1,13 @@
 package app.domain.model;
 
-
-import java.util.List;
+import java.io.Serializable;
 
 /**
  * Container of one of the test parameters and its test result
  *
  * @author SRC-Code-23
  */
-public class TestParameter {
+public class TestParameter implements Serializable {
 
     /**
      * Parameter to be evaluated for the a test.
@@ -27,6 +26,11 @@ public class TestParameter {
     public TestParameter(Parameter parameter){
         this.parameter = parameter;
         testResult = null;
+    }
+
+    public TestParameter(Parameter parameter, TestParameterResult testParameterResult){
+        this.parameter = parameter;
+        testResult = testParameterResult;
     }
 
     public Parameter getParameter() {

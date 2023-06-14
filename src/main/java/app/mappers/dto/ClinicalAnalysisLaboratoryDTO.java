@@ -22,9 +22,6 @@ public class ClinicalAnalysisLaboratoryDTO extends LaboratoryDTO {
      */
     private List<String> testTypeCodes;
 
-    private List<TestType> selectedTT;
-
-    private List<Test> calTestList;
 
     /**
      * Builds a Clinical Analysis Laboratory's instance receiving:
@@ -42,13 +39,6 @@ public class ClinicalAnalysisLaboratoryDTO extends LaboratoryDTO {
         super(name, address, phoneNumber, numTIN);
         this.laboratoryID = laboratoryID;
         this.testTypeCodes = new ArrayList<>(testTypeCodes);
-    }
-
-    public ClinicalAnalysisLaboratoryDTO(String laboratoryID, String name, String address, String phoneNumber, String numTIN, List<TestType> selectedTT, List<Test> calTestList) {
-        super(name, address, phoneNumber, numTIN);
-        this.laboratoryID = laboratoryID;
-        this.selectedTT = selectedTT;
-        this.calTestList = calTestList;
     }
 
     /**
@@ -76,38 +66,8 @@ public class ClinicalAnalysisLaboratoryDTO extends LaboratoryDTO {
      */
     @Override
     public String toString() {
-        List<TestType> copy = new ArrayList<>(selectedTT);
 
-        StringBuilder s = new StringBuilder();
-        for (TestType tt : copy) {
-            s.append("  >> ");
-            s.append("Code: ");
-            s.append(tt.getCode());
-            s.append(", ");
-            s.append("Description: ");
-            s.append(tt.getDescription());
-            s.append("\n");
-        }
-
-        List<Test> copyCalTestsList = new ArrayList<>(calTestList);
-
-        StringBuilder sCalTestsList = new StringBuilder();
-        for (Test test : copyCalTestsList) {
-            sCalTestsList.append("  >> ");
-            sCalTestsList.append("Code: ");
-            sCalTestsList.append(test.getCode());
-            sCalTestsList.append(", ");
-            sCalTestsList.append("Nhs Code: ");
-            sCalTestsList.append(test.getNhsCode());
-            sCalTestsList.append(", ");
-            sCalTestsList.append("Test Type: ");
-            sCalTestsList.append(test.getTestType().getCode());
-            sCalTestsList.append("\n");
-        }
-
-
-
-        return String.format("%s> Laboratory ID: %s%n> Test Types: %n%s> Tests: %n%s",
-                super.toString(), laboratoryID, s, sCalTestsList);
+        return String.format("%s> Laboratory ID: %s%n> Test Types: %n%s>",
+                super.toString(), laboratoryID, testTypeCodes);
     }
 }

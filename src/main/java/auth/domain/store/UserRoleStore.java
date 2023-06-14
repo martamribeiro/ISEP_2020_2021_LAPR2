@@ -2,6 +2,7 @@ package auth.domain.store;
 
 import auth.domain.model.UserRole;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -10,7 +11,7 @@ import java.util.Set;
  *
  * @author Paulo Maio <pam@isep.ipp.pt>
  */
-public class UserRoleStore {
+public class UserRoleStore implements Serializable {
 
     private Set<UserRole> store = new HashSet<UserRole>();
 

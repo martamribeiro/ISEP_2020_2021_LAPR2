@@ -27,7 +27,7 @@ public class MedLabTechUI implements Runnable {
             int option = 0;
             do
             {
-                option = Utils.showAndSelectIndex(options, "\n\nMedical Lab Technician Menu:\n");
+                option = Utils.showAndSelectIndex(options, "\n\nMedical Lab Technician Menu:");
 
                 if ( (option >= 0) && (option < options.size()))
                 {

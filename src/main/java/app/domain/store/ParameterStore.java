@@ -4,6 +4,7 @@ import app.domain.model.Parameter;
 import app.domain.model.ParameterCategory;
 import app.domain.model.TestType;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
  *
  * @author Marta Ribeiro 1201592
  */
-public class ParameterStore {
+public class ParameterStore implements Serializable {
 
     /**
      * List of existing parameters.

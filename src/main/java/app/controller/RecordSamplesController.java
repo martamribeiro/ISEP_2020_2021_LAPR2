@@ -65,7 +65,7 @@ public class RecordSamplesController {
      * @throws BarcodeException  if the data to be encoded in the barcode is invalid
      * @throws IllegalAccessException if there's a method invoked does not have access to the class representing the API
      */
-    public boolean createSample() throws ClassNotFoundException, InstantiationException, BarcodeException, IllegalAccessException, IOException, OutputException {
+    public boolean createSample() throws ClassNotFoundException, InstantiationException, BarcodeException, IllegalAccessException {
         MyBarcode myBarcode = getBarcode();
         SampleStore sampleStore = this.company.getSampleStore();
         this.sample = sampleStore.createSample(myBarcode);
@@ -98,8 +98,8 @@ public class RecordSamplesController {
      * @return a List<TestDTO> if the list was successfully received.
      */
     public List<TestDTO> getTestsNoSamples(String laboratoryID) {
-        ClinicalAnalysisLaboratoryStore calStore = this.company.getCalStore();
-        List<Test> listTestsNoSamples = calStore.getTestsWithNoSamples(laboratoryID);
+        TestStore testStore = this.company.getTestStore();
+        List<Test> listTestsNoSamples = testStore.getTestsWithNoSamples(laboratoryID);
 
         TestMapper mapper = new TestMapper();
         return mapper.toDTO(listTestsNoSamples);

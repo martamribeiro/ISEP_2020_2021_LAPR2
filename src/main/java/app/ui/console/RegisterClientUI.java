@@ -1,6 +1,7 @@
 package app.ui.console;
 
 import app.controller.RegisterClientController;
+import app.mappers.dto.ClientDTO;
 import app.ui.console.utils.OurUtils;
 import app.ui.console.utils.Utils;
 
@@ -46,7 +47,7 @@ public class RegisterClientUI implements Runnable{
                                 "Name: %s%n Phone number: %s%n Sex: %s%n",
                         citizenCard, nhsNumber, birthDate.toString(), tinNumber, email, name, phoneNumber, sex));
             }else{
-                ctrl.registerClient(citizenCard, nhsNumber, birthDate, tinNumber, email, name, phoneNumber);
+                ctrl.registerClient(new ClientDTO(citizenCard, nhsNumber, birthDate, tinNumber, email, name, phoneNumber));
                 confirm = Utils.confirm(String.format("Please confirm the data (type `s` if its correct, `n` if it is not):" +
                                 "%nCitizen card: %s%nNhs number: %s%nBirth date: %s%nTin number: %s%nEmail: %s%nName: %s%nPhone number: %s%n",
                         citizenCard, nhsNumber, birthDate.toString(), tinNumber, email, name, phoneNumber));
@@ -57,8 +58,6 @@ public class RegisterClientUI implements Runnable{
                 throw new Exception("Error: Client either already existent or null, please try again");
             else
                 System.out.println("\nClient successfully created!");
-            success = ctrl.makeClientAnUserAndSendPassword();
-            if(!success) throw new Exception("Error: Client is already an user of the system");
         }catch (IllegalArgumentException exception){
             System.out.println(exception.getMessage());
             success = false;

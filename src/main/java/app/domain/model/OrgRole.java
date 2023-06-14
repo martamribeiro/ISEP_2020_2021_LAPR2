@@ -2,11 +2,13 @@ package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * Represents an Organization Role through:
  * a description.
  */
-public class OrgRole {
+public class OrgRole implements Serializable {
 
     /**
      * The organization role description.

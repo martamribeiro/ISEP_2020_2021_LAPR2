@@ -2,11 +2,13 @@ package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * Represents a Specialist Doctor through:
  * a name, an address, a phone number, an email, a SOC code and a doctor index number.
  */
-public class SpecialistDoctor extends Employee {
+public class SpecialistDoctor extends Employee implements Serializable {
 
     /**
      * The specialist doctor's doctor index number.

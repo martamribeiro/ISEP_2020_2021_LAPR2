@@ -3,6 +3,7 @@ package app.domain.store;
 import app.domain.model.ParameterCategory;
 import app.domain.model.TestType;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,7 @@ import java.util.List;
  *
  * @author João Wolff
  */
-public class TestTypeStore {
+public class TestTypeStore implements Serializable {
     /**
      * List of test types performed by the company
      */

@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+
+participant ":CreateTestController" as CTRL
+participant ":Company" as PLAT
+participant "store:Parameter" as PARAM_STORE
+participant ": ParameterMapper" as PARAM_MAPPER
+
+activate CTRL
+CTRL -> PLAT : parameterStore = getParameterStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> PARAM_STORE : filteredParamsList = getParamsByCategories(selectedCategoriesCodes)
+activate PARAM_STORE
+deactivate PARAM_STORE
+
+
+
+CTRL -> PARAM_MAPPER : toDTO(filteredParamsList)
+activate PARAM_MAPPER
+PARAM_MAPPER --> CTRL : filteredParamsList
+deactivate PARAM_MAPPER
+deactivate CTRL
+
+
+
+@enduml

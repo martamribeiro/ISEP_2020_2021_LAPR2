@@ -1,0 +1,55 @@
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Model {}
+
+package Stores {}
+
+package Adapters {
+
+}
+
+package Interfaces {}
+
+}
+
+package DTO {
+
+}
+
+package Controllers {
+
+
+}
+
+package ThirdParty {
+package APIs {}
+}
+
+}
+
+package UI {
+package Utils {
+
+}
+
+
+}
+
+Controllers ..> Domain
+Controllers ..> DTO
+Controllers ..> Controllers
+UI ..> Controllers
+UI ..> DTO
+Model -- Stores : uses >
+Interfaces <|.. Adapters
+Adapters --> APIs
+
+@enduml

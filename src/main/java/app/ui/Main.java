@@ -10,6 +10,7 @@ public class Main {
 
     public static void main(String[] args)
     {
+        //teste
         try
         {
             MainMenuUI menu = new MainMenuUI();

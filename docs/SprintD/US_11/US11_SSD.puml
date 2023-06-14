@@ -1,0 +1,23 @@
+@startuml
+autonumber
+actor "Administrator" as Adm
+
+activate Adm
+Adm-> ":System" : asks to create a new parameter category
+activate ":System"
+":System" --> Adm : request data(i.e., code, name)
+deactivate ":System"
+
+Adm-> ":System" : types requested data
+activate ":System"
+":System" --> Adm : shows the data and requests a confirmation
+deactivate ":System"
+
+Adm-> ":System" : confirms the data
+activate ":System"
+":System" --> Adm : informs operation success
+deactivate ":System"
+
+deactivate Adm
+
+@enduml

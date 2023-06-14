@@ -1,5 +1,6 @@
 package app.domain.model;
 
+import app.domain.shared.Constants;
 import app.mappers.dto.EmployeeDTO;
 import app.mappers.dto.SpecialistDoctorDTO;
 import org.junit.Assert;
@@ -13,7 +14,7 @@ public class US7_CompanyTest {
 
     @Before
     public void setUp() {
-        company = new Company("Many Labs");
+        company = new Company("Many Labs", Constants.CLASS_BARCODE_API,Constants.CLASS_SORT_ALGORITHM, Constants.CLASS_SIMPLE_REGRESSION_MODEL, Constants.DATE_INTERVAL, Constants.HISTORICAL_POINTS, Constants.CONFIDENCE_LEVEL, Constants.SIGNIFICANCE_LEVEL);
         r1 = new OrgRole("Spec Doctor");
         r2 = new OrgRole("Med Lab Tech");
     }

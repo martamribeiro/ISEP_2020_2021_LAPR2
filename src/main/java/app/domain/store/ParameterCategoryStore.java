@@ -2,6 +2,7 @@ package app.domain.store;
 
 import app.domain.model.ParameterCategory;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ import java.util.List;
  *
  * @author João Wolff
  */
-public class ParameterCategoryStore {
+public class ParameterCategoryStore implements Serializable {
 
     /**
      * list of parameter categories

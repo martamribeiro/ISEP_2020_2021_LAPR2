@@ -2,12 +2,14 @@ package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * Class to generate a parameter category
  *
  * @author João Wolff and Marta Ribeiro
  */
-public class ParameterCategory {
+public class ParameterCategory implements Serializable {
     final static int CODE_LENGTH = 5;
     final static int NAME_LENGTH = 10;
 

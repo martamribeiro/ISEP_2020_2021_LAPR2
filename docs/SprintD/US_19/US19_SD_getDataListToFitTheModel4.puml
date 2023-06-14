@@ -1,0 +1,42 @@
+@startuml
+
+title SD_getDataListToFitTheModel()
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "dateInterval:\nString" as DATE_INTERVAL
+participant "intervalDatesInString:\nString[]" as STRING_ARRAY_DATES
+participant "sdf:\nSimpleDateFormat" as SDF
+participant "beginDate:\nDate" as BEGIN_DATE
+participant "endDate:\nDate" as END_DATE
+participant "testStore:\nTestStore" as TEST_STORE
+participant "dataList:\nList< List<Double> >"
+
+[o-> TASK : getDataListToFitTheModel()
+activate TASK
+
+TASK -> DATE_INTERVAL : intervalDatesInString = split("-")
+activate DATE_INTERVAL
+deactivate DATE_INTERVAL
+
+TASK -> SDF** : create("dd/MM/yyyy")
+
+TASK -> SDF : beginDate = parse(intervalDatesInString[0])
+activate SDF
+deactivate SDF
+
+TASK -> SDF : endDate = parse(intervalDatesInString[1])
+activate SDF
+deactivate SDF
+
+'POSSÍVEL REFERÊNCIA getAllDataToFitTheModel(beginDate, endDate)
+TASK -> TEST_STORE : getAllDataToFitTheModel(beginDate, endDate)
+activate TEST_STORE
+TEST_STORE --> TASK : dataList
+deactivate TEST_STORE
+
+[<-- TASK : dataList
+deactivate TASK
+
+
+
+@enduml

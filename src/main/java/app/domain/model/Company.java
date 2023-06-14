@@ -1,75 +1,115 @@
 package app.domain.model;
 
-import app.controller.App;
 import app.domain.interfaces.ExternalAPI;
+import app.domain.interfaces.RegressionModel;
+import app.domain.interfaces.SortAlgorithm;
+import app.domain.shared.Constants;
 import app.domain.store.*;
 import app.mappers.dto.EmployeeDTO;
 import app.mappers.dto.SpecialistDoctorDTO;
 import auth.AuthFacade;
 import org.apache.commons.lang3.StringUtils;
-import java.util.ArrayList;
-import java.util.List;
 
+import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.Timer;
 /**
  *
  * @author Paulo Maio <pam@isep.ipp.pt> and SRC-Code-23
  */
-public class Company {
+public class Company implements Serializable {
 
     /**
      * The company designation.
      */
-    private String designation;
+    private final String designation;
 
-    private AuthFacade authFacade;
+    private final AuthFacade authFacade;
 
     /**
      * The parameter category store.
      */
-    private ParameterCategoryStore parameterCategoryStore;
+    private final ParameterCategoryStore parameterCategoryStore;
 
     /**
      * The parameter store.
      */
-    private ParameterStore parameterStore;
+    private final ParameterStore parameterStore;
 
     /**
      * The test store.
      */
-    private TestStore testStore;
+    private final TestStore testStore;
 
     /**
      * The client store.
      */
-    private ClientStore clientStore;
+    private final ClientStore clientStore;
 
     /**
      * The test type store.
      */
-    private TestTypeStore testTypeStore;
+    private final TestTypeStore testTypeStore;
 
     /**
      * The sample store.
      */
-    private SampleStore sampleStore;
+    private final SampleStore sampleStore;
 
     /**
      * The clinical analysis laboratory store.
      */
-    private ClinicalAnalysisLaboratoryStore calStore;
+    private final ClinicalAnalysisLaboratoryStore calStore;
+
+    private final NHSReportStore nhsReportStore;
 
     private List<Employee> empList;
     private List<OrgRole> roles;
 
-    public Company(String designation)
-    {
+    /**
+     * The Class of the Barcode External API to be used.
+     */
+    private String classNameForBarcodeApi;
+
+    private String classNameForSortAlgorithm;
+
+    private String regressionModelCLass;
+
+    private String dateInterval;
+
+    private String historicalPoints;
+
+    private String confidenceLevel;
+
+    private String significanceLevel;
+
+    private NHSReportTask nhsReportTask;
+
+    public Company(String designation,
+                   String classNameForBarcodeApi,
+                   String classNameForSortAlgorithm,
+                   String regressionModelCLass,
+                   String dateInterval,
+                   String historicalPoints,
+                   String confidenceLevel,
+                   String significanceLevel) {
         if (StringUtils.isBlank(designation))
             throw new IllegalArgumentException("Designation cannot be blank.");
+        if (StringUtils.isBlank(classNameForBarcodeApi))
+            throw new IllegalArgumentException("The Class Name for the Barcode API cannot be blank.");
+        if (StringUtils.isBlank(regressionModelCLass))
+            throw new IllegalArgumentException("The Class Name for Regression Model cannot be blank.");
+        if (StringUtils.isBlank(dateInterval))
+            throw new IllegalArgumentException("The Class Name for the Date Interval cannot be blank.");
+        if (StringUtils.isBlank(historicalPoints))
+            throw new IllegalArgumentException("The Class Name for the Historical Points cannot be blank.");
 
         this.designation = designation;
         this.authFacade = new AuthFacade();
         this.testTypeStore = new TestTypeStore();
-        this.clientStore = new ClientStore();
+        this.clientStore = new ClientStore(this.authFacade);
         this.parameterCategoryStore = new ParameterCategoryStore();
         this.testStore = new TestStore();
         this.empList = new ArrayList<>();
@@ -89,6 +129,28 @@ public class Company {
         this.roles.add(r6);
         this.sampleStore = new SampleStore();
         this.calStore = new ClinicalAnalysisLaboratoryStore();
+        this.classNameForBarcodeApi = classNameForBarcodeApi;
+        this.classNameForSortAlgorithm = classNameForSortAlgorithm;
+        this.regressionModelCLass = regressionModelCLass;
+        this.dateInterval = dateInterval;
+        this.historicalPoints = historicalPoints;
+        this.nhsReportStore = new NHSReportStore();
+        this.confidenceLevel = confidenceLevel;
+        this.significanceLevel = significanceLevel;
+
+
+        this.nhsReportTask = new NHSReportTask(regressionModelCLass,
+                historicalPoints, significanceLevel, confidenceLevel, dateInterval, testStore, nhsReportStore);
+
+        //this.timer = new Timer();
+
+        //timer.schedule(nhsReportTask, today.getTime(), 1000L * 60L * 60L * 24L);
+        //timer.schedule(nhsReportTask, initialDateForTask, TimeUnit.MILLISECONDS.convert(1, TimeUnit.MINUTES));
+        //timer.schedule(nhsReportTask, initialDateForTask, TimeUnit.MILLISECONDS.convert(1, TimeUnit.DAYS));
+        //timer.schedule(nhsReportTask,5000);
+
+
+
     }
 
     public String getDesignation() {
@@ -160,6 +222,10 @@ public class Company {
      */
     public ClinicalAnalysisLaboratoryStore getCalStore() {
         return calStore;
+    }
+
+    public NHSReportStore getNhsReportStore() {
+        return nhsReportStore;
     }
 
     /**
@@ -295,6 +361,19 @@ public class Company {
     }
 
     /**
+     * Called method through the CompanyPerformanceAnalysisController to create a new company performance
+     * through the first and last moments of study and the chosen algorithm.
+     *
+     * @param beginningDate the first moment of study
+     * @param endingDate the last moment of study
+     * @param chosenAlg the chosen algorithm
+     * @return instance of CompanyPerformance Class with the beginningDate, endingDate and chosenAlg.
+     */
+    public CompanyPerformance createCompanyPerformance(Date beginningDate, Date endingDate, String chosenAlg) {
+        return new CompanyPerformance(beginningDate,endingDate,chosenAlg, this);
+    }
+
+    /**
      * Called method to get the External API, using Java Reflection.
      *
      * @return a instance of the External API to be used.
@@ -304,11 +383,52 @@ public class Company {
      * @throws InstantiationException if the class object of the external API cannot be instantiated
      */
     public ExternalAPI getExternalAPI() throws IllegalAccessException, InstantiationException, ClassNotFoundException {
-        String className = App.getInstance().getBarcodeClassNameConfig();
-        Class<?> oClass = Class.forName(className);
+        Class<?> oClass = Class.forName(classNameForBarcodeApi);
         return (ExternalAPI) oClass.newInstance();
     }
 
+    public SortAlgorithm getSortAlgorithm() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        Class<?> oClass = Class.forName(classNameForSortAlgorithm);
+        return (SortAlgorithm) oClass.newInstance();
+    }
 
+    //LANÇAR EXCEÇÃO!!
+    public RegressionModel getChosenRegressionModel(String regressionModelCLass) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        Class<?> oClass = (regressionModelCLass.equals("Simple Linear Regression")) ? Class.forName(Constants.CLASS_SIMPLE_REGRESSION_MODEL) : Class.forName(Constants.CLASS_MULTIPLE_REGRESSION_MODEL);
+        return (RegressionModel) oClass.newInstance();
+    }
 
+    public List<Date> getDateInterval() throws ParseException {
+        String[] intervalDatesInString = dateInterval.split("-");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        List<Date> intervalDates = new ArrayList<>();
+        intervalDates.add(sdf.parse(intervalDatesInString[0]));
+        intervalDates.add(sdf.parse(intervalDatesInString[1]));
+        return intervalDates;
+    }
+
+    public int getHistoricalPoints() {
+        return Integer.parseInt(historicalPoints);
+    }
+
+    public double getConfidenceLevel() {
+        return Double.parseDouble(confidenceLevel);
+    }
+
+    public double getSignificanceLevel() {
+        return Double.parseDouble(significanceLevel);
+    }
+
+    public Date getDateForNHSReportTask() {
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 6);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        return cal.getTime();
+    }
+
+    public void scheduleNHSReportTask(Date delay, long interval) {
+        Timer timer = new Timer();
+        timer.schedule(this.nhsReportTask, delay, interval);
+    }
 }

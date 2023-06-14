@@ -1,0 +1,171 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+hide empty attributes
+
+class Company {
+-designation
+-classNameForBarcodeApi
+-classNameForSortAlgorithm
+-regressionModelCLass
+-dateInterval
+-historicalPoints
+-confidenceLevel
+-significanceLevel
+}
+
+class Timer {}
+
+class NhsAPI{}
+
+class NHSReport {}
+
+class RegressionModel {
+-intercept
+-slope
+-secondIndVariable
+-r
+-r2
+-r2Adjusted
+-numberOfObservations
+}
+
+/'class ConfigFile {}'/
+
+'The interval of dates to fit the regression model
+/'class IntervalOfDates {}'/
+
+'Number of days and number of weeks
+/'class NumberOfHistoricalPoints {}'/
+
+'hypothesis tests for regression coefficients
+class HypothesisTest {
+-tObsA
+-tObsB
+-tObsC
+-significanceLevel
+-critTD
+-f
+-critFD
+-numeratorDegreesOfFreedom
+-denominatorDegreesOfFreedom
+}
+
+'significance model with Anova.
+class SignificanceModelAnova {
+-significanceLevel
+-sr
+-se
+-st
+-mr
+-me
+-f
+-degFreedomSr
+-degFreedomSe
+-degFreedomSt
+}
+
+class TableOfValues {
+-dates
+-observedPositives
+-estimatedPositives
+}
+
+class ConfidenceInterval {
+-y0
+-auxDelta
+-confidenceLevel
+-delta
+-limInf
+-limSup
+}
+
+class Test {
+- code
+- nhsCode
+- dateOfTestRegistration
+- dateOfSamplesCollection
+- dateOfChemicalAnalysis
+- dateOfDiagnosis
+}
+
+class Client {
+- name
+- citizenCardNum
+- nhsNum
+- birthDate
+- sex
+- taxIdNum
+- phoneNum
+- email
+}
+
+class MathCalculus {}
+
+/'class NHSReportTask {
+-regressionModelClass
+-historicalPoints
+-significanceLevel
+-confidenceLevel
+-dateInterval
+}'/
+
+App "1" -- "1" Company : knows >
+Timer "1" -- "*" NHSReport : schedules >
+/'NHSReportTask "1" -- "1..*" NHSReport : reports >'/
+Company "1" -- "1..*" NHSReport : reports >
+Company "1" -- "1" Timer : knows >
+/'Company "1" -- "1" NHSReportTask : knows >'/
+/'Company "*" - "1" NhsAPI : makes use of >'/
+Company "*" - "1" NhsAPI : makes use of >
+/'NHSReportTask "*" - "1" NhsAPI : makes use of >'/
+NHSReport "*" - "1" NhsAPI : sent by >
+NHSReport "*" -- "1" RegressionModel : has >
+NHSReport "1" -- "1" HypothesisTest : contains >
+NHSReport "1" -- "1" SignificanceModelAnova : contains >
+Company "*" -- "1" RegressionModel : makes use of >
+HypothesisTest "*" -- "1" RegressionModel : of >
+SignificanceModelAnova "1" -- "1" RegressionModel : of >
+SignificanceModelAnova "1" -- "1" HypothesisTest : contains >
+NHSReport "1" - "1" TableOfValues : contains >
+TableOfValues "1" -- "1" RegressionModel : of >
+TableOfValues "1" -- "*" ConfidenceInterval : contains >
+ConfidenceInterval "*" -- "1" RegressionModel : of >
+RegressionModel "*" -- "1" MathCalculus : provided by >
+Test "*" -- "1" Client : requested by >
+Company "1" -- "*" Test : conducts >
+/'Timer "1" -- "*" NHSReportTask : schedules >'/
+/'NHSReportTask "1" -- "1" RegressionModel : makes use of >'/
+/'NHSReportTask "*" -- "1" RegressionModel : makes use of >'/
+
+
+'ANTIGO
+/'NHSReportTask "1" -- "1..*" NHSReport : reports >
+Company "1" -- "1" Timer : knows >
+Company "*" - "1" NhsAPI : makes use of >'/
+/'NHSReportTask "*" -- "1" NhsAPI : makes use of >'/
+/'NHSReport "*" -- "1" NhsAPI : sent by >
+NHSReport "*" -- "1" RegressionModel : has >
+NHSReport "1" -- "1" HypothesisTest : contains >
+NHSReport "1" -- "1" SignificanceModelAnova : contains >
+Company "*" -- "1" RegressionModel : makes use of >
+HypothesisTest "*" -- "1" RegressionModel : of >
+SignificanceModelAnova "1" -- "1" RegressionModel : of >
+SignificanceModelAnova "1" -- "1" HypothesisTest : contains >
+NHSReport "1" -- "1" TableOfValues : contains >
+TableOfValues "1" -- "1" RegressionModel : of >
+TableOfValues "1" -- "*" ConfidenceInterval : contains >
+ConfidenceInterval "*" -- "1" RegressionModel : of >
+Timer "1" - "*" NHSReportTask : schedules >
+NHSReportTask "1" -- "1" RegressionModel : makes use of >'/
+/'NHSReportTask "*" -- "1" RegressionModel : makes use of >'/
+
+'Apagar posteriormente
+/'RegressionModel "1" -- "1" ConfigFile : defined by >
+IntervalOfDates "1" -- "1" ConfigFile : defined by >
+NumberOfHistoricalPoints "1" -- "1" ConfigFile : defined by >'/
+
+
+
+@enduml

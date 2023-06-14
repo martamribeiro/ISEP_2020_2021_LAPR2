@@ -1,11 +1,13 @@
 package app.domain.model;
 
+import java.io.Serializable;
+
 /**
  * Class of a Test parameter result which stores also the metric used and the reference value for the parameter
  *
  * @author SRC-Code-23
  */
-public class TestParameterResult {
+public class TestParameterResult implements Serializable {
 
     /**
      * result value of a given parameter of test

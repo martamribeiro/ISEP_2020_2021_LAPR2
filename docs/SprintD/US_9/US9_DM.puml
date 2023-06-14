@@ -1,0 +1,29 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+hide empty attributes
+left to right direction
+
+class Company{
+- designation
+}
+class ParameterCategory{
+  -code
+  -name
+}
+class TestType{
+- Code
+- Description
+- Collecting method
+}
+
+ TestType -[hidden]right-|> Company
+
+Company "1" -- "*" TestType : conducts >
+Company "1" -- "*" ParameterCategory : capable of analysing >
+Company "1" -- "*" Administrator : know >
+TestType "1" -- "1..*" ParameterCategory : characterized by >
+TestType "*" -- "1" Administrator : created by >
+
+@enduml

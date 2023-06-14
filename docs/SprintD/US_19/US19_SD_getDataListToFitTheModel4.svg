@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="544px" preserveAspectRatio="none" style="width:1196px;height:544px;" version="1.1" viewBox="0 0 1196 544" width="1196px" zoomAndPan="magnify"><defs><filter height="300%" id="f1nayvj7vjk4ym" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="261" x="465" y="30.6855">SD_getDataListToFitTheModel()</text><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="336.3281" style="stroke:#A80036;stroke-width:1.0;" width="10" x="186" y="128.2109"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="395" y="158.5625"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="683.5" y="283.1328"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="683.5" y="343.4844"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="984" y="403.8359"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="190.5" x2="190.5" y1="95.8594" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="400" x2="400" y1="95.8594" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="534" x2="534" y1="95.8594" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="688" x2="688" y1="238.6719" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="809" x2="809" y1="95.8594" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="901" x2="901" y1="95.8594" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="989" x2="989" y1="95.8594" y2="482.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1112" x2="1112" y1="95.8594" y2="482.5391"/><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="115" x="131.5" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="138.5" y="63.1738">nhsReportTask:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="138.5" y="80.7832">NHSReportTask</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="115" x="131.5" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="138.5" y="503.0723">nhsReportTask:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="138.5" y="520.6816">NHSReportTask</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="92" x="352" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="359" y="63.1738">dateInterval:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="379.5" y="80.7832">String</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="92" x="352" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="359" y="503.0723">dateInterval:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="379.5" y="520.6816">String</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="149" x="458" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="465" y="63.1738">intervalDatesInString:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="510" y="80.7832">String[]</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="149" x="458" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="465" y="503.0723">intervalDatesInString:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="510" y="520.6816">String[]</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="131" x="621" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="675" y="503.0723">sdf:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="628" y="520.6816">SimpleDateFormat</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="83" x="766" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="773" y="63.1738">beginDate:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="792.5" y="80.7832">Date</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="83" x="766" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="773" y="503.0723">beginDate:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="792.5" y="520.6816">Date</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="72" x="863" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="870" y="63.1738">endDate:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="884" y="80.7832">Date</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="72" x="863" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="870" y="503.0723">endDate:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="884" y="520.6816">Date</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="76" x="949" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="956.5" y="63.1738">testStore:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="956" y="80.7832">TestStore</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="76" x="949" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="956.5" y="503.0723">testStore:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="956" y="520.6816">TestStore</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="143" x="1039" y="41.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1083.5" y="63.1738">dataList:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1046" y="80.7832">List&lt; List&lt;Double&gt; &gt;</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="143" x="1039" y="481.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1083.5" y="503.0723">dataList:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="1046" y="520.6816">List&lt; List&lt;Double&gt; &gt;</text><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="336.3281" style="stroke:#A80036;stroke-width:1.0;" width="10" x="186" y="128.2109"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="395" y="158.5625"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="683.5" y="283.1328"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="683.5" y="343.4844"/><rect fill="#FFFFFF" filter="url(#f1nayvj7vjk4ym)" height="30.3516" style="stroke:#A80036;stroke-width:1.0;" width="10" x="984" y="403.8359"/><ellipse cx="7.5" cy="127.4609" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><polygon fill="#A80036" points="174,124.2109,184,128.2109,174,132.2109,178,128.2109" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="12" x2="180" y1="128.2109" y2="128.2109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159" x="15" y="123.3545">getDataListToFitTheModel()</text><polygon fill="#A80036" points="383,154.5625,393,158.5625,383,162.5625,387,158.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="196" x2="389" y1="158.5625" y2="158.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="203" y="153.7061">intervalDatesInString = split("-")</text><polygon fill="#A80036" points="609,214.9141,619,218.9141,609,222.9141,613,218.9141" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="196" x2="615" y1="218.9141" y2="218.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="203" y="214.0576">create("dd/MM/yyyy")</text><rect fill="#FEFECE" filter="url(#f1nayvj7vjk4ym)" height="49.2188" style="stroke:#A80036;stroke-width:1.5;" width="131" x="621" y="196.5625"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="675" y="218.0957">sdf:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="628" y="235.7051">SimpleDateFormat</text><polygon fill="#A80036" points="671.5,279.1328,681.5,283.1328,671.5,287.1328,675.5,283.1328" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="196" x2="677.5" y1="283.1328" y2="283.1328"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="247" x="203" y="278.2764">beginDate = parse(intervalDatesInString[0])</text><polygon fill="#A80036" points="671.5,339.4844,681.5,343.4844,671.5,347.4844,675.5,343.4844" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="196" x2="677.5" y1="343.4844" y2="343.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="237" x="203" y="338.6279">endDate = parse(intervalDatesInString[1])</text><polygon fill="#A80036" points="972,399.8359,982,403.8359,972,407.8359,976,403.8359" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="196" x2="978" y1="403.8359" y2="403.8359"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="267" x="203" y="398.9795">getAllDataToFitTheModel(beginDate, endDate)</text><polygon fill="#A80036" points="207,430.1875,197,434.1875,207,438.1875,203,434.1875" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="201" x2="988" y1="434.1875" y2="434.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="213" y="429.3311">dataList</text><polygon fill="#A80036" points="11,460.5391,1,464.5391,11,468.5391,7,464.5391" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="5" x2="190" y1="464.5391" y2="464.5391"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="17" y="459.6826">dataList</text><!--MD5=[33324cde8bc19bbd21f644191df41051]
+@startuml
+
+title SD_getDataListToFitTheModel()
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "dateInterval:\nString" as DATE_INTERVAL
+participant "intervalDatesInString:\nString[]" as STRING_ARRAY_DATES
+participant "sdf:\nSimpleDateFormat" as SDF
+participant "beginDate:\nDate" as BEGIN_DATE
+participant "endDate:\nDate" as END_DATE
+participant "testStore:\nTestStore" as TEST_STORE
+participant "dataList:\nList< List<Double> >"
+
+[o-> TASK : getDataListToFitTheModel()
+activate TASK
+
+TASK -> DATE_INTERVAL : intervalDatesInString = split("-")
+activate DATE_INTERVAL
+deactivate DATE_INTERVAL
+
+TASK -> SDF** : create("dd/MM/yyyy")
+
+TASK -> SDF : beginDate = parse(intervalDatesInString[0])
+activate SDF
+deactivate SDF
+
+TASK -> SDF : endDate = parse(intervalDatesInString[1])
+activate SDF
+deactivate SDF
+
+'POSSÍVEL REFERÊNCIA getAllDataToFitTheModel(beginDate, endDate)
+TASK -> TEST_STORE : getAllDataToFitTheModel(beginDate, endDate)
+activate TEST_STORE
+TEST_STORE - -> TASK : dataList
+deactivate TEST_STORE
+
+[<- - TASK : dataList
+deactivate TASK
+
+
+
+@enduml
+
+@startuml
+
+title SD_getDataListToFitTheModel()
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "dateInterval:\nString" as DATE_INTERVAL
+participant "intervalDatesInString:\nString[]" as STRING_ARRAY_DATES
+participant "sdf:\nSimpleDateFormat" as SDF
+participant "beginDate:\nDate" as BEGIN_DATE
+participant "endDate:\nDate" as END_DATE
+participant "testStore:\nTestStore" as TEST_STORE
+participant "dataList:\nList< List<Double> >"
+
+[o-> TASK : getDataListToFitTheModel()
+activate TASK
+
+TASK -> DATE_INTERVAL : intervalDatesInString = split("-")
+activate DATE_INTERVAL
+deactivate DATE_INTERVAL
+
+TASK -> SDF** : create("dd/MM/yyyy")
+
+TASK -> SDF : beginDate = parse(intervalDatesInString[0])
+activate SDF
+deactivate SDF
+
+TASK -> SDF : endDate = parse(intervalDatesInString[1])
+activate SDF
+deactivate SDF
+
+TASK -> TEST_STORE : getAllDataToFitTheModel(beginDate, endDate)
+activate TEST_STORE
+TEST_STORE - -> TASK : dataList
+deactivate TEST_STORE
+
+[<- - TASK : dataList
+deactivate TASK
+
+
+
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 09:49:39 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

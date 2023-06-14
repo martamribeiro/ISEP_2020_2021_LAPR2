@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>isep.lei.sem2</groupId>
 	<artifactId>Sem2App</artifactId>
 	<version>1.0-SNAPSHOT</version>
@@ -13,8 +9,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>8</source>
-					<target>8</target>
+					<source>11</source>
+					<target>11</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -28,17 +24,8 @@
 						<version>2.22.0</version>
 					</dependency>
 				</dependencies>
-				<!-- <dependencies>-->
-				<!-- This dependency must be included, otherwise Maven Surefire will not recognise the test cases -->
-				<!-- <dependency>
-					<groupId>org.junit.platform</groupId>
-					<artifactId>junit-platform-surefire-provider</artifactId>
-					<version>1.2.0</version>
-				</dependency>
-			</dependencies>
-			-->
 			</plugin>
-			<!-- Required for generating coverage report -->
+			<!--  Required for generating coverage report  -->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -58,15 +45,14 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- Required for generating PIT Mutation reports -->
+			<!--  Required for generating PIT Mutation reports  -->
 			<plugin>
 				<groupId>org.pitest</groupId>
 				<artifactId>pitest-maven</artifactId>
 				<version>1.4.3</version>
-
 				<configuration>
-					<!-- <timestampedReports>false</timestampedReports> -->
-					<!-- <inScopeClasses> <param>lapr.project.model.*</param> <param>lapr.project.utils.*</param> </inScopeClasses> -->
+					<!--  <timestampedReports>false</timestampedReports>  -->
+					<!--  <inScopeClasses> <param>lapr.project.model.*</param> <param>lapr.project.utils.*</param> </inScopeClasses>  -->
 					<targetClasses>
 						<param>app.domain.model.*</param>
 						<param>app.utils.*</param>
@@ -79,10 +65,10 @@
 						<outputFormat>XML</outputFormat>
 						<outputFormat>HTML</outputFormat>
 					</outputFormats>
-					<!-- <verbose>true</verbose> -->
+					<!--  <verbose>true</verbose>  -->
 				</configuration>
 			</plugin>
-			<!-- Build an executable JAR -->
+			<!--  Build an executable JAR  -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -97,28 +83,23 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.5</version>
+				<configuration>
+					<mainClass>app.ui.gui.App</mainClass>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
-	<properties>
-		<maven.compiler.source>1.11</maven.compiler.source>
-		<maven.compiler.target>1.11</maven.compiler.target>
-	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.5</version>
-		</dependency>
-		<dependency>
-			<groupId>at.favre.lib</groupId>
-			<artifactId>bcrypt</artifactId>
-			<version>0.9.0</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
+			<groupId>com.example3</groupId>
+			<artifactId>CovidReferenceValues1API</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/CovidReferenceValues1API-1.0.0.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.example1</groupId>
@@ -135,21 +116,67 @@
 			<systemPath>${basedir}/lib/ExternalModule2API-1.0.0.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>com.example3</groupId>
-			<artifactId>CovidReferenceValues1API</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/CovidReferenceValues1API-1.0.0.jar</systemPath>
-		</dependency>
-		<dependency>
 			<groupId>net.sourceforge.barbecue</groupId>
 			<artifactId>barbecue</artifactId>
 			<version>2.0-dev</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/lib/barbecue-2.0-dev.jar</systemPath>
 		</dependency>
-	</dependencies>
-
-
-
+		<dependency>
+			<groupId>com.isep.mdis</groupId>
+			<artifactId>Sum</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/Sum-1.0.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.nhs.report</groupId>
+			<artifactId>Report2NHS</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/Report2NHS-1.0.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>at.favre.lib</groupId>
+			<artifactId>bcrypt</artifactId>
+			<version>0.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>11.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>11.0.2</version>
+		</dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

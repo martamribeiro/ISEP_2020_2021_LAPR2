@@ -11,6 +11,7 @@ import net.sourceforge.barbecue.output.OutputException;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  * Adapter class for the Barbecue Library which generates barcodes.
@@ -18,7 +19,7 @@ import java.io.IOException;
  *
  * @author Ana Albergaria
  */
-public class BarbecueAdapter implements ExternalAPI {
+public class BarbecueAdapter implements ExternalAPI, Serializable {
 
     /**
      * Method which generates a barcode with a UPC code received by parameter

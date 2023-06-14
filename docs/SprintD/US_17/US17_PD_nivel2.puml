@@ -1,0 +1,205 @@
+@startuml
+hide empty methods
+hide empty attributes
+/'left to right direction'/
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Adapters {
+    class BarbecueAdapter {
+    +MyBarcode getBarcode(barcodeNumber)
+    +saveImageBarcode(myBarcode, code)
+    }
+    }
+
+package Interfaces {
+    interface ExternalAPI <<interface>> {
+    +MyBarcode getBarcode(barcodeNumber)
+    +saveImageBarcode(myBarcode, code)
+    }
+}
+package Model {
+
+       class ClinicalAnalysisLaboratory{
+               - laboratoryID
+               }
+
+               class Test{
+                   - code
+                   - NhsCode
+                   - dateOfTestRegistration
+                   - dateOfSamplesCollection
+                   - dateOfChemicalAnalysis
+                   - dateOfDiagnosis
+               }
+
+        class Company {
+                    -designation : String
+                    +getTestTypeStore()
+                    +getParameterStore()
+                    +getTestStore()
+                    +getCalStore()
+                }
+                class TestType {
+                    - code : String
+                    - description : String
+                    - collectingMethod : String
+                    }
+
+                class Sample {
+                -myBarcode
+                }
+
+                class Parameter {
+                  -code
+                  -shortName
+                  -description
+                }
+                class TestParameter{
+                    +TestParameter(parameter: Parameter)
+                }
+                class TestParameterResult{
+                - createdAt
+                - value
+                - metric
+                }
+
+                class Client{
+                - name
+                - citizenCardNum
+                - nhsNum
+                - birthDate
+                - sex
+                - taxIdNum
+                - phoneNum
+                - email
+                }
+
+                class MyBarcode {
+                - barcodeNumber
+                }
+
+}
+
+package Stores {
+
+    class ClientStore {
+               +getClientByTinNumber(tinNumber)
+            }
+
+            class ParameterStore {
+                    +getParamsByCategories(List<String> selectedCategoriesCodes)
+                    +getParamsByCategory(String category)
+                }
+
+            class SampleStore {
+                +createSample(myBarcode)
+                +validateSample(sample)
+            }
+
+            class TestStore {
+                +createTest(String nhsCode, Client associatedClient,\n TestType selectedTestType, List<Parameter>selectedParamsList)
+                +validateTest(test)
+                +saveTest(test)
+            }
+
+            class ClinicalAnalysisLaboratoryStore {
+                +getCalByCode(labId)
+            }
+
+            class TestTypeStore {
+                +getTestTypeByTinNumber(code)
+                }
+
+}
+
+
+package DTO {
+
+    class TestFileDTO{
+               -ClientDTO
+               -NhsCode
+               -TestParameterCodes
+               -TestParameterResult
+               - dateOfTestRegistration
+               - dateOfSamplesCollection
+               - dateOfChemicalAnalysis
+               - dateOfDiagnosis
+            }
+}
+
+}
+package Controllers {
+
+    class CreateTestOfFileControler{
+        +createTest(TestFileDto)
+        +saveTest()
+        }
+
+    class ImportTestController{
+            +createTestsFromFile(TestFileDto)
+            +saveTest()
+            +addSample()
+        }
+
+    class RegisterClientController {
+      +registerClient(ClientDto)
+      +saveClient()
+    }
+
+}
+
+package ThirdParty {
+class barcode
+package APIs {
+    class BarbecueAPI{
+    +Barcode createUPCA(data)
+    +BufferedImage saveJPEG(barcode, file)
+    }
+    }
+}
+
+}
+package UI {
+    package Utils{
+        class TestFileUtils {
+        +getTestDataToDto(filepath)
+
+        }
+    }
+    package GUI {
+     class ImportTestUI{
+      }
+    }
+
+}
+
+Controllers ..> Model
+Controllers ..> DTO
+Controllers ..> Controllers
+UI ..> Controllers
+UI ..> DTO
+Model -- Stores : uses >
+ImportTestUI .> TestFileUtils
+ImportTestController ..> CreateTestOfFileControler
+ImportTestController ..> RegisterClientController
+Company "1" --- "*" Test : conducts >
+Client "1" -- "1" Test : requested by <
+ClinicalAnalysisLaboratory "1" - "1..*" Test : performs >
+TestType "1" -- "1..*" Parameter : characterized by >
+Company "1" -- "*" TestType : conducts >
+Company "1" -- "*" Test : conducts >
+Company "1" - "*" Parameter : capable of analysing >
+Test "*" -- "1" TestType : classified as >
+Test "1" -- "1..*" TestParameter : requests analysis of >
+TestParameter "*" -- "1" Parameter : refers to >
+TestParameter "1" - "0..1" TestParameterResult : contains >
+Test"1" -- "1..*" Sample : collects >
+Sample "1" -- "1" MyBarcode : identified with >
+Interfaces <|.. Adapters
+Adapters --> APIs
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+title US10_SD_CategoriesMapper_toDTO_List
+autonumber
+
+participant ":CategoriesMapper" as PCMAPPER
+participant "lc\n:List<ParameterCategory>" as LC
+participant "listParameterCategoryDTO\n:List<ParameterCategoryDTO>" as LIST_DTO
+participant "objDTO\n: CategoriesDTO" as OBJ_DTO
+
+[o-> PCMAPPER : toDTO(lc)
+activate PCMAPPER
+
+PCMAPPER --> LIST_DTO** : create()
+
+loop for each object in lc
+PCMAPPER -> LC : obj = get(i)
+activate LC
+|||
+deactivate LC
+
+PCMAPPER -> PCMAPPER : objDTO = toDTO(obj)
+activate PCMAPPER
+
+PCMAPPER --> OBJ_DTO** : create(code, name)
+deactivate PCMAPPER
+
+PCMAPPER --> LIST_DTO : add(objDTO)
+activate LIST_DTO
+deactivate LIST_DTO
+end
+
+[<-- PCMAPPER : listCategoriesDto
+deactivate PCMAPPER
+
+@enduml

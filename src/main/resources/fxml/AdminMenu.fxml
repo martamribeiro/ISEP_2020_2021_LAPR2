@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.gui.AdminMenuUI">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="693.0">
+         <image>
+            <Image url="@Images/Background3.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="500.0" prefWidth="693.0">
+         <top>
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+              <items>
+                <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitAction" style="-fx-background-color: #ff4d4d;" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                </Button>
+              </items>
+            </ToolBar>
+         </top>
+         <bottom>
+            <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: ee6c4d; -fx-background-radius: 90;" text="Logout" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="15.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" />
+               </BorderPane.margin></Button>
+         </bottom>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="sendNHSReportBtn" layoutX="152.0" layoutY="6.0" mnemonicParsing="false" onAction="#sendNHSReportAction" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="140.0">
+                           <image>
+                              <Image url="@Images/Icon5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#e0fbfc" layoutX="150.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send NHS Report">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="createEmployee" layoutX="331.0" layoutY="6.0" mnemonicParsing="false" onAction="#createEmployee" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="140.0">
+                           <image>
+                              <Image url="@Images/Icon8.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#e0fbfc" layoutX="333.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create employee">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="registerCal" layoutX="510.0" layoutY="6.0" mnemonicParsing="false" onAction="#registerCal" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="140.0">
+                           <image>
+                              <Image url="@Images/Icon9.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#e0fbfc" layoutX="510.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new CAL" textAlignment="CENTER" wrappingWidth="166.955078125">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="sendNHSReportBtn1" layoutX="145.0" layoutY="182.0" mnemonicParsing="false" onAction="#createTestType" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="140.0">
+                           <image>
+                              <Image url="@Images/Icon10.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#e0fbfc" layoutX="121.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specify new Test Type" wrappingWidth="208.388671875">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="sendNHSReportBtn11" layoutX="324.0" layoutY="182.0" mnemonicParsing="false" onAction="#createParameterCategory" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="140.0">
+                           <image>
+                              <Image url="@Images/Icon7.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#e0fbfc" layoutX="366.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create PC">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="createParameter" layoutX="510.0" layoutY="182.0" mnemonicParsing="false" onAction="#createParameter" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="140.0" fitWidth="140.0">
+                           <image>
+                              <Image url="@Images/Icon6.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#e0fbfc" layoutX="511.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Parameter">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

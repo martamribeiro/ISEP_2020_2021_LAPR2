@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1046.25px" preserveAspectRatio="none" style="width:3071px;height:1046px;background:#FFFFFF;" version="1.1" viewBox="0 0 3071 1046" width="3071.25px" zoomAndPan="magnify"><defs><filter height="300%" id="f1m03xa78di9h9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2c2e2644034c00788261e03c85b06837]
+cluster Core--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="428.75,7.5,478.75,7.5,487.5,37.0117,3050,37.0117,3050,1037.5,428.75,1037.5,428.75,7.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="428.75" x2="487.5" y1="37.0117" y2="37.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="42.5" x="433.75" y="28.1665">Core</text><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="860,62.5,932.5,62.5,941.25,92.0117,2758.75,92.0117,2758.75,1007.5,860,1007.5,860,62.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="860" x2="941.25" y1="92.0117" y2="92.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="65" x="865" y="83.1665">Domain</text><!--MD5=[15636c1ca4a123c16a2a1a8e90aca7a9]
+cluster Model--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="1070.625,332.5,1133.125,332.5,1141.875,362.0117,2012.5,362.0117,2012.5,977.5,1070.625,977.5,1070.625,332.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1070.625" x2="1141.875" y1="362.0117" y2="362.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="55" x="1075.625" y="353.1665">Model</text><!--MD5=[0b89f7d34c26fffbb81ea7301eb9df33]
+cluster Interfaces--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="2168.75,583.75,2265,583.75,2273.75,613.2617,2411.25,613.2617,2411.25,726.25,2168.75,726.25,2168.75,583.75" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="2168.75" x2="2273.75" y1="613.2617" y2="613.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="2173.75" y="604.4165">Interfaces</text><!--MD5=[7ce1723ddb6e6233854253973eae5a71]
+cluster Store--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="890,117.5,945,117.5,953.75,147.0117,1428.75,147.0117,1428.75,302.5,890,302.5,890,117.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="890" x2="953.75" y1="147.0117" y2="147.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="47.5" x="895" y="138.1665">Store</text><!--MD5=[aedc30b8666742a3000193d7e0a0b93e]
+cluster Adapters--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="2452.5,532.5,2538.75,532.5,2547.5,562.0117,2728.75,562.0117,2728.75,776.25,2452.5,776.25,2452.5,532.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="2452.5" x2="2547.5" y1="562.0117" y2="562.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="78.75" x="2457.5" y="553.1665">Adapters</text><!--MD5=[1f2cfc53d9d308f53762fd0fcbaa4873]
+cluster Controller--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="458.75,202.5,555,202.5,563.75,232.0117,818.75,232.0117,818.75,500,458.75,500,458.75,202.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="458.75" x2="563.75" y1="232.0117" y2="232.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="463.75" y="223.1665">Controller</text><!--MD5=[c29634d7cdbe8f1c1e88f2fe66ae73ec]
+cluster ThirdParty--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="2800,517.5,2896.25,517.5,2905,547.0117,3020,547.0117,3020,812.5,2800,812.5,2800,517.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="2800" x2="2905" y1="547.0117" y2="547.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="2805" y="538.1665">ThirdParty</text><!--MD5=[0d079ae59d318396171bf167e6cb96b6]
+cluster APIs--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="2850,650,2895,650,2903.75,679.5117,2970,679.5117,2970,782.5,2850,782.5,2850,650" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="2850" x2="2903.75" y1="679.5117" y2="679.5117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="37.5" x="2855" y="670.6665">APIs</text><!--MD5=[9681dc6e01e10c6b4fe06895ae94f592]
+cluster UI--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="20,243.75,45,243.75,53.75,273.2617,387.5,273.2617,387.5,433.75,20,433.75,20,243.75" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="20" x2="53.75" y1="273.2617" y2="273.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="25" y="264.4165">UI</text><!--MD5=[b27c5c9af3cea12247b1c4c8d3c78770]
+cluster GUI--><polygon fill="#FFFFFF" filter="url(#f1m03xa78di9h9)" points="50,298.75,88.75,298.75,97.5,328.2617,357.5,328.2617,357.5,403.75,50,403.75,50,298.75" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="50" x2="97.5" y1="328.2617" y2="328.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="31.25" x="55" y="319.4165">GUI</text><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="13" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="111.8848" id="Company" style="stroke:#A80036;stroke-width:1.875;" width="137.5" x="1090.625" y="475"/><ellipse cx="1123.4375" cy="495" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1125.9375,490.625 Q1126.1914,490 1126.4844,489.6875 Q1126.7773,489.375 1127.1094,489.375 Q1127.6953,489.375 1128.0664,489.7266 Q1128.4375,490.0781 1128.4375,490.8984 L1128.4375,492.8516 Q1128.4375,493.6719 1128.0859,494.0234 Q1127.7344,494.375 1127.1875,494.375 Q1126.6992,494.375 1126.3867,494.1602 Q1126.0742,493.9453 1125.9375,493.3789 Q1125.8789,492.9883 1125.6641,492.7734 Q1125.2734,492.3633 1124.5703,492.1289 Q1123.8672,491.875 1123.1641,491.875 Q1122.2852,491.875 1121.543,492.2266 Q1120.8203,492.5781 1120.2539,493.3594 Q1119.6875,494.1406 1119.6875,495.2148 L1119.6875,496.3672 Q1119.6875,497.6563 1120.7422,498.5156 Q1121.7969,499.375 1123.6719,499.375 Q1124.7852,499.375 1125.5664,499.1211 Q1126.0156,498.9844 1126.5234,498.5352 Q1126.8555,498.2813 1127.0313,498.2031 Q1127.207,498.125 1127.4219,498.125 Q1127.832,498.125 1128.125,498.457 Q1128.4375,498.7695 1128.4375,499.2188 Q1128.4375,499.6484 1128.0078,500.1563 Q1127.3828,500.8984 1126.3867,501.3086 Q1125.0781,501.875 1123.4766,501.875 Q1121.6016,501.875 1120.0977,501.1328 Q1118.8867,500.5469 1118.0273,499.2773 Q1117.1875,498.0078 1117.1875,496.5039 L1117.1875,495.1367 Q1117.1875,493.5742 1117.9297,492.207 Q1118.6914,490.8398 1120,490.1172 Q1121.3281,489.375 1122.8125,489.375 Q1123.7109,489.375 1124.4922,489.6875 Q1125.2734,490 1125.9375,490.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="66.25" x="1144.0625" y="501.1377">Company</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1091.875" x2="1226.875" y1="515" y2="515"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="112.5" x="1098.125" y="534.2737">-String designation</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="122.5" x="1098.125" y="551.5686">-TestStore testStore</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1091.875" x2="1226.875" y1="559.5898" y2="559.5898"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="95" x="1098.125" y="578.8635">+getTestStore()</text><!--MD5=[dcf2a5f2a10777fb61a46b3b0525c1db]
+class CompanyPerformance--><rect codeLine="19" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="578.8477" id="CompanyPerformance" style="stroke:#A80036;stroke-width:1.875;" width="461.25" x="1531.25" y="378.125"/><ellipse cx="1679.0625" cy="398.125" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1681.5625,393.75 Q1681.8164,393.125 1682.1094,392.8125 Q1682.4023,392.5 1682.7344,392.5 Q1683.3203,392.5 1683.6914,392.8516 Q1684.0625,393.2031 1684.0625,394.0234 L1684.0625,395.9766 Q1684.0625,396.7969 1683.7109,397.1484 Q1683.3594,397.5 1682.8125,397.5 Q1682.3242,397.5 1682.0117,397.2852 Q1681.6992,397.0703 1681.5625,396.5039 Q1681.5039,396.1133 1681.2891,395.8984 Q1680.8984,395.4883 1680.1953,395.2539 Q1679.4922,395 1678.7891,395 Q1677.9102,395 1677.168,395.3516 Q1676.4453,395.7031 1675.8789,396.4844 Q1675.3125,397.2656 1675.3125,398.3398 L1675.3125,399.4922 Q1675.3125,400.7813 1676.3672,401.6406 Q1677.4219,402.5 1679.2969,402.5 Q1680.4102,402.5 1681.1914,402.2461 Q1681.6406,402.1094 1682.1484,401.6602 Q1682.4805,401.4063 1682.6563,401.3281 Q1682.832,401.25 1683.0469,401.25 Q1683.457,401.25 1683.75,401.582 Q1684.0625,401.8945 1684.0625,402.3438 Q1684.0625,402.7734 1683.6328,403.2813 Q1683.0078,404.0234 1682.0117,404.4336 Q1680.7031,405 1679.1016,405 Q1677.2266,405 1675.7227,404.2578 Q1674.5117,403.6719 1673.6523,402.4023 Q1672.8125,401.1328 1672.8125,399.6289 L1672.8125,398.2617 Q1672.8125,396.6992 1673.5547,395.332 Q1674.3164,393.9648 1675.625,393.2422 Q1676.9531,392.5 1678.4375,392.5 Q1679.3359,392.5 1680.1172,392.8125 Q1680.8984,393.125 1681.5625,393.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="155" x="1704.6875" y="404.2627">CompanyPerformance</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1532.5" x2="1991.25" y1="418.125" y2="418.125"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="120" x="1538.75" y="437.3987">-Company company</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="121.25" x="1538.75" y="454.6936">-Date beginningDate</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="103.75" x="1538.75" y="471.9885">-Date endingDate</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="108.75" x="1538.75" y="489.2834">-String chosenAlg</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="87.5" x="1538.75" y="506.5784">-int clientsNum</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="132.5" x="1538.75" y="523.8733">-int processTestsNum</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="170" x="1538.75" y="541.1682">-ArrayList&lt;int[]&gt; testInfoDay</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="180" x="1538.75" y="558.4631">-ArrayList&lt;int[]&gt; testInfoWeek</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="182.5" x="1538.75" y="575.7581">-ArrayList&lt;int[]&gt; testInfoMonth</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="176.25" x="1538.75" y="593.053">-ArrayList&lt;int[]&gt; testInfoYear</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="117.5" x="1538.75" y="610.3479">-Date[] worstSubInt</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="82.5" x="1538.75" y="627.6428">+setCompany</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1532.5" x2="1991.25" y1="635.6641" y2="635.6641"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="446.25" x="1538.75" y="654.9377">+CompanyPerformance(beginningDate, endingDate, chosenAlg, company)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="102.5" x="1538.75" y="672.2327">+getClientsNum()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="146.25" x="1538.75" y="689.5276">+getProcessTestsNum()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="108.75" x="1538.75" y="706.8225">+getTestInfoDay()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="118.75" x="1538.75" y="724.1174">+getTestInfoWeek()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="121.25" x="1538.75" y="741.4124">+getTestInfoMonth()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="115" x="1538.75" y="758.7073">+getTestInfoYear()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="110" x="1538.75" y="776.0022">+getWorstSubInt()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="192.5" x="1538.75" y="793.2971">+getClientsInfoPerInterval(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="235" x="1538.75" y="810.592">+getNumTestsProcessedInterval(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="158.75" x="1538.75" y="827.887">+getTestInfoPerDay(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="168.75" x="1538.75" y="845.1819">+getTestInfoPerWeek(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="171.25" x="1538.75" y="862.4768">+getTestInfoPerMonth(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="165" x="1538.75" y="879.7717">+getTestInfoPerYear(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="67.5" x="1538.75" y="897.0667">+getDays()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="157.5" x="1538.75" y="914.3616">+makeIntervalArray(days)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="381.25" x="1538.75" y="931.6565">+findWorstSubIntWithChosenAlgorithm(days, chosenAlgorithm)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="288.75" x="1538.75" y="948.9514">+getChosenAlgorithmAdapter(chosenAlgorithm)</text><!--MD5=[03e21a3a74a4ec725edc90da8949a6b4]
+class SubMaxSumAlgorithms--><rect codeLine="56" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="77.5293" id="SubMaxSumAlgorithms" style="stroke:#A80036;stroke-width:1.875;" width="202.5" x="2188.75" y="628.75"/><ellipse cx="2207.5" cy="653.8672" fill="#B4A7E5" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2208.75,650.1172 L2208.75,657.6172 L2211.25,657.6172 L2211.8555,657.6172 L2212.5,658.3984 L2212.5,658.8672 L2212.5,659.3359 L2211.8555,660.1172 L2211.25,660.1172 L2203.75,660.1172 L2203.1445,660.1172 L2202.5,659.3359 L2202.5,658.8672 L2202.5,658.3984 L2203.1445,657.6172 L2203.75,657.6172 L2206.25,657.6172 L2206.25,650.1172 L2203.75,650.1172 L2203.1445,650.1172 L2202.5,649.3359 L2202.5,648.8672 L2202.5,648.3984 L2203.1445,647.6172 L2203.75,647.6172 L2211.25,647.6172 L2211.8555,647.6172 L2212.5,648.3984 L2212.5,648.8672 L2212.5,649.3359 L2211.8555,650.1172 L2211.25,650.1172 L2208.75,650.1172 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="76.25" x="2268.125" y="650.5713">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="162.5" x="2225" y="669.4385">SubMaxSumAlgorithms</text><line style="stroke:#A80036;stroke-width:1.875;" x1="2190" x2="2390" y1="678.9844" y2="678.9844"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="158.75" x="2196.25" y="698.2581">+findSubMaxSum(interval)</text><!--MD5=[0f6f7964b844a64b0496af0dda7914bd]
+class TestStore--><rect codeLine="64" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="119.1797" id="TestStore" style="stroke:#A80036;stroke-width:1.875;" width="498.75" x="910" y="163.125"/><ellipse cx="1120.9375" cy="183.125" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1123.4375,178.75 Q1123.6914,178.125 1123.9844,177.8125 Q1124.2773,177.5 1124.6094,177.5 Q1125.1953,177.5 1125.5664,177.8516 Q1125.9375,178.2031 1125.9375,179.0234 L1125.9375,180.9766 Q1125.9375,181.7969 1125.5859,182.1484 Q1125.2344,182.5 1124.6875,182.5 Q1124.1992,182.5 1123.8867,182.2852 Q1123.5742,182.0703 1123.4375,181.5039 Q1123.3789,181.1133 1123.1641,180.8984 Q1122.7734,180.4883 1122.0703,180.2539 Q1121.3672,180 1120.6641,180 Q1119.7852,180 1119.043,180.3516 Q1118.3203,180.7031 1117.7539,181.4844 Q1117.1875,182.2656 1117.1875,183.3398 L1117.1875,184.4922 Q1117.1875,185.7813 1118.2422,186.6406 Q1119.2969,187.5 1121.1719,187.5 Q1122.2852,187.5 1123.0664,187.2461 Q1123.5156,187.1094 1124.0234,186.6602 Q1124.3555,186.4063 1124.5313,186.3281 Q1124.707,186.25 1124.9219,186.25 Q1125.332,186.25 1125.625,186.582 Q1125.9375,186.8945 1125.9375,187.3438 Q1125.9375,187.7734 1125.5078,188.2813 Q1124.8828,189.0234 1123.8867,189.4336 Q1122.5781,190 1120.9766,190 Q1119.1016,190 1117.5977,189.2578 Q1116.3867,188.6719 1115.5273,187.4023 Q1114.6875,186.1328 1114.6875,184.6289 L1114.6875,183.2617 Q1114.6875,181.6992 1115.4297,180.332 Q1116.1914,178.9648 1117.5,178.2422 Q1118.8281,177.5 1120.3125,177.5 Q1121.2109,177.5 1121.9922,177.8125 Q1122.7734,178.125 1123.4375,178.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="66.25" x="1146.5625" y="189.2627">TestStore</text><line style="stroke:#A80036;stroke-width:1.875;" x1="911.25" x2="1407.5" y1="203.125" y2="203.125"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="440" x="917.5" y="222.3987">+getNumTestsWaitingForResultsDayOrInterval(beginningDay, endingDay)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="453.75" x="917.5" y="239.6936">+getNumTestsWaitingForDiagnosisDayOrInterval(beginningDay, endingDay)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="483.75" x="917.5" y="256.9885">+getNumberOfTestsByIntervalDateOfTestRegistration(beginningDay, endingDay)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="445" x="917.5" y="274.2834">+getNumberOfTestsByIntervalDateOfDiagnosis(beginningDay, endingDay)</text><!--MD5=[f4a38599b97b911edb1e154f571cf5e4]
+class BenchmarkAlgorithmAdapter--><rect codeLine="141" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="67.2949" id="BenchmarkAlgorithmAdapter" style="stroke:#A80036;stroke-width:1.875;" width="236.25" x="2472.5" y="688.75"/><ellipse cx="2491.25" cy="708.75" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2493.75,704.375 Q2494.0039,703.75 2494.2969,703.4375 Q2494.5898,703.125 2494.9219,703.125 Q2495.5078,703.125 2495.8789,703.4766 Q2496.25,703.8281 2496.25,704.6484 L2496.25,706.6016 Q2496.25,707.4219 2495.8984,707.7734 Q2495.5469,708.125 2495,708.125 Q2494.5117,708.125 2494.1992,707.9102 Q2493.8867,707.6953 2493.75,707.1289 Q2493.6914,706.7383 2493.4766,706.5234 Q2493.0859,706.1133 2492.3828,705.8789 Q2491.6797,705.625 2490.9766,705.625 Q2490.0977,705.625 2489.3555,705.9766 Q2488.6328,706.3281 2488.0664,707.1094 Q2487.5,707.8906 2487.5,708.9648 L2487.5,710.1172 Q2487.5,711.4063 2488.5547,712.2656 Q2489.6094,713.125 2491.4844,713.125 Q2492.5977,713.125 2493.3789,712.8711 Q2493.8281,712.7344 2494.3359,712.2852 Q2494.668,712.0313 2494.8438,711.9531 Q2495.0195,711.875 2495.2344,711.875 Q2495.6445,711.875 2495.9375,712.207 Q2496.25,712.5195 2496.25,712.9688 Q2496.25,713.3984 2495.8203,713.9063 Q2495.1953,714.6484 2494.1992,715.0586 Q2492.8906,715.625 2491.2891,715.625 Q2489.4141,715.625 2487.9102,714.8828 Q2486.6992,714.2969 2485.8398,713.0273 Q2485,711.7578 2485,710.2539 L2485,708.8867 Q2485,707.3242 2485.7422,705.957 Q2486.5039,704.5898 2487.8125,703.8672 Q2489.1406,703.125 2490.625,703.125 Q2491.5234,703.125 2492.3047,703.4375 Q2493.0859,703.75 2493.75,704.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="196.25" x="2508.75" y="714.8877">BenchmarkAlgorithmAdapter</text><line style="stroke:#A80036;stroke-width:1.875;" x1="2473.75" x2="2707.5" y1="728.75" y2="728.75"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="158.75" x="2480" y="748.0237">+findSubMaxSum(interval)</text><!--MD5=[3d195b319a9e341286852cea89c88ec3]
+class BruteForceAlgorithmAdapter--><rect codeLine="142" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="67.2949" id="BruteForceAlgorithmAdapter" style="stroke:#A80036;stroke-width:1.875;" width="232.5" x="2474.375" y="577.5"/><ellipse cx="2493.125" cy="597.5" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2495.625,593.125 Q2495.8789,592.5 2496.1719,592.1875 Q2496.4648,591.875 2496.7969,591.875 Q2497.3828,591.875 2497.7539,592.2266 Q2498.125,592.5781 2498.125,593.3984 L2498.125,595.3516 Q2498.125,596.1719 2497.7734,596.5234 Q2497.4219,596.875 2496.875,596.875 Q2496.3867,596.875 2496.0742,596.6602 Q2495.7617,596.4453 2495.625,595.8789 Q2495.5664,595.4883 2495.3516,595.2734 Q2494.9609,594.8633 2494.2578,594.6289 Q2493.5547,594.375 2492.8516,594.375 Q2491.9727,594.375 2491.2305,594.7266 Q2490.5078,595.0781 2489.9414,595.8594 Q2489.375,596.6406 2489.375,597.7148 L2489.375,598.8672 Q2489.375,600.1563 2490.4297,601.0156 Q2491.4844,601.875 2493.3594,601.875 Q2494.4727,601.875 2495.2539,601.6211 Q2495.7031,601.4844 2496.2109,601.0352 Q2496.543,600.7813 2496.7188,600.7031 Q2496.8945,600.625 2497.1094,600.625 Q2497.5195,600.625 2497.8125,600.957 Q2498.125,601.2695 2498.125,601.7188 Q2498.125,602.1484 2497.6953,602.6563 Q2497.0703,603.3984 2496.0742,603.8086 Q2494.7656,604.375 2493.1641,604.375 Q2491.2891,604.375 2489.7852,603.6328 Q2488.5742,603.0469 2487.7148,601.7773 Q2486.875,600.5078 2486.875,599.0039 L2486.875,597.6367 Q2486.875,596.0742 2487.6172,594.707 Q2488.3789,593.3398 2489.6875,592.6172 Q2491.0156,591.875 2492.5,591.875 Q2493.3984,591.875 2494.1797,592.1875 Q2494.9609,592.5 2495.625,593.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="192.5" x="2510.625" y="603.6377">BruteForceAlgorithmAdapter</text><line style="stroke:#A80036;stroke-width:1.875;" x1="2475.625" x2="2705.625" y1="617.5" y2="617.5"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="158.75" x="2481.875" y="636.7737">+findSubMaxSum(interval)</text><!--MD5=[670275f839cd0f6ae295f6f439fd6034]
+class CompanyPerformanceAnalysisController--><rect codeLine="89" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="232.9492" id="CompanyPerformanceAnalysisController" style="stroke:#A80036;stroke-width:1.875;" width="320" x="478.75" y="247.5"/><ellipse cx="497.5" cy="267.5" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M500,263.125 Q500.2539,262.5 500.5469,262.1875 Q500.8398,261.875 501.1719,261.875 Q501.7578,261.875 502.1289,262.2266 Q502.5,262.5781 502.5,263.3984 L502.5,265.3516 Q502.5,266.1719 502.1484,266.5234 Q501.7969,266.875 501.25,266.875 Q500.7617,266.875 500.4492,266.6602 Q500.1367,266.4453 500,265.8789 Q499.9414,265.4883 499.7266,265.2734 Q499.3359,264.8633 498.6328,264.6289 Q497.9297,264.375 497.2266,264.375 Q496.3477,264.375 495.6055,264.7266 Q494.8828,265.0781 494.3164,265.8594 Q493.75,266.6406 493.75,267.7148 L493.75,268.8672 Q493.75,270.1563 494.8047,271.0156 Q495.8594,271.875 497.7344,271.875 Q498.8477,271.875 499.6289,271.6211 Q500.0781,271.4844 500.5859,271.0352 Q500.918,270.7813 501.0938,270.7031 Q501.2695,270.625 501.4844,270.625 Q501.8945,270.625 502.1875,270.957 Q502.5,271.2695 502.5,271.7188 Q502.5,272.1484 502.0703,272.6563 Q501.4453,273.3984 500.4492,273.8086 Q499.1406,274.375 497.5391,274.375 Q495.6641,274.375 494.1602,273.6328 Q492.9492,273.0469 492.0898,271.7773 Q491.25,270.5078 491.25,269.0039 L491.25,267.6367 Q491.25,266.0742 491.9922,264.707 Q492.7539,263.3398 494.0625,262.6172 Q495.3906,261.875 496.875,261.875 Q497.7734,261.875 498.5547,262.1875 Q499.3359,262.5 500,263.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="280" x="515" y="273.6377">CompanyPerformanceAnalysisController</text><line style="stroke:#A80036;stroke-width:1.875;" x1="480" x2="797.5" y1="287.5" y2="287.5"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="120" x="486.25" y="306.7737">-Company company</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="275" x="486.25" y="324.0686">-CompanyPerformance companyPerformance</text><line style="stroke:#A80036;stroke-width:1.875;" x1="480" x2="797.5" y1="332.0898" y2="332.0898"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="302.5" x="486.25" y="351.3635">+setCompanyPerformance(companyPerformance)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="162.5" x="486.25" y="368.6584">+getClientsInfoPerInterval()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="205" x="486.25" y="385.9534">+getNumTestsProcessedInterval()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="128.75" x="486.25" y="403.2483">+getTestInfoPerDay()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="138.75" x="486.25" y="420.5432">+getTestInfoPerWeek()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="141.25" x="486.25" y="437.8381">+getTestInfoPerMonth()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="135" x="486.25" y="455.1331">+getTestInfoPerYear()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="242.5" x="486.25" y="472.428">+findWorstSubIntWithChosenAlgorithm()</text><!--MD5=[1dec90c14ec2ba3af2708f621be65d00]
+class BruteForceAlgorithm--><rect codeLine="114" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="67.2949" id="BruteForceAlgorithm" style="stroke:#A80036;stroke-width:1.875;" width="180" x="2820" y="562.5"/><ellipse cx="2838.75" cy="582.5" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2841.25,578.125 Q2841.5039,577.5 2841.7969,577.1875 Q2842.0898,576.875 2842.4219,576.875 Q2843.0078,576.875 2843.3789,577.2266 Q2843.75,577.5781 2843.75,578.3984 L2843.75,580.3516 Q2843.75,581.1719 2843.3984,581.5234 Q2843.0469,581.875 2842.5,581.875 Q2842.0117,581.875 2841.6992,581.6602 Q2841.3867,581.4453 2841.25,580.8789 Q2841.1914,580.4883 2840.9766,580.2734 Q2840.5859,579.8633 2839.8828,579.6289 Q2839.1797,579.375 2838.4766,579.375 Q2837.5977,579.375 2836.8555,579.7266 Q2836.1328,580.0781 2835.5664,580.8594 Q2835,581.6406 2835,582.7148 L2835,583.8672 Q2835,585.1563 2836.0547,586.0156 Q2837.1094,586.875 2838.9844,586.875 Q2840.0977,586.875 2840.8789,586.6211 Q2841.3281,586.4844 2841.8359,586.0352 Q2842.168,585.7813 2842.3438,585.7031 Q2842.5195,585.625 2842.7344,585.625 Q2843.1445,585.625 2843.4375,585.957 Q2843.75,586.2695 2843.75,586.7188 Q2843.75,587.1484 2843.3203,587.6563 Q2842.6953,588.3984 2841.6992,588.8086 Q2840.3906,589.375 2838.7891,589.375 Q2836.9141,589.375 2835.4102,588.6328 Q2834.1992,588.0469 2833.3398,586.7773 Q2832.5,585.5078 2832.5,584.0039 L2832.5,582.6367 Q2832.5,581.0742 2833.2422,579.707 Q2834.0039,578.3398 2835.3125,577.6172 Q2836.6406,576.875 2838.125,576.875 Q2839.0234,576.875 2839.8047,577.1875 Q2840.5859,577.5 2841.25,578.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="140" x="2856.25" y="588.6377">BruteForceAlgorithm</text><line style="stroke:#A80036;stroke-width:1.875;" x1="2821.25" x2="2998.75" y1="602.5" y2="602.5"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="65" x="2827.5" y="621.7737">+Max(seq)</text><!--MD5=[bbc84d1aa0e7f30bd67b3f6e81f0f299]
+class Sum--><rect codeLine="108" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="67.2949" id="Sum" style="stroke:#A80036;stroke-width:1.875;" width="80" x="2870" y="695"/><ellipse cx="2892.125" cy="715" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2894.625,710.625 Q2894.8789,710 2895.1719,709.6875 Q2895.4648,709.375 2895.7969,709.375 Q2896.3828,709.375 2896.7539,709.7266 Q2897.125,710.0781 2897.125,710.8984 L2897.125,712.8516 Q2897.125,713.6719 2896.7734,714.0234 Q2896.4219,714.375 2895.875,714.375 Q2895.3867,714.375 2895.0742,714.1602 Q2894.7617,713.9453 2894.625,713.3789 Q2894.5664,712.9883 2894.3516,712.7734 Q2893.9609,712.3633 2893.2578,712.1289 Q2892.5547,711.875 2891.8516,711.875 Q2890.9727,711.875 2890.2305,712.2266 Q2889.5078,712.5781 2888.9414,713.3594 Q2888.375,714.1406 2888.375,715.2148 L2888.375,716.3672 Q2888.375,717.6563 2889.4297,718.5156 Q2890.4844,719.375 2892.3594,719.375 Q2893.4727,719.375 2894.2539,719.1211 Q2894.7031,718.9844 2895.2109,718.5352 Q2895.543,718.2813 2895.7188,718.2031 Q2895.8945,718.125 2896.1094,718.125 Q2896.5195,718.125 2896.8125,718.457 Q2897.125,718.7695 2897.125,719.2188 Q2897.125,719.6484 2896.6953,720.1563 Q2896.0703,720.8984 2895.0742,721.3086 Q2893.7656,721.875 2892.1641,721.875 Q2890.2891,721.875 2888.7852,721.1328 Q2887.5742,720.5469 2886.7148,719.2773 Q2885.875,718.0078 2885.875,716.5039 L2885.875,715.1367 Q2885.875,713.5742 2886.6172,712.207 Q2887.3789,710.8398 2888.6875,710.1172 Q2890.0156,709.375 2891.5,709.375 Q2892.3984,709.375 2893.1797,709.6875 Q2893.9609,710 2894.625,710.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="32.5" x="2910.375" y="721.1377">Sum</text><line style="stroke:#A80036;stroke-width:1.875;" x1="2871.25" x2="2948.75" y1="735" y2="735"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="65" x="2877.5" y="754.2737">+Max(seq)</text><!--MD5=[3404723274ca4ec774b8d2f7e379376f]
+class CompanyPerformanceAnalysisUI--><rect codeLine="126" fill="#FEFECE" filter="url(#f1m03xa78di9h9)" height="40" id="CompanyPerformanceAnalysisUI" style="stroke:#A80036;stroke-width:1.875;" width="267.5" x="70" y="343.75"/><ellipse cx="88.75" cy="363.75" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M91.25,359.375 Q91.5039,358.75 91.7969,358.4375 Q92.0898,358.125 92.4219,358.125 Q93.0078,358.125 93.3789,358.4766 Q93.75,358.8281 93.75,359.6484 L93.75,361.6016 Q93.75,362.4219 93.3984,362.7734 Q93.0469,363.125 92.5,363.125 Q92.0117,363.125 91.6992,362.9102 Q91.3867,362.6953 91.25,362.1289 Q91.1914,361.7383 90.9766,361.5234 Q90.5859,361.1133 89.8828,360.8789 Q89.1797,360.625 88.4766,360.625 Q87.5977,360.625 86.8555,360.9766 Q86.1328,361.3281 85.5664,362.1094 Q85,362.8906 85,363.9648 L85,365.1172 Q85,366.4063 86.0547,367.2656 Q87.1094,368.125 88.9844,368.125 Q90.0977,368.125 90.8789,367.8711 Q91.3281,367.7344 91.8359,367.2852 Q92.168,367.0313 92.3438,366.9531 Q92.5195,366.875 92.7344,366.875 Q93.1445,366.875 93.4375,367.207 Q93.75,367.5195 93.75,367.9688 Q93.75,368.3984 93.3203,368.9063 Q92.6953,369.6484 91.6992,370.0586 Q90.3906,370.625 88.7891,370.625 Q86.9141,370.625 85.4102,369.8828 Q84.1992,369.2969 83.3398,368.0273 Q82.5,366.7578 82.5,365.2539 L82.5,363.8867 Q82.5,362.3242 83.2422,360.957 Q84.0039,359.5898 85.3125,358.8672 Q86.6406,358.125 88.125,358.125 Q89.0234,358.125 89.8047,358.4375 Q90.5859,358.75 91.25,359.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="227.5" x="106.25" y="369.8877">CompanyPerformanceAnalysisUI</text><!--MD5=[5b29af9deb3324aeb9c231daa5002dba]
+link CompanyPerformanceAnalysisUI to CompanyPerformanceAnalysisController--><path codeLine="133" d="M337.7,363.75 C380.0625,363.75 427.4875,363.75 471.8875,363.75 " fill="none" id="CompanyPerformanceAnalysisUI-to-CompanyPerformanceAnalysisController" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="478.4125,363.75,467.1625,358.75,472.1625,363.75,467.1625,368.75,478.4125,363.75" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[5ce4db4ce32c27ecea6aaa74e26a0164]
+link CompanyPerformanceAnalysisController to Company--><path codeLine="134" d="M798.975,415.15 C894.025,445.875 1010.3125,483.4625 1084.3125,507.3875 " fill="none" id="CompanyPerformanceAnalysisController-to-Company" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1090.45,509.375,1081.2913,501.1482,1084.5049,507.4468,1078.2062,510.6604,1090.45,509.375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[d03b593c12afa5f3c42671c11d6ed63b]
+link CompanyPerformanceAnalysisController to TestStore--><path codeLine="135" d="M798.975,320.4125 C841.675,308.7625 888.675,295.9625 934.1875,283.55 " fill="none" id="CompanyPerformanceAnalysisController-to-TestStore" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="940.3125,281.875,928.1443,280.0052,934.2819,283.5165,930.7706,289.6541,940.3125,281.875" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[3300167ae7d23235b62a0a68c7d5f569]
+link CompanyPerformance to SubMaxSumAlgorithms--><path codeLine="136" d="M1992.525,667.5 C2058.675,667.5 2127.6875,667.5 2182.45,667.5 " fill="none" id="CompanyPerformance-to-SubMaxSumAlgorithms" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="2188.7125,667.5,2177.4625,662.5,2182.4625,667.5,2177.4625,672.5,2188.7125,667.5" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#000000" points="2045,656.4697,2033.6936,652.7961,2033.6936,660.1434,2045,656.4697" style="stroke:#000000;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="97.5" x="2050" y="663.1189">makes use of</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="6.25" x="2002.3874" y="684.798">*</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="2169.8915" y="685.3416">1</text><!--MD5=[6926410afba6dbb7662f77bf9a4beef8]
+link BenchmarkAlgorithmAdapter to Sum--><path codeLine="137" d="M2708.9625,724.8125 C2762.6875,725.875 2823.225,727.0625 2863.4375,727.8625 " fill="none" id="BenchmarkAlgorithmAdapter-to-Sum" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="2869.7125,727.975,2858.565,722.7504,2863.4638,727.8497,2858.3645,732.7484,2869.7125,727.975" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[5c0b00d376c45fe49ede70ccf937dd89]
+link BruteForceAlgorithmAdapter to BruteForceAlgorithm--><path codeLine="138" d="M2707.175,605.7875 C2742.0125,604.1375 2779.8625,602.35 2813.25,600.775 " fill="none" id="BruteForceAlgorithmAdapter-to-BruteForceAlgorithm" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="2819.875,600.4625,2808.3957,596.0142,2813.6324,600.7657,2808.8808,606.0024,2819.875,600.4625" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[3f3cec389b63617d5cf5a63fd6d0d0a0]
+link Company to CompanyPerformance--><path codeLine="139" d="M1228.2875,546.6125 C1300.25,562.9625 1418.1875,589.7375 1524.775,613.9375 " fill="none" id="Company-to-CompanyPerformance" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="1531.1375,615.3875,1521.2856,608.0049,1525.0449,613.9939,1519.0558,617.7531,1531.1375,615.3875" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#000000" points="1461.0948,590.3537,1450.8827,584.2676,1449.2557,591.4325,1461.0948,590.3537" style="stroke:#000000;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="26.25" x="1466.25" y="595.6189">has</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="1238.1355" y="566.9603">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="6.25" x="1515.0214" y="630.487">*</text><!--MD5=[7500d493c54aadfc564551571970942a]
+reverse link SubMaxSumAlgorithms to BenchmarkAlgorithmAdapter--><path d="M2416.15,690.5375 C2434.65,693.95 2453.6625,697.4625 2472,700.85 " fill="none" id="SubMaxSumAlgorithms-backto-BenchmarkAlgorithmAdapter" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2414.35,699.1125,2391.35,685.9625,2417.525,681.9,2414.35,699.1125" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[2746a4793daa6de3b91732e823f67982]
+reverse link SubMaxSumAlgorithms to BruteForceAlgorithmAdapter--><path d="M2416.1625,643.925 C2435.3625,640.3125 2455.1125,636.5875 2474.1,633 " fill="none" id="SubMaxSumAlgorithms-backto-BruteForceAlgorithmAdapter" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2417.5375,652.575,2391.35,648.6125,2414.3,635.375,2417.5375,652.575" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[9f26caf2ea927c419433b5977c920871]
+@startuml
+'skinparam linetype ortho
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+package Core{
+
+package Domain {
+
+package Model{
+
+class Company {
+    - String designation
+    - TestStore testStore
+    + getTestStore()
+}
+
+class CompanyPerformance{
+    - Company company
+    - Date beginningDate
+    - Date endingDate
+    - String chosenAlg
+    - int clientsNum
+    - int processTestsNum
+    - ArrayList<int[]> testInfoDay
+    - ArrayList<int[]> testInfoWeek
+    - ArrayList<int[]> testInfoMonth
+    - ArrayList<int[]> testInfoYear
+    - Date[] worstSubInt
+    + setCompany
+    + CompanyPerformance(beginningDate, endingDate, chosenAlg, company)
+    + getClientsNum()
+    + getProcessTestsNum()
+    + getTestInfoDay()
+    + getTestInfoWeek()
+    + getTestInfoMonth()
+    + getTestInfoYear()
+    + getWorstSubInt()
+    + getClientsInfoPerInterval(days)
+    + getNumTestsProcessedInterval(days)
+    + getTestInfoPerDay(days)
+    + getTestInfoPerWeek(days)
+    + getTestInfoPerMonth(days)
+    + getTestInfoPerYear(days)
+    + getDays()
+    + makeIntervalArray(days)
+    + findWorstSubIntWithChosenAlgorithm(days, chosenAlgorithm)
+    + getChosenAlgorithmAdapter(chosenAlgorithm)
+}
+
+}
+
+package Interfaces {
+
+interface SubMaxSumAlgorithms <<interface>> {
+    +findSubMaxSum(interval)
+}
+
+}
+
+package Store {
+
+class TestStore {
+    + getNumTestsWaitingForResultsDayOrInterval(beginningDay, endingDay)
+    + getNumTestsWaitingForDiagnosisDayOrInterval(beginningDay, endingDay)
+    + getNumberOfTestsByIntervalDateOfTestRegistration(beginningDay, endingDay)
+    + getNumberOfTestsByIntervalDateOfDiagnosis(beginningDay, endingDay)
+}
+
+}
+
+package Adapters{
+
+class BenchmarkAlgorithmAdapter{
+    +findSubMaxSum(interval)
+}
+
+class BruteForceAlgorithmAdapter{
+    +findSubMaxSum(interval)
+}
+
+}
+
+}
+
+package Controller {
+
+class CompanyPerformanceAnalysisController{
+    - Company company
+    - CompanyPerformance companyPerformance
+    + setCompanyPerformance(companyPerformance)
+    + getClientsInfoPerInterval()
+    + getNumTestsProcessedInterval()
+    + getTestInfoPerDay()
+    + getTestInfoPerWeek()
+    + getTestInfoPerMonth()
+    + getTestInfoPerYear()
+    + findWorstSubIntWithChosenAlgorithm()
+}
+
+}
+
+package ThirdParty{
+
+package APIs {
+
+class Sum{
+    +Max(seq)
+}
+
+}
+
+class BruteForceAlgorithm{
+    +Max(seq)
+}
+
+}
+
+}
+
+package UI {
+
+package GUI{
+
+class CompanyPerformanceAnalysisUI{
+}
+
+}
+
+}
+
+CompanyPerformanceAnalysisUI ..> CompanyPerformanceAnalysisController
+CompanyPerformanceAnalysisController ..> Company
+CompanyPerformanceAnalysisController ..> TestStore
+CompanyPerformance "*" - -> "1" SubMaxSumAlgorithms : makes use of >
+BenchmarkAlgorithmAdapter - -> Sum
+BruteForceAlgorithmAdapter - -> BruteForceAlgorithm
+Company "1" - -> "*" CompanyPerformance : has >
+
+class BenchmarkAlgorithmAdapter implements SubMaxSumAlgorithms
+class BruteForceAlgorithmAdapter implements SubMaxSumAlgorithms
+
+@enduml
+
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+package Core{
+
+package Domain {
+
+package Model{
+
+class Company {
+    - String designation
+    - TestStore testStore
+    + getTestStore()
+}
+
+class CompanyPerformance{
+    - Company company
+    - Date beginningDate
+    - Date endingDate
+    - String chosenAlg
+    - int clientsNum
+    - int processTestsNum
+    - ArrayList<int[]> testInfoDay
+    - ArrayList<int[]> testInfoWeek
+    - ArrayList<int[]> testInfoMonth
+    - ArrayList<int[]> testInfoYear
+    - Date[] worstSubInt
+    + setCompany
+    + CompanyPerformance(beginningDate, endingDate, chosenAlg, company)
+    + getClientsNum()
+    + getProcessTestsNum()
+    + getTestInfoDay()
+    + getTestInfoWeek()
+    + getTestInfoMonth()
+    + getTestInfoYear()
+    + getWorstSubInt()
+    + getClientsInfoPerInterval(days)
+    + getNumTestsProcessedInterval(days)
+    + getTestInfoPerDay(days)
+    + getTestInfoPerWeek(days)
+    + getTestInfoPerMonth(days)
+    + getTestInfoPerYear(days)
+    + getDays()
+    + makeIntervalArray(days)
+    + findWorstSubIntWithChosenAlgorithm(days, chosenAlgorithm)
+    + getChosenAlgorithmAdapter(chosenAlgorithm)
+}
+
+}
+
+package Interfaces {
+
+interface SubMaxSumAlgorithms <<interface>> {
+    +findSubMaxSum(interval)
+}
+
+}
+
+package Store {
+
+class TestStore {
+    + getNumTestsWaitingForResultsDayOrInterval(beginningDay, endingDay)
+    + getNumTestsWaitingForDiagnosisDayOrInterval(beginningDay, endingDay)
+    + getNumberOfTestsByIntervalDateOfTestRegistration(beginningDay, endingDay)
+    + getNumberOfTestsByIntervalDateOfDiagnosis(beginningDay, endingDay)
+}
+
+}
+
+package Adapters{
+
+class BenchmarkAlgorithmAdapter{
+    +findSubMaxSum(interval)
+}
+
+class BruteForceAlgorithmAdapter{
+    +findSubMaxSum(interval)
+}
+
+}
+
+}
+
+package Controller {
+
+class CompanyPerformanceAnalysisController{
+    - Company company
+    - CompanyPerformance companyPerformance
+    + setCompanyPerformance(companyPerformance)
+    + getClientsInfoPerInterval()
+    + getNumTestsProcessedInterval()
+    + getTestInfoPerDay()
+    + getTestInfoPerWeek()
+    + getTestInfoPerMonth()
+    + getTestInfoPerYear()
+    + findWorstSubIntWithChosenAlgorithm()
+}
+
+}
+
+package ThirdParty{
+
+package APIs {
+
+class Sum{
+    +Max(seq)
+}
+
+}
+
+class BruteForceAlgorithm{
+    +Max(seq)
+}
+
+}
+
+}
+
+package UI {
+
+package GUI{
+
+class CompanyPerformanceAnalysisUI{
+}
+
+}
+
+}
+
+CompanyPerformanceAnalysisUI ..> CompanyPerformanceAnalysisController
+CompanyPerformanceAnalysisController ..> Company
+CompanyPerformanceAnalysisController ..> TestStore
+CompanyPerformance "*" - -> "1" SubMaxSumAlgorithms : makes use of >
+BenchmarkAlgorithmAdapter - -> Sum
+BruteForceAlgorithmAdapter - -> BruteForceAlgorithm
+Company "1" - -> "*" CompanyPerformance : has >
+
+class BenchmarkAlgorithmAdapter implements SubMaxSumAlgorithms
+class BruteForceAlgorithmAdapter implements SubMaxSumAlgorithms
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

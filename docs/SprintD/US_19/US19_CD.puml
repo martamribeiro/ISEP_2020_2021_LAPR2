@@ -1,0 +1,249 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+
+
+class Company {
+-designation
+-classNameForBarcodeApi
+-classNameForSortAlgorithm
+-regressionModelCLass
+-dateInterval
+-historicalPoints
+-confidenceLevel
+-significanceLevel
++scheduleNHSReportTask(delay, interval)
+}
+
+class NHSReport {}
+
+class RegressionModel {}
+
+class HypothesisTest {
+-tObsA
+-tObsB
+-tObsC
+-significanceLevel
+-critTD
+-f
+-critFD
+-numeratorDegreesOfFreedom
+-denominatorDegreesOfFreedom
++getDecision(tObs, critTD)
++getDecisionForAnova(critFD)
+}
+
+class SignificanceModelAnova {
+-significanceLevel
+-sr
+-se
+-st
+-mr
+-me
+-f
+-degFreedomSr
+-degFreedomSe
+-degFreedomSt
+}
+
+class TableOfValues {
+-dates
+-observedPositives
+-estimatedPositives
++getConfidenceLevelInPercentage()
+}
+
+class ConfidenceInterval {
+-y0
+-auxDelta
+-confidenceLevel
+-delta
+-limInf
+-limSup
++getConfidenceLevel()
+}
+
+class Timer {
++schedule(task, delay, interval)
+}
+
+class NHSReportStore {
++getBestXIndex(regressionModel, x1, x2, y)
++createMyBestRegressionModel(regressionModel, bestX, y, historicalPoints)
++createMyRegressionModel(regressionModel, x1, x2, y, historicalPoints)
++createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)
++createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)
++createTableOfValues(myRegressionModel, dates, observedPositives, estimatedPositives, confidenceIntervals)
++getDoubleArrayWithData(covidTestAndMeanAgeList, index)
++copyArray(array)
++getDatesColumnToTableOfValues(numberOfObservations, currentDate)
++getWeeksColumnToTableOfValues(numberOfObservations, currentDate)
++getWeek(initialDate, endDate)
++getStartDate()
++getStartDateForSelectedDate(currentDate)
+}
+
+class TestStore {
++getObservedPositivesToTableOfValues(numberOfObservations, dates)
++getWeeklyObservedPositivesToTableOfValues(dates)
++getObservedPositivesInOneWeek(beginDate, endDate)
++getNumberOfCovidTestsRealizedInADay(date)
++getMeanAgeOfClientsOfCovidTestsInADay(date)
++getNumClientsWithValidatedTestsInADay(date)
++getSumOfClientAgesInADay(date)
++getObservedPositivesCovidInADay(date)
++getAllDataToFitTheModel(beginDate, endDate, typeOfData)
++addAllDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)
++addWeeklyDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)
++getNumberOfCovidTestsInHistoricalPoints(dates)
++getWeeklyNumberOfCovidTestsInHistoricalPoints(dates)
++getNumberOfCovidTestsInOneWeek(beginDate, endDate)
++getMeanAgeInHistoricalPoints(dates)
++getWeeklyMeanAgeInHistoricalPoints(dates)
++checkIfDatesAreEqual(date, otherDate)
++turnPrimitiveIntoDoubleArray(array)
++checkDateIntervalHasMinRange(beginDate, endDate)
++getFinalBeginDateForWeekData(beginDate)
++getFinalEndDateForWeekData(endDate)
+}
+
+class SimpleLinearRegressionAdapter {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class MultipleLinearRegressionAdapter {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class RegressionModel {}
+
+class NHSReportTask {
+-historicalPoints
+-significanceLevel
+-confidenceLevel
+-regressionModelClass
++createNHSDailyReport(typeOfData)
++getDataListToFitTheModel(typeOfData)
++getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
++getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate, typeOfData)
++getConfidenceIntervalListForTableOfValues(myRegressionModel, regressionModel, x1InHistoricalPoints, x2InHistoricalPoints, bestXIndex)
++getRegressionModel(regressionModelCLass)
++writeEventIntoLogFile()
++run()
+}
+
+class MyRegressionModel {
+-intercept
+-slope
+-secondIndVariable
+-r
+-r2
+-r2Adjusted
+-numberOfObservations
++calculateCriticalValFSnedecor(numeratorDegreesOfFreedom, denominatorDegreesOfFreedom, significanceLevel)
++calculateCriticalValTStudent(significanceLevel)
+}
+
+interface MathCalculus <<interface>> {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class Test {
+- code
+- nhsCode
+- dateOfTestRegistration
+- dateOfSamplesCollection
+- dateOfChemicalAnalysis
+- dateOfDiagnosis
++isValidated()
++hasPositiveResultForCovid()
++isCovidTest()
+}
+
+class Client {
+- name
+- citizenCardNum
+- nhsNum
+- birthDate
+- sex
+- taxIdNum
+- phoneNum
+- email
++getAge()
+}
+/'O CONTROLLER É A APP STARTUP'/
+/'COLOCAR TIMER'/
+
+class App {}
+
+/'Timer "1" -- "*" NHSReport : schedules >'/
+/'Company "1" -- "1..*" NHSReport : reports >'/
+App "1" -- "1" Company : knows >
+Company "1" -- "1" Timer : knows >
+/'NHSReportTask "1" -- "1" NHSReport : sends >'/
+NHSReport "*" -- "1" MyRegressionModel : has >
+NHSReport "1" -- "1" HypothesisTest : contains >
+NHSReport "1" -- "1" SignificanceModelAnova : contains >
+Company "*" -- "1" RegressionModel : makes use of >
+HypothesisTest "*" -- "1" MyRegressionModel : of >
+SignificanceModelAnova "1" -- "1" MyRegressionModel : of >
+SignificanceModelAnova "1" -- "1" HypothesisTest : contains >
+NHSReport "1" - "1" TableOfValues : contains >
+TableOfValues "1" -- "1" MyRegressionModel : of >
+TableOfValues "1" -- "*" ConfidenceInterval : contains >
+ConfidenceInterval "*" -- "1" MyRegressionModel : of >
+RegressionModel "*" -- "1" MathCalculus : provided by >
+MyRegressionModel "1" -- "1" RegressionModel : has >
+/'Timer "1" -- "*" NHSReportTask : runs >'/
+Test "*" -- "1" Client : requested by >
+
+class SimpleLinearRegressionAdapter implements MathCalculus
+class MultipleLinearRegressionAdapter implements MathCalculus
+
+
+
+/'NHSReportTask ..> Company'/
+NHSReportTask ..> TestStore
+NHSReportTask ..> NHSReportStore
+NHSReportTask ..> NHSReport
+NHSReportTask ..> Test
+NHSReportTask ..> TableOfValues
+NHSReportTask ..> SignificanceModelAnova
+NHSReportTask ..> ConfidenceInterval
+NHSReportTask ..> HypothesisTest
+NHSReportTask ..> MyRegressionModel
+NHSReportTask ..> MathCalculus
+NHSReportTask ..> Client
+Timer --> NHSReportTask : runs >
+
+
+
+Company "1" --> "1" TestStore : uses >
+Company "1" --> "1" NHSReportStore : uses >
+TestStore "1" -- "*" Test : conducts >
+NHSReportStore "1" -- "1..*" NHSReport : reports >
+
+
+@enduml

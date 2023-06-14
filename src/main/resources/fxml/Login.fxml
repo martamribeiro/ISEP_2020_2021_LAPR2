@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ui.gui.MainUI">
+   <children>
+      <AnchorPane layoutX="338.0" prefHeight="500.0" prefWidth="355.0" style="-fx-background-color: #26292F;">
+         <children>
+            <TextField fx:id="email" layoutX="95.0" layoutY="250.0" promptText="User E-mail" style="-fx-background-color: transparent; -fx-border-color: #ee6c4d; -fx-border-width: 0px 0px 2px 0px;" styleClass="text-input" AnchorPane.bottomAnchor="220.0">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pwd" layoutX="95.0" layoutY="303.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #ee6c4d; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </PasswordField>
+            <Text fill="WHITE" layoutX="124.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" AnchorPane.bottomAnchor="304.04296875" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="118.6640625" AnchorPane.topAnchor="166.98828125">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="53.0" fitWidth="52.0" layoutX="154.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@whiteUser.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="130.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #3d5a80; -fx-background-radius: 90;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="500.0" prefWidth="338.0" style="-fx-background-color: #3d5a80; -fx-border-color: #FFFFFF; -fx-border-width: 0px 2px 0px 0px;">
+         <children>
+            <Text fill="WHITE" layoutX="66.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANY LABS">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgTeam" fitHeight="150.0" fitWidth="200.0" layoutX="95.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="95.0" layoutY="320.0" text="SRC-Code-23" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="362.0" text="1200805 Alexandre Dias" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="387.0" text="1201518 Ana Albergaria" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="434.0" text="1200049 João Lucas Wolff" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="410.0" text="1201592 Marta Ribeiro" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="45.0" prefWidth="693.0">
+         <children>
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="45.0" prefWidth="693.0" style="-fx-background-color: transparent;">
+               <items>
+                  <Button fx:id="sairBtn" mnemonicParsing="false" onAction="#exitAction" style="-fx-background-color: #ff4d4d;" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -4,7 +4,6 @@ import app.controller.SelectCalController;
 import app.mappers.dto.ClinicalAnalysisLaboratoryDTO;
 import app.ui.console.utils.Utils;
 
-import javax.rmi.CORBA.Util;
 import java.util.ArrayList;
 import java.util.List;
 

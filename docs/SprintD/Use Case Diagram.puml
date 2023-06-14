@@ -1,0 +1,37 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+actor "Client" as CL
+actor "Receptionist" as REC
+actor "Medical Lab Technician" as MLT
+actor Administrator
+actor "Clinical Chemistry Technologist" as CCT
+actor "Specialist Doctor" as SD
+actor "Laboratory Coordinator" as LC
+actor "Many Labs" as ML
+
+rectangle System {
+CL --> (UC 1 - View the results of the performed tests)
+CL --> (UC 2 - Update personal data)
+REC --> (UC 4 - Register a test to be performed)
+(UC 4 - Register a test to be performed) --> (UC 3 - Register a new client) #brown;line.dashed;text:black : <<Include>>
+MLT --> (UC 5 - Record the samples collected in the scope of a given test)
+Administrator --> (UC 6 - Specify a new test parameter and categorize it)
+Administrator --> (UC 7 - Register a new employee)
+Administrator --> (UC 8 - Register a new clinical analysis laboratory stating which kind of tests it operates)
+Administrator --> (UC 9 - Specify a new type of test and its collecting methods)
+Administrator --> (UC 10 - Specify a new parameter and categorize it)
+Administrator --> (UC 11 - Specify a new parameter category)
+CCT --> (UC 12 - Record the results of a given test)
+CCT --> (UC 13 - Consult the historical tests performed by a client)
+SD --> (UC 14 - Make a diagnosis and write a report for a given test)
+LC --> (UC 15 - Validate the work done by the clinical chemistry technologist)
+LC --> (UC 16 - Have an overview of all the tests and analyse the company performance)
+LC --> (UC 17 - Import clinical tests from a CSV file)
+Administrator --> (UC 18 - Send the Covid-19 report to the NHS at any time)
+ML --> (UC 19 - Send daily Covid-19 data reports to NHS)
+}
+
+
+@enduml

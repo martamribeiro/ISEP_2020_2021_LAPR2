@@ -5,11 +5,13 @@ import app.domain.model.Parameter;
 import app.domain.interfaces.ExternalModule;
 import com.example3.CovidReferenceValues1API;
 
+import java.io.Serializable;
+
 /**
  * Adapter class for the covid reference value 1 API
  * Implements the External module interface
  */
-public class CovidReferenceValues1APIAdapter implements ExternalModule {
+public class CovidReferenceValues1APIAdapter implements ExternalModule , Serializable {
 
     /**
      * Method for getting the Reference value object using the covid external module

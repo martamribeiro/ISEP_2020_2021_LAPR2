@@ -1,0 +1,57 @@
+@startuml
+title SD_getBarcode()
+
+autonumber
+
+participant ":CreateFileTestController" as CTRL
+participant ":Company" as COMPANY
+participant "api\n:ExternalAPI" as API
+participant ":BarcodeUtils" as BARCODE_UTILS
+participant "barcodeNumber\n:String" as NUMBER
+participant "sampleStore\n:SampleStore" as SAMPLE_STORE
+participant "myBarcode\n:MyBarcode" as MY_BARCODE
+participant "barcode\n:Barcode" as BARCODE
+participant "sample\n:Sample" as SAMPLE
+
+
+activate CTRL
+CTRL -> CTRL : myBarcode = getBarcode()
+activate CTRL
+deactivate CTRL
+
+CTRL -> COMPANY : api = getExternalApi()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> BARCODE_UTILS : barcodeNumber = generateBarcodeNumber()
+activate BARCODE_UTILS
+deactivate BARCODE_UTILS
+
+CTRL -> API : getBarcode(barcodeNumber)
+activate API
+
+API --> MY_BARCODE** : create(barcode, barcodeNumber)
+
+API --> CTRL : myBarcode
+
+CTRL -> COMPANY : sampleStore = getSampleStore()
+activate COMPANY
+COMPANY --> SAMPLE_STORE** : create()
+deactivate COMPANY
+
+
+CTRL -> SAMPLE_STORE : sample = createSample(myBarcode)
+activate SAMPLE_STORE
+
+SAMPLE_STORE --> SAMPLE** : create(myBarcode)
+
+
+deactivate SAMPLE_STORE
+deactivate API
+
+
+
+
+
+
+@enduml

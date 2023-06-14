@@ -273,7 +273,7 @@ Application "1" - "*" Notification : sends >
 TestType "*" -- "1..*" ParameterCategory : characterized by >
 
 ClinicalAnalysisLaboratory "1..*" -- "1" Administrator : registered by >
-
+ClinicalAnalysisLaboratory "1" -- "1..*" Test : performs >
 /' US8 '/
 ClinicalAnalysisLaboratory "1" -- "1..*" TestType : operates >
 

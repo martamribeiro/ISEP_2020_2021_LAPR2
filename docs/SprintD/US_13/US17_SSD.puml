@@ -1,0 +1,20 @@
+@startuml
+
+autonumber
+actor "clinical chemistry technologist" as MLT
+
+activate MLT
+MLT -> ":System" :  asks to consult the historical tests performed by a particular client
+activate ":System"
+":System" --> MLT : asks to choose if clients should be ordered by tin or by name
+deactivate ":System"
+MLT -> ":System" : selects requested data
+activate ":System"
+":System" --> MLT : shows list of clients and asks to select one
+deactivate ":System"
+MLT -> ":System" : selects requested data
+activate ":System"
+":System" --> MLT : shows historical tests performed by the client in details
+deactivate ":System"
+
+@enduml

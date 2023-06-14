@@ -1,0 +1,156 @@
+@startuml
+autonumber
+'hide footbox
+actor "Laboratory coordinator" as ADM
+participant ":ImportTestUI  " as UI
+participant "testFile:TestFileUtils" as TST
+participant ":ImportTestController" as CTRL
+participant ":RegisterClientController" as CLIENT_CTRL
+participant ":CreateFileTestController" as TEST_CTRL
+participant ":Company" as PLAT
+participant "store:TestStore" as ORG
+participant "tt\n:Test" as TAREFA
+participant ": TestParameter" as tp
+
+activate ADM
+ADM -> UI : asks to import clinical tests from a CSV file.
+activate UI
+
+UI -> CTRL : create()
+activate CTRL
+CTRL -> CLIENT_CTRL** : createClientCtrl = create()
+CTRL -> TEST_CTRL** : createClientCtrl = create()
+deactivate CTRL
+
+
+
+
+UI --> ADM : shows the file chooser and asks to select the file.
+deactivate UI
+
+ADM -> UI : selects requested data
+activate UI
+
+UI -> TST** : Create()
+UI -> TST : List<TestFileDTO>testFileDTO = getTestDataToDto(pathOfFile)
+activate TST
+deactivate TST
+loop for each TestFileDTO of the list
+
+UI -> CTRL : createTestsFromFile(TestFileDTO)
+activate CTRL
+
+/'
+CTRL -> TEST_LIST** : create()
+'/
+
+
+CTRL -> CLIENT_CTRL : existsClient = createClient(testFileDTO.getClientDTO())
+activate CLIENT_CTRL
+
+ref over CLIENT_CTRL
+SD_createClient(clientDto)
+end
+deactivate CLIENT_CTRL
+
+alt client doesn't exist in Client Store
+CTRL -> CLIENT_CTRL : clientCreation = saveClient()
+activate CLIENT_CTRL
+ref over CLIENT_CTRL
+SD_saveClient()
+end
+
+deactivate CLIENT_CTRL
+end
+CTRL -> TEST_CTRL : createTest(TestFileDTO)
+activate TEST_CTRL
+
+
+
+ref over TEST_CTRL
+SD_extractDataFromTestFileDto
+end
+
+TEST_CTRL -> PLAT : testStore = getTestStore()
+activate PLAT
+PLAT -> ORG** : create()
+deactivate PLAT
+
+TEST_CTRL -> ORG : test = createTest(nhsCode, associatedClient,\n selectedTestType, selectedParamsList, paramsResults, cal,\n testRegDate, testChemDate, testDiagnosisDate, testValidationDate)
+activate ORG
+ORG -> TAREFA** : createTest(nhsCode, associatedClient,\n selectedTestType, selectedParamsList, paramsResults, cal,\n testRegDate, testChemDate, testDiagnosisDate, testValidationDate)
+
+activate TAREFA
+TAREFA -> TAREFA : checkAttributes(NHScode, associatedClient)
+
+loop for each parameter of the list
+TAREFA -> ExternalAPI** : refValue = getRefValueFor(parameter)
+TAREFA -> tp**: testParameter =  create(parameter, result, refValue)
+TAREFA -> TAREFA: testParameters.add(testParameter)
+end
+
+TAREFA -> TAREFA : code = generateSequentialCode()
+deactivate TAREFA
+deactivate ORG
+
+alt testChemDate different than null
+TEST_CTRL -> TEST_CTRL : sample = createSample()
+ref over TEST_CTRL
+SD_creatSample()
+end
+activate TEST_CTRL
+deactivate TEST_CTRL
+
+TEST_CTRL -> TAREFA : test.addSample()
+activate TAREFA
+
+TAREFA -> TAREFA : validate(sample)
+activate TAREFA
+deactivate TAREFA
+
+TAREFA -> TAREFA : samples.add(sample)
+activate TAREFA
+deactivate TAREFA
+deactivate TAREFA
+end
+
+TEST_CTRL -> ORG : result = validateTest(test)
+activate ORG
+deactivate ORG
+TEST_CTRL -> CTRL : result
+deactivate TEST_CTRL
+
+deactivate TEST_CTRL
+deactivate ORG
+
+CTRL -> TEST_CTRL : saveTest()
+activate TEST_CTRL
+
+TEST_CTRL -> PLAT : testStore = getTestStore()
+activate PLAT
+deactivate PLAT
+
+TEST_CTRL -> ORG : saveTest(test)
+activate ORG
+
+ORG -> ORG: validateTest(test)
+ORG -> ORG: addTest(test)
+deactivate ORG
+
+TEST_CTRL -> CTRL : result
+deactivate TEST_CTRL
+
+
+CTRL --> UI: result
+deactivate CTRL
+end
+
+
+UI --> ADM : informs operation success\n and shows all created tests
+deactivate ORG
+deactivate CTRL
+deactivate UI
+
+deactivate ADM
+
+@enduml

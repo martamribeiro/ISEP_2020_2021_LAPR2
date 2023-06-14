@@ -1,0 +1,204 @@
+@startuml
+skinparam classAttributeIconSize 0
+/'left to right direction'/
+
+/'skinparam linetype ortho'/
+
+
+/'package Domain <<Folder>> {
+    package Model <<Folder>> {'/
+
+        class ClinicalAnalysisLaboratory{
+        - laboratoryID
+        }
+
+
+        class Test{
+            - code
+            - NhsCode
+            - dateOfTestRegistration
+            - dateOfSamplesCollection
+            - dateOfChemicalAnalysis
+            - dateOfDiagnosis
+        }
+
+        class TestFileDTO{
+           -ClientDTO
+           -NhsCode
+           -TestParameterCodes
+           -TestParameterResult
+           - dateOfTestRegistration
+           - dateOfSamplesCollection
+           - dateOfChemicalAnalysis
+           - dateOfDiagnosis
+        }
+
+
+        class Company {
+            -designation : String
+            +getTestTypeStore()
+            +getParameterStore()
+            +getTestStore()
+            +getCalStore()
+        }
+        class TestType {
+            - code : String
+            - description : String
+            - collectingMethod : String
+            }
+
+        class Sample {
+        -myBarcode
+        }
+
+        class Parameter {
+          -code
+          -shortName
+          -description
+        }
+        class TestParameter{
+            +TestParameter(parameter: Parameter)
+        }
+        class TestParameterResult{
+        - createdAt
+        - value
+        - metric
+        }
+
+        class Client{
+        - name
+        - citizenCardNum
+        - nhsNum
+        - birthDate
+        - sex
+        - taxIdNum
+        - phoneNum
+        - email
+        }
+
+        class MyBarcode {
+        - barcodeNumber
+        }
+
+
+        class ClientStore {
+           +getClientByTinNumber(tinNumber)
+        }
+
+        class ParameterStore {
+                +getParamsByCategories(List<String> selectedCategoriesCodes)
+                +getParamsByCategory(String category)
+            }
+
+        class SampleStore {
+            +createSample(myBarcode)
+            +validateSample(sample)
+        }
+
+        class TestStore {
+            +createTest(String nhsCode, Client associatedClient,\n TestType selectedTestType, List<Parameter>selectedParamsList)
+            +validateTest(test)
+            +saveTest(test)
+        }
+
+        class ClinicalAnalysisLaboratoryStore {
+            +getCalByCode(labId)
+        }
+
+        class TestTypeStore {
+            +getTestTypeByTinNumber(code)
+            }
+
+/'    }
+}'/
+
+/'package Controller <<Folder>>{'/
+    class CreateTestOfFileControler{
+    +createTest(TestFileDto)
+    +saveTest()
+    +createSample()
+    +addSample(code)
+    }
+
+    class ImportTestController{
+            +createTestsFromFile(TestFileDto)
+            +saveTest()
+            +addSample()
+        }
+
+    class RegisterClientController {
+      +registerClient(ClientDto)
+      +saveClient()
+    }
+
+/'}'/
+
+    class TestFileUtils {
+        +getTestDataToDto(filepath)
+
+    }
+
+    interface ExternalAPI <<interface>> {
+    +MyBarcode getBarcode(barcodeNumber)
+    +saveImageBarcode(myBarcode, code)
+    }
+    class BarbecueAdapter {
+    +MyBarcode getBarcode(barcodeNumber)
+    +saveImageBarcode(myBarcode, code)
+    }
+
+    class BarbecueAPI{
+    +Barcode createUPCA(data)
+    +BufferedImage saveJPEG(barcode, file)
+    }
+
+
+
+ImportTestUI ..> ImportTestController
+ImportTestUI ..> TestFileUtils
+ImportTestUI ..> TestFileDTO
+TestFileUtils ..> TestFileDTO
+ImportTestController ..> TestFileDTO
+ImportTestController ..> CreateTestOfFileControler
+ImportTestController ..> RegisterClientController
+CreateTestOfFileControler ..> Company
+CreateTestOfFileControler ..> ClinicalAnalysisLaboratoryStore
+CreateTestOfFileControler ..> ParameterStore
+CreateTestOfFileControler ..> TestTypeStore
+CreateTestOfFileControler ..> TestStore
+
+Company "1" -- "1" ParameterStore : uses >
+ParameterStore "1" -- "*" Parameter : stores >
+RegisterClientController ..> Company
+RegisterClientController ..> ClientStore
+ClientStore "1" -- "*" Client : stores >
+TestStore "1" -- "*" Test : stores >
+ClinicalAnalysisLaboratoryStore "1" -- "*" ClinicalAnalysisLaboratory : stores >
+Company "1" -- "1" TestStore : uses >
+Company "1" -- "1" ClientStore : uses >
+Company "1" -- "1" ClinicalAnalysisLaboratoryStore : uses >
+Company "1" --- "*" Test : conducts >
+Client "1" -- "1" Test : requested by <
+ClinicalAnalysisLaboratory "1" - "1..*" Test : performs >
+TestType "1" -- "1..*" Parameter : characterized by >
+Company "1" -- "*" TestType : conducts >
+Company "1" -- "*" Test : conducts >
+TestTypeStore "1" -- "*" TestType : stores >
+Company "1" -- "*" Parameter : capable of analysing >
+Test "*" -- "1" TestType : classified as >
+Test "1" -- "1..*" TestParameter : requests analysis of >
+TestParameter "*" -- "1" Parameter : refers to >
+TestParameter "1" -- "0..1" TestParameterResult : contains >
+Test"1" -- "1..*" Sample : collects >
+CreateTestOfFileControler ..> Sample
+CreateTestOfFileControler ..> SampleStore
+Company "1" --> "1" SampleStore : uses >
+SampleStore "1" - "*" Sample : manages >
+Sample "1" -- "1" MyBarcode : identified with >
+MyBarcode "1" -- "1" Barcode : has >
+MyBarcode "1" -- "1" BarbecueAdapter : given by >
+Barcode "*" -- "1" ExternalAPI : generated by >
+class BarbecueAdapter implements ExternalAPI
+Company "*" -- "1" ExternalAPI : makes use of >
+BarbecueAdapter --> BarbecueAPI
+@enduml

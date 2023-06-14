@@ -3,6 +3,7 @@ package app.domain.store;
 import app.domain.model.MyBarcode;
 import app.domain.model.Sample;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * @author Ana Albergaria
  */
 
-public class SampleStore {
+public class SampleStore implements Serializable {
 
     /**
      * Called method through the Company to create a new Sample containing a myBarcode.

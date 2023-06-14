@@ -3,6 +3,7 @@ package app.domain.store;
 import app.domain.model.Company;
 import app.domain.model.Parameter;
 import app.domain.model.ParameterCategory;
+import app.domain.shared.Constants;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +15,7 @@ public class ParameterStoreTest {
 
     private ParameterCategory p1;
     private ParameterCategory p2;
-    private Company company = new Company("Many Labs");
+    private Company company = new Company("Many Labs", Constants.CLASS_BARCODE_API,Constants.CLASS_SORT_ALGORITHM, Constants.CLASS_SIMPLE_REGRESSION_MODEL, Constants.DATE_INTERVAL, Constants.HISTORICAL_POINTS, Constants.CONFIDENCE_LEVEL, Constants.SIGNIFICANCE_LEVEL);
     private List<ParameterCategory> pcList;
 
     @Before

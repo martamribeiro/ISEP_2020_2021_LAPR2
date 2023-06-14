@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="412.5px" preserveAspectRatio="none" style="width:991px;height:412px;background:#FFFFFF;" version="1.1" viewBox="0 0 991 412" width="991.25px" zoomAndPan="magnify"><defs><filter height="300%" id="f17mw1yek8df1n" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2c2e2644034c00788261e03c85b06837]
+cluster Core--><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="157.5,7.5,207.5,7.5,216.25,37.0117,970,37.0117,970,403.75,157.5,403.75,157.5,7.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="157.5" x2="216.25" y1="37.0117" y2="37.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="42.5" x="162.5" y="28.1665">Core</text><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="360,72.5,432.5,72.5,441.25,102.0117,750,102.0117,750,363.75,360,363.75,360,72.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="360" x2="441.25" y1="102.0117" y2="102.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="65" x="365" y="93.1665">Domain</text><!--MD5=[c29634d7cdbe8f1c1e88f2fe66ae73ec]
+cluster ThirdParty--><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="831.25,195,927.5,195,936.25,224.5117,940,224.5117,940,330,831.25,330,831.25,195" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="831.25" x2="936.25" y1="224.5117" y2="224.5117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="836.25" y="215.6665">ThirdParty</text><!--MD5=[9681dc6e01e10c6b4fe06895ae94f592]
+cluster UI--><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="20,268.75,45,268.75,53.75,298.2617,116.25,298.2617,116.25,403.75,20,403.75,20,268.75" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="20" x2="53.75" y1="298.2617" y2="298.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="25" y="289.4165">UI</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="406.875,128.125,469.375,128.125,478.125,157.6367,486.875,157.6367,486.875,197.1484,406.875,197.1484,406.875,128.125" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="406.875" x2="478.125" y1="157.6367" y2="157.6367"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="55" x="411.875" y="148.7915">Model</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="631.875,128.125,686.875,128.125,695.625,157.6367,704.375,157.6367,704.375,197.1484,631.875,197.1484,631.875,128.125" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="631.875" x2="695.625" y1="157.6367" y2="157.6367"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="47.5" x="636.875" y="148.7915">Store</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="390,240.625,486.25,240.625,495,270.1367,503.75,270.1367,503.75,309.6484,390,309.6484,390,240.625" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="390" x2="495" y1="270.1367" y2="270.1367"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="395" y="261.2915">Interfaces</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="616.25,240.625,702.5,240.625,711.25,270.1367,720,270.1367,720,309.6484,616.25,309.6484,616.25,240.625" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="616.25" x2="711.25" y1="270.1367" y2="270.1367"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="78.75" x="621.25" y="261.2915">Adapters</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="177.5,314.375,273.75,314.375,282.5,343.8867,291.25,343.8867,291.25,383.3984,177.5,383.3984,177.5,314.375" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="177.5" x2="282.5" y1="343.8867" y2="343.8867"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="182.5" y="335.0415">Controller</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="853.75,240.625,898.75,240.625,907.5,270.1367,916.25,270.1367,916.25,309.6484,853.75,309.6484,853.75,240.625" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="853.75" x2="907.5" y1="270.1367" y2="270.1367"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="37.5" x="858.75" y="261.2915">APIs</text><polygon fill="#FFFFFF" filter="url(#f17mw1yek8df1n)" points="40,314.375,78.75,314.375,87.5,343.8867,96.25,343.8867,96.25,383.3984,40,383.3984,40,314.375" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="40" x2="87.5" y1="343.8867" y2="343.8867"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="31.25" x="45" y="335.0415">GUI</text><!--MD5=[6e5f90ba632a98c155c6a391e6222125]
+link GUI to Controller--><path d="M96.4125,348.75 C116.6,348.75 145,348.75 170.7,348.75 " fill="none" id="GUI-to-Controller" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="177.175,348.75,165.9393,343.7179,170.925,348.7321,165.9108,353.7178,177.175,348.75" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[5eef8fc34ee0f8a6e9a4917deebd15c5]
+link Controller to Domain--><path d="M291.35,350.075 C306.6594,350.4406 323.7766,350.8492 340.8848,351.2574 C345.1618,351.3595 349.4383,351.4615 353.6858,351.5628 C354.7477,351.5882 355.8078,351.6134 356.8656,351.6387 C357.3945,351.6513 357.9229,351.6639 358.4506,351.6765 C358.7145,351.6828 358.9782,351.6891 359.2417,351.6954 " fill="none" id="Controller-to-Domain" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="359.2417,351.6954,348.1142,346.4285,352.9935,351.5463,347.8757,356.4257,359.2417,351.6954" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[5a887953c81670e82bf0effada931465]
+link Model to Store--><path d="M487.2375,162.5 C526.0375,162.5 585.3,162.5 625.025,162.5 " fill="none" id="Model-to-Store" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="631.7125,162.5,620.4625,157.5,625.4625,162.5,620.4625,167.5,631.7125,162.5" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="35" x="542.5" y="158.1189">uses</text><!--MD5=[e4260d37eac002eaed16f3dbd7488749]
+reverse link Interfaces to Adapters--><path d="M529.05,275 C558.1875,275 590.2375,275 616.075,275 " fill="none" id="Interfaces-backto-Adapters" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="528.8875,283.75,503.8875,275,528.8875,266.25,528.8875,283.75" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[50a3f65e1c55b1f4fbf6f3ec54f8479b]
+link Adapters to APIs--><path d="M720.175,275 C759.1125,275 811.9125,275 846.875,275 " fill="none" id="Adapters-to-APIs" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="853.175,275,841.9393,269.9679,846.925,274.9821,841.9108,279.9678,853.175,275" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[d634a34342d4f3d8da60b5f9bdcb67dd]
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+package Model {}
+package Store {}
+package Interfaces{}
+package Adapters{}
+}
+
+package Controller {}
+
+package ThirdParty{
+package APIs{}
+}
+
+}
+
+
+package UI {
+package GUI{}
+}
+
+GUI ..> Controller
+Controller ..> Domain
+Model - -> Store : uses
+Interfaces <|.. Adapters
+Adapters - -> APIs
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

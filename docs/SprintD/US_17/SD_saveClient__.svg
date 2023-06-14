@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="710px" preserveAspectRatio="none" style="width:1065px;height:710px;" version="1.1" viewBox="0 0 1065 710" width="1065px" zoomAndPan="magnify"><defs><filter height="300%" id="f5h2yd7wjs7mx" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="515.5762" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="108.125" y="86.5234"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="507.6367" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="288.75" y="114.4629"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="162.4023"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="254.0918"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="345.7813"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="567.0996"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="82.9395" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="792.5" y="427.4707"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="798.75" y="475.4102"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="113.75" x2="113.75" y1="74.0234" y2="633.3496"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="295" x2="295" y1="74.0234" y2="633.3496"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="798.125" x2="798.125" y1="74.0234" y2="633.3496"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1016.25" x2="1016.25" y1="74.0234" y2="633.3496"/><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="211.25" x="6.25" y="28.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="193.75" x="15" y="55.1782">:RegisterClientController</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="211.25" x="6.25" y="632.0996"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="193.75" x="15" y="659.0161">:RegisterClientController</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="115" x="235" y="28.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="97.5" x="243.75" y="55.1782">: ClientStore</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="115" x="235" y="632.0996"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="97.5" x="243.75" y="659.0161">: ClientStore</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="61.5234" style="stroke:#A80036;stroke-width:1.875;" width="118.75" x="736.875" y="6.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="36.25" x="778.125" y="33.1665">Auth</text><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="101.25" x="745.625" y="55.1782">:AuthFacade</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="61.5234" style="stroke:#A80036;stroke-width:1.875;" width="118.75" x="736.875" y="632.0996"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="36.25" x="778.125" y="659.0161">Auth</text><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="101.25" x="745.625" y="681.0278">:AuthFacade</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="61.5234" style="stroke:#A80036;stroke-width:1.875;" width="67.5" x="980" y="6.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="17.5" x="1005" y="33.1665">cl:</text><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="45" x="993.75" y="55.1782">Client</text><rect fill="#FEFECE" filter="url(#f5h2yd7wjs7mx)" height="61.5234" style="stroke:#A80036;stroke-width:1.875;" width="67.5" x="980" y="632.0996"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="17.5" x="1005" y="659.0161">cl:</text><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="45" x="993.75" y="681.0278">Client</text><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="515.5762" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="108.125" y="86.5234"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="507.6367" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="288.75" y="114.4629"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="162.4023"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="254.0918"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="345.7813"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="295" y="567.0996"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="82.9395" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="792.5" y="427.4707"/><rect fill="#FFFFFF" filter="url(#f5h2yd7wjs7mx)" height="35" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="798.75" y="475.4102"/><polygon fill="#A80036" points="273.75,109.4629,286.25,114.4629,273.75,119.4629,278.75,114.4629" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="120.625" x2="281.25" y1="114.4629" y2="114.4629"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="129.375" y="108.3923">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="96.25" x="143.125" y="108.3923">saveClient(cl)</text><line style="stroke:#A80036;stroke-width:1.25;" x1="307.5" x2="360" y1="152.4023" y2="152.4023"/><line style="stroke:#A80036;stroke-width:1.25;" x1="360" x2="360" y1="152.4023" y2="168.6523"/><line style="stroke:#A80036;stroke-width:1.25;" x1="308.75" x2="360" y1="168.6523" y2="168.6523"/><polygon fill="#A80036" points="321.25,163.6523,308.75,168.6523,321.25,173.6523,316.25,168.6523" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="316.25" y="146.3318">2</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="117.5" x="330" y="146.3318">validateClient(cl)</text><line style="stroke:#A80036;stroke-width:1.25;" x1="307.5" x2="360" y1="244.0918" y2="244.0918"/><line style="stroke:#A80036;stroke-width:1.25;" x1="360" x2="360" y1="244.0918" y2="260.3418"/><line style="stroke:#A80036;stroke-width:1.25;" x1="308.75" x2="360" y1="260.3418" y2="260.3418"/><polygon fill="#A80036" points="321.25,255.3418,308.75,260.3418,321.25,265.3418,316.25,260.3418" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="316.25" y="238.0212">3</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="315" x="330" y="238.0212">generatedPassword = generatedPassword()</text><line style="stroke:#A80036;stroke-width:1.25;" x1="307.5" x2="360" y1="335.7813" y2="335.7813"/><line style="stroke:#A80036;stroke-width:1.25;" x1="360" x2="360" y1="335.7813" y2="352.0313"/><line style="stroke:#A80036;stroke-width:1.25;" x1="308.75" x2="360" y1="352.0313" y2="352.0313"/><polygon fill="#A80036" points="321.25,347.0313,308.75,352.0313,321.25,357.0313,316.25,352.0313" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="316.25" y="329.7107">4</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="90" x="330" y="329.7107">addClient(cl)</text><polygon fill="#A80036" points="777.5,422.4707,790,427.4707,777.5,432.4707,782.5,427.4707" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="301.25" x2="785" y1="427.4707" y2="427.4707"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="310" y="421.4001">5</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="453.75" x="323.75" y="421.4001">addUser(String name, String email, String generatedPassword)</text><line style="stroke:#A80036;stroke-width:1.25;" x1="811.25" x2="863.75" y1="465.4102" y2="465.4102"/><line style="stroke:#A80036;stroke-width:1.25;" x1="863.75" x2="863.75" y1="465.4102" y2="481.6602"/><line style="stroke:#A80036;stroke-width:1.25;" x1="812.5" x2="863.75" y1="481.6602" y2="481.6602"/><polygon fill="#A80036" points="825,476.6602,812.5,481.6602,825,486.6602,820,481.6602" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="820" y="459.3396">6</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="173.75" x="833.75" y="459.3396">existsUser(String email)</text><line style="stroke:#A80036;stroke-width:1.25;" x1="307.5" x2="360" y1="557.0996" y2="557.0996"/><line style="stroke:#A80036;stroke-width:1.25;" x1="360" x2="360" y1="557.0996" y2="573.3496"/><line style="stroke:#A80036;stroke-width:1.25;" x1="308.75" x2="360" y1="573.3496" y2="573.3496"/><polygon fill="#A80036" points="321.25,568.3496,308.75,573.3496,321.25,578.3496,316.25,573.3496" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="316.25" y="551.0291">7</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="257.5" x="330" y="551.0291">writePassword(generatedPassword)</text><!--MD5=[25abd4892e5a0a9e6e490efad84d41d2]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+participant ":RegisterClientController" as CTRL
+participant ": ClientStore" as CS
+participant "Auth\n:AuthFacade" as SESSAO
+participant "cl:\n Client" as CL
+
+
+activate CTRL
+CTRL -> CS : saveClient(cl)
+activate CS
+
+CS -> CS : validateClient(cl)
+activate CS
+deactivate CS
+
+CS -> CS : generatedPassword = generatedPassword()
+activate CS
+deactivate CS
+
+
+CS -> CS : addClient(cl)
+activate CS
+deactivate CS
+
+
+CS -> SESSAO : addUser(String name, String email, String generatedPassword)
+
+activate SESSAO
+
+SESSAO -> SESSAO : existsUser(String email)
+activate SESSAO
+deactivate SESSAO
+deactivate SESSAO
+
+CS -> CS : writePassword(generatedPassword)
+activate CS
+deactivate CS
+deactivate CTRL
+
+@enduml
+
+@startuml
+
+autonumber
+
+participant ":RegisterClientController" as CTRL
+participant ": ClientStore" as CS
+participant "Auth\n:AuthFacade" as SESSAO
+participant "cl:\n Client" as CL
+
+
+activate CTRL
+CTRL -> CS : saveClient(cl)
+activate CS
+
+CS -> CS : validateClient(cl)
+activate CS
+deactivate CS
+
+CS -> CS : generatedPassword = generatedPassword()
+activate CS
+deactivate CS
+
+
+CS -> CS : addClient(cl)
+activate CS
+deactivate CS
+
+
+CS -> SESSAO : addUser(String name, String email, String generatedPassword)
+
+activate SESSAO
+
+SESSAO -> SESSAO : existsUser(String email)
+activate SESSAO
+deactivate SESSAO
+deactivate SESSAO
+
+CS -> CS : writePassword(generatedPassword)
+activate CS
+deactivate CS
+deactivate CTRL
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 10:25:05 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: BR
+--></g></svg>

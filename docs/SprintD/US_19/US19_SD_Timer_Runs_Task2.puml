@@ -1,0 +1,53 @@
+@startuml
+
+title SD_run()\nTimer runs the Task
+
+participant "timer:\nTimer" as TIMER
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "NhsAPI" as NHS_API
+participant "nhsDayDataReport\n:NHSReport"
+participant "nhsWeekDataReport\n:NHSReport"
+participant ":Constants" as CONSTANTS
+
+
+TIMER -> TASK : run()
+activate TIMER
+activate TASK
+
+TASK -> CONSTANTS : dayData = Constants.DAY_DATA
+activate CONSTANTS
+deactivate CONSTANTS
+TASK -> TASK : createNHSDailyReport(dayData)
+activate TASK
+ref over TASK
+SD_createNHSDailyReport(typeOfData)
+end
+TASK --> TASK : nhsDayDataReport
+deactivate TASK
+
+TASK -> CONSTANTS : weekData = WEEK_DATA
+activate CONSTANTS
+deactivate CONSTANTS
+TASK -> TASK : createNHSDailyReport(weekData)
+activate TASK
+ref over TASK
+SD_createNHSDailyReport(typeOfData)
+end
+TASK --> TASK : nhsWeekDataReport
+deactivate TASK
+
+note over TASK, NHS_API
+The **dataToBeSent** is a String containing **nhsDayDataReport.toString()** and **nhsWeekDataReport.toString()**
+end note
+TASK -> NHS_API : writeUsingFileWriter(dataToBeSent)
+activate NHS_API
+deactivate NHS_API
+TASK -> TASK : writeEventIntoLogFile()
+activate TASK
+deactivate TASK
+
+deactivate TIMER
+deactivate TASK
+
+
+@enduml

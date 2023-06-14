@@ -4,6 +4,7 @@ import auth.domain.model.Email;
 import auth.domain.model.Password;
 import auth.domain.model.User;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -12,7 +13,7 @@ import java.util.Set;
  *
  * @author Paulo Maio <pam@isep.ipp.pt>
  */
-public class UserStore {
+public class UserStore implements Serializable {
     private Set<User> store = new HashSet<User>();
 
 

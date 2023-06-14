@@ -1,0 +1,15 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+.text-input {
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-text-inner-color: #FFFFFF;
+}
+.textArea{
+}
+
+
+
+
+

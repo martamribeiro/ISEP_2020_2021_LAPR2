@@ -1,0 +1,28 @@
+@startuml
+
+title SD_getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "nhsReportStore\n:NHSReportStore" as NHS_REPORT_STORE
+participant "myRegressionModel:\nMyRegressionModel" as MY_REGRESSION_MODEL
+
+[o-> TASK : getMyRegressionModel(regressionModel, bestXIndex, \ncovidTestsArray, meanAgeArray, observedPositives, historicalPoints)
+
+activate TASK
+alt bestXIndex = null (Multiple Linear Regression)
+TASK -> NHS_REPORT_STORE : myRegressionModel = createMyRegressionModel(regressionModel, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+else bestXIndex = 1 (Simple Linear Regression)
+TASK -> NHS_REPORT_STORE : myRegressionModel = createMyBestRegressionModel(regressionModel, covidTestsArray, observedPositives, historicalPoints)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+else else (Simple Linear Regression)
+TASK -> NHS_REPORT_STORE : myRegressionModel = createMyBestRegressionModel(regressionModel, meanAgeArray, observedPositives, historicalPoints)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+end
+
+[<-- TASK : myRegressionModel
+
+@enduml

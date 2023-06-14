@@ -8,7 +8,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -17,7 +20,7 @@ public class TestTypeStoreTest {
     private List<ParameterCategory> pcList;
     private ParameterCategory p1;
     private ParameterCategory p2;
-    private Company company = new Company("many labs");
+    private Company company = new Company("many labs", Constants.CLASS_BARCODE_API,Constants.CLASS_SORT_ALGORITHM, Constants.CLASS_SIMPLE_REGRESSION_MODEL, Constants.DATE_INTERVAL, Constants.HISTORICAL_POINTS, Constants.CONFIDENCE_LEVEL, Constants.SIGNIFICANCE_LEVEL);
 
     @Before
     public void setUp() {
@@ -77,5 +80,7 @@ public class TestTypeStoreTest {
 
         testTypeStore.getTestTypesByCode(codeList);
     }
+
+
 
 }

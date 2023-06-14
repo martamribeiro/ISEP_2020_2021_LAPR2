@@ -1,0 +1,100 @@
+@startuml
+
+title SD_getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "nhsReportStore\n:NHSReportStore" as NHS_REPORT_STORE
+participant "testStore\n:TestStore" as TEST_STORE
+participant "dates:\nList<String>" as DATES
+participant "observedPositives:\nint[]" as OBSERVED_POSITIVES
+participant "regressionModel:\nMathCalculus" as REGRESSION_MODEL
+participant "bestXInHistoricalPoints:\nDouble[]" as BEST_X_HISTORICAL_POINTS
+participant "estimatedPositives:\nList<Double>" as ESTIMATED_POSITIVES
+participant "numCovidTestsInHistoricalPoints\nDouble[]" as COVID_TESTS_HISTORICAL_POINTS
+participant "meanAgeInHistoricalPoints\nDouble[]" as MEAN_AGE_HISTORICAL_POINTS
+participant "confidenceIntervals:\nList<ConfidenceInterval>" as CONFIDENCE_INTERVALS
+participant "tableOfValues:\nTableOfValues" as TABLE_OF_VALUES
+
+[o-> TASK : getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate)
+
+alt type of data is equal to day data
+TASK -> NHS_REPORT_STORE : dates = getDatesColumnToTableOfValues(historicalPoints, startDate)
+activate TASK
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> TEST_STORE : observedPositives = getObservedPositivesToTableOfValues(historicalPoints, dates)
+activate TEST_STORE
+deactivate TEST_STORE
+
+TASK -> TEST_STORE : numCovidTestsInHistoricalPoints = getNumberOfCovidTestsInHistoricalPoints(dates)
+activate TEST_STORE
+deactivate TEST_STORE
+
+TASK -> TEST_STORE : meanAgeInHistoricalPoints = getMeanAgeInHistoricalPoints(dates)
+activate TEST_STORE
+deactivate TEST_STORE
+
+else else
+
+TASK -> NHS_REPORT_STORE : dates = getWeeksColumnToTableOfValues(historicalPoints, startDate)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+TASK -> TEST_STORE : observedPositives = getWeeklyObservedPositivesToTableOfValues(historicalPoints, dates)
+activate TEST_STORE
+deactivate TEST_STORE
+
+TASK -> TEST_STORE : numCovidTestsInHistoricalPoints = getWeeklyNumberOfCovidTestsInHistoricalPoints(dates)
+activate TEST_STORE
+deactivate TEST_STORE
+
+TASK -> TEST_STORE : meanAgeInHistoricalPoints = getWeeklyMeanAgeInHistoricalPoints(dates)
+activate TEST_STORE
+deactivate TEST_STORE
+end
+TASK -> TASK : regressionModel = getRegressionModel(regressionModelClass)
+activate TASK
+deactivate TASK
+
+
+alt bestXIndex != null (Simple Linear Regression)
+alt bestXIndex = 1
+TASK -> NHS_REPORT_STORE : bestXInHistoricalPoints = copyArray(numCovidTestsInHistoricalPoints)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+else else
+TASK -> NHS_REPORT_STORE : bestXInHistoricalPoints = copyArray(meanAgeInHistoricalPoints)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+end
+TASK -> REGRESSION_MODEL : estimatedPositives = getEstimatedPositives(myRegressionModel, bestXInHistoricalPoints, null)
+activate REGRESSION_MODEL
+deactivate REGRESSION_MODEL
+TASK -> TASK : getConfidenceIntervalListForTableOfValues(myRegressionModel, regressionModel, bestXInHistoricalPoints, null, bestXIndex)
+activate TASK
+ref over TASK
+SD_getConfidenceIntervalListForTableOfValues(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel, bestXIndex)
+end
+TASK --> TASK : confidenceIntervals
+deactivate TASK
+|||
+else else (Multiple Linear Regression)
+TASK -> REGRESSION_MODEL : getEstimatedPositives(myRegressionModel, numCovidTestsInHistoricalPoints, meanAgeInHistoricalPoints)
+activate REGRESSION_MODEL
+deactivate REGRESSION_MODEL
+TASK -> TASK : confidenceIntervals = getConfidenceIntervalListForTableOfValues(myRegressionModel, regressionModel, numCovidTestsInHistoricalPoints, meanAgeInHistoricalPoints, bestXIndex)
+activate TASK
+deactivate TASK
+end
+
+TASK -> NHS_REPORT_STORE : tableOfValues = createTableOfValues(myRegressionModel, dates, observedPositives, estimatedPositives, confidenceIntervals)
+activate NHS_REPORT_STORE
+deactivate NHS_REPORT_STORE
+
+[<-- TASK : tableOfValues
+
+
+
+
+@enduml

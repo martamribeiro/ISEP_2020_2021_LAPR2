@@ -6,11 +6,13 @@ import app.domain.interfaces.ExternalModule;
 import com.example2.EMRefValue;
 import com.example2.ExternalModule2API;
 
+import java.io.Serializable;
+
 /**
  * Adapter class for the blood reference value 1 API
  * Implements the External module interface
  */
-public class ExternalModule2APIAdapter implements ExternalModule {
+public class ExternalModule2APIAdapter implements ExternalModule, Serializable {
 
     /**
      * Method for getting the Reference value object using the blood external module 1

@@ -2,6 +2,8 @@ package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * This class allows the construction of a class hierarchy
  * to represent different types of laboratories.
@@ -11,26 +13,26 @@ import org.apache.commons.lang3.StringUtils;
  * @author Ana Albergaria
  */
 
-public class Laboratory {
+public class Laboratory implements Serializable {
     /**
      * The name of the Laboratory.
      */
-    private String name;
+    private final String name;
 
     /**
      * The address of the Laboratory.
      */
-    private String address;
+    private final String address;
 
     /**
      * The phone number the Laboratory.
      */
-    private String phoneNumber;
+    private final String phoneNumber;
 
     /**
      * The TIN number of the Laboratory.
      */
-    private String numTIN;
+    private final String numTIN;
 
     /**
      * Maximum length the name can have.

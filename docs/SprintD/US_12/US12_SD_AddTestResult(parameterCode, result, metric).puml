@@ -1,0 +1,42 @@
+@startuml
+autonumber
+
+participant ":RecordTestResultController" as CTRL
+participant "test\n:Test" as TST
+participant "testParam\n:TestParameter" as TP
+participant "param\n:Parameter" as PRM
+participant "type\n:TestType" as TT
+participant "em\n:ExternalModule" as EM
+participant "refValue\n:ReferenceValue" as RV
+participant "testResult\n:TestParameterResult" as TPR
+
+activate CTRL
+CTRL -> TST : addTestResult(parameterCode, result, metric)
+activate TST
+TST -> TST: getTestParameterFor(parameterCode)
+activate TST
+TST --> TST: testParam
+deactivate TST
+TST -> TP : getParameter()
+activate TP
+TP --> TST : param
+deactivate TP
+TST -> TT : getExternalModule()
+activate TT
+TT --> TST : em
+deactivate TT
+TST -> EM : getReferenceValue(param)
+activate EM
+'SOMEHOW IT CREATES THE BELOW OBJECT
+EM -> RV** : create(...)
+EM --> TST : refValue
+deactivate EM
+TST -> TP : addResult(result, metric, refValue)
+activate TP
+TP -> TPR** : create(result, metric, refValue)
+TP --> TST : ok
+deactivate TP
+TST --> CTRL : ok
+deactivate TST
+
+@enduml

@@ -9,7 +9,7 @@ import java.util.List;
 public class ParameterCategoryUI implements Runnable{
     CreateParameterCategoryController crtl;
 
-    ParameterCategoryUI(){
+    public ParameterCategoryUI(){
         crtl = new CreateParameterCategoryController();
     };
 

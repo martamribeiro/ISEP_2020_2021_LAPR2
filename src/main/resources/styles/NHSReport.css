@@ -1,0 +1,16 @@
+.date-picker .text-field {
+    -fx-control-inner-background: #293241;
+    -fx-prompt-text-fill: gray;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-text-inner-color: #FFFFFF;
+    -fx-control-inner-background: #293241 ;
+}
+
+.choice-box .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .context-menu { -fx-background-color:  #293241; }

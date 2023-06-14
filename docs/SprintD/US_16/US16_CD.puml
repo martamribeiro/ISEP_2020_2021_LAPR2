@@ -1,0 +1,101 @@
+@startuml
+'skinparam linetype ortho
+hide empty methods
+hide empty attributes
+'left to right direction
+skinparam classAttributeIconSize 0
+
+class Company {
+    - String designation
+    - TestStore testStore
+    + getTestStore()
+}
+
+class TestStore {
+    + getNumTestsWaitingForResultsDayOrInterval(beginningDay, endingDay)
+    + getNumTestsWaitingForDiagnosisDayOrInterval(beginningDay, endingDay)
+    + getNumberOfTestsByIntervalDateOfTestRegistration(beginningDay, endingDay)
+    + getNumberOfTestsByIntervalDateOfDiagnosis(beginningDay, endingDay)
+}
+
+class CompanyPerformanceAnalysisController{
+    - Company company
+    - CompanyPerformance companyPerformance
+    + setCompanyPerformance(companyPerformance)
+    + getClientsInfoPerInterval()
+    + getNumTestsProcessedInterval()
+    + getTestInfoPerDay()
+    + getTestInfoPerWeek()
+    + getTestInfoPerMonth()
+    + getTestInfoPerYear()
+    + findWorstSubIntWithChosenAlgorithm()
+}
+
+class CompanyPerformanceAnalysisUI{
+}
+
+interface SubMaxSumAlgorithms <<interface>> {
+    + findSubMaxSum(interval)
+}
+
+class BenchmarkAlgorithmAdapter{
+    + findSubMaxSum(interval)
+}
+
+class BruteForceAlgorithmAdapter{
+    + findSubMaxSum(interval)
+}
+
+class Sum{
+    + Max(seq)
+}
+
+class BruteForceAlgorithm{
+    + Max(seq)
+}
+
+class CompanyPerformance{
+    - Company company
+    - Date beginningDate
+    - Date endingDate
+    - String chosenAlg
+    - int clientsNum
+    - int processTestsNum
+    - ArrayList<int[]> testInfoDay
+    - ArrayList<int[]> testInfoWeek
+    - ArrayList<int[]> testInfoMonth
+    - ArrayList<int[]> testInfoYear
+    - Date[] worstSubInt
+    + setCompany
+    + CompanyPerformance(beginningDate, endingDate, chosenAlg, company)
+    + getClientsNum()
+    + getProcessTestsNum()
+    + getTestInfoDay()
+    + getTestInfoWeek()
+    + getTestInfoMonth()
+    + getTestInfoYear()
+    + getWorstSubInt()
+    + getClientsInfoPerInterval(days)
+    + getNumTestsProcessedInterval(days)
+    + getTestInfoPerDay(days)
+    + getTestInfoPerWeek(days)
+    + getTestInfoPerMonth(days)
+    + getTestInfoPerYear(days)
+    + getDays()
+    + makeIntervalArray(days)
+    + findWorstSubIntWithChosenAlgorithm(days, chosenAlgorithm)
+    + getChosenAlgorithmAdapter(chosenAlgorithm)
+}
+
+CompanyPerformanceAnalysisUI ..> CompanyPerformanceAnalysisController
+CompanyPerformanceAnalysisController ..> Company
+CompanyPerformanceAnalysisController ..> TestStore
+CompanyPerformance "*" --> "1" SubMaxSumAlgorithms : makes use of >
+BenchmarkAlgorithmAdapter --> Sum
+BruteForceAlgorithmAdapter --> BruteForceAlgorithm
+Company "1" --> "*" CompanyPerformance : has >
+
+class BenchmarkAlgorithmAdapter implements SubMaxSumAlgorithms
+class BruteForceAlgorithmAdapter implements SubMaxSumAlgorithms
+
+@enduml

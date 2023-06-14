@@ -2,9 +2,14 @@ package app.mappers.dto;
 
 import app.domain.model.*;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+/**
+ * @author SRC-Code-23
+ */
 public class TestDTO {
 
     /**
@@ -45,22 +50,27 @@ public class TestDTO {
     /**
      * Date of test registration
      */
-    private final String dateOfTestRegistration;
+    private final Date dateOfTestRegistration;
 
     /**
      * Date of samples collection
      */
-    private String dateOfSamplesCollection;
+    private Date dateOfSamplesCollection;
 
     /**
      * Date of chemical analysis
      */
-    private String dateOfChemicalAnalysis;
+    private Date dateOfChemicalAnalysis;
 
     /**
      * Date of diagnosis
      */
-    private String dateOfDiagnosis;
+    private Date dateOfDiagnosis;
+
+    /**
+     * Date of validation
+     */
+    private Date dateOfValidation;
 
     /**
      * Number of existing tests.
@@ -81,10 +91,11 @@ public class TestDTO {
                    List<TestParameter> parameters,
                    List<Sample> samples,
                    Report diagnosisReport,
-                   String dateOfTestRegistration,
-                   String dateOfSamplesCollection,
-                   String dateOfChemicalAnalysis,
-                   String dateOfDiagnosis) {
+                   Date dateOfTestRegistration,
+                   Date dateOfSamplesCollection,
+                   Date dateOfChemicalAnalysis,
+                   Date dateOfDiagnosis,
+                   Date dateOfValidation) {
         totalTests++;
         this.code = code;
         this.nhsCode = nhsCode;
@@ -97,6 +108,7 @@ public class TestDTO {
         this.dateOfSamplesCollection = dateOfSamplesCollection;
         this.dateOfChemicalAnalysis = dateOfChemicalAnalysis;
         this.dateOfDiagnosis = dateOfDiagnosis;
+        this.dateOfValidation = dateOfValidation;
     }
 
     /**
@@ -106,6 +118,112 @@ public class TestDTO {
      */
     public String getCode() {
         return code;
+    }
+
+    /**
+     * Returns the description of the test type of the Test Dto.
+     *
+     * @return description of the test type of the Test Dto
+     */
+    public String getTestTypeDescription(){
+        return testType.getDescription();
+    }
+
+    /**
+     * Returns the date of test registration of the Test Dto.
+     *
+     * @return date of test registration of the Test Dto
+     */
+    public Date getDateOfTestRegistration(){
+        return dateOfTestRegistration;
+    }
+
+    public String getReport(){
+        return diagnosisReport.getReportText();
+    }
+
+    /**
+     * Returns the date of test registration of the Test Dto, in the String format.
+     *
+     * @return the date of test registration of the Test Dto, in the String format
+     */
+    public String getStringDateOfTestRegistration(){
+        return dateOfTestRegistration.toString();
+    }
+
+    /**
+     * Returns the names of the test parameters of the Test DTO.
+     *
+     * @return the names of the test parameters of the Test DTO
+     */
+    public List<String> getTestParametersName(){
+        List<String> parametersName = new ArrayList<>();
+        String toAdd;
+        for (int i = 0; i < testParameters.size(); i++) {
+            toAdd=testParameters.get(i).getParameter().getShortName();
+            parametersName.add(toAdd);
+        }
+        return parametersName;
+    }
+
+    /**
+     * Returns the results of the test parameters of the Test DTO.
+     *
+     * @return the results of the test parameters of the Test DTO
+     */
+    public List<Double> getTestParametersResult(){
+        List<Double> parametersResult = new ArrayList<>();
+        Double toAdd;
+        for (int i = 0; i < testParameters.size(); i++) {
+            toAdd=testParameters.get(i).getTestParameterResult().getResultValue();
+            parametersResult.add(toAdd);
+        }
+        return parametersResult;
+    }
+
+    /**
+     * Returns the metrics of the test parameters of the Test DTO.
+     *
+     * @return the metrics of the test parameters of the Test DTO
+     */
+    public List<String> getTestParametersMetric(){
+        List<String> parametersMetric = new ArrayList<>();
+        String toAdd;
+        for (int i = 0; i < testParameters.size(); i++) {
+            toAdd=testParameters.get(i).getTestParameterResult().getResultMetric();
+            parametersMetric.add(toAdd);
+        }
+        return parametersMetric;
+    }
+
+    /**
+     * Returns the minimum acceptable values of the test parameters of the Test DTO.
+     *
+     * @return the minimum acceptable values of the test parameters of the Test DTO
+     */
+    public List<Double> getTestParametersReferenceValueMin(){
+        List<Double> parametersMinRef = new ArrayList<>();
+        Double toAdd;
+        for (int i = 0; i < testParameters.size(); i++) {
+            toAdd=testParameters.get(i).getTestParameterResult().getResultReferenceValue().getMinValue();
+            parametersMinRef.add(toAdd);
+        }
+        return parametersMinRef;
+    }
+
+    /**
+     * Returns the maximum acceptable values of the test parameters of the Test DTO.
+     *
+     * @return the maximum acceptable values of the test parameters of the Test DTO
+     */
+    public List<Double> getTestParametersReferenceValueMax(){
+        List<Double> parametersMaxRef = new ArrayList<>();
+        Double toAdd;
+        for (int i = 0; i < testParameters.size(); i++) {
+            toAdd=testParameters.get(i).getTestParameterResult().getResultReferenceValue().getMaxValue();
+            parametersMaxRef.add(toAdd);
+        }
+        return parametersMaxRef;
     }
 
     /**
@@ -133,11 +251,42 @@ public class TestDTO {
             s.append("\n");
         }
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+
+        String printDateOfSamplesCollection = (dateOfSamplesCollection == null) ? "n/a" : sdf.format(dateOfSamplesCollection);
+        String printDateOfChemicalAnalysis = (dateOfChemicalAnalysis == null) ? "n/a" : sdf.format(dateOfChemicalAnalysis);
+        String printDateOfDiagnosis = (dateOfDiagnosis == null) ? "n/a" : sdf.format(dateOfDiagnosis);
+        String printDateOfValidation = (dateOfValidation == null) ? "n/a" : sdf.format(dateOfValidation);
+
         return String.format(">> TEST CODE %s%n > NHS Code: %s%n > Client name: %s%n > Test Type: %s%n" +
                         " > Parameters: %n%n%s > Number of Samples Collected: %d%n > Diagnosis Report: %s%n" +
                         " > Date Of Test Registration: %s%n > Date Of Samples Collection: %s%n" +
-                        " > Date of Chemical Analysis: %s%n > Date Of Diagnosis: %s%n",
+                        " > Date of Chemical Analysis: %s%n > Date Of Diagnosis: %s%n > Date Of Validation: %s%n",
                 code, nhsCode, client.getName(), testType, s, samples.size(), diagnosisReport,
-                dateOfTestRegistration, dateOfSamplesCollection, dateOfChemicalAnalysis, dateOfDiagnosis);
+                sdf.format(dateOfTestRegistration), printDateOfSamplesCollection, printDateOfChemicalAnalysis, printDateOfDiagnosis, printDateOfValidation);
+    }
+
+    public String showAllButReport() {
+        List<TestParameter> copyTP = new ArrayList<>(testParameters);
+
+        StringBuilder s = new StringBuilder();
+        for (TestParameter testParameter : copyTP) {
+            s.append(testParameter);
+            s.append("\n");
+        }
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+
+        String printDateOfSamplesCollection = (dateOfSamplesCollection == null) ? "n/a" : sdf.format(dateOfSamplesCollection);
+        String printDateOfChemicalAnalysis = (dateOfChemicalAnalysis == null) ? "n/a" : sdf.format(dateOfChemicalAnalysis);
+        String printDateOfDiagnosis = (dateOfDiagnosis == null) ? "n/a" : sdf.format(dateOfDiagnosis);
+        String printDateOfValidation = (dateOfValidation == null) ? "n/a" : sdf.format(dateOfValidation);
+
+        return String.format(">> TEST CODE %s%n > NHS Code: %s%n > Client name: %s%n > Test Type: %s%n" +
+                        " > Parameters: %n%n%s > Number of Samples Collected: %d%n" +
+                        " > Date Of Test Registration: %s%n > Date Of Samples Collection: %s%n" +
+                        " > Date of Chemical Analysis: %s%n > Date Of Diagnosis: %s%n > Date Of Validation: %s%n%n%n",
+                code, nhsCode, client.getName(), testType, s, samples.size(),
+                sdf.format(dateOfTestRegistration), printDateOfSamplesCollection, printDateOfChemicalAnalysis, printDateOfDiagnosis, printDateOfValidation);
     }
 }

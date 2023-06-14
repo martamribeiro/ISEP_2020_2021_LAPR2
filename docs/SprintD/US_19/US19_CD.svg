@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1104.8px" preserveAspectRatio="none" style="width:754px;height:1104px;" version="1.1" viewBox="0 0 754 1104" width="754px" zoomAndPan="magnify"><defs><filter height="300%" id="f18bw0pakgzcoy" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8000000000000002"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.6000000000000003" dy="1.6000000000000003" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="6" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="69.0094" id="Company" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="85.2" x="88.5385" y="50"/><ellipse cx="118.8385" cy="56.4" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M119.6385,55 Q119.7197,54.8 119.8135,54.7 Q119.9072,54.6 120.0135,54.6 Q120.201,54.6 120.3197,54.7125 Q120.4385,54.825 120.4385,55.0875 L120.4385,55.7125 Q120.4385,55.975 120.326,56.0875 Q120.2135,56.2 120.0385,56.2 Q119.8822,56.2 119.7822,56.1313 Q119.6822,56.0625 119.6385,55.8813 Q119.6197,55.7563 119.551,55.6875 Q119.426,55.5563 119.201,55.4813 Q118.976,55.4 118.751,55.4 Q118.4697,55.4 118.2322,55.5125 Q118.001,55.625 117.8197,55.875 Q117.6385,56.125 117.6385,56.4688 L117.6385,56.8375 Q117.6385,57.25 117.976,57.525 Q118.3135,57.8 118.9135,57.8 Q119.2697,57.8 119.5197,57.7188 Q119.6635,57.675 119.826,57.5313 Q119.9322,57.45 119.9885,57.425 Q120.0447,57.4 120.1135,57.4 Q120.2447,57.4 120.3385,57.5063 Q120.4385,57.6063 120.4385,57.75 Q120.4385,57.8875 120.301,58.05 Q120.101,58.2875 119.7822,58.4188 Q119.3635,58.6 118.851,58.6 Q118.251,58.6 117.7697,58.3625 Q117.3822,58.175 117.1072,57.7688 Q116.8385,57.3625 116.8385,56.8813 L116.8385,56.4438 Q116.8385,55.9438 117.076,55.5063 Q117.3197,55.0688 117.7385,54.8375 Q118.1635,54.6 118.6385,54.6 Q118.926,54.6 119.176,54.7 Q119.426,54.8 119.6385,55 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="21.2" x="127.0385" y="58.3641">Company</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="88.9385" x2="173.3385" y1="62.8" y2="62.8"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="23.6" x="90.9385" y="68.9676">-designation</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="52" x="90.9385" y="74.502">-classNameForBarcodeApi</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="55.2" x="90.9385" y="80.0363">-classNameForSortAlgorithm</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="46" x="90.9385" y="85.5707">-regressionModelCLass</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="24" x="90.9385" y="91.1051">-dateInterval</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="30.4" x="90.9385" y="96.6395">-historicalPoints</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="33.6" x="90.9385" y="102.1738">-confidenceLevel</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="35.2" x="90.9385" y="107.7082">-significanceLevel</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="88.9385" x2="173.3385" y1="110.275" y2="110.275"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="80.4" x="90.9385" y="116.4426">+scheduleNHSReportTask(delay, interval)</text><!--MD5=[74783ec010d186752c4ffd5c6de5633a]
+class NHSReport--><rect codeLine="18" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="16" id="NHSReport" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="38" x="269.7385" y="509.8"/><ellipse cx="275.7385" cy="516.2" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M276.5385,514.8 Q276.6197,514.6 276.7135,514.5 Q276.8072,514.4 276.9135,514.4 Q277.101,514.4 277.2197,514.5125 Q277.3385,514.625 277.3385,514.8875 L277.3385,515.5125 Q277.3385,515.775 277.226,515.8875 Q277.1135,516 276.9385,516 Q276.7822,516 276.6822,515.9313 Q276.5822,515.8625 276.5385,515.6813 Q276.5197,515.5563 276.451,515.4875 Q276.326,515.3563 276.101,515.2813 Q275.876,515.2 275.651,515.2 Q275.3697,515.2 275.1322,515.3125 Q274.901,515.425 274.7197,515.675 Q274.5385,515.925 274.5385,516.2688 L274.5385,516.6375 Q274.5385,517.05 274.876,517.325 Q275.2135,517.6 275.8135,517.6 Q276.1697,517.6 276.4197,517.5188 Q276.5635,517.475 276.726,517.3313 Q276.8322,517.25 276.8885,517.225 Q276.9447,517.2 277.0135,517.2 Q277.1447,517.2 277.2385,517.3063 Q277.3385,517.4063 277.3385,517.55 Q277.3385,517.6875 277.201,517.85 Q277.001,518.0875 276.6822,518.2188 Q276.2635,518.4 275.751,518.4 Q275.151,518.4 274.6697,518.1625 Q274.2822,517.975 274.0072,517.5688 Q273.7385,517.1625 273.7385,516.6813 L273.7385,516.2438 Q273.7385,515.7438 273.976,515.3063 Q274.2197,514.8688 274.6385,514.6375 Q275.0635,514.4 275.5385,514.4 Q275.826,514.4 276.076,514.5 Q276.326,514.6 276.5385,514.8 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="25.2" x="281.3385" y="518.1641">NHSReport</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="270.1385" x2="307.3385" y1="522.6" y2="522.6"/><!--MD5=[f9bf174dd5fcee0192f6251129b9c376]
+class RegressionModel--><rect codeLine="132" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="16" id="RegressionModel" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52" x="295.1385" y="897.6"/><ellipse cx="301.1385" cy="904" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M301.9385,902.6 Q302.0197,902.4 302.1135,902.3 Q302.2072,902.2 302.3135,902.2 Q302.501,902.2 302.6197,902.3125 Q302.7385,902.425 302.7385,902.6875 L302.7385,903.3125 Q302.7385,903.575 302.626,903.6875 Q302.5135,903.8 302.3385,903.8 Q302.1822,903.8 302.0822,903.7313 Q301.9822,903.6625 301.9385,903.4813 Q301.9197,903.3563 301.851,903.2875 Q301.726,903.1563 301.501,903.0813 Q301.276,903 301.051,903 Q300.7697,903 300.5322,903.1125 Q300.301,903.225 300.1197,903.475 Q299.9385,903.725 299.9385,904.0688 L299.9385,904.4375 Q299.9385,904.85 300.276,905.125 Q300.6135,905.4 301.2135,905.4 Q301.5697,905.4 301.8197,905.3188 Q301.9635,905.275 302.126,905.1313 Q302.2322,905.05 302.2885,905.025 Q302.3447,905 302.4135,905 Q302.5447,905 302.6385,905.1063 Q302.7385,905.2063 302.7385,905.35 Q302.7385,905.4875 302.601,905.65 Q302.401,905.8875 302.0822,906.0188 Q301.6635,906.2 301.151,906.2 Q300.551,906.2 300.0697,905.9625 Q299.6822,905.775 299.4072,905.3688 Q299.1385,904.9625 299.1385,904.4813 L299.1385,904.0438 Q299.1385,903.5438 299.376,903.1063 Q299.6197,902.6688 300.0385,902.4375 Q300.4635,902.2 300.9385,902.2 Q301.226,902.2 301.476,902.3 Q301.726,902.4 301.9385,902.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="39.2" x="306.7385" y="905.9641">RegressionModel</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="295.5385" x2="346.7385" y1="910.4" y2="910.4"/><!--MD5=[dfe7672a7c242e7ff03cfd775649b5cb]
+class HypothesisTest--><rect codeLine="22" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="80.0781" id="HypothesisTest" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="68" x="199.5385" y="686"/><ellipse cx="214.8985" cy="692.4" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M215.6985,691 Q215.7797,690.8 215.8735,690.7 Q215.9672,690.6 216.0735,690.6 Q216.261,690.6 216.3797,690.7125 Q216.4985,690.825 216.4985,691.0875 L216.4985,691.7125 Q216.4985,691.975 216.386,692.0875 Q216.2735,692.2 216.0985,692.2 Q215.9422,692.2 215.8422,692.1313 Q215.7422,692.0625 215.6985,691.8813 Q215.6797,691.7563 215.611,691.6875 Q215.486,691.5563 215.261,691.4813 Q215.036,691.4 214.811,691.4 Q214.5297,691.4 214.2922,691.5125 Q214.061,691.625 213.8797,691.875 Q213.6985,692.125 213.6985,692.4688 L213.6985,692.8375 Q213.6985,693.25 214.036,693.525 Q214.3735,693.8 214.9735,693.8 Q215.3297,693.8 215.5797,693.7188 Q215.7235,693.675 215.886,693.5313 Q215.9922,693.45 216.0485,693.425 Q216.1047,693.4 216.1735,693.4 Q216.3047,693.4 216.3985,693.5063 Q216.4985,693.6063 216.4985,693.75 Q216.4985,693.8875 216.361,694.05 Q216.161,694.2875 215.8422,694.4188 Q215.4235,694.6 214.911,694.6 Q214.311,694.6 213.8297,694.3625 Q213.4422,694.175 213.1672,693.7688 Q212.8985,693.3625 212.8985,692.8813 L212.8985,692.4438 Q212.8985,691.9438 213.136,691.5063 Q213.3797,691.0688 213.7985,690.8375 Q214.2235,690.6 214.6985,690.6 Q214.986,690.6 215.236,690.7 Q215.486,690.8 215.6985,691 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="34.4" x="222.5785" y="694.3641">HypothesisTest</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="199.9385" x2="267.1385" y1="698.8" y2="698.8"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="14" x="201.9385" y="704.9676">-tObsA</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="13.6" x="201.9385" y="710.502">-tObsB</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="13.6" x="201.9385" y="716.0363">-tObsC</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="35.2" x="201.9385" y="721.5707">-significanceLevel</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="12.8" x="201.9385" y="727.1051">-critTD</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="3.2" x="201.9385" y="732.6395">-f</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="12.8" x="201.9385" y="738.1738">-critFD</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="59.2" x="201.9385" y="743.7082">-numeratorDegreesOfFreedom</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="63.2" x="201.9385" y="749.2426">-denominatorDegreesOfFreedom</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="199.9385" x2="267.1385" y1="751.8094" y2="751.8094"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="50.8" x="201.9385" y="757.977">+getDecision(tObs, critTD)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="58.4" x="201.9385" y="763.5113">+getDecisionForAnova(critFD)</text><!--MD5=[39ee656b41ae4892150ca74368648c0e]
+class SignificanceModelAnova--><rect codeLine="36" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="71.3438" id="SignificanceModelAnova" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="66" x="310.1385" y="583.6"/><ellipse cx="316.1385" cy="590" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M316.9385,588.6 Q317.0197,588.4 317.1135,588.3 Q317.2072,588.2 317.3135,588.2 Q317.501,588.2 317.6197,588.3125 Q317.7385,588.425 317.7385,588.6875 L317.7385,589.3125 Q317.7385,589.575 317.626,589.6875 Q317.5135,589.8 317.3385,589.8 Q317.1822,589.8 317.0822,589.7313 Q316.9822,589.6625 316.9385,589.4813 Q316.9197,589.3563 316.851,589.2875 Q316.726,589.1563 316.501,589.0813 Q316.276,589 316.051,589 Q315.7697,589 315.5322,589.1125 Q315.301,589.225 315.1197,589.475 Q314.9385,589.725 314.9385,590.0688 L314.9385,590.4375 Q314.9385,590.85 315.276,591.125 Q315.6135,591.4 316.2135,591.4 Q316.5697,591.4 316.8197,591.3188 Q316.9635,591.275 317.126,591.1313 Q317.2322,591.05 317.2885,591.025 Q317.3447,591 317.4135,591 Q317.5447,591 317.6385,591.1063 Q317.7385,591.2063 317.7385,591.35 Q317.7385,591.4875 317.601,591.65 Q317.401,591.8875 317.0822,592.0188 Q316.6635,592.2 316.151,592.2 Q315.551,592.2 315.0697,591.9625 Q314.6822,591.775 314.4072,591.3688 Q314.1385,590.9625 314.1385,590.4813 L314.1385,590.0438 Q314.1385,589.5438 314.376,589.1063 Q314.6197,588.6688 315.0385,588.4375 Q315.4635,588.2 315.9385,588.2 Q316.226,588.2 316.476,588.3 Q316.726,588.4 316.9385,588.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="53.2" x="321.7385" y="591.9641">SignificanceModelAnova</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="310.5385" x2="375.7385" y1="596.4" y2="596.4"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="35.2" x="312.5385" y="602.5676">-significanceLevel</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="5.6" x="312.5385" y="608.102">-sr</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="6.4" x="312.5385" y="613.6363">-se</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="5.2" x="312.5385" y="619.1707">-st</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="6.4" x="312.5385" y="624.7051">-mr</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="7.2" x="312.5385" y="630.2395">-me</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="3.2" x="312.5385" y="635.7738">-f</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="30" x="312.5385" y="641.3082">-degFreedomSr</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="30.8" x="312.5385" y="646.8426">-degFreedomSe</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="29.6" x="312.5385" y="652.377">-degFreedomSt</text><!--MD5=[2326f07dd74de3a812ad289cd3fa63bf]
+class TableOfValues--><rect codeLine="49" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="41.3375" id="TableOfValues" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="74" x="433.3385" y="497.2"/><ellipse cx="452.4385" cy="503.6" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M453.2385,502.2 Q453.3197,502 453.4135,501.9 Q453.5072,501.8 453.6135,501.8 Q453.801,501.8 453.9197,501.9125 Q454.0385,502.025 454.0385,502.2875 L454.0385,502.9125 Q454.0385,503.175 453.926,503.2875 Q453.8135,503.4 453.6385,503.4 Q453.4822,503.4 453.3822,503.3313 Q453.2822,503.2625 453.2385,503.0813 Q453.2197,502.9563 453.151,502.8875 Q453.026,502.7563 452.801,502.6813 Q452.576,502.6 452.351,502.6 Q452.0697,502.6 451.8322,502.7125 Q451.601,502.825 451.4197,503.075 Q451.2385,503.325 451.2385,503.6688 L451.2385,504.0375 Q451.2385,504.45 451.576,504.725 Q451.9135,505 452.5135,505 Q452.8697,505 453.1197,504.9188 Q453.2635,504.875 453.426,504.7313 Q453.5322,504.65 453.5885,504.625 Q453.6447,504.6 453.7135,504.6 Q453.8447,504.6 453.9385,504.7063 Q454.0385,504.8063 454.0385,504.95 Q454.0385,505.0875 453.901,505.25 Q453.701,505.4875 453.3822,505.6188 Q452.9635,505.8 452.451,505.8 Q451.851,505.8 451.3697,505.5625 Q450.9822,505.375 450.7072,504.9688 Q450.4385,504.5625 450.4385,504.0813 L450.4385,503.6438 Q450.4385,503.1438 450.676,502.7063 Q450.9197,502.2688 451.3385,502.0375 Q451.7635,501.8 452.2385,501.8 Q452.526,501.8 452.776,501.9 Q453.026,502 453.2385,502.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="32.4" x="460.6385" y="505.5641">TableOfValues</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="433.7385" x2="506.9385" y1="510" y2="510"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="12.4" x="435.7385" y="516.1676">-dates</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="37.2" x="435.7385" y="521.702">-observedPositives</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="37.2" x="435.7385" y="527.2363">-estimatedPositives</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="433.7385" x2="506.9385" y1="529.8031" y2="529.8031"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="69.2" x="435.7385" y="535.9707">+getConfidenceLevelInPercentage()</text><!--MD5=[fe0bb2d390fc5dca74774fa5d2975c11]
+class ConfidenceInterval--><rect codeLine="56" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="57.9406" id="ConfidenceInterval" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.6" x="390.3385" y="590.2"/><ellipse cx="396.3385" cy="596.6" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M397.1385,595.2 Q397.2197,595 397.3135,594.9 Q397.4072,594.8 397.5135,594.8 Q397.701,594.8 397.8197,594.9125 Q397.9385,595.025 397.9385,595.2875 L397.9385,595.9125 Q397.9385,596.175 397.826,596.2875 Q397.7135,596.4 397.5385,596.4 Q397.3822,596.4 397.2822,596.3313 Q397.1822,596.2625 397.1385,596.0813 Q397.1197,595.9563 397.051,595.8875 Q396.926,595.7563 396.701,595.6813 Q396.476,595.6 396.251,595.6 Q395.9697,595.6 395.7322,595.7125 Q395.501,595.825 395.3197,596.075 Q395.1385,596.325 395.1385,596.6688 L395.1385,597.0375 Q395.1385,597.45 395.476,597.725 Q395.8135,598 396.4135,598 Q396.7697,598 397.0197,597.9188 Q397.1635,597.875 397.326,597.7313 Q397.4322,597.65 397.4885,597.625 Q397.5447,597.6 397.6135,597.6 Q397.7447,597.6 397.8385,597.7063 Q397.9385,597.8063 397.9385,597.95 Q397.9385,598.0875 397.801,598.25 Q397.601,598.4875 397.2822,598.6188 Q396.8635,598.8 396.351,598.8 Q395.751,598.8 395.2697,598.5625 Q394.8822,598.375 394.6072,597.9688 Q394.3385,597.5625 394.3385,597.0813 L394.3385,596.6438 Q394.3385,596.1438 394.576,595.7063 Q394.8197,595.2688 395.2385,595.0375 Q395.6635,594.8 396.1385,594.8 Q396.426,594.8 396.676,594.9 Q396.926,595 397.1385,595.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="40.8" x="401.9385" y="598.5641">ConfidenceInterval</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="390.7385" x2="443.5385" y1="603" y2="603"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="6.4" x="392.7385" y="609.1676">-y0</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="18.4" x="392.7385" y="614.702">-auxDelta</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="33.6" x="392.7385" y="620.2363">-confidenceLevel</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="10.8" x="392.7385" y="625.7707">-delta</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="11.2" x="392.7385" y="631.3051">-limInf</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="14" x="392.7385" y="636.8395">-limSup</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="390.7385" x2="443.5385" y1="639.4063" y2="639.4063"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="44" x="392.7385" y="645.5738">+getConfidenceLevel()</text><!--MD5=[1b844c90688aafb95cd8c95626c3b83a]
+class Timer--><rect codeLine="66" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="24.7344" id="Timer" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="65.2" x="208.5385" y="150.4"/><ellipse cx="233.0385" cy="156.8" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M233.8385,155.4 Q233.9197,155.2 234.0135,155.1 Q234.1072,155 234.2135,155 Q234.401,155 234.5197,155.1125 Q234.6385,155.225 234.6385,155.4875 L234.6385,156.1125 Q234.6385,156.375 234.526,156.4875 Q234.4135,156.6 234.2385,156.6 Q234.0822,156.6 233.9822,156.5313 Q233.8822,156.4625 233.8385,156.2813 Q233.8197,156.1563 233.751,156.0875 Q233.626,155.9563 233.401,155.8813 Q233.176,155.8 232.951,155.8 Q232.6697,155.8 232.4322,155.9125 Q232.201,156.025 232.0197,156.275 Q231.8385,156.525 231.8385,156.8688 L231.8385,157.2375 Q231.8385,157.65 232.176,157.925 Q232.5135,158.2 233.1135,158.2 Q233.4697,158.2 233.7197,158.1188 Q233.8635,158.075 234.026,157.9313 Q234.1322,157.85 234.1885,157.825 Q234.2447,157.8 234.3135,157.8 Q234.4447,157.8 234.5385,157.9063 Q234.6385,158.0063 234.6385,158.15 Q234.6385,158.2875 234.501,158.45 Q234.301,158.6875 233.9822,158.8188 Q233.5635,159 233.051,159 Q232.451,159 231.9697,158.7625 Q231.5822,158.575 231.3072,158.1688 Q231.0385,157.7625 231.0385,157.2813 L231.0385,156.8438 Q231.0385,156.3438 231.276,155.9063 Q231.5197,155.4688 231.9385,155.2375 Q232.3635,155 232.8385,155 Q233.126,155 233.376,155.1 Q233.626,155.2 233.8385,155.4 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="12.8" x="241.2385" y="158.7641">Timer</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="208.9385" x2="273.3385" y1="163.2" y2="163.2"/><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="208.9385" x2="273.3385" y1="166.4" y2="166.4"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="60.4" x="210.9385" y="172.5676">+schedule(task, delay, interval)</text><!--MD5=[f6ed80812a9b4129b15a1e09868c6e4c]
+class NHSReportStore--><rect codeLine="70" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="91.1469" id="NHSReportStore" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="220" x="113.9385" y="338.6"/><ellipse cx="203.8385" cy="345" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M204.6385,343.6 Q204.7197,343.4 204.8135,343.3 Q204.9072,343.2 205.0135,343.2 Q205.201,343.2 205.3197,343.3125 Q205.4385,343.425 205.4385,343.6875 L205.4385,344.3125 Q205.4385,344.575 205.326,344.6875 Q205.2135,344.8 205.0385,344.8 Q204.8822,344.8 204.7822,344.7313 Q204.6822,344.6625 204.6385,344.4813 Q204.6197,344.3563 204.551,344.2875 Q204.426,344.1563 204.201,344.0813 Q203.976,344 203.751,344 Q203.4697,344 203.2322,344.1125 Q203.001,344.225 202.8197,344.475 Q202.6385,344.725 202.6385,345.0688 L202.6385,345.4375 Q202.6385,345.85 202.976,346.125 Q203.3135,346.4 203.9135,346.4 Q204.2697,346.4 204.5197,346.3188 Q204.6635,346.275 204.826,346.1313 Q204.9322,346.05 204.9885,346.025 Q205.0447,346 205.1135,346 Q205.2447,346 205.3385,346.1063 Q205.4385,346.2063 205.4385,346.35 Q205.4385,346.4875 205.301,346.65 Q205.101,346.8875 204.7822,347.0188 Q204.3635,347.2 203.851,347.2 Q203.251,347.2 202.7697,346.9625 Q202.3822,346.775 202.1072,346.3688 Q201.8385,345.9625 201.8385,345.4813 L201.8385,345.0438 Q201.8385,344.5438 202.076,344.1063 Q202.3197,343.6688 202.7385,343.4375 Q203.1635,343.2 203.6385,343.2 Q203.926,343.2 204.176,343.3 Q204.426,343.4 204.6385,343.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="36.8" x="212.0385" y="346.9641">NHSReportStore</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="114.3385" x2="333.5385" y1="351.4" y2="351.4"/><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="114.3385" x2="333.5385" y1="354.6" y2="354.6"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="84.8" x="116.3385" y="360.7676">+getBestXIndex(regressionModel, x1, x2, y)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="147.2" x="116.3385" y="366.302">+createMyBestRegressionModel(regressionModel, bestX, y, historicalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="139.2" x="116.3385" y="371.8363">+createMyRegressionModel(regressionModel, x1, x2, y, historicalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="157.2" x="116.3385" y="377.3707">+createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="174.8" x="116.3385" y="382.9051">+createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="215.2" x="116.3385" y="388.4395">+createTableOfValues(myRegressionModel, dates, observedPositives, estimatedPositives, confidenceIntervals)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="118" x="116.3385" y="393.9738">+getDoubleArrayWithData(covidTestAndMeanAgeList, index)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="36.8" x="116.3385" y="399.5082">+copyArray(array)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="140.8" x="116.3385" y="405.0426">+getDatesColumnToTableOfValues(numberOfObservations, currentDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="142.8" x="116.3385" y="410.577">+getWeeksColumnToTableOfValues(numberOfObservations, currentDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="58.8" x="116.3385" y="416.1113">+getWeek(initialDate, endDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="29.6" x="116.3385" y="421.6457">+getStartDate()</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="84.4" x="116.3385" y="427.1801">+getStartDateForSelectedDate(currentDate)</text><!--MD5=[0f6f7964b844a64b0496af0dda7914bd]
+class TestStore--><rect codeLine="86" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="135.4219" id="TestStore" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="204" x="518.3385" y="316.4"/><ellipse cx="608.0385" cy="322.8" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M608.8385,321.4 Q608.9197,321.2 609.0135,321.1 Q609.1072,321 609.2135,321 Q609.401,321 609.5197,321.1125 Q609.6385,321.225 609.6385,321.4875 L609.6385,322.1125 Q609.6385,322.375 609.526,322.4875 Q609.4135,322.6 609.2385,322.6 Q609.0822,322.6 608.9822,322.5313 Q608.8822,322.4625 608.8385,322.2813 Q608.8197,322.1563 608.751,322.0875 Q608.626,321.9563 608.401,321.8813 Q608.176,321.8 607.951,321.8 Q607.6697,321.8 607.4322,321.9125 Q607.201,322.025 607.0197,322.275 Q606.8385,322.525 606.8385,322.8688 L606.8385,323.2375 Q606.8385,323.65 607.176,323.925 Q607.5135,324.2 608.1135,324.2 Q608.4697,324.2 608.7197,324.1188 Q608.8635,324.075 609.026,323.9313 Q609.1322,323.85 609.1885,323.825 Q609.2447,323.8 609.3135,323.8 Q609.4447,323.8 609.5385,323.9063 Q609.6385,324.0063 609.6385,324.15 Q609.6385,324.2875 609.501,324.45 Q609.301,324.6875 608.9822,324.8188 Q608.5635,325 608.051,325 Q607.451,325 606.9697,324.7625 Q606.5822,324.575 606.3072,324.1688 Q606.0385,323.7625 606.0385,323.2813 L606.0385,322.8438 Q606.0385,322.3438 606.276,321.9063 Q606.5197,321.4688 606.9385,321.2375 Q607.3635,321 607.8385,321 Q608.126,321 608.376,321.1 Q608.626,321.2 608.8385,321.4 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="21.2" x="616.2385" y="324.7641">TestStore</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="518.7385" x2="721.9385" y1="329.2" y2="329.2"/><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="518.7385" x2="721.9385" y1="332.4" y2="332.4"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="140" x="520.7385" y="338.5676">+getObservedPositivesToTableOfValues(numberOfObservations, dates)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="106.4" x="520.7385" y="344.102">+getWeeklyObservedPositivesToTableOfValues(dates)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="107.6" x="520.7385" y="349.6363">+getObservedPositivesInOneWeek(beginDate, endDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="91.6" x="520.7385" y="355.1707">+getNumberOfCovidTestsRealizedInADay(date)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="96.4" x="520.7385" y="360.7051">+getMeanAgeOfClientsOfCovidTestsInADay(date)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="92.4" x="520.7385" y="366.2395">+getNumClientsWithValidatedTestsInADay(date)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="68" x="520.7385" y="371.7738">+getSumOfClientAgesInADay(date)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="81.2" x="520.7385" y="377.3082">+getObservedPositivesCovidInADay(date)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="114.8" x="520.7385" y="382.8426">+getAllDataToFitTheModel(beginDate, endDate, typeOfData)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="190" x="520.7385" y="388.377">+addAllDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="199.2" x="520.7385" y="393.9113">+addWeeklyDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="96" x="520.7385" y="399.4457">+getNumberOfCovidTestsInHistoricalPoints(dates)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="110" x="520.7385" y="404.9801">+getWeeklyNumberOfCovidTestsInHistoricalPoints(dates)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="112.4" x="520.7385" y="410.5145">+getNumberOfCovidTestsInOneWeek(beginDate, endDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="73.2" x="520.7385" y="416.0488">+getMeanAgeInHistoricalPoints(dates)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="87.2" x="520.7385" y="421.5832">+getWeeklyMeanAgeInHistoricalPoints(dates)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="78" x="520.7385" y="427.1176">+checkIfDatesAreEqual(date, otherDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="70.4" x="520.7385" y="432.652">+turnPrimitiveIntoDoubleArray(array)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="104" x="520.7385" y="438.1863">+checkDateIntervalHasMinRange(beginDate, endDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="85.2" x="520.7385" y="443.7207">+getFinalBeginDateForWeekData(beginDate)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="78.4" x="520.7385" y="449.2551">+getFinalEndDateForWeekData(endDate)</text><!--MD5=[0df2666d1ba5e90671395b36b534d7be]
+class SimpleLinearRegressionAdapter--><rect codeLine="221" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="63.475" id="SimpleLinearRegressionAdapter" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="211.6" x="300.1385" y="1036"/><ellipse cx="368.0385" cy="1042.4" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M368.8385,1041 Q368.9197,1040.8 369.0135,1040.7 Q369.1072,1040.6 369.2135,1040.6 Q369.401,1040.6 369.5197,1040.7125 Q369.6385,1040.825 369.6385,1041.0875 L369.6385,1041.7125 Q369.6385,1041.975 369.526,1042.0875 Q369.4135,1042.2 369.2385,1042.2 Q369.0822,1042.2 368.9822,1042.1313 Q368.8822,1042.0625 368.8385,1041.8813 Q368.8197,1041.7563 368.751,1041.6875 Q368.626,1041.5563 368.401,1041.4813 Q368.176,1041.4 367.951,1041.4 Q367.6697,1041.4 367.4322,1041.5125 Q367.201,1041.625 367.0197,1041.875 Q366.8385,1042.125 366.8385,1042.4688 L366.8385,1042.8375 Q366.8385,1043.25 367.176,1043.525 Q367.5135,1043.8 368.1135,1043.8 Q368.4697,1043.8 368.7197,1043.7188 Q368.8635,1043.675 369.026,1043.5313 Q369.1322,1043.45 369.1885,1043.425 Q369.2447,1043.4 369.3135,1043.4 Q369.4447,1043.4 369.5385,1043.5063 Q369.6385,1043.6063 369.6385,1043.75 Q369.6385,1043.8875 369.501,1044.05 Q369.301,1044.2875 368.9822,1044.4188 Q368.5635,1044.6 368.051,1044.6 Q367.451,1044.6 366.9697,1044.3625 Q366.5822,1044.175 366.3072,1043.7688 Q366.0385,1043.3625 366.0385,1042.8813 L366.0385,1042.4438 Q366.0385,1041.9438 366.276,1041.5063 Q366.5197,1041.0688 366.9385,1040.8375 Q367.3635,1040.6 367.8385,1040.6 Q368.126,1040.6 368.376,1040.7 Q368.626,1040.8 368.8385,1041 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="72.4" x="376.2385" y="1044.3641">SimpleLinearRegressionAdapter</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="300.5385" x2="511.3385" y1="1048.8" y2="1048.8"/><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="300.5385" x2="511.3385" y1="1052" y2="1052"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="50.4" x="302.5385" y="1058.1676">+getBestXIndex(x1, x2, y)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="92.8" x="302.5385" y="1063.702">+getRegressionModel(x1, x2, y, historicalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="116.4" x="302.5385" y="1069.2363">+getHypothesisTest(myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="134" x="302.5385" y="1074.7707">+getSignificanceModelAnova(myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="165.2" x="302.5385" y="1080.3051">+getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="135.2" x="302.5385" y="1085.8395">+getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="206.8" x="302.5385" y="1091.3738">+getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="176.4" x="302.5385" y="1096.9082">+getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)</text><!--MD5=[c0eeeb4f7b6396a56a0500fd5d9f47d8]
+class MultipleLinearRegressionAdapter--><rect codeLine="222" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="63.475" id="MultipleLinearRegressionAdapter" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="211.6" x="525.7385" y="1036"/><ellipse cx="593.0385" cy="1042.4" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M593.8385,1041 Q593.9197,1040.8 594.0135,1040.7 Q594.1072,1040.6 594.2135,1040.6 Q594.401,1040.6 594.5197,1040.7125 Q594.6385,1040.825 594.6385,1041.0875 L594.6385,1041.7125 Q594.6385,1041.975 594.526,1042.0875 Q594.4135,1042.2 594.2385,1042.2 Q594.0822,1042.2 593.9822,1042.1313 Q593.8822,1042.0625 593.8385,1041.8813 Q593.8197,1041.7563 593.751,1041.6875 Q593.626,1041.5563 593.401,1041.4813 Q593.176,1041.4 592.951,1041.4 Q592.6697,1041.4 592.4322,1041.5125 Q592.201,1041.625 592.0197,1041.875 Q591.8385,1042.125 591.8385,1042.4688 L591.8385,1042.8375 Q591.8385,1043.25 592.176,1043.525 Q592.5135,1043.8 593.1135,1043.8 Q593.4697,1043.8 593.7197,1043.7188 Q593.8635,1043.675 594.026,1043.5313 Q594.1322,1043.45 594.1885,1043.425 Q594.2447,1043.4 594.3135,1043.4 Q594.4447,1043.4 594.5385,1043.5063 Q594.6385,1043.6063 594.6385,1043.75 Q594.6385,1043.8875 594.501,1044.05 Q594.301,1044.2875 593.9822,1044.4188 Q593.5635,1044.6 593.051,1044.6 Q592.451,1044.6 591.9697,1044.3625 Q591.5822,1044.175 591.3072,1043.7688 Q591.0385,1043.3625 591.0385,1042.8813 L591.0385,1042.4438 Q591.0385,1041.9438 591.276,1041.5063 Q591.5197,1041.0688 591.9385,1040.8375 Q592.3635,1040.6 592.8385,1040.6 Q593.126,1040.6 593.376,1040.7 Q593.626,1040.8 593.8385,1041 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="73.6" x="601.2385" y="1044.3641">MultipleLinearRegressionAdapter</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="526.1385" x2="736.9385" y1="1048.8" y2="1048.8"/><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="526.1385" x2="736.9385" y1="1052" y2="1052"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="50.4" x="528.1385" y="1058.1676">+getBestXIndex(x1, x2, y)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="92.8" x="528.1385" y="1063.702">+getRegressionModel(x1, x2, y, historicalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="116.4" x="528.1385" y="1069.2363">+getHypothesisTest(myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="134" x="528.1385" y="1074.7707">+getSignificanceModelAnova(myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="165.2" x="528.1385" y="1080.3051">+getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="135.2" x="528.1385" y="1085.8395">+getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="206.8" x="528.1385" y="1091.3738">+getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="176.4" x="528.1385" y="1096.9082">+getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)</text><!--MD5=[679f3b7d58d6042ffd323d827f6737cf]
+class NHSReportTask--><rect codeLine="134" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="85.6125" id="NHSReportTask" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="270.8" x="262.1385" y="206.4"/><ellipse cx="377.8385" cy="212.8" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M378.6385,211.4 Q378.7197,211.2 378.8135,211.1 Q378.9072,211 379.0135,211 Q379.201,211 379.3197,211.1125 Q379.4385,211.225 379.4385,211.4875 L379.4385,212.1125 Q379.4385,212.375 379.326,212.4875 Q379.2135,212.6 379.0385,212.6 Q378.8822,212.6 378.7822,212.5313 Q378.6822,212.4625 378.6385,212.2813 Q378.6197,212.1563 378.551,212.0875 Q378.426,211.9563 378.201,211.8813 Q377.976,211.8 377.751,211.8 Q377.4697,211.8 377.2322,211.9125 Q377.001,212.025 376.8197,212.275 Q376.6385,212.525 376.6385,212.8688 L376.6385,213.2375 Q376.6385,213.65 376.976,213.925 Q377.3135,214.2 377.9135,214.2 Q378.2697,214.2 378.5197,214.1188 Q378.6635,214.075 378.826,213.9313 Q378.9322,213.85 378.9885,213.825 Q379.0447,213.8 379.1135,213.8 Q379.2447,213.8 379.3385,213.9063 Q379.4385,214.0063 379.4385,214.15 Q379.4385,214.2875 379.301,214.45 Q379.101,214.6875 378.7822,214.8188 Q378.3635,215 377.851,215 Q377.251,215 376.7697,214.7625 Q376.3822,214.575 376.1072,214.1688 Q375.8385,213.7625 375.8385,213.2813 L375.8385,212.8438 Q375.8385,212.3438 376.076,211.9063 Q376.3197,211.4688 376.7385,211.2375 Q377.1635,211 377.6385,211 Q377.926,211 378.176,211.1 Q378.426,211.2 378.6385,211.4 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="36" x="386.0385" y="214.7641">NHSReportTask</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="262.5385" x2="532.5385" y1="219.2" y2="219.2"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="30.4" x="264.5385" y="225.3676">-historicalPoints</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="35.2" x="264.5385" y="230.902">-significanceLevel</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="33.6" x="264.5385" y="236.4363">-confidenceLevel</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="44.4" x="264.5385" y="241.9707">-regressionModelClass</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="262.5385" x2="532.5385" y1="244.5375" y2="244.5375"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="70.4" x="264.5385" y="250.7051">+createNHSDailyReport(typeOfData)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="76.8" x="264.5385" y="256.2395">+getDataListToFitTheModel(typeOfData)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="242.4" x="264.5385" y="261.7738">+getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="178.8" x="264.5385" y="267.3082">+getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate, typeOfData)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="266" x="264.5385" y="272.8426">+getConfidenceIntervalListForTableOfValues(myRegressionModel, regressionModel, x1InHistoricalPoints, x2InHistoricalPoints, bestXIndex)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="89.2" x="264.5385" y="278.377">+getRegressionModel(regressionModelCLass)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="46.8" x="264.5385" y="283.9113">+writeEventIntoLogFile()</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="12" x="264.5385" y="289.4457">+run()</text><!--MD5=[e4560fe2b65614678775c90137f62e75]
+class MyRegressionModel--><rect codeLine="149" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="69.0094" id="MyRegressionModel" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="225.6" x="208.3385" y="797.2"/><ellipse cx="297.0385" cy="803.6" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M297.8385,802.2 Q297.9197,802 298.0135,801.9 Q298.1072,801.8 298.2135,801.8 Q298.401,801.8 298.5197,801.9125 Q298.6385,802.025 298.6385,802.2875 L298.6385,802.9125 Q298.6385,803.175 298.526,803.2875 Q298.4135,803.4 298.2385,803.4 Q298.0822,803.4 297.9822,803.3313 Q297.8822,803.2625 297.8385,803.0813 Q297.8197,802.9563 297.751,802.8875 Q297.626,802.7563 297.401,802.6813 Q297.176,802.6 296.951,802.6 Q296.6697,802.6 296.4322,802.7125 Q296.201,802.825 296.0197,803.075 Q295.8385,803.325 295.8385,803.6688 L295.8385,804.0375 Q295.8385,804.45 296.176,804.725 Q296.5135,805 297.1135,805 Q297.4697,805 297.7197,804.9188 Q297.8635,804.875 298.026,804.7313 Q298.1322,804.65 298.1885,804.625 Q298.2447,804.6 298.3135,804.6 Q298.4447,804.6 298.5385,804.7063 Q298.6385,804.8063 298.6385,804.95 Q298.6385,805.0875 298.501,805.25 Q298.301,805.4875 297.9822,805.6188 Q297.5635,805.8 297.051,805.8 Q296.451,805.8 295.9697,805.5625 Q295.5822,805.375 295.3072,804.9688 Q295.0385,804.5625 295.0385,804.0813 L295.0385,803.6438 Q295.0385,803.1438 295.276,802.7063 Q295.5197,802.2688 295.9385,802.0375 Q296.3635,801.8 296.8385,801.8 Q297.126,801.8 297.376,801.9 Q297.626,802 297.8385,802.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="44.8" x="305.2385" y="805.5641">MyRegressionModel</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="208.7385" x2="433.5385" y1="810" y2="810"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="18.4" x="210.7385" y="816.1676">-intercept</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="12" x="210.7385" y="821.702">-slope</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="37.6" x="210.7385" y="827.2363">-secondIndVariable</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="3.2" x="210.7385" y="832.7707">-r</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="5.6" x="210.7385" y="838.3051">-r2</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="22.8" x="210.7385" y="843.8395">-r2Adjusted</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="46.8" x="210.7385" y="849.3738">-numberOfObservations</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="208.7385" x2="433.5385" y1="851.9406" y2="851.9406"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="220.8" x="210.7385" y="858.1082">+calculateCriticalValFSnedecor(numeratorDegreesOfFreedom, denominatorDegreesOfFreedom, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="92.8" x="210.7385" y="863.6426">+calculateCriticalValTStudent(significanceLevel)</text><!--MD5=[ae5ae3d8ba74ff2b11824aab5560c281]
+class MathCalculus--><rect codeLine="161" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="66.75" id="MathCalculus" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="211.6" x="412.9385" y="944.8"/><ellipse cx="502.2385" cy="952.8375" fill="#B4A7E5" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M502.6385,951.6375 L502.6385,954.0375 L503.4385,954.0375 L503.6322,954.0375 L503.8385,954.2875 L503.8385,954.4375 L503.8385,954.5875 L503.6322,954.8375 L503.4385,954.8375 L501.0385,954.8375 L500.8447,954.8375 L500.6385,954.5875 L500.6385,954.4375 L500.6385,954.2875 L500.8447,954.0375 L501.0385,954.0375 L501.8385,954.0375 L501.8385,951.6375 L501.0385,951.6375 L500.8447,951.6375 L500.6385,951.3875 L500.6385,951.2375 L500.6385,951.0875 L500.8447,950.8375 L501.0385,950.8375 L503.4385,950.8375 L503.6322,950.8375 L503.8385,951.0875 L503.8385,951.2375 L503.8385,951.3875 L503.6322,951.6375 L503.4385,951.6375 L502.6385,951.6375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" font-style="italic" lengthAdjust="spacing" textLength="24.4" x="513.0385" y="951.7828">«interface»</text><text fill="#000000" font-family="sans-serif" font-size="4.8" font-style="italic" lengthAdjust="spacing" textLength="29.6" x="510.4385" y="957.8203">MathCalculus</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="413.3385" x2="624.1385" y1="960.875" y2="960.875"/><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="413.3385" x2="624.1385" y1="964.075" y2="964.075"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="50.4" x="415.3385" y="970.2426">+getBestXIndex(x1, x2, y)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="92.8" x="415.3385" y="975.777">+getRegressionModel(x1, x2, y, historicalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="116.4" x="415.3385" y="981.3113">+getHypothesisTest(myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="134" x="415.3385" y="986.8457">+getSignificanceModelAnova(myRegressionModel, significanceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="165.2" x="415.3385" y="992.3801">+getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="135.2" x="415.3385" y="997.9145">+getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="206.8" x="415.3385" y="1003.4488">+getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="176.4" x="415.3385" y="1008.9832">+getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)</text><!--MD5=[df38be88ccee13e832d6fafd6288a4ca]
+class Test--><rect codeLine="172" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="69.0094" id="Test" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="61.6" x="549.9385" y="483.2"/><ellipse cx="574.2385" cy="489.6" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M575.0385,488.2 Q575.1197,488 575.2135,487.9 Q575.3072,487.8 575.4135,487.8 Q575.601,487.8 575.7197,487.9125 Q575.8385,488.025 575.8385,488.2875 L575.8385,488.9125 Q575.8385,489.175 575.726,489.2875 Q575.6135,489.4 575.4385,489.4 Q575.2822,489.4 575.1822,489.3313 Q575.0822,489.2625 575.0385,489.0813 Q575.0197,488.9563 574.951,488.8875 Q574.826,488.7563 574.601,488.6813 Q574.376,488.6 574.151,488.6 Q573.8697,488.6 573.6322,488.7125 Q573.401,488.825 573.2197,489.075 Q573.0385,489.325 573.0385,489.6688 L573.0385,490.0375 Q573.0385,490.45 573.376,490.725 Q573.7135,491 574.3135,491 Q574.6697,491 574.9197,490.9188 Q575.0635,490.875 575.226,490.7313 Q575.3322,490.65 575.3885,490.625 Q575.4447,490.6 575.5135,490.6 Q575.6447,490.6 575.7385,490.7063 Q575.8385,490.8063 575.8385,490.95 Q575.8385,491.0875 575.701,491.25 Q575.501,491.4875 575.1822,491.6188 Q574.7635,491.8 574.251,491.8 Q573.651,491.8 573.1697,491.5625 Q572.7822,491.375 572.5072,490.9688 Q572.2385,490.5625 572.2385,490.0813 L572.2385,489.6438 Q572.2385,489.1438 572.476,488.7063 Q572.7197,488.2688 573.1385,488.0375 Q573.5635,487.8 574.0385,487.8 Q574.326,487.8 574.576,487.9 Q574.826,488 575.0385,488.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="9.6" x="582.4385" y="491.5641">Test</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="550.3385" x2="611.1385" y1="496" y2="496"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="11.2" x="552.3385" y="502.1676">-code</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="18.8" x="552.3385" y="507.702">-nhsCode</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="46" x="552.3385" y="513.2363">-dateOfTestRegistration</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="49.6" x="552.3385" y="518.7707">-dateOfSamplesCollection</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="48.8" x="552.3385" y="524.3051">-dateOfChemicalAnalysis</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="33.6" x="552.3385" y="529.8395">-dateOfDiagnosis</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="550.3385" x2="611.1385" y1="532.4063" y2="532.4063"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="26.8" x="552.3385" y="538.5738">+isValidated()</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="56.8" x="552.3385" y="544.1082">+hasPositiveResultForCovid()</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="28" x="552.3385" y="549.6426">+isCovidTest()</text><!--MD5=[ed6624c6556d5e7b1bd23032162d20b7]
+class Client--><rect codeLine="184" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="69.0094" id="Client" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="36.4" x="529.3385" y="584.6"/><ellipse cx="540.1985" cy="591" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M540.9985,589.6 Q541.0797,589.4 541.1735,589.3 Q541.2672,589.2 541.3735,589.2 Q541.561,589.2 541.6797,589.3125 Q541.7985,589.425 541.7985,589.6875 L541.7985,590.3125 Q541.7985,590.575 541.686,590.6875 Q541.5735,590.8 541.3985,590.8 Q541.2422,590.8 541.1422,590.7313 Q541.0422,590.6625 540.9985,590.4813 Q540.9797,590.3563 540.911,590.2875 Q540.786,590.1563 540.561,590.0813 Q540.336,590 540.111,590 Q539.8297,590 539.5922,590.1125 Q539.361,590.225 539.1797,590.475 Q538.9985,590.725 538.9985,591.0688 L538.9985,591.4375 Q538.9985,591.85 539.336,592.125 Q539.6735,592.4 540.2735,592.4 Q540.6297,592.4 540.8797,592.3188 Q541.0235,592.275 541.186,592.1313 Q541.2922,592.05 541.3485,592.025 Q541.4047,592 541.4735,592 Q541.6047,592 541.6985,592.1063 Q541.7985,592.2063 541.7985,592.35 Q541.7985,592.4875 541.661,592.65 Q541.461,592.8875 541.1422,593.0188 Q540.7235,593.2 540.211,593.2 Q539.611,593.2 539.1297,592.9625 Q538.7422,592.775 538.4672,592.3688 Q538.1985,591.9625 538.1985,591.4813 L538.1985,591.0438 Q538.1985,590.5438 538.436,590.1063 Q538.6797,589.6688 539.0985,589.4375 Q539.5235,589.2 539.9985,589.2 Q540.286,589.2 540.536,589.3 Q540.786,589.4 540.9985,589.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="12.8" x="546.8785" y="592.9641">Client</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="529.7385" x2="565.3385" y1="597.4" y2="597.4"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="12" x="531.7385" y="603.5676">-name</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="31.6" x="531.7385" y="609.102">-citizenCardNum</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="17.2" x="531.7385" y="614.6363">-nhsNum</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="18.8" x="531.7385" y="620.1707">-birthDate</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="8.8" x="531.7385" y="625.7051">-sex</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="19.2" x="531.7385" y="631.2395">-taxIdNum</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="22" x="531.7385" y="636.7738">-phoneNum</text><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="11.2" x="531.7385" y="642.3082">-email</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="529.7385" x2="565.3385" y1="644.875" y2="644.875"/><text fill="#000000" font-family="sans-serif" font-size="4.4" lengthAdjust="spacing" textLength="19.6" x="531.7385" y="651.0426">+getAge()</text><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="198" fill="#FEFECE" filter="url(#f18bw0pakgzcoy)" height="16" id="App" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="21.2" x="120.5385" y="2.8"/><ellipse cx="126.5385" cy="9.2" fill="#ADD1B2" rx="4.4" ry="4.4" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><path d="M127.3385,7.8 Q127.4197,7.6 127.5135,7.5 Q127.6072,7.4 127.7135,7.4 Q127.901,7.4 128.0197,7.5125 Q128.1385,7.625 128.1385,7.8875 L128.1385,8.5125 Q128.1385,8.775 128.026,8.8875 Q127.9135,9 127.7385,9 Q127.5822,9 127.4822,8.9313 Q127.3822,8.8625 127.3385,8.6813 Q127.3197,8.5563 127.251,8.4875 Q127.126,8.3563 126.901,8.2813 Q126.676,8.2 126.451,8.2 Q126.1697,8.2 125.9322,8.3125 Q125.701,8.425 125.5197,8.675 Q125.3385,8.925 125.3385,9.2688 L125.3385,9.6375 Q125.3385,10.05 125.676,10.325 Q126.0135,10.6 126.6135,10.6 Q126.9697,10.6 127.2197,10.5188 Q127.3635,10.475 127.526,10.3313 Q127.6322,10.25 127.6885,10.225 Q127.7447,10.2 127.8135,10.2 Q127.9447,10.2 128.0385,10.3063 Q128.1385,10.4063 128.1385,10.55 Q128.1385,10.6875 128.001,10.85 Q127.801,11.0875 127.4822,11.2188 Q127.0635,11.4 126.551,11.4 Q125.951,11.4 125.4697,11.1625 Q125.0822,10.975 124.8072,10.5688 Q124.5385,10.1625 124.5385,9.6813 L124.5385,9.2438 Q124.5385,8.7438 124.776,8.3063 Q125.0197,7.8688 125.4385,7.6375 Q125.8635,7.4 126.3385,7.4 Q126.626,7.4 126.876,7.5 Q127.126,7.6 127.3385,7.8 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="4.8" lengthAdjust="spacing" textLength="8.4" x="132.1385" y="11.1641">App</text><line style="stroke:#A80036;stroke-width:0.6000000000000001;" x1="120.9385" x2="141.3385" y1="15.6" y2="15.6"/><!--MD5=[5b0f1873c15ced29becf7ded48d12cb7]
+link App to Company--><path codeLine="202" d="M131.1385,18.876 C131.1385,26.38 131.1385,38.348 131.1385,50 " fill="none" id="App-Company" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="133.1385,36.4703,134.314,32.8523,131.9629,32.8523,133.1385,36.4703" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.8" x="136.7385" y="36.598">knows</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="127.9447" y="27.4652">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="128.2138" y="45.6462">1</text><!--MD5=[01558f40b86ad3407c4a50a817100da8]
+link Company to Timer--><path codeLine="203" d="M173.8265,115.036 C191.3385,127.36 210.6065,140.916 224.0265,150.36 " fill="none" id="Company-Timer" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="209.5741,136.0213,207.2917,132.9778,205.9387,134.9006,209.5741,136.0213" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.8" x="211.5385" y="136.998">knows</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="176.9264" y="115.9607">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="217.4084" y="146.1536">1</text><!--MD5=[9df82754a8329979491fdf31d2dbdd20]
+link NHSReport to MyRegressionModel--><path codeLine="205" d="M287.9105,525.852 C285.6105,548.54 279.6865,617.396 285.9385,674 C290.6865,717 302.5265,765.428 311.1665,797.068 " fill="none" id="NHSReport-MyRegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="288.1093,672.463,288.9715,668.7578,286.629,668.9586,288.1093,672.463" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8.4" x="291.5385" y="672.598">has</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="285.3964" y="534.4344">*</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="307.3892" y="792.8205">1</text><!--MD5=[8b5211240efe264c13d5ef595a4d03bb]
+link NHSReport to HypothesisTest--><path codeLine="206" d="M283.3065,525.82 C275.2065,537.596 260.1305,561.2 252.7385,583.6 C241.7065,617.028 237.0025,656.884 235.0025,685.852 " fill="none" id="NHSReport-HypothesisTest" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="254.1605,621.185,256.3314,618.061,254.0806,617.3816,254.1605,621.185" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="19.6" x="258.3385" y="621.398">contains</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="278.585" y="534.3934">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="232.2072" y="681.669">1</text><!--MD5=[547d65f66fccba149814dbcd0a782d42]
+link NHSReport to SignificanceModelAnova--><path codeLine="207" d="M292.9185,525.928 C299.5345,538.164 312.8305,562.756 324.0825,583.56 " fill="none" id="NHSReport-SignificanceModelAnova" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="320.4898,569.8296,319.8029,566.0879,317.7348,567.2062,320.4898,569.8296" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="19.6" x="323.1385" y="570.198">contains</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="290.8656" y="534.3893">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="319.5245" y="579.2201">1</text><!--MD5=[306e6753dd5938314f2cd068130fe945]
+link Company to RegressionModel--><path codeLine="208" d="M88.4025,93.048 C52.1305,102.644 5.9385,122.664 5.9385,162.4 C5.9385,162.4 5.9385,162.4 5.9385,832.2 C5.9385,891.388 219.5585,902.6 295.0745,904.712 " fill="none" id="Company-RegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="8.432,519.8085,8.6784,516.0122,6.4,516.5924,8.432,519.8085" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="31.2" x="11.5385" y="519.998">makes use of</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="83.3273" y="92.4267">*</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="289.099" y="903.2455">1</text><!--MD5=[198e8dc471e5a6e91bdf29139210d87b]
+link HypothesisTest to MyRegressionModel--><path codeLine="209" d="M254.6185,766.004 C258.8145,772.664 263.4505,779.316 268.3385,785.2 C271.7225,789.276 275.4825,793.3 279.3905,797.172 " fill="none" id="HypothesisTest-MyRegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="271.5829,783.236,270.252,779.6722,268.4114,781.1351,271.5829,783.236" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4" x="273.9385" y="783.798">of</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="254.1559" y="774.7122">*</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="272.7476" y="792.8157">1</text><!--MD5=[b5956a601dde9528ac02f2defc92ce64]
+link SignificanceModelAnova to MyRegressionModel--><path codeLine="210" d="M340.1345,654.872 C339.5625,661.24 338.9505,667.82 338.3385,674 C334.1465,716.472 328.7105,765.316 325.0865,797.188 " fill="none" id="SignificanceModelAnova-MyRegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="338.5282,728.0592,340.0777,724.5849,337.7396,724.3376,338.5282,728.0592" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4" x="342.3385" y="728.198">of</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="336.9698" y="663.489">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="322.5134" y="792.8332">1</text><!--MD5=[c6acbac970cf27bd6d16a5c7db39602e]
+link SignificanceModelAnova to HypothesisTest--><path codeLine="211" d="M319.9305,654.836 C314.8745,661.504 309.3025,668.2 303.5385,674 C292.7865,684.816 279.6265,695.128 267.6265,703.652 " fill="none" id="SignificanceModelAnova-HypothesisTest" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="310.0764,671.8349,313.5235,670.2257,311.9193,668.5069,310.0764,671.8349" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="19.6" x="315.1385" y="672.598">contains</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="315.0157" y="663.5714">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="270.7871" y="700.3775">1</text><!--MD5=[0dcaa8173aedfc40b07273db6fb5ce96]
+link NHSReport to TableOfValues--><path codeLine="212" d="M307.8305,517.8 C337.5185,517.8 395.2825,517.8 433.3345,517.8 " fill="none" id="NHSReport-TableOfValues" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="361.7385,513.0703,358.1204,511.8947,358.1204,514.2459,361.7385,513.0703" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="19.6" x="363.3385" y="515.198">contains</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="310.9683" y="516.3188">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="427.3541" y="516.5332">1</text><!--MD5=[8aa8d5df8f26005bc40a87edd0d6e9ee]
+link TableOfValues to MyRegressionModel--><path codeLine="213" d="M469.3505,538.5 C467.6185,565.532 463.0025,614.604 451.1385,654.8 C435.7145,707.056 432.7265,722.792 399.5385,766 C390.8985,777.244 380.0065,787.848 369.1065,797.116 " fill="none" id="TableOfValues-MyRegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="448.4156,672.3351,450.8194,669.3865,448.6272,668.5368,448.4156,672.3351" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4" x="452.7385" y="672.598">of</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="466.2296" y="547.1098">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="370.3084" y="792.8726">1</text><!--MD5=[fbf6af04bdbd2e53a8939c56935774d0]
+link TableOfValues to ConfidenceInterval--><path codeLine="214" d="M451.9825,538.504 C445.7305,546.2 439.1185,555.308 434.3385,564.4 C430.1425,572.38 426.7585,581.56 424.1345,590.076 " fill="none" id="TableOfValues-ConfidenceInterval" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="435.3882,569.8301,438.1417,567.2051,436.0729,566.088,435.3882,569.8301" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="19.6" x="439.9385" y="570.198">contains</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="446.5278" y="547.1144">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="422.7247" y="585.902">*</text><!--MD5=[45df89014b944d506706342a514ceed2]
+link ConfidenceInterval to MyRegressionModel--><path codeLine="215" d="M404.1425,648.276 C386.6225,686.924 355.4745,755.648 336.7185,797.024 " fill="none" id="ConfidenceInterval-MyRegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="387.5128,727.8919,390.0772,725.0819,387.9358,724.1113,387.5128,727.8919" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4" x="391.9385" y="728.198">of</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="400.8085" y="656.7599">*</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="335.0928" y="792.8909">1</text><!--MD5=[d216cdaead7ca886dbb0449b3ca05d73]
+link RegressionModel to MathCalculus--><path codeLine="216" d="M342.0985,913.616 C362.7825,921.132 395.8625,933.152 427.8345,944.768 " fill="none" id="RegressionModel-MathCalculus" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="394.2182,929.9533,391.2192,927.6129,390.4163,929.8226,394.2182,929.9533" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="395.9385" y="931.398">provided by</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="345.7122" y="922.1883">*</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="416.8137" y="940.512">1</text><!--MD5=[120638f2907a3f1450ca2929fb13b0a2]
+link MyRegressionModel to RegressionModel--><path codeLine="217" d="M321.1385,866.456 C321.1385,878.088 321.1385,890.024 321.1385,897.516 " fill="none" id="MyRegressionModel-RegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="323.1385,884.0703,324.314,880.4523,321.9629,880.4523,323.1385,884.0703" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8.4" x="326.7385" y="884.198">has</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="318.2313" y="874.7651">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="317.9272" y="893.22">1</text><!--MD5=[3994f36c72829dbcddd1cf7021dddf61]
+link Test to Client--><path codeLine="219" d="M569.4065,552.54 C566.0065,562.84 562.2785,574.14 558.8745,584.444 " fill="none" id="Test-Client" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="566.1115,569.9695,568.362,566.9023,566.1294,566.1653,566.1115,569.9695" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30" x="570.3385" y="570.198">requested by</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="566.4623" y="560.8555">*</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="556.8973" y="580.3125">1</text><!--MD5=[7da1af0ce58df4a2bd2978ad618b6881]
+reverse link MathCalculus to SimpleLinearRegressionAdapter--><path d="M470.3985,1016.652 C462.2345,1023.08 453.8385,1029.692 445.9185,1035.928 " fill="none" id="MathCalculus-backto-SimpleLinearRegressionAdapter" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="468.7185,1014.416,476.7345,1011.664,472.1825,1018.816,468.7185,1014.416" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[0fcf6e9ce64ceb82b92ede330e2cd68b]
+reverse link MathCalculus to MultipleLinearRegressionAdapter--><path d="M567.0785,1016.652 C575.2425,1023.08 583.6385,1029.692 591.5585,1035.928 " fill="none" id="MathCalculus-backto-MultipleLinearRegressionAdapter" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="565.2945,1018.816,560.7425,1011.664,568.7585,1014.416,565.2945,1018.816" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[f72ce2526d983c36f546b29717afb88c]
+link NHSReportTask to TestStore--><path codeLine="227" d="M486.4425,292.06 C493.6545,295.96 500.7665,299.964 507.5385,304 C513.5185,307.564 519.5945,311.348 525.6625,315.252 " fill="none" id="NHSReportTask-to-TestStore" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="527.3745,316.356,525.2143,313.0615,525.693,315.273,523.4815,315.7518,527.3745,316.356" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[51a2342502d0de7909ffffd83df3c28b]
+link NHSReportTask to NHSReportStore--><path codeLine="228" d="M342.6105,292.06 C323.9625,306.476 303.0385,322.652 284.0105,337.364 " fill="none" id="NHSReportTask-to-NHSReportStore" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="282.4105,338.6,286.2375,337.6652,283.9932,337.3773,284.2811,335.1329,282.4105,338.6" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[4e966c963453e3c35798fd39e036e3d7]
+link NHSReportTask to NHSReport--><path codeLine="229" d="M377.4985,292.028 C375.9145,296.032 374.4305,300.068 373.1385,304 C352.1425,367.94 370.0585,391.232 341.1385,452 C330.3665,474.632 310.3665,496.42 298.4305,508.252 " fill="none" id="NHSReportTask-to-NHSReport" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="296.8745,509.784,300.5655,508.407,298.3029,508.3841,298.3258,506.1215,296.8745,509.784" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[85e1e81012b03945bdfce091ee1ae81c]
+link NHSReportTask to Test--><path codeLine="230" d="M469.3025,292.072 C472.9305,295.804 476.2585,299.78 479.1385,304 C517.1105,359.608 478.3985,393.384 511.5385,452 C516.5425,460.852 532.7185,476.296 548.1705,489.956 " fill="none" id="NHSReportTask-to-Test" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="549.8545,491.444,548.2123,487.863,548.3543,490.1213,546.096,490.2633,549.8545,491.444" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[1d52afbf0c95164b2ca48d15ef1d5e3f]
+link NHSReportTask to TableOfValues--><path codeLine="231" d="M417.8825,292.028 C419.4985,296.032 421.0145,300.064 422.3385,304 C434.3265,339.644 456.4945,447.864 465.9185,495.028 " fill="none" id="NHSReportTask-to-TableOfValues" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="466.3305,497.092,467.1891,493.2472,465.936,495.1313,464.0519,493.8782,466.3305,497.092" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[8ecdddeffaf4b7a276a4fcd82590ae88]
+link NHSReportTask to SignificanceModelAnova--><path codeLine="232" d="M391.2705,292.132 C380.5385,364.984 358.8105,512.452 348.6305,581.524 " fill="none" id="NHSReportTask-to-SignificanceModelAnova" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="348.3345,583.544,350.441,580.2149,348.6253,581.5653,347.275,579.7496,348.3345,583.544" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[f9f35a1babc5056eb5d6a3341fe8a79e]
+link NHSReportTask to ConfidenceInterval--><path codeLine="233" d="M399.7945,292.132 C403.7905,367.348 412.0065,522.112 415.5025,588.004 " fill="none" id="NHSReportTask-to-ConfidenceInterval" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="415.6145,590.116,417.0275,586.4386,415.5118,588.1186,413.8317,586.6029,415.6145,590.116" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[f0173f87a1183ea57d11be677d63c950]
+link NHSReportTask to HypothesisTest--><path codeLine="234" d="M261.9945,265.316 C196.6345,275.836 127.8665,292.252 106.7385,316.4 C62.4145,367.06 92.7385,399.888 92.7385,467.2 C92.7385,467.2 92.7385,467.2 92.7385,619.6 C92.7385,672.008 155.7665,701.736 197.4865,715.676 " fill="none" id="NHSReportTask-to-HypothesisTest" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="199.4545,716.328,196.5404,713.677,197.556,715.699,195.5339,716.7146,199.4545,716.328" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[ae8bf0c6f616ea442b3a4f27471f8430]
+link NHSReportTask to MyRegressionModel--><path codeLine="235" d="M262.0385,262.392 C187.2625,272.372 104.5785,289.228 79.5385,316.4 C58.7305,338.98 64.3385,353.092 64.3385,383.8 C64.3385,383.8 64.3385,383.8 64.3385,726.4 C64.3385,759.4 137.9105,787.156 206.2945,805.824 " fill="none" id="NHSReportTask-to-MyRegressionModel" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="208.3145,806.376,205.2629,803.8844,206.3851,805.8493,204.4202,806.9714,208.3145,806.376" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[8f1e4c3894990a654a1a14ae0aad22fc]
+link NHSReportTask to MathCalculus--><path codeLine="236" d="M532.9505,261.748 C612.0265,271.648 701.6105,288.644 729.5385,316.4 C751.2385,337.968 743.5385,353.204 743.5385,383.8 C743.5385,383.8 743.5385,383.8 743.5385,906 C743.5385,932.924 684.2745,951.132 626.6065,962.472 " fill="none" id="NHSReportTask-to-MathCalculus" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="624.5545,962.872,628.394,963.7543,626.5176,962.4896,627.7822,960.6133,624.5545,962.872" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[9fad79c08afe27af33ab0bb62b390ca0]
+link NHSReportTask to Client--><path codeLine="237" d="M436.4425,292.044 C442.1345,299.76 447.4465,308.024 451.5385,316.4 C478.6985,372.004 453.0825,397.908 483.1385,452 C492.6625,469.14 504.7185,466.112 514.3385,483.2 C531.7265,514.084 540.0825,553.936 544.0505,582.428 " fill="none" id="NHSReportTask-to-Client" style="stroke:#A80036;stroke-width:0.4000000000000001;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="544.3305,584.46,545.4313,580.6774,544.0613,582.4782,542.2605,581.1081,544.3305,584.46" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><!--MD5=[2d6e9e001c0bf2f7f3a5c6201f06070c]
+link Timer to NHSReportTask--><path codeLine="238" d="M263.2145,175.284 C277.8065,183.268 297.9025,194.268 318.1105,205.328 " fill="none" id="Timer-to-NHSReportTask" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#A80036" points="319.9425,206.328,317.5525,203.1962,318.188,205.3679,316.0163,206.0034,319.9425,206.328" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="299.6929,191.8305,297.0835,189.0623,295.9547,191.1247,299.6929,191.8305" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="10" x="301.5385" y="192.998">runs</text><!--MD5=[7f6cf7f175eae0af66201860de5de971]
+link Company to TestStore--><path codeLine="242" d="M173.8145,86.388 C254.8025,91.216 432.2985,112.568 539.9385,206.4 C571.9585,234.312 591.9145,277.552 603.9345,314.352 " fill="none" id="Company-to-TestStore" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#A80036" points="604.5745,316.32,604.9858,312.402,603.9575,314.4176,601.9419,313.3892,604.5745,316.32" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="526.5056,191.8069,523.8593,189.0739,522.7583,191.1513,526.5056,191.8069" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.2" x="528.3385" y="192.998">uses</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="176.9136" y="85.2984">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="600.9967" y="312.1045">1</text><!--MD5=[eab2606be57f591e54f848b4df2db8c8]
+link Company to NHSReportStore--><path codeLine="243" d="M141.7825,119.276 C158.3865,172.732 190.4825,276.076 209.2665,336.556 " fill="none" id="Company-to-NHSReportStore" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#A80036" points="209.8745,338.512,210.3352,334.5995,209.2815,336.6019,207.2791,335.5483,209.8745,338.512" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="167.7317,192.7803,167.7812,188.9764,165.5359,189.6738,167.7317,192.7803" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.2" x="170.7385" y="192.998">uses</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="139.6902" y="127.5866">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="206.0355" y="334.2319">1</text><!--MD5=[b0f4f6db8206580012ef9cd998ed01c5]
+link TestStore to Test--><path codeLine="244" d="M600.1905,452.168 C596.9985,462.868 593.8225,473.528 590.9865,483.036 " fill="none" id="TestStore-Test" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="596.967,469.5869,599.1274,466.4556,596.8743,465.7838,596.967,469.5869" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="21.2" x="601.1385" y="469.798">conducts</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="596.5488" y="460.3523">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2" x="589.7523" y="478.9039">*</text><!--MD5=[2f00781f7b171962932cccf494519213]
+link NHSReportStore to NHSReport--><path codeLine="245" d="M246.0585,429.932 C260.3185,459.16 277.5465,494.464 285.0025,509.74 " fill="none" id="NHSReportStore-NHSReport" style="stroke:#A80036;stroke-width:0.4000000000000001;"/><polygon fill="#000000" points="268.8156,469.4677,268.2854,465.7006,266.1724,466.7317,268.8156,469.4677" style="stroke:#000000;stroke-width:0.4000000000000001;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="271.5385" y="469.798">reports</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="244.5211" y="438.3177">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8" x="274.73" y="505.4511">1..*</text><!--MD5=[3762a99dfb25326de7c2f56986d1b127]
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+
+
+class Company {
+-designation
+-classNameForBarcodeApi
+-classNameForSortAlgorithm
+-regressionModelCLass
+-dateInterval
+-historicalPoints
+-confidenceLevel
+-significanceLevel
++scheduleNHSReportTask(delay, interval)
+}
+
+class NHSReport {}
+
+class RegressionModel {}
+
+class HypothesisTest {
+-tObsA
+-tObsB
+-tObsC
+-significanceLevel
+-critTD
+-f
+-critFD
+-numeratorDegreesOfFreedom
+-denominatorDegreesOfFreedom
++getDecision(tObs, critTD)
++getDecisionForAnova(critFD)
+}
+
+class SignificanceModelAnova {
+-significanceLevel
+-sr
+-se
+-st
+-mr
+-me
+-f
+-degFreedomSr
+-degFreedomSe
+-degFreedomSt
+}
+
+class TableOfValues {
+-dates
+-observedPositives
+-estimatedPositives
++getConfidenceLevelInPercentage()
+}
+
+class ConfidenceInterval {
+-y0
+-auxDelta
+-confidenceLevel
+-delta
+-limInf
+-limSup
++getConfidenceLevel()
+}
+
+class Timer {
++schedule(task, delay, interval)
+}
+
+class NHSReportStore {
++getBestXIndex(regressionModel, x1, x2, y)
++createMyBestRegressionModel(regressionModel, bestX, y, historicalPoints)
++createMyRegressionModel(regressionModel, x1, x2, y, historicalPoints)
++createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)
++createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)
++createTableOfValues(myRegressionModel, dates, observedPositives, estimatedPositives, confidenceIntervals)
++getDoubleArrayWithData(covidTestAndMeanAgeList, index)
++copyArray(array)
++getDatesColumnToTableOfValues(numberOfObservations, currentDate)
++getWeeksColumnToTableOfValues(numberOfObservations, currentDate)
++getWeek(initialDate, endDate)
++getStartDate()
++getStartDateForSelectedDate(currentDate)
+}
+
+class TestStore {
++getObservedPositivesToTableOfValues(numberOfObservations, dates)
++getWeeklyObservedPositivesToTableOfValues(dates)
++getObservedPositivesInOneWeek(beginDate, endDate)
++getNumberOfCovidTestsRealizedInADay(date)
++getMeanAgeOfClientsOfCovidTestsInADay(date)
++getNumClientsWithValidatedTestsInADay(date)
++getSumOfClientAgesInADay(date)
++getObservedPositivesCovidInADay(date)
++getAllDataToFitTheModel(beginDate, endDate, typeOfData)
++addAllDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)
++addWeeklyDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)
++getNumberOfCovidTestsInHistoricalPoints(dates)
++getWeeklyNumberOfCovidTestsInHistoricalPoints(dates)
++getNumberOfCovidTestsInOneWeek(beginDate, endDate)
++getMeanAgeInHistoricalPoints(dates)
++getWeeklyMeanAgeInHistoricalPoints(dates)
++checkIfDatesAreEqual(date, otherDate)
++turnPrimitiveIntoDoubleArray(array)
++checkDateIntervalHasMinRange(beginDate, endDate)
++getFinalBeginDateForWeekData(beginDate)
++getFinalEndDateForWeekData(endDate)
+}
+
+class SimpleLinearRegressionAdapter {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class MultipleLinearRegressionAdapter {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class RegressionModel {}
+
+class NHSReportTask {
+-historicalPoints
+-significanceLevel
+-confidenceLevel
+-regressionModelClass
++createNHSDailyReport(typeOfData)
++getDataListToFitTheModel(typeOfData)
++getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
++getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate, typeOfData)
++getConfidenceIntervalListForTableOfValues(myRegressionModel, regressionModel, x1InHistoricalPoints, x2InHistoricalPoints, bestXIndex)
++getRegressionModel(regressionModelCLass)
++writeEventIntoLogFile()
++run()
+}
+
+class MyRegressionModel {
+-intercept
+-slope
+-secondIndVariable
+-r
+-r2
+-r2Adjusted
+-numberOfObservations
++calculateCriticalValFSnedecor(numeratorDegreesOfFreedom, denominatorDegreesOfFreedom, significanceLevel)
++calculateCriticalValTStudent(significanceLevel)
+}
+
+interface MathCalculus <<interface>> {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class Test {
+- code
+- nhsCode
+- dateOfTestRegistration
+- dateOfSamplesCollection
+- dateOfChemicalAnalysis
+- dateOfDiagnosis
++isValidated()
++hasPositiveResultForCovid()
++isCovidTest()
+}
+
+class Client {
+- name
+- citizenCardNum
+- nhsNum
+- birthDate
+- sex
+- taxIdNum
+- phoneNum
+- email
++getAge()
+}
+/'O CONTROLLER É A APP STARTUP'/
+/'COLOCAR TIMER'/
+
+class App {}
+
+/'Timer "1" - - "*" NHSReport : schedules >'/
+/'Company "1" - - "1..*" NHSReport : reports >'/
+App "1" - - "1" Company : knows >
+Company "1" - - "1" Timer : knows >
+/'NHSReportTask "1" - - "1" NHSReport : sends >'/
+NHSReport "*" - - "1" MyRegressionModel : has >
+NHSReport "1" - - "1" HypothesisTest : contains >
+NHSReport "1" - - "1" SignificanceModelAnova : contains >
+Company "*" - - "1" RegressionModel : makes use of >
+HypothesisTest "*" - - "1" MyRegressionModel : of >
+SignificanceModelAnova "1" - - "1" MyRegressionModel : of >
+SignificanceModelAnova "1" - - "1" HypothesisTest : contains >
+NHSReport "1" - "1" TableOfValues : contains >
+TableOfValues "1" - - "1" MyRegressionModel : of >
+TableOfValues "1" - - "*" ConfidenceInterval : contains >
+ConfidenceInterval "*" - - "1" MyRegressionModel : of >
+RegressionModel "*" - - "1" MathCalculus : provided by >
+MyRegressionModel "1" - - "1" RegressionModel : has >
+/'Timer "1" - - "*" NHSReportTask : runs >'/
+Test "*" - - "1" Client : requested by >
+
+class SimpleLinearRegressionAdapter implements MathCalculus
+class MultipleLinearRegressionAdapter implements MathCalculus
+
+
+
+/'NHSReportTask ..> Company'/
+NHSReportTask ..> TestStore
+NHSReportTask ..> NHSReportStore
+NHSReportTask ..> NHSReport
+NHSReportTask ..> Test
+NHSReportTask ..> TableOfValues
+NHSReportTask ..> SignificanceModelAnova
+NHSReportTask ..> ConfidenceInterval
+NHSReportTask ..> HypothesisTest
+NHSReportTask ..> MyRegressionModel
+NHSReportTask ..> MathCalculus
+NHSReportTask ..> Client
+Timer - -> NHSReportTask : runs >
+
+
+
+Company "1" - -> "1" TestStore : uses >
+Company "1" - -> "1" NHSReportStore : uses >
+TestStore "1" - - "*" Test : conducts >
+NHSReportStore "1" - - "1..*" NHSReport : reports >
+
+
+@enduml
+
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+
+
+class Company {
+-designation
+-classNameForBarcodeApi
+-classNameForSortAlgorithm
+-regressionModelCLass
+-dateInterval
+-historicalPoints
+-confidenceLevel
+-significanceLevel
++scheduleNHSReportTask(delay, interval)
+}
+
+class NHSReport {}
+
+class RegressionModel {}
+
+class HypothesisTest {
+-tObsA
+-tObsB
+-tObsC
+-significanceLevel
+-critTD
+-f
+-critFD
+-numeratorDegreesOfFreedom
+-denominatorDegreesOfFreedom
++getDecision(tObs, critTD)
++getDecisionForAnova(critFD)
+}
+
+class SignificanceModelAnova {
+-significanceLevel
+-sr
+-se
+-st
+-mr
+-me
+-f
+-degFreedomSr
+-degFreedomSe
+-degFreedomSt
+}
+
+class TableOfValues {
+-dates
+-observedPositives
+-estimatedPositives
++getConfidenceLevelInPercentage()
+}
+
+class ConfidenceInterval {
+-y0
+-auxDelta
+-confidenceLevel
+-delta
+-limInf
+-limSup
++getConfidenceLevel()
+}
+
+class Timer {
++schedule(task, delay, interval)
+}
+
+class NHSReportStore {
++getBestXIndex(regressionModel, x1, x2, y)
++createMyBestRegressionModel(regressionModel, bestX, y, historicalPoints)
++createMyRegressionModel(regressionModel, x1, x2, y, historicalPoints)
++createHypothesisTest(regressionModel, myRegressionModel, significanceLevel)
++createSignificanceModelAnova(regressionModel, myRegressionModel, significanceLevel)
++createTableOfValues(myRegressionModel, dates, observedPositives, estimatedPositives, confidenceIntervals)
++getDoubleArrayWithData(covidTestAndMeanAgeList, index)
++copyArray(array)
++getDatesColumnToTableOfValues(numberOfObservations, currentDate)
++getWeeksColumnToTableOfValues(numberOfObservations, currentDate)
++getWeek(initialDate, endDate)
++getStartDate()
++getStartDateForSelectedDate(currentDate)
+}
+
+class TestStore {
++getObservedPositivesToTableOfValues(numberOfObservations, dates)
++getWeeklyObservedPositivesToTableOfValues(dates)
++getObservedPositivesInOneWeek(beginDate, endDate)
++getNumberOfCovidTestsRealizedInADay(date)
++getMeanAgeOfClientsOfCovidTestsInADay(date)
++getNumClientsWithValidatedTestsInADay(date)
++getSumOfClientAgesInADay(date)
++getObservedPositivesCovidInADay(date)
++getAllDataToFitTheModel(beginDate, endDate, typeOfData)
++addAllDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)
++addWeeklyDataFromDateInterval(beginDate, endDate, covidTestList, meanAgeList, observedPositives)
++getNumberOfCovidTestsInHistoricalPoints(dates)
++getWeeklyNumberOfCovidTestsInHistoricalPoints(dates)
++getNumberOfCovidTestsInOneWeek(beginDate, endDate)
++getMeanAgeInHistoricalPoints(dates)
++getWeeklyMeanAgeInHistoricalPoints(dates)
++checkIfDatesAreEqual(date, otherDate)
++turnPrimitiveIntoDoubleArray(array)
++checkDateIntervalHasMinRange(beginDate, endDate)
++getFinalBeginDateForWeekData(beginDate)
++getFinalEndDateForWeekData(endDate)
+}
+
+class SimpleLinearRegressionAdapter {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class MultipleLinearRegressionAdapter {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class RegressionModel {}
+
+class NHSReportTask {
+-historicalPoints
+-significanceLevel
+-confidenceLevel
+-regressionModelClass
++createNHSDailyReport(typeOfData)
++getDataListToFitTheModel(typeOfData)
++getMyRegressionModel(regressionModel, bestXIndex, covidTestsArray, meanAgeArray, observedPositives, historicalPoints)
++getTableOfValues(myRegressionModel, bestXIndex, historicalPoints, startDate, typeOfData)
++getConfidenceIntervalListForTableOfValues(myRegressionModel, regressionModel, x1InHistoricalPoints, x2InHistoricalPoints, bestXIndex)
++getRegressionModel(regressionModelCLass)
++writeEventIntoLogFile()
++run()
+}
+
+class MyRegressionModel {
+-intercept
+-slope
+-secondIndVariable
+-r
+-r2
+-r2Adjusted
+-numberOfObservations
++calculateCriticalValFSnedecor(numeratorDegreesOfFreedom, denominatorDegreesOfFreedom, significanceLevel)
++calculateCriticalValTStudent(significanceLevel)
+}
+
+interface MathCalculus <<interface>> {
++getBestXIndex(x1, x2, y)
++getRegressionModel(x1, x2, y, historicalPoints)
++getHypothesisTest(myRegressionModel, significanceLevel)
++getSignificanceModelAnova(myRegressionModel, significanceLevel)
++getEstimatedPositives(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints)
++getConfidenceInterval(myRegressionModel, x1, x2, confidenceLevel)
++getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
++getChosenHypothesisTest(myRegressionModel, significanceLevel, chosenRegCoefficient)
+}
+
+class Test {
+- code
+- nhsCode
+- dateOfTestRegistration
+- dateOfSamplesCollection
+- dateOfChemicalAnalysis
+- dateOfDiagnosis
++isValidated()
++hasPositiveResultForCovid()
++isCovidTest()
+}
+
+class Client {
+- name
+- citizenCardNum
+- nhsNum
+- birthDate
+- sex
+- taxIdNum
+- phoneNum
+- email
++getAge()
+}
+
+class App {}
+
+App "1" - - "1" Company : knows >
+Company "1" - - "1" Timer : knows >
+NHSReport "*" - - "1" MyRegressionModel : has >
+NHSReport "1" - - "1" HypothesisTest : contains >
+NHSReport "1" - - "1" SignificanceModelAnova : contains >
+Company "*" - - "1" RegressionModel : makes use of >
+HypothesisTest "*" - - "1" MyRegressionModel : of >
+SignificanceModelAnova "1" - - "1" MyRegressionModel : of >
+SignificanceModelAnova "1" - - "1" HypothesisTest : contains >
+NHSReport "1" - "1" TableOfValues : contains >
+TableOfValues "1" - - "1" MyRegressionModel : of >
+TableOfValues "1" - - "*" ConfidenceInterval : contains >
+ConfidenceInterval "*" - - "1" MyRegressionModel : of >
+RegressionModel "*" - - "1" MathCalculus : provided by >
+MyRegressionModel "1" - - "1" RegressionModel : has >
+Test "*" - - "1" Client : requested by >
+
+class SimpleLinearRegressionAdapter implements MathCalculus
+class MultipleLinearRegressionAdapter implements MathCalculus
+
+
+
+NHSReportTask ..> TestStore
+NHSReportTask ..> NHSReportStore
+NHSReportTask ..> NHSReport
+NHSReportTask ..> Test
+NHSReportTask ..> TableOfValues
+NHSReportTask ..> SignificanceModelAnova
+NHSReportTask ..> ConfidenceInterval
+NHSReportTask ..> HypothesisTest
+NHSReportTask ..> MyRegressionModel
+NHSReportTask ..> MathCalculus
+NHSReportTask ..> Client
+Timer - -> NHSReportTask : runs >
+
+
+
+Company "1" - -> "1" TestStore : uses >
+Company "1" - -> "1" NHSReportStore : uses >
+TestStore "1" - - "*" Test : conducts >
+NHSReportStore "1" - - "1..*" NHSReport : reports >
+
+
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 09:49:39 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

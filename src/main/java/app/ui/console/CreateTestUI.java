@@ -16,7 +16,7 @@ public class CreateTestUI implements Runnable{
 
     public CreateTestUI(String selectedCal)
     {
-        ctrl = new CreateTestController();
+        ctrl = new CreateTestController(selectedCal);
         this.selectedCal = selectedCal;
     }
 

@@ -1,0 +1,179 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+
+/'
+class App {
++{static} getInstance() : App
++getCurrentSession() : UserSession
+}
+'/
+/'
+class UserSession {
++isLoggedInWithRole() : boolean
+}
+'/
+
+class Laboratory {
+-name : String
+-address : String
+-phoneNumber : int
+-numTIN : int
++Laboratory(name, address, phoneNumber, numTIN)
++getName()
++getAddress()
++getPhoneNumber()
++getNumTIN()
++toString()
+/'+checkNameRules()
++checkAddressRules()
++checkPhoneNumberRules()
++checkTINNumberRules()'/
++equals()
+}
+
+class ClinicalAnalysisLaboratory {
+-laboratoryID : String
++ClinicalAnalysisLaboratory(laboratoryID, name, address, phoneNumber, numTIN, selectedTT)
++getLaboratoryID()
++getSelectedTT()
++toString()
+/'+checkLaboratoryIDRules()
++checkTestTypesRules()'/
++equals()
+}
+
+class TestType {
+- code : String
+- description : String
+- collectingMethod :
++TestType(code, description, collectingMethod, selectedCategories)
++getString()
++getDescription()
++getCollectingMethod()
++getSelectedCategories()
++toString()
+/'+checkCode()
++checkDescription()
++checkCollectingMethod()'/
++equals()
+}
+
+class Company {
+-designation : String
++getTestTypeStore()
++getCalStore()
+/'+checkCalDuplicates()'/
+/'+getTestTypes()
++getTestTypesByDesignation(selectedTestTypes)'/
+}
+
+class TestTypeStore {
++getTestTypes()
++getTestTypesByCode(testTypesCodes)
++getSingleTestTypeByCode(code)
+}
+
+/'
+class LaboratoryStore {
++createClinicalAnalysisLaboratory(laboratoryID : String, name : String, address : String, phoneNumber : int, numTIN : int, tt)
++saveClinicalAnalysisLaboratory(cal)
+-addClinicalAnalysisLaboratory(cal)
++validateClinicalAnalysisLaboratory(cal)
+}'/
+
+class RegisterNewCalController {
++createClinicalAnalysisLaboratory(calDto)
++saveClinicalAnalysisLaboratory()
++getTestTypes()
+}
+
+class RegisterNewCalUI {}
+
+class TestTypeMapper {
++List<TestTypeDto> toDTO(List<TestType> testTypes)
++TestTypeDto toDTO(TestType tt)
+}
+
+
+class TestTypeDto {
+-code
+-description
+-collectingMethod
++TestTypeDto(code, description, collectingMethod, selectedCategories)
++getCode()
++getDescription()
++getCollectingMethod()
++getSelectedCategories()
+}
+
+class LaboratoryDto {
+-name
+-address
+-phoneNumber
+-numTIN
++getName()
++getAddress()
++getPhoneNumber()
++getNumTIN()
+}
+
+class ClinicalAnalysisLaboratoryDto {
+-laboratoryID
+-testTypesCodes
++getLaboratoryID()
++getTestTypesCode()
+}
+
+class ClinicalAnalysisLaboratoryStore {
++createClinicalAnalysisLaboratory(laboratoryID, name, address, phoneNumber, numTIN, tt)
++saveClinicalAnalysisLaboratory(cal)
+-addClinicalAnalysisLaboratory(cal)
++validateClinicalAnalysisLaboratory(cal)
+}
+
+RegisterNewCalUI ..> RegisterNewCalController
+RegisterNewCalController ..> Laboratory
+RegisterNewCalController ..> TestType
+RegisterNewCalController ..> ClinicalAnalysisLaboratory
+RegisterNewCalController ..> Company
+RegisterNewCalController ..> TestTypeStore
+/'RegisterNewCalController ..> App
+RegisterNewCalController ..> UserSession'/
+
+RegisterNewCalController ..> TestTypeMapper
+TestTypeMapper ..> TestType
+TestTypeMapper ..> TestTypeDto
+RegisterNewCalController ..> TestTypeDto
+RegisterNewCalUI ..> TestTypeDto
+
+RegisterNewCalController ..> LaboratoryDto
+ClinicalAnalysisLaboratoryDto --|> LaboratoryDto
+RegisterNewCalController .> ClinicalAnalysisLaboratoryDto
+RegisterNewCalUI ..> ClinicalAnalysisLaboratoryDto
+
+
+
+
+
+Company "1" -> "1" TestTypeStore : uses >
+TestTypeStore "1" -> "*" TestType : conducts >
+/'VERIFICAR MULTIPLICIDADE LINHA ABAIXO'/
+/'ClinicalAnalysisLaboratory "1" --> "1" Laboratory : is of >'/
+/'Laboratory "1" --> "1" LaboratoryStore : uses >'/
+Company "1" --> "1" ClinicalAnalysisLaboratoryStore : uses >
+ClinicalAnalysisLaboratory "1" -> "1..*" TestType : operates >
+ClinicalAnalysisLaboratoryStore "1" --> "2..*" ClinicalAnalysisLaboratory : owns >
+
+/'TestTypeStore -[hidden]-> LaboratoryStore'/
+
+TestType -[hidden]down-> ClinicalAnalysisLaboratory
+
+
+ClinicalAnalysisLaboratory --|> Laboratory
+
+/'ACRESCENTAR TESTTYPE CHARACTERIZED BY CATEGORY!!!!!!'/
+
+
+
+@enduml

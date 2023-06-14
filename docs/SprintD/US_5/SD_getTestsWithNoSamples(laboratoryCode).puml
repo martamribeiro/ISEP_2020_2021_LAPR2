@@ -1,0 +1,72 @@
+@startuml
+title SD_getTestsWithNoSamples(laboratoryID)
+
+autonumber
+
+participant "calStore\n:ClinicalAnalysisLaboratoryStore" as CAL_STORE
+participant "calList\n:List<ClinicalAnalysisLaboratory>" as CAL_LIST
+participant "cal\n:ClinicalAnalysisLaboratory" as CAL_OBJ
+participant "calTestList\n:List<Test>" as LIST
+participant "listTestsNoSamples\n:List<Test>" as LIST_NO_SAMPLES
+participant "test\n :Test" as TEST_OBJ
+participant "selectedCal\n:ClinicalAnalysisLaboratory" as CAL
+
+
+
+[o-> CAL_STORE : getTestsWithNoSamples(laboratoryID)
+activate CAL_STORE
+
+CAL_STORE -> CAL_STORE : getCalByLaboratoryID()
+activate CAL_STORE
+deactivate CAL_STORE
+
+loop for each object in calList
+CAL_STORE -> CAL_LIST : cal = get(i)
+activate CAL_LIST
+deactivate CAL_LIST
+
+CAL_STORE -> CAL : b = getLaboratoryID().equalsIgnoreCase(laboratoryID)
+activate CAL
+deactivate CAL
+
+opt b = true
+CAL_STORE --> CAL_STORE : selectedCal = cal
+activate CAL_STORE
+deactivate CAL_STORE
+end
+
+
+end
+|||
+CAL_STORE --> LIST_NO_SAMPLES** : create()
+
+CAL_STORE -> CAL : calTestList = getCalTestList()
+activate CAL
+deactivate CAL
+
+loop for each object in calTestList
+CAL_STORE -> LIST : test = get(i)
+activate LIST
+deactivate LIST
+
+CAL_STORE -> TEST_OBJ : boolean = hasSamples()
+activate TEST_OBJ
+deactivate TEST_OBJ
+
+opt boolean = true
+
+
+CAL_STORE -> LIST_NO_SAMPLES : add(test)
+activate LIST_NO_SAMPLES
+deactivate LIST_NO_SAMPLES
+
+end
+end
+
+
+[<-- CAL_STORE : listTestsNoSamples
+deactivate CAL_STORE
+
+
+
+@enduml

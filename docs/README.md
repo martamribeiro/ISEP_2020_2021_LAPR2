@@ -26,6 +26,7 @@ Throughout the project's development period, the distribution of _tasks / requir
 | Use Case Diagram (UCD)  |  [all](SprintA/UCD.md)   |   [all](SprintB/UCD.md)  |   [all](SprintC/UCD.md)  | [all](SprintD/UCD.md)  |
 | Supplementary Specification   |  [all](SprintA/FURPS.md)   |   [all](SprintB/FURPS.md)  |   [all](SprintC/FURPS.md)  | [all](SprintD/FURPS.md)  |
 | Domain Model  |  [all](SprintA/DM.md)   |   [all](SprintB/DM.md)  |   [all](SprintC/DM.md)  | [all](SprintD/DM.md)  |
+| US 1 (SDP Activities)  |  | | | [1201592]()   |   
 | US 3 (SDP Activities)  |   | [1200805, 1200049](SprintB/US_3/US3_RegisterClient.md)   |   |  |
 | US 4 (SDP Activities)  |   | | [1200049](SprintC/US_4/US_4.md)     |  |
 | US 5 (SDP Activities)  |   | | [1201518](SprintC/US_5/US5_RecordSamples.md)      |  |
@@ -35,4 +36,9 @@ Throughout the project's development period, the distribution of _tasks / requir
 | US 10 (SDP Activities)  |    | [1201592](SprintB/US_10/US10_CreateCategorizeParameter.md)    |   |  |
 | US 11 (SDP Activities)  |     | [1200049, 1201592, 1201518](SprintB/US_11/US11_CreateParameterCategory.md)   |   |  |
 | US 12 (SDP Activities)  |   | | [1200049, 1201592, 1201518]()     |  |
+| US 13 (SDP Activities)  |  | | | [1200049, 1201592, 1201518]()    
 | US 14 (SDP Activities)  |   | | [1201592](SprintC/US_14/US14_MakeDiagnosisWriteTestReport.md)      |  |
+| US 16 (SDP Activities)  | |  | | [1201592](SprintD/US_16/US16_OverviewTestsAnalysePerformance.md)      |  
+| US 17 (SDP Activities)  |  | | | [1200049](SprintD/US_17/US_17.md)      |  
+| US 18 (SDP Activities)  |  | | | [1201592, 1201518, 1200049]()        |
+| US 19 (SDP Activities)  |   | | | [1201518](SprintD/US_19/US19_SendDailyReportsToNHS.md)      |

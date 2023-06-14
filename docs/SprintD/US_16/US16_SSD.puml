@@ -1,0 +1,18 @@
+@startuml
+autonumber
+actor "Laboratory Coordinator" as LC
+
+activate LC
+LC-> ":System" : asks to see an overview of all the clients and tests performed, and analyse the overall performance of the company
+activate ":System"
+":System" --> LC : asks the day or interval of time to analyse and asks the algorithm to be used
+deactivate ":System"
+
+loop while the Laboratory Coordinator inserts and selects different data
+LC-> ":System" : inserts and selects the requested data (i.e., beginningDay, endingDay, chosenAlgorithm)
+activate ":System"
+":System" --> LC : shows an overview of the clients and tests performed, and shows the overall performance of the company
+deactivate ":System"
+end
+
+@enduml

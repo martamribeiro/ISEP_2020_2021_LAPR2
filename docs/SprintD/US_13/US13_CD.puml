@@ -1,0 +1,111 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+
+/'skinparam linetype ortho'/
+
+
+/'package Domain <<Folder>> {
+    package Model <<Folder>> {'/
+
+        class ClinicalAnalysisLaboratory{
+        - laboratoryID
+        }
+
+
+
+        class Test{
+            - code
+            - NhsCode
+            - dateOfTestRegistration
+            - dateOfSamplesCollection
+            - dateOfChemicalAnalysis
+            - dateOfDiagnosis
+        }
+
+
+        class Company {
+            -designation : String
+            +getTestTypeStore()
+            +getParameterStore()
+            +getTestStore()
+            +getCalStore()
+        }
+
+        class Client{
+        - name
+        - citizenCardNum
+        - nhsNum
+        - birthDate
+        - sex
+        - taxIdNum
+        - phoneNum
+        - email
+        }
+
+
+        class ClientStore {
+           +getClientByTinNumber(tinNumber)
+        }
+
+
+        class TestStore {
+            +getTestByNhsCode(nhsCode)
+            +createTest(String nhsCode, Client associatedClient,\n TestType selectedTestType, List<Parameter>selectedParamsList)
+            +validateTest(test)
+            +saveTest(test)
+        }
+
+        class ClinicalAnalysisLaboratoryStore {
+            +getCalByCode(clinicalAnalysisLabCode)
+        }
+
+/'    }
+}'/
+
+/'package Controller <<Folder>>{'/
+    class CreateTestControler{
+    +createTest(NHScode, citizenCardNumber,selectedTestTypeCode, selectedParamCodes)
+    +saveTest(test)
+    }
+
+    class ImportTestController{
+            +createTestsFromFile(filePath)
+        }
+
+    class RegisterClientController {
+      +registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
+      +saveClient()
+    }
+
+/'}'/
+
+    class TestFileUtils {
+        +getTestDataByFile(filepath)
+        +getParameterCodes(String [])
+        +getParameterResults(String[])
+    }
+
+
+
+ImportTestUI ..> ImportTestController
+ImportTestController ..> CreateTestControler
+ImportTestController ..> RegisterClientController
+ImportTestController ..> TestStore
+ImportTestController ..> TestFileUtils
+CreateTestControler ..> Company
+CreateTestControler ..> ClinicalAnalysisLaboratory
+CreateTestControler ..> TestStore
+RegisterClientController ..> Company
+RegisterClientController ..> ClientStore
+ClientStore "1" -- "*" Client : stores >
+TestStore "1" -- "*" Test : stores >
+ClinicalAnalysisLaboratoryStore "1" -- "*" ClinicalAnalysisLaboratory : stores >
+Company "1" -- "1" TestStore : uses >
+Company "1" -- "1" ClientStore : uses >
+Company "1" -- "1" ClinicalAnalysisLaboratoryStore : uses >
+Company "1" --- "*" Test : conducts >
+Client "1" -- "1" Test : requested by <
+ClinicalAnalysisLaboratory "1" - "1..*" Test : performs >
+
+@enduml

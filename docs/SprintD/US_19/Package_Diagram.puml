@@ -1,0 +1,65 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+/'hide empty methods
+hide empty attributes'/
+
+
+'PACKAGES
+
+
+package Core {
+
+
+package Controller {
+
+}
+
+package Domain {
+
+package Model {
+
+}
+
+
+package Stores {
+
+}
+
+
+
+
+package Adapters {
+
+}
+
+package Interfaces {
+
+}
+
+}
+
+
+
+package ThirdParty {
+
+package RegressionModels {
+
+}
+
+
+}
+
+}
+
+
+
+Controller ..> Domain
+Model --> Stores : uses >
+Interfaces <|.. Adapters
+Adapters --> RegressionModels
+
+
+
+
+@enduml

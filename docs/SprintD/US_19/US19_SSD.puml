@@ -1,0 +1,34 @@
+@startuml
+autonumber
+actor "Timer/Clock\n<<automatic>>" as T
+
+activate T
+T -> ":System" : sends automatic daily report to NHS
+
+/'activate ":System"
+":System" --> T : requests report to be sent
+deactivate ":System"
+
+T -> ":System" : create daily report and send it'/
+activate ":System"
+
+":System" --> T : operation success
+
+deactivate ":System"
+
+/'
+T -> ":System" : selects type of test
+activate ":System"
+
+
+":System" --> T : shows all data and requests confirmation
+deactivate ":System"
+
+T -> ":System" : confirms the data
+activate ":System"
+":System" --> T : informs operation success
+deactivate ":System"
+
+deactivate T'/
+
+@enduml

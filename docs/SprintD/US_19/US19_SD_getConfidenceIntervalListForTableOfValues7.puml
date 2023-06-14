@@ -1,0 +1,25 @@
+@startuml
+
+title SD_getConfidenceIntervalListForTableOfValues(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel, bestXIndex)
+
+participant "nhsReportTask:\nNHSReportTask" as TASK
+participant "regressionModel:\nMathCalculus" as REGRESSION_MODEL
+participant "confidenceIntervals:\nList<ConfidenceInterval>"
+
+[o-> TASK : getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, null, confidenceLevel, bestXIndex)
+
+activate TASK
+alt bestXIndex != null (Simple Linear Regression)
+TASK -> REGRESSION_MODEL : confidenceIntervals = getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, null, confidenceLevel)
+activate REGRESSION_MODEL
+deactivate REGRESSION_MODEL
+else else (Multiple Linear Regression)
+TASK -> REGRESSION_MODEL : confidenceIntervals = regressionModel.getConfidenceIntervalList(myRegressionModel, x1InHistoricalPoints, x2InHistoricalPoints, confidenceLevel)
+activate REGRESSION_MODEL
+deactivate REGRESSION_MODEL
+end
+
+[<-- TASK : confidenceIntervals
+deactivate TASK
+
+@enduml

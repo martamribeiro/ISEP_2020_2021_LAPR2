@@ -2,6 +2,8 @@ package app.domain.model;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
+
 
 /**
  * Represents a Report through:
@@ -10,7 +12,7 @@ import org.apache.commons.lang3.StringUtils;
  * @author Marta Ribeiro 1201592
  */
 
-public class Report {
+public class Report implements Serializable {
 
     /**
      * Reference value for checking reportText words count.
