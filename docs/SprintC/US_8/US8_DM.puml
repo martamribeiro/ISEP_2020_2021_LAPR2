@@ -1,0 +1,85 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+hide empty attributes
+left to right direction
+
+class Laboratory {
+- name
+- address
+- phoneNumber
+- numTIN
+}
+
+/'
+class Employee {
+- employeeID
+- organizationRole
+- name
+- address
+- phoneNumber
+- e-Mail
+- standardOccupationalClassificationCode
+}'/
+
+class Test{
+- code
+- NhsCode
+- createdAt
+}
+
+class ClinicalAnalysisLaboratory{
+- laboratoryID
+}
+
+/'class Application{}'/
+
+class TestType{
+- code
+- description
+- collectingMethod
+}
+
+class Company{
+- designation
+}
+
+class Administrator{}
+
+together {
+class TestType
+class Laboratory
+}
+
+Company -[hidden]-> TestType
+Company -[hidden]-> Laboratory
+
+
+/' LAYOUT PURPOSES '/
+ClinicalAnalysisLaboratory -[hidden]down-> Laboratory
+Test -[hidden]up-> TestType
+ClinicalAnalysisLaboratory -[hidden]up-> TestType
+
+
+/' END OF LAYOUT PURPOSES '/
+
+Company "1" -- "2..*" ClinicalAnalysisLaboratory : owns >
+/'ClinicalAnalysisLaboratory "1" -- "1" Laboratory : is of >'/
+/'Employee "1..*" - "1" Company : works for >'/
+Company "1" -- "*" TestType : conducts >
+ClinicalAnalysisLaboratory "1" -- "1..*" Test : performs
+Company "1" -- "*" ParameterCategory : capable of analysing >
+
+/' MUDAR SENTIDO DA SETA? POR CAUSA DO RATIONALE '/
+/'Application "1" -- "1" Company : knows <'/
+Test "*" -- "1" TestType : classified as >
+ClinicalAnalysisLaboratory "1" -- "1..*" TestType : operates >
+ClinicalAnalysisLaboratory "1..*" -- "1" Administrator : registered by >
+TestType "1" -- "1..*" ParameterCategory : characterized by >
+
+Laboratory <|-- ClinicalAnalysisLaboratory
+
+
+
+@enduml

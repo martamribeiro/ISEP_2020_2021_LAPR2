@@ -1,0 +1,34 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+actor Receptionist
+actor "Medical Lab Technician" as MLT
+actor Administrator
+actor "Clinical Chemistry Technologist" as CCT
+actor "Laboratory Coordinator" as LC
+actor "Specialist Doctor" as SD
+actor Client
+actor BOT
+
+
+
+rectangle System {
+Receptionist --> (UC 2 - Register a test to be performed)
+(UC 2 - Register a test to be performed) --> (UC 1 - Register a new client) #brown;line.dashed;text:black : <<Include>>
+MLT --> (UC 3 - Register the clinical test performed)
+MLT --> (UC 4 - Record the sample collected in the scope of a given test)
+CCT --> (UC 8 - Record the chemical analysis result)
+Administrator --> (UC 5 - Specify a new type of test and its collecting methods)
+Administrator --> (UC 6 - Specify a new test parameter and categorize it)
+Administrator --> (UC 7 - Specify a new parameter category)
+SD --> (UC 12 - Register a report)
+LC --> (UC 10 - Post the chemical test/result)
+(UC 10 - Post the chemical test/result) --> (UC 9 - Validate the chemical test/result) #brown;line.dashed;text:black : <<Include>>
+BOT --> (UC 13 - Generate Covid-19 reports)
+BOT --> (UC 14 - Send notification)
+(UC 12 - Register a report) --> (UC 11 - Make a diagnosis) #brown;line.dashed;text:black : <<Include>>
+}
+
+
+@enduml

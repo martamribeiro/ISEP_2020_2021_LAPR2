@@ -1,0 +1,284 @@
+@startuml
+
+autonumber
+
+actor "Medical Lab Technician" as MLT
+
+participant ":RecordSamplesUI  " as UI
+participant ":RecordSamplesController" as CTRL
+participant ":Company" as COMPANY
+participant "testStore\n:TestStore" as TEST_STORE
+participant "selectedTest\n:Test" as SELECTED_TEST
+participant "sampleStore\n:SampleStore" as SAMPLE_STORE
+participant ":TestMapper" as TEST_MAPPER
+participant "listTestsNoSamples\n:List<Test>" as LIST_TESTS_NO_SAMPLES
+participant "listTestsNoSamplesDto\n:List<TestDto>" as LIST_TESTS_NO_SAMPLES_DTO
+participant "calStore\n:ClinicalAnalysisLaboratoryStore" as CAL_STORE
+participant "selectedCal\n:ClinicalAnalysisLaboratory" as CAL
+participant "sample\n:Sample" as SAMPLE
+participant "api\n:ExternalAPI" as API
+participant "barcode\n:Barcode" as BARCODE
+participant "myBarcode\n:MyBarcode" as MY_BARCODE
+
+activate MLT
+MLT -> UI : asks to record the samples
+activate UI
+
+note over UI, CTRL
+The **laboratoryID** refers to the laboratory ID of the ClinicalAnalysisLaboratoryDto
+selected by the Medical Lab Technician when he/she logs in.
+end note
+UI -> CTRL : listTestsNoSamplesDto = getTestsNoSamples(laboratoryID)
+activate CTRL
+
+CTRL -> COMPANY : calStore = getCalStore()
+activate COMPANY
+
+COMPANY --> CAL_STORE** : create()
+deactivate COMPANY
+
+CTRL -> CAL_STORE : getTestsWithNoSamples(laboratoryID)
+activate CAL_STORE
+ref over CAL_STORE
+SD_getTestsWithNoSamples(laboratoryID)
+end
+CAL_STORE --> CTRL : listTestsNoSamples
+deactivate CAL_STORE
+|||
+/'
+CTRL -> COMPANY : testStore = getTestStore()
+activate COMPANY
+|||
+deactivate COMPANY'/
+/'
+CTRL -> TEST_STORE : getTestsWithNoSamples(selectedCal)
+activate TEST_STORE
+
+ref over TEST_STORE
+SD_getTestsWithNoSamples(selectedCal)
+end
+
+TEST_STORE --> CTRL : listTestsNoSamples
+deactivate TEST_STORE
+|||'/
+
+CTRL -> TEST_MAPPER : toDTO(listTestsNoSamples)
+activate TEST_MAPPER
+
+ref over TEST_MAPPER
+SD_toDTO(listTestsNoSamples)
+end
+
+TEST_MAPPER --> CTRL : listTestsNoSamplesDto
+deactivate TEST_MAPPER
+
+CTRL --> UI : listTestsNoSamplesDto
+deactivate CTRL
+
+UI --> MLT : shows list with tests with no samples collected and asks to select one
+deactivate UI
+
+
+MLT -> UI : selects test
+activate UI
+
+/'UI -> UI : selectedTestDto = (TestDto) Utils.showAndSelectOne(listTestWithNoSamplesDto, "msg")
+activate UI
+deactivate UI'/
+
+/'note over UI, CTRL
+The **code** refers to the code of the TestDto
+selected by the Medical Lab Technician.
+end note
+UI -> CTRL : selectedTest = getTestByCode(code)
+activate CTRL
+
+CTRL -> COMPANY : testStore = getTestStore()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> TEST_STORE : selectedTest = getTestByCode(code)
+activate TEST_STORE
+TEST_STORE --> SELECTED_TEST** : create()
+TEST_STORE --> CTRL : selectedTest
+deactivate TEST_STORE
+
+CTRL --> UI : selectedTest'/
+
+deactivate CTRL
+
+
+UI --> MLT : asks the number of samples to collect
+deactivate UI
+
+MLT -> UI : types number
+activate UI
+
+UI --> MLT : requests confirmation
+deactivate UI
+
+MLT -> UI : confirms the data
+activate UI
+
+loop for each Sample to be recorded
+UI -> CTRL : createSample()
+activate CTRL
+
+CTRL -> CTRL : getBarcode()
+activate CTRL
+ref over CTRL
+SD_getBarcode()
+end
+CTRL --> CTRL : myBarcode
+deactivate CTRL
+
+CTRL -> COMPANY : sampleStore = getSampleStore()
+activate COMPANY
+COMPANY --> SAMPLE_STORE** : create()
+deactivate COMPANY
+
+
+CTRL -> SAMPLE_STORE : sample = createSample(myBarcode)
+activate SAMPLE_STORE
+
+SAMPLE_STORE --> SAMPLE** : create(myBarcode)
+
+
+deactivate SAMPLE_STORE
+
+/'
+SAMPLE -> SAMPLE : api = getExternalAPI()
+activate SAMPLE
+deactivate SAMPLE
+'/
+
+
+/'
+SAMPLE -> API : barcode = getBarcode(barcodeNumber)
+activate API
+'/
+/'
+API --> BARCODE** : create(barcodeNumber)
+
+API --> SAMPLE : barcode'/
+/'deactivate SAMPLE'/
+deactivate COMPANY
+deactivate API
+
+CTRL --> UI : result
+deactivate CTRL
+
+
+
+/'UI --> MLT : shows data and requests confirmation
+
+MLT -> UI : confirms the data'/
+
+/' SAVESAMPLE()
+UI -> CTRL : saveSample()
+activate CTRL
+
+CTRL -> COMPANY : sampleStore = getSampleStore()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> SAMPLE_STORE : saveSample(sample)
+activate SAMPLE_STORE
+
+
+SAMPLE_STORE -> SAMPLE_STORE : validateSample(sample)
+activate SAMPLE_STORE
+deactivate SAMPLE_STORE
+
+SAMPLE_STORE -> SAMPLE_STORE : addSample(sample)
+activate SAMPLE_STORE
+deactivate SAMPLE_STORE
+
+CTRL --> UI : result
+
+deactivate SAMPLE_STORE
+'/
+
+
+note over UI, CTRL
+The **code** refers to the code of the TestDto
+selected by the Medical Lab Technician in step 12.
+end note
+UI -> CTRL : addSample(code)
+activate CTRL
+
+
+
+
+CTRL -> COMPANY : testStore = getTestStore()
+activate COMPANY
+
+COMPANY --> TEST_STORE** : create()
+
+deactivate COMPANY
+
+CTRL -> TEST_STORE : getTestByCodeInTestList(code)
+activate TEST_STORE
+ref over TEST_STORE
+SD_getTestByCodeInTestList()
+end
+TEST_STORE --> CTRL : selectedTest
+deactivate TEST_STORE
+|||
+CTRL -> SELECTED_TEST : addSample(sample)
+activate SELECTED_TEST
+
+SELECTED_TEST -> SELECTED_TEST : add(sample)
+activate SELECTED_TEST
+deactivate SELECTED_TEST
+
+deactivate SELECTED_TEST
+
+
+
+/'dentro do método addSample, vai-se verificar se a sample já está lá?'/
+
+deactivate CTRL
+
+
+UI -> CTRL : saveImageBarcode(code)
+activate CTRL
+
+CTRL -> COMPANY : api = getExternalApi()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> SAMPLE : myBarcode = getMyBarcode()
+activate SAMPLE
+deactivate SAMPLE
+
+CTRL -> API : saveImageBarcode(myBarcode, code)
+activate API
+deactivate API
+
+CTRL --> UI : result
+
+deactivate CTRL
+
+end
+deactivate CTRL
+|||
+UI -> CTRL : addSampleCollectingDateToTest()
+activate CTRL
+
+CTRL -> SELECTED_TEST : addSampleCollectingDate()
+activate SELECTED_TEST
+deactivate SELECTED_TEST
+deactivate CTRL
+
+
+
+UI --> MLT : informs operation success
+
+
+/'colocar requests confirmation
+e confirms the data em cima'/
+
+
+
+@enduml

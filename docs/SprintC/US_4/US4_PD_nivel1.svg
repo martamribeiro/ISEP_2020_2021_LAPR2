@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="328.25px" preserveAspectRatio="none" style="width:746px;height:328px;" version="1.1" viewBox="0 0 746 328" width="746.39px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ao6lgajbunk2" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.02"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.04" dy="4.04" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2c2e2644034c00788261e03c85b06837]
+cluster Core--><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="97.97,6.06,138.37,6.06,145.44,29.9055,729.22,29.9055,729.22,303,97.97,303,97.97,6.06" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="97.97" x2="145.44" y1="29.9055" y2="29.9055"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="34.34" x="102.01" y="22.7585">Core</text><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="414.1,58.58,472.68,58.58,479.75,82.4255,696.9,82.4255,696.9,203.01,414.1,203.01,414.1,58.58" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="414.1" x2="479.75" y1="82.4255" y2="82.4255"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="52.52" x="418.14" y="75.2785">Domain</text><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="438.34,103.525,488.84,103.525,495.91,127.3705,502.98,127.3705,502.98,159.2959,438.34,159.2959,438.34,103.525" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="438.34" x2="495.91" y1="127.3705" y2="127.3705"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="44.44" x="442.38" y="120.2235">Model</text><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="606,103.525,658.52,103.525,665.59,127.3705,672.66,127.3705,672.66,159.2959,606,159.2959,606,103.525" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="606" x2="665.59" y1="127.3705" y2="127.3705"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="46.46" x="610.04" y="120.2235">Stores</text><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="275.73,167.155,344.41,167.155,351.48,191.0005,358.55,191.0005,358.55,222.9259,275.73,222.9259,275.73,167.155" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="275.73" x2="351.48" y1="191.0005" y2="191.0005"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="62.62" x="279.77" y="183.8535">Mappers</text><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="445.915,230.785,481.265,230.785,488.335,254.6305,495.405,254.6305,495.405,286.5559,445.915,286.5559,445.915,230.785" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="445.915" x2="488.335" y1="254.6305" y2="254.6305"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="29.29" x="449.955" y="247.4835">DTO</text><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="114.13,186.345,199.98,186.345,207.05,210.1905,214.12,210.1905,214.12,242.1159,114.13,242.1159,114.13,186.345" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="114.13" x2="207.05" y1="210.1905" y2="210.1905"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="79.79" x="118.17" y="203.0435">Controllers</text><polygon fill="#FFFFFF" filter="url(#f1ao6lgajbunk2)" points="16.16,266.135,36.36,266.135,43.43,289.9805,50.5,289.9805,50.5,321.9059,16.16,321.9059,16.16,266.135" style="stroke:#000000;stroke-width:1.5150000000000001;"/><line style="stroke:#000000;stroke-width:1.5150000000000001;" x1="16.16" x2="43.43" y1="289.9805" y2="289.9805"/><text fill="#000000" font-family="sans-serif" font-size="14.14" font-weight="bold" lengthAdjust="spacing" textLength="14.14" x="20.2" y="282.8335">UI</text><!--MD5=[1d15d32329e53e89c950c7808a8d40e3]
+link Controllers to Mappers--><path d="M214.1604,207.8883 C232.1081,205.6057 252.3384,203.0403 270.0235,200.788 " fill="none" id="Controllers-to-Mappers" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="275.427,200.1012,265.901,197.2368,270.4171,200.7365,266.9174,205.2526,275.427,200.1012" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[01b5c43ff5db2b3ab7f36f76b228af8f]
+link Controllers to DTO--><path d="M214.3826,227.3712 C233.4312,232.0879 255.4795,237.047 275.73,240.38 C333.603,249.9144 402.0911,254.8735 440.2287,257.0854 " fill="none" id="Controllers-to-DTO" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="445.6322,257.3884,436.7746,252.8616,440.5896,257.1147,436.3366,260.9297,445.6322,257.3884" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[050e352373bbcff083fb8deb9ac850c3]
+link Controllers to Domain--><path d="M201.7879,186.0319 C222.3313,172.0838 249.1165,156.6914 275.73,149.48 C311.2618,139.8547 323.3212,138.8144 358.55,149.48 C378.6894,155.5804 378.7702,167.0742 397.94,175.74 C401.5798,177.3863 405.3895,178.9153 409.2747,180.3314 C410.246,180.6854 411.222,181.0323 412.2013,181.3723 C412.6909,181.5423 413.1813,181.7105 413.6724,181.877 C413.7952,181.9186 413.918,181.9601 414.0408,182.0015 " fill="none" id="Controllers-to-Domain" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="414.0408,182.0015,406.7173,175.2698,409.2553,180.3885,404.1366,182.9266,414.0408,182.0015" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[e520cc194c2a0f527ea9a8a291e7735a]
+link Mappers to Domain--><path d="M358.752,194.93 C369.7938,194.93 382.1171,194.93 394.4224,194.93 C400.575,194.93 406.7231,194.93 412.7043,194.93 C413.0782,194.93 413.4513,194.93 413.8238,194.93 " fill="none" id="Mappers-to-Domain" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="413.8238,194.93,404.7338,190.89,408.7738,194.93,404.7338,198.97,413.8238,194.93" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[7bfceed364607ce3b8cce1b3d5210487]
+link Mappers to DTO--><path d="M358.752,211.9788 C384.608,222.8464 417.4835,236.6531 440.7135,246.4097 " fill="none" id="Mappers-to-DTO" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="445.511,248.4196,438.7011,241.1688,440.8567,246.4599,435.5656,248.6156,445.511,248.4196" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[bb4acd81d18e7ee3505d81d4ee75e8fc]
+link UI to Controllers--><path d="M50.6515,283.7999 C66.5085,273.9726 91.4151,258.5398 113.7664,244.6927 " fill="none" id="UI-to-Controllers" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="118.2003,241.9556,108.3466,243.3176,113.9098,244.6191,112.6083,250.1823,118.2003,241.9556" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[9ea89be3b33715d555650644e5bd9dde]
+link UI to DTO--><path d="M50.6111,292.5869 C115.4834,287.3248 356.1967,267.7712 440.3701,260.9335 " fill="none" id="UI-to-DTO" style="stroke:#A80036;stroke-width:1.01;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="445.6827,260.5093,436.2894,257.2359,440.65,260.9275,436.9585,265.2882,445.6827,260.5093" style="stroke:#A80036;stroke-width:1.01;"/><!--MD5=[8db2d36dfcc6aadb263e2609429d2d71]
+link Model to Stores--><path d="M503.0204,131.3 C532.4316,131.3 576.2454,131.3 605.9798,131.3 " fill="none" id="Model-Stores" style="stroke:#A80036;stroke-width:1.01;"/><text fill="#000000" font-family="sans-serif" font-size="13.13" lengthAdjust="spacing" textLength="40.4" x="534.29" y="127.7601">uses &gt;</text><!--MD5=[411163bcdd0d31a00c13df643a17c934]
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Model {
+
+}
+
+package Stores {
+
+
+}
+
+}
+
+package Mappers {
+
+
+}
+
+package DTO {
+
+}
+
+package Controllers {
+
+
+}
+
+}
+
+package UI {
+
+
+
+}
+
+Controllers ..> Mappers
+Controllers ..> DTO
+Controllers ..> Domain
+Mappers ..> Domain
+Mappers ..> DTO
+UI ..> Controllers
+UI ..> DTO
+Model - - Stores : uses >
+
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 10:25:05 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: BR
+--></g></svg>

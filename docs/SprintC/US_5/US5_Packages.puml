@@ -1,0 +1,200 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+/'hide empty methods
+hide empty attributes'/
+
+'PACKAGES
+package UI {
+class RecordSamplesUI
+}
+
+package Core {
+
+
+package Controller {
+class RecordSamplesController
+}
+
+package Domain {
+
+package Model {
+class Company
+class Test
+class Sample
+class MyBarcode
+class ClinicalAnalysisLaboratory
+class Laboratory
+}
+
+
+package Stores {
+class TestStore
+class SampleStore
+class ClinicalAnalysisLaboratoryStore
+}
+
+package Shared {
+class BarcodeUtils
+}
+
+
+
+package Adapters {
+class BarbecueAdapter
+}
+
+package Interfaces {
+class ExternalAPI
+}
+
+}
+
+
+
+package Mappers {
+class TestMapper
+}
+
+package DTO {
+class TestDto
+}
+
+package ThirdParty {
+
+package APIs {
+class BarbecueAPI
+}
+
+class Barcode
+
+}
+
+}
+
+
+
+
+
+
+class RecordSamplesUI {}
+
+class RecordSamplesController {
++getTestsNoSamples()
++createSample()
++addSample(code)
++getBarcode()
++saveImageBarcode(code)
++addSampleCollectionDateToTest()
+}
+
+class Company {
+-designation
++getTestStore()
++getSampleStore()
+}
+
+class TestStore {
++getTestByCodeInTestList()
+}
+
+class TestMapper {
++List<TestDto> toDTO(List<Test> tests)
++TestDto toDTO(Test t)
+}
+
+class TestDto {
+- code
+- nhsCode
++TestDto(code, nhsCode, client, testType, parameters, samples)
++getCode()
+}
+
+class Test {
+- code
+- nhsCode
+- dateOfTestRegistration
+- dateOfChemicalAnalysis
+- dateOfDiagnosis
++Test(nhsCode, client, testType, parameters)
++getCode()
++getNhsCode()
++getSamples()
++getClient()
++getTestType()
++getParameters()
++addSample(sample)
++addSampleCollectionDate()
++generateNowDateAndTime()
++hasSamples()
+}
+
+class Sample {
+-myBarcode
++Sample(myBarcode)
++getMyBarcode()
++equals(otherObject)
+}
+
+class SampleStore {
++createSample(myBarcode)
++validateSample(sample)
+}
+
+class Barcode {}
+
+class MyBarcode {
+- barcodeNumber
++MyBarcode(barcode, barcodeNumber)
++MyBarcode(Mybarcode otherMyBarcode)
++getBarcode()
++getBarcodeNumber()
++equals(otherObject)
+}
+
+interface ExternalAPI <<interface>> {
++MyBarcode getBarcode(barcodeNumber)
++saveImageBarcode(myBarcode, code)
+}
+
+class BarbecueAdapter {
++MyBarcode getBarcode(barcodeNumber)
++saveImageBarcode(myBarcode, code)
+}
+
+class BarbecueAPI{
++Barcode createUPCA(data)
++BufferedImage saveJPEG(barcode, file)
+}
+
+class ClinicalAnalysisLaboratory {
+-laboratoryID : String
++ClinicalAnalysisLaboratory(laboratoryID, name, address, phoneNumber, numTIN, selectedTT)
++getLaboratoryID()
++getSelectedTT()
++getCalTestList()
+}
+
+class BarcodeUtils{
++generateBarcodeNumber()
++File imageFolderPath(code)
+}
+
+class ClinicalAnalysisLaboratoryStore {
++getTestsWithNoSamples(laboratoryID)
++getCalByLaboratoryID(laboratoryID)
+}
+
+class Laboratory {
+-name
+-address
+-phoneNumber
+-numTIN
++Laboratory(name, address, phoneNumber, numTIN)
++getName()
++getAddress()
++getPhoneNumber()
++getNumTIN()
+}
+
+@enduml

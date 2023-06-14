@@ -1,0 +1,39 @@
+@startuml
+title SD_getTestByCodeInTestList()
+
+autonumber
+
+participant "testStore\n:TestStore" as TEST_STORE
+participant "testList\n:List<Test>" as LIST
+participant "selectedTest\n:Test" as SELECTED_TEST
+participant "test\n :Test" as TEST_OBJ
+
+[o-> TEST_STORE : getTestByCodeInTestList(code)
+activate TEST_STORE
+
+loop for each object in testList
+TEST_STORE -> LIST : test = get(i)
+activate LIST
+deactivate LIST
+
+TEST_STORE -> TEST_OBJ : boolean = getCode().equalsIgnoreCase(code)
+activate TEST_OBJ
+deactivate TEST_OBJ
+
+opt boolean = true
+
+
+TEST_STORE -> TEST_STORE : selectedTest = test
+activate TEST_STORE
+deactivate TEST_STORE
+
+end
+end
+
+
+[<-- TEST_STORE : selectedTest
+deactivate TEST_STORE
+
+
+
+@enduml

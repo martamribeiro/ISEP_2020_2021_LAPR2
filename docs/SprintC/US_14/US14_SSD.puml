@@ -1,0 +1,29 @@
+@startuml
+autonumber
+actor "Specialist Doctor" as SpDt
+
+activate SpDt
+SpDt-> ":System" : asks to make a diagnosis and write a report
+activate ":System"
+loop while the specialist doctor wants to make a diagnosis and write a report for one more test
+":System" --> SpDt : shows list of tests ready to make a diagnosis and asks to selects one
+deactivate ":System"
+
+SpDt-> ":System" : selects a test
+activate ":System"
+":System" --> SpDt : shows name, chemical result, metric and reference value of each parameter of the selected test and requests data(i.e., reportText)
+deactivate ":System"
+
+SpDt-> ":System" : types requested data
+activate ":System"
+":System" --> SpDt : shows the data and requests a confirmation
+deactivate ":System"
+
+SpDt-> ":System" : confirms the data
+activate ":System"
+end
+":System" --> SpDt : informs operation success
+deactivate ":System"
+deactivate SpDt
+
+@enduml

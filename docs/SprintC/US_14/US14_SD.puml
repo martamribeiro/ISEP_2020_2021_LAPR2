@@ -1,0 +1,137 @@
+@startuml
+autonumber
+actor "Specialist Doctor" as SPDT
+
+participant ":WriteReportUI" as UI
+participant ":WriteReportController" as CTRL
+participant ":Company" as CMP
+participant "tstStore\n:TestStore" as TSTSTORE
+participant "rpt\n:Report" as RPT
+participant ":TestMapper" as TSTMAPPER
+participant "listTestsToDiagnose\n:List<Test>" as LT
+participant "listTestParams\n:List<TestParameter>" as LTP
+participant ":TestParameterMapper" as TPMAPPER
+participant "testParam\n:TestParameter" as TP
+participant "listTestResults\n:List<TestParameterResult>" as LTPR
+participant ":TestResultsMapper" as TRMAPPER
+participant "listTestsToDiagnoseDTO\n:List<TestDTO>" as LIST_DTO
+participant "testResult\n:TestParameterResult" as TPR
+participant "tst\n:Test" as TST
+
+activate SPDT
+SPDT -> UI : asks to make diagnosis and write a report
+activate UI
+loop while the specialist doctor wants to make a diagnosis and write a report for one more test
+UI -> CTRL : listTestsToDiagnoseDTO = getTestsToDiagnose()
+activate CTRL
+
+CTRL -> CMP : tstStore = getTestStore()
+activate CMP
+|||
+deactivate CMP
+
+CTRL -> TSTSTORE : listTestsToDiagnose = getTestsReadyToDiagnose()
+activate TSTSTORE
+
+TSTSTORE --> LT** : create()
+TSTSTORE --> CTRL : listTestsToDiagnose
+deactivate TSTSTORE
+
+CTRL -> TSTMAPPER : listTestsToDiagnoseDTO = toDTO(listTestsToDiagnose)
+activate TSTMAPPER
+
+ref over TSTMAPPER : US14_SD_TestMapper_toDTO_List
+
+TSTMAPPER --> CTRL : listTestsToDiagnoseDTO
+deactivate TSTMAPPER
+
+CTRL --> UI : listTestsToDiagnoseDTO
+deactivate CTRL
+
+UI --> SPDT : shows list of tests ready to make a diagnosis and asks to selects one
+deactivate UI
+
+SPDT -> UI : selects a test
+activate UI
+
+UI -> CTRL : listTestParamsDTO = getTestParameters(code)
+activate CTRL
+
+CTRL -> CMP : tstStore = getTestStore()
+activate CMP
+|||
+deactivate CMP
+
+CTRL -> TSTSTORE : tst = getTestByCode()
+activate TSTSTORE
+|||
+deactivate TSTSTORE
+
+CTRL -> TSTSTORE : listTestParams = getTestParameters(tst)
+activate TSTSTORE
+TSTSTORE --> LTP** : create()
+TSTSTORE --> CTRL : listTestParams
+deactivate TSTSTORE
+
+CTRL -> TPMAPPER : listTestParamsDTO = toDTO(listTestParams)
+activate TPMAPPER
+ref over TPMAPPER : US14_SD_TestParameterMapper_toDTO_List
+TPMAPPER --> CTRL : listTestParamsDTO
+deactivate TPMAPPER
+
+CTRL --> UI : listTestParamsDTO
+
+deactivate CTRL
+
+UI --> SPDT : shows name, chemical result, metric and reference value of each parameter of the selected test and requests data(i.e., reportText)
+deactivate UI
+
+SPDT -> UI : types requested data
+activate UI
+
+UI -> CTRL : createReport(reportText)
+activate CTRL
+
+CTRL -> CMP : report = createReport(reportText)
+activate CMP
+
+CMP --> RPT** : create(reportText)
+deactivate CMP
+
+CTRL --> UI : result
+deactivate CTRL
+UI --> SPDT : shows the data and requests a confirmation
+deactivate UI
+
+SPDT -> UI : confirms the data
+activate UI
+
+UI -> CTRL : addReportToTest(code)
+activate CTRL
+
+CTRL -> CMP : tstStore = getTestStore()
+activate CMP
+|||
+deactivate CMP
+
+CTRL -> TSTSTORE : selectedTest = getTestByCode(code)
+activate TSTSTORE
+|||
+deactivate TSTSTORE
+
+CTRL -> TSTSTORE : addReportToTest(selectedTest)
+activate TSTSTORE
+|||
+deactivate TSTSTORE
+
+CTRL --> UI : result
+deactivate CMP
+deactivate CTRL
+
+end
+
+UI --> SPDT : informs operation success
+deactivate UI
+deactivate SPDT
+
+@enduml

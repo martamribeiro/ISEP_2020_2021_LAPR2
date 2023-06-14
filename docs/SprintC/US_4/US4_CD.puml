@@ -1,0 +1,209 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+
+/'skinparam linetype ortho'/
+package UI <<Folder>> {
+   class CreateTestUI{
+    -selectedCal: String
+    }
+}
+
+
+/'package Domain <<Folder>> {
+    package Model <<Folder>> {'/
+        class Report{}
+
+        class ClinicalAnalysisLaboratory{
+        - laboratoryID
+        }
+
+        class TestParameter{
+            +TestParameter(parameter: Parameter)
+        }
+        class TestParameterResult{
+        - createdAt
+        - value
+        - metric
+        }
+        class TestType {
+        - code : String
+        - description : String
+        - collectingMethod : String
+        }
+
+        class Test{
+            - code
+            - NhsCode
+            - dateOfTestRegistration
+            - dateOfSamplesCollection
+            - dateOfChemicalAnalysis
+            - dateOfDiagnosis
+        }
+
+        class Sample{
+            - barCode
+        }
+
+        class Parameter {
+          -code
+          -shortName
+          -description
+        }
+
+        class Company {
+            -designation : String
+            +getTestTypeStore()
+            +getParameterStore()
+            +getTestStore()
+            +getCalStore()
+        }
+
+        class ParameterCategory{
+            -code
+            -name
+        }
+        class Client{
+        - name
+        - citizenCardNum
+        - nhsNum
+        - birthDate
+        - sex
+        - taxIdNum
+        - phoneNum
+        - email
+        }
+
+/'    }'/
+/'    package Stores <<Folder>> {'/
+        class ParameterStore {
+            +getParamsByCategories(List<String> selectedCategoriesCodes)
+            +getParamsByCategory(String category)
+        }
+
+        class TestTypeStore {
+               +getTestTypes()
+               +getTestTypeByCode(String code)
+               +getCategoriesByTestTypeCode(String selectedTestTypeCode)
+            }
+
+        class ClientStore {
+           +getClientByTinNumber(tinNumber)
+        }
+
+
+        class TestStore {
+            +createTest(String NHScode, Client associatedClient,\n TestType selectedTestType, List<Parameter>selectedParamsList)
+            +validateTest(test)
+            +saveTest(test)
+        }
+
+        class ClinicalAnalysisLaboratoryStore {
+            +getCalByCode(clinicalAnalysisLabCode)
+        }
+
+/'    }
+}'/
+
+/'package Controller <<Folder>>{'/
+    class CreateTestControler{
+    +createTest(NHScode, citizenCardNumber,selectedTestTypeCode, selectedParamCodes)
+    +saveTest(test)
+    +getTestTypes() : TestTypeDTO
+    +getCategoriesListOfTestType(selectedTestTypeCode): CategoriesDTO
+    +getParametersOfCategories(selectedCategoriesCodes): ParametersDTO
+    }
+/'}'/
+
+/'package DTO <<Folder>>{'/
+    class TestTypeDTO {
+    -code
+    -description
+    -collectingMethod
+    -List<Category> selectedCategories
+    +TestTypeDTO(code, description, collectingMethod, selectedCategories)
+    }
+
+    class CategoryDto {
+    -code
+    -name
+    +CategoryDto(code, name)
+    }
+
+    class ParameterDTO {
+    -code
+    -shortName
+    -description
+    -ParameterCategory
+    +ParameterDTO(code, shortName, description, ParameterCategory)'
+    }
+
+/'}'/
+
+/'package Mappers <<Folder>>{'/
+    class TestTypeMapper {
+        +List<TestTypeDTO> toDTO(List<TestType> testTypes)
+        +TestTypeDTO toDTO(TestType tt)
+    }
+    class CategoryMapper{
+        +List<CategoryDto> toDTO(List<Category> parameterCategories)
+        +CategoryDto toDTO(Category category)
+    }
+    class ParameterMapper {
+        +List<ParameterDTO> toDTO(List<Parameter> parameters)
+        +ParameterDTO toDTO(Parameter parameter)
+    }
+
+/'}'/
+
+Client -[hidden]-|> Test
+CreateTestControler -[hidden]-|> Test
+ClinicalAnalysisLaboratory -[hidden]-|> Test
+
+CreateTestUI ..> CreateTestControler
+CreateTestUI ..> CategoryDto
+CreateTestUI ..> ParameterDTO
+CreateTestUI ..> TestTypeDTO
+CategoryMapper ..> CategoryDto
+CategoryMapper ..> ParameterCategory
+ParameterMapper ..> ParameterDTO
+ParameterMapper ..> Parameter
+TestTypeMapper ..> TestTypeDTO
+TestTypeMapper ..> TestType
+CreateTestControler ..> Company
+CreateTestControler ..> CategoryMapper
+CreateTestControler ..> CategoryDto
+CreateTestControler ..> ParameterMapper
+CreateTestControler ..> ParameterDTO
+CreateTestControler ..> TestTypeMapper
+CreateTestControler ..> TestTypeDTO
+CreateTestControler ..> ParameterStore
+CreateTestControler ..> TestTypeStore
+CreateTestControler ..> TestStore
+TestTypeStore "1" -- "*" TestType : stores >
+ClientStore "1" -- "*" Client : stores >
+TestStore "1" -- "*" Test : stores >
+ParameterStore "1" -- "*" Parameter : stores >
+ClinicalAnalysisLaboratoryStore "1" -- "*" ClinicalAnalysisLaboratory : stores >
+Company "1" -- "1" ParameterStore : uses >
+Company "1" -- "1" TestTypeStore : uses >
+Company "1" -- "1" TestStore : uses >
+Company "1" -- "1" ClientStore : uses >
+Company "1" -- "1" ClinicalAnalysisLaboratoryStore : uses >
+TestType "1" -- "1..*" Parameter : characterized by >
+Company "1" -- "*" TestType : conducts >
+Company "1" -- "*" Test : conducts >
+Company "1" -- "*" Parameter : capable of analysing >
+Test "*" -- "1" TestType : classified as >
+Test "1" -- "1..*" TestParameter : requests analysis of >
+TestParameter "*" -- "1" Parameter : refers to >
+TestParameter "1" -- "0..1" TestParameterResult : contains >
+Test "1" -- "1..*" Sample : collects >
+Client "1" -- "1" Test : requested by <
+Parameter "*" -- "1" ParameterCategory: presented under >
+TestType "1" -- "1..*" ParameterCategory : characterized by >
+Report "1" -- "1" Test : is of >
+ClinicalAnalysisLaboratory "1" - "1..*" TestType : operates >
+ClinicalAnalysisLaboratory "1" - "1..*" Test : performs >
+
+@enduml

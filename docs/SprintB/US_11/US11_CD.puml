@@ -1,0 +1,40 @@
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+class Company {
+  -String designation
+  +getParameterCategoryStore()
+}
+
+class ParameterCategory {
+   -String code
+   -String name
+   +ParameterCategory(code, name)
+   +getCode()
+}
+
+class ParameterCategoryStore {
+    +createParameterCategory(code, name)
+    +validateParameterCategory(pc)
+    +saveParameterCategory(pc)
+}
+
+class CreateParameterCategoryController {
+  +createParameterCategory(code, name)
+  +saveParameterCategory()
+}
+
+class CreateParameterCategoryUI {
+}
+
+CreateParameterCategoryUI ..> CreateParameterCategoryController
+CreateParameterCategoryController ..> Company
+CreateParameterCategoryController ..> ParameterCategoryStore
+ParameterCategoryStore "1" -- "*" ParameterCategory : adopts >
+Company "1" --> "1" ParameterCategoryStore : uses >
+
+
+@enduml

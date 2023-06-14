@@ -1,0 +1,118 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class CreateEmployeeUI {
+}
+
+class RegisterEmployeeController {
+-Company company
+-Employee emp
+-SpecialistDoctor sd
+-String generatedPassword
++createEmployee(empDTO)
++saveEmployee()
++getRoles()
++makeEmployeeAUser()
++makeEmployeeAnUserAndSendPassword()
+}
+
+class Employee {
+-OrgRole role
+-String employeeID
+-String name
+-String address
+-String phoneNumber
+-String email
+-String socCode
++Employee(role,name,address,phoneNumber,email,socCode)
++generateEmployeeID(name)
++checkRoleRules()
++checkNameRules()
++checkAddressRules()
++checkPhoneNumberRules()
++checkEmailRules()
++checkSocCodeRules()
++getName()
++getEmail()
++getRole()
++toString()
++equals(otherObject)
+}
+
+class SpecialistDoctor {
+-String doctorIndexNumber
++SpecialistDoctor(role,name,address,phoneNumber,email,socCode,doctorIndexNumber)
++checkDoctorIndexNumberRules(doctorIndexNumber)
++toString()
++equals(otherObject)
+}
+
+class OrgRole {
+-String description
++OrgRole(description)
++checkDescription(description)
++getDescription()
++toString()
++equals(otherObject)
+}
+
+class OrgRoleDTO {
+-String description
++OrgRoleDTO(description)
++getDescription()
++toString()
+}
+
+class EmployeeDTO {
+-String roleDesignation
+-String name
+-String address
+-String phoneNumber
+-String email
+-String socCode
++EmployeeDTO(roleDesignation, name, address, phoneNumber, email, socCode)
++getRoleDesignation()
++getName()
++getAddress()
++getPhoneNumber()
++getEmail()
+}
+
+class SpecialistDoctorDTO {
+-String doctorIndexNumber
++SpecialistDoctorDTO(roleDesignation, name, address, phoneNumber, email, socCode, doctorIndexNumber)
++getDoctorIndexNumber()
+}
+
+class User {
+-Email id
+-Password password
+-String name
+-Set<UserRole> roles
+
+}
+
+CreateEmployeeUI ..> RegisterEmployeeController
+Employee <|-- SpecialistDoctor
+RegisterEmployeeController ..> Employee
+RegisterEmployeeController ..> SpecialistDoctor
+CreateEmployeeUI ..> EmployeeDTO
+CreateEmployeeUI ..> SpecialistDoctorDTO
+RegisterEmployeeController ..> EmployeeDTO
+RegisterEmployeeController ..> SpecialistDoctorDTO
+RegisterEmployeeController ..> OrgRoleDTO
+CreateEmployeeUI ..> OrgRoleDTO
+RegisterEmployeeController ..> Company
+RegisterEmployeeController ..> OrgRole
+
+EmployeeDTO <|-- SpecialistDoctorDTO
+
+Employee "*" -- "1" OrgRole : has/plays >
+Company "1" -- "*" OrgRole : comprehends >
+Company "*" -- "1" Employee : employ >
+Employee "0..1" -- "1" User : relates to >
+
+RegisterEmployeeController ..> User
+
+
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+autonumber
+actor Administrator as A
+
+activate A
+A -> ":System" : asks to register a new Clinical Analysis Laboratory
+activate ":System"
+":System" --> A : requests data (laboratory ID, name, address, phone number, TIN number)
+deactivate ":System"
+
+A -> ":System" : types requested data
+activate ":System"
+
+loop while user adds types of test
+":System" --> A : shows types of test list and asks to select one
+deactivate ":System"
+
+A -> ":System" : selects type of test
+activate ":System"
+end
+
+":System" --> A : shows all data and requests confirmation
+deactivate ":System"
+
+A -> ":System" : confirms the data
+activate ":System"
+":System" --> A : informs operation success
+deactivate ":System"
+
+deactivate A
+
+@enduml

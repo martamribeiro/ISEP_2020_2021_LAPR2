@@ -1,0 +1,98 @@
+@startuml
+autonumber
+'hide footbox
+actor "Receptionist" as RC
+
+participant ":RegisterClientUI" as UI
+participant ":RegisterClientController" as CTRL
+participant ":Company" as CP
+participant ": ClientStore" as CS
+participant "Auth\n:AuthFacade" as SESSAO
+participant "cl:\n Client" as CL
+
+
+activate RC
+RC -> UI : asks to register a new client
+activate UI
+UI --> RC : requests data (clients citizen card number, NHS number,  birth \n date, sex, TIN number, e-mail, name, phone number)
+deactivate UI
+
+RC -> UI : types requested data
+activate UI
+
+UI -> CTRL : createClient(clients citizen card number, NHS number,  birth \n date, sex, TIN number, e-mail, name, phone number)
+
+CTRL -> CP : store = getClientStore()
+activate CP
+deactivate CP
+activate CTRL
+CTRL -> CS : cl = createClient(clients citizen card number, NHS number,  birth \n date, sex, TIN number, e-mail, name, phone number)
+activate CS
+CS -->  CL** : create(clients citizen card number, NHS number,  birth \n date, sex, TIN number, e-mail, name, phone number)
+deactivate CS
+
+CTRL -> CS : validateClient(cl)
+activate CS
+
+deactivate CS
+deactivate CTRL
+
+UI --> RC : requests to confirm the data
+deactivate CS
+deactivate UI
+
+RC -> UI : confirms the data
+activate UI
+
+UI -> CTRL : saveClient()
+activate CTRL
+
+CTRL -> CS : saveClient(cl)
+activate CS
+CS -> CS : validateClient(cl)
+activate CS
+deactivate CS
+CS -> CS : addClient(cl)
+activate CS
+deactivate CS
+|||
+deactivate CS
+deactivate CTRL
+UI -> CTRL : makeClientAnUserAndSendPassword()
+activate CTRL
+
+CTRL -> SESSAO : addUser(String name, String email, String generatedPassword)
+activate SESSAO
+SESSAO -> SESSAO : existsUser(String email)
+activate SESSAO
+deactivate SESSAO
+deactivate SESSAO
+
+CTRL -> CTRL : writePassword(generatedPassword)
+activate CTRL
+deactivate CTRL
+deactivate CTRL
+
+
+
+
+
+
+
+
+
+
+UI --> RC: informs operation success
+
+deactivate CP
+deactivate CTRL
+deactivate UI
+
+
+
+deactivate CTRL
+deactivate UI
+
+deactivate RC
+
+@enduml

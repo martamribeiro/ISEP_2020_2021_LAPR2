@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="662.5px" preserveAspectRatio="none" style="width:2581px;height:662px;" version="1.1" viewBox="0 0 2581 662" width="2581.25px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fnjj94dqz3b" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2c2e2644034c00788261e03c85b06837]
+cluster Core--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="20,7.5,70,7.5,78.75,37.0117,2292.5,37.0117,2292.5,653.75,20,653.75,20,7.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="20" x2="78.75" y1="37.0117" y2="37.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="42.5" x="25" y="28.1665">Core</text><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="1165,62.5,1237.5,62.5,1246.25,92.0117,2262.5,92.0117,2262.5,623.75,1165,623.75,1165,62.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1165" x2="1246.25" y1="92.0117" y2="92.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="65" x="1170" y="83.1665">Domain</text><!--MD5=[15636c1ca4a123c16a2a1a8e90aca7a9]
+cluster Model--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="1460,117.5,1522.5,117.5,1531.25,147.0117,2232.5,147.0117,2232.5,593.75,1460,593.75,1460,117.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1460" x2="1531.25" y1="147.0117" y2="147.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="55" x="1465" y="138.1665">Model</text><!--MD5=[7ce1723ddb6e6233854253973eae5a71]
+cluster Store--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="1195,135,1250,135,1258.75,164.5117,1430,164.5117,1430,328.75,1195,328.75,1195,135" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="1195" x2="1258.75" y1="164.5117" y2="164.5117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="47.5" x="1200" y="155.6665">Store</text><!--MD5=[701152d03fbf85133a1de050cfdbc7fd]
+cluster Mappers--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="735,156.875,820,156.875,828.75,186.3867,1135,186.3867,1135,306.875,735,306.875,735,156.875" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="735" x2="828.75" y1="186.3867" y2="186.3867"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="77.5" x="740" y="177.5415">Mappers</text><!--MD5=[7b8bc9ee8bb84b99fb3a3f9477c19238]
+cluster DTO--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="310,108.75,353.75,108.75,362.5,138.2617,705,138.2617,705,355,310,355,310,108.75" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="310" x2="362.5" y1="138.2617" y2="138.2617"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="36.25" x="315" y="129.4165">DTO</text><!--MD5=[1f2cfc53d9d308f53762fd0fcbaa4873]
+cluster Controller--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="50,117.5,146.25,117.5,155,147.0117,280,147.0117,280,346.25,50,346.25,50,117.5" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="50" x2="155" y1="147.0117" y2="147.0117"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="88.75" x="55" y="138.1665">Controller</text><!--MD5=[9681dc6e01e10c6b4fe06895ae94f592]
+cluster UI--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="2322.5,124.375,2347.5,124.375,2356.25,153.8867,2560,153.8867,2560,314.375,2322.5,314.375,2322.5,124.375" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="2322.5" x2="2356.25" y1="153.8867" y2="153.8867"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="2327.5" y="145.0415">UI</text><!--MD5=[4851e5193cf5e7abdec7b18b3bca50f8]
+cluster Console--><polygon fill="#FFFFFF" filter="url(#f1fnjj94dqz3b)" points="2352.5,179.375,2432.5,179.375,2441.25,208.8867,2530,208.8867,2530,284.375,2352.5,284.375,2352.5,179.375" style="stroke:#000000;stroke-width:1.875;"/><line style="stroke:#000000;stroke-width:1.875;" x1="2352.5" x2="2441.25" y1="208.8867" y2="208.8867"/><text fill="#000000" font-family="sans-serif" font-size="17.5" font-weight="bold" lengthAdjust="spacing" textLength="72.5" x="2357.5" y="200.0415">Console</text><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><rect codeLine="12" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="129.1797" id="Company" style="stroke:#A80036;stroke-width:1.875;" width="173.75" x="1480.625" y="180"/><ellipse cx="1529.75" cy="200" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1532.25,195.625 Q1532.5039,195 1532.7969,194.6875 Q1533.0898,194.375 1533.4219,194.375 Q1534.0078,194.375 1534.3789,194.7266 Q1534.75,195.0781 1534.75,195.8984 L1534.75,197.8516 Q1534.75,198.6719 1534.3984,199.0234 Q1534.0469,199.375 1533.5,199.375 Q1533.0117,199.375 1532.6992,199.1602 Q1532.3867,198.9453 1532.25,198.3789 Q1532.1914,197.9883 1531.9766,197.7734 Q1531.5859,197.3633 1530.8828,197.1289 Q1530.1797,196.875 1529.4766,196.875 Q1528.5977,196.875 1527.8555,197.2266 Q1527.1328,197.5781 1526.5664,198.3594 Q1526,199.1406 1526,200.2148 L1526,201.3672 Q1526,202.6563 1527.0547,203.5156 Q1528.1094,204.375 1529.9844,204.375 Q1531.0977,204.375 1531.8789,204.1211 Q1532.3281,203.9844 1532.8359,203.5352 Q1533.168,203.2813 1533.3438,203.2031 Q1533.5195,203.125 1533.7344,203.125 Q1534.1445,203.125 1534.4375,203.457 Q1534.75,203.7695 1534.75,204.2188 Q1534.75,204.6484 1534.3203,205.1563 Q1533.6953,205.8984 1532.6992,206.3086 Q1531.3906,206.875 1529.7891,206.875 Q1527.9141,206.875 1526.4102,206.1328 Q1525.1992,205.5469 1524.3398,204.2773 Q1523.5,203.0078 1523.5,201.5039 L1523.5,200.1367 Q1523.5,198.5742 1524.2422,197.207 Q1525.0039,195.8398 1526.3125,195.1172 Q1527.6406,194.375 1529.125,194.375 Q1530.0234,194.375 1530.8047,194.6875 Q1531.5859,195 1532.25,195.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="66.25" x="1554" y="206.1377">Company</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1481.875" x2="1653.125" y1="220" y2="220"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="112.5" x="1488.125" y="239.2737">-String designation</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="122.5" x="1488.125" y="256.5686">-TestStore testStore</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1481.875" x2="1653.125" y1="264.5898" y2="264.5898"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="95" x="1488.125" y="283.8635">+getTestStore()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="158.75" x="1488.125" y="301.1584">+createReport(reportText)</text><!--MD5=[f00dbe8c0302c6aec2cb26b3c659c8fc]
+class Report--><rect codeLine="19" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="146.4746" id="Report" style="stroke:#A80036;stroke-width:1.875;" width="231.25" x="1698.125" y="171.25"/><ellipse cx="1785.3125" cy="191.25" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1787.8125,186.875 Q1788.0664,186.25 1788.3594,185.9375 Q1788.6523,185.625 1788.9844,185.625 Q1789.5703,185.625 1789.9414,185.9766 Q1790.3125,186.3281 1790.3125,187.1484 L1790.3125,189.1016 Q1790.3125,189.9219 1789.9609,190.2734 Q1789.6094,190.625 1789.0625,190.625 Q1788.5742,190.625 1788.2617,190.4102 Q1787.9492,190.1953 1787.8125,189.6289 Q1787.7539,189.2383 1787.5391,189.0234 Q1787.1484,188.6133 1786.4453,188.3789 Q1785.7422,188.125 1785.0391,188.125 Q1784.1602,188.125 1783.418,188.4766 Q1782.6953,188.8281 1782.1289,189.6094 Q1781.5625,190.3906 1781.5625,191.4648 L1781.5625,192.6172 Q1781.5625,193.9063 1782.6172,194.7656 Q1783.6719,195.625 1785.5469,195.625 Q1786.6602,195.625 1787.4414,195.3711 Q1787.8906,195.2344 1788.3984,194.7852 Q1788.7305,194.5313 1788.9063,194.4531 Q1789.082,194.375 1789.2969,194.375 Q1789.707,194.375 1790,194.707 Q1790.3125,195.0195 1790.3125,195.4688 Q1790.3125,195.8984 1789.8828,196.4063 Q1789.2578,197.1484 1788.2617,197.5586 Q1786.9531,198.125 1785.3516,198.125 Q1783.4766,198.125 1781.9727,197.3828 Q1780.7617,196.7969 1779.9023,195.5273 Q1779.0625,194.2578 1779.0625,192.7539 L1779.0625,191.3867 Q1779.0625,189.8242 1779.8047,188.457 Q1780.5664,187.0898 1781.875,186.3672 Q1783.2031,185.625 1784.6875,185.625 Q1785.5859,185.625 1786.3672,185.9375 Q1787.1484,186.25 1787.8125,186.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="46.25" x="1810.9375" y="197.3877">Report</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1699.375" x2="1928.125" y1="211.25" y2="211.25"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="106.25" x="1705.625" y="230.5237">-String reportText</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1699.375" x2="1928.125" y1="238.5449" y2="238.5449"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="120" x="1705.625" y="257.8186">+Report(reportText)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="216.25" x="1705.625" y="275.1135">+checkReportTextRules(reportText)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="153.75" x="1705.625" y="292.4084">+countWords(reportText)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="63.75" x="1705.625" y="309.7034">+toString()</text><!--MD5=[df38be88ccee13e832d6fafd6288a4ca]
+class Test--><rect codeLine="27" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="163.7695" id="Test" style="stroke:#A80036;stroke-width:1.875;" width="238.75" x="1973.125" y="162.5"/><ellipse cx="2072.1875" cy="182.5" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2074.6875,178.125 Q2074.9414,177.5 2075.2344,177.1875 Q2075.5273,176.875 2075.8594,176.875 Q2076.4453,176.875 2076.8164,177.2266 Q2077.1875,177.5781 2077.1875,178.3984 L2077.1875,180.3516 Q2077.1875,181.1719 2076.8359,181.5234 Q2076.4844,181.875 2075.9375,181.875 Q2075.4492,181.875 2075.1367,181.6602 Q2074.8242,181.4453 2074.6875,180.8789 Q2074.6289,180.4883 2074.4141,180.2734 Q2074.0234,179.8633 2073.3203,179.6289 Q2072.6172,179.375 2071.9141,179.375 Q2071.0352,179.375 2070.293,179.7266 Q2069.5703,180.0781 2069.0039,180.8594 Q2068.4375,181.6406 2068.4375,182.7148 L2068.4375,183.8672 Q2068.4375,185.1563 2069.4922,186.0156 Q2070.5469,186.875 2072.4219,186.875 Q2073.5352,186.875 2074.3164,186.6211 Q2074.7656,186.4844 2075.2734,186.0352 Q2075.6055,185.7813 2075.7813,185.7031 Q2075.957,185.625 2076.1719,185.625 Q2076.582,185.625 2076.875,185.957 Q2077.1875,186.2695 2077.1875,186.7188 Q2077.1875,187.1484 2076.7578,187.6563 Q2076.1328,188.3984 2075.1367,188.8086 Q2073.8281,189.375 2072.2266,189.375 Q2070.3516,189.375 2068.8477,188.6328 Q2067.6367,188.0469 2066.7773,186.7773 Q2065.9375,185.5078 2065.9375,184.0039 L2065.9375,182.6367 Q2065.9375,181.0742 2066.6797,179.707 Q2067.4414,178.3398 2068.75,177.6172 Q2070.0781,176.875 2071.5625,176.875 Q2072.4609,176.875 2073.2422,177.1875 Q2074.0234,177.5 2074.6875,178.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="30" x="2097.8125" y="188.6377">Test</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1974.375" x2="2210.625" y1="202.5" y2="202.5"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="73.75" x="1980.625" y="221.7737">-String code</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="146.25" x="1980.625" y="239.0686">-Report diagnosisReport</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="223.75" x="1980.625" y="256.3635">-List&lt;TestParameter&gt; testParameters</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1974.375" x2="2210.625" y1="264.3848" y2="264.3848"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="105" x="1980.625" y="283.6584">+getParameters()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="148.75" x="1980.625" y="300.9534">+hasSamplesAnalysed()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="116.25" x="1980.625" y="318.2483">+addReport(report)</text><!--MD5=[0f07739f46effee96e095e9c408da841]
+class TestParameter--><rect codeLine="36" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="129.1797" id="TestParameter" style="stroke:#A80036;stroke-width:1.875;" width="208.75" x="1480.625" y="427.5"/><ellipse cx="1529.1875" cy="447.5" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1531.6875,443.125 Q1531.9414,442.5 1532.2344,442.1875 Q1532.5273,441.875 1532.8594,441.875 Q1533.4453,441.875 1533.8164,442.2266 Q1534.1875,442.5781 1534.1875,443.3984 L1534.1875,445.3516 Q1534.1875,446.1719 1533.8359,446.5234 Q1533.4844,446.875 1532.9375,446.875 Q1532.4492,446.875 1532.1367,446.6602 Q1531.8242,446.4453 1531.6875,445.8789 Q1531.6289,445.4883 1531.4141,445.2734 Q1531.0234,444.8633 1530.3203,444.6289 Q1529.6172,444.375 1528.9141,444.375 Q1528.0352,444.375 1527.293,444.7266 Q1526.5703,445.0781 1526.0039,445.8594 Q1525.4375,446.6406 1525.4375,447.7148 L1525.4375,448.8672 Q1525.4375,450.1563 1526.4922,451.0156 Q1527.5469,451.875 1529.4219,451.875 Q1530.5352,451.875 1531.3164,451.6211 Q1531.7656,451.4844 1532.2734,451.0352 Q1532.6055,450.7813 1532.7813,450.7031 Q1532.957,450.625 1533.1719,450.625 Q1533.582,450.625 1533.875,450.957 Q1534.1875,451.2695 1534.1875,451.7188 Q1534.1875,452.1484 1533.7578,452.6563 Q1533.1328,453.3984 1532.1367,453.8086 Q1530.8281,454.375 1529.2266,454.375 Q1527.3516,454.375 1525.8477,453.6328 Q1524.6367,453.0469 1523.7773,451.7773 Q1522.9375,450.5078 1522.9375,449.0039 L1522.9375,447.6367 Q1522.9375,446.0742 1523.6797,444.707 Q1524.4414,443.3398 1525.75,442.6172 Q1527.0781,441.875 1528.5625,441.875 Q1529.4609,441.875 1530.2422,442.1875 Q1531.0234,442.5 1531.6875,443.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="102.5" x="1553.3125" y="453.6377">TestParameter</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1481.875" x2="1688.125" y1="467.5" y2="467.5"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="131.25" x="1488.125" y="486.7737">-Parameter parameter</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="193.75" x="1488.125" y="504.0686">-TestParameterResult testResult</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1481.875" x2="1688.125" y1="512.0898" y2="512.0898"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="97.5" x="1488.125" y="531.3635">+getParameter()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="135" x="1488.125" y="548.6584">+getParameterResult()</text><!--MD5=[4e608140b854dae633589343bce77383]
+class TestParameterResult--><rect codeLine="43" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="163.7695" id="TestParameterResult" style="stroke:#A80036;stroke-width:1.875;" width="256.25" x="1733.125" y="410"/><ellipse cx="1782.8125" cy="430" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1785.3125,425.625 Q1785.5664,425 1785.8594,424.6875 Q1786.1523,424.375 1786.4844,424.375 Q1787.0703,424.375 1787.4414,424.7266 Q1787.8125,425.0781 1787.8125,425.8984 L1787.8125,427.8516 Q1787.8125,428.6719 1787.4609,429.0234 Q1787.1094,429.375 1786.5625,429.375 Q1786.0742,429.375 1785.7617,429.1602 Q1785.4492,428.9453 1785.3125,428.3789 Q1785.2539,427.9883 1785.0391,427.7734 Q1784.6484,427.3633 1783.9453,427.1289 Q1783.2422,426.875 1782.5391,426.875 Q1781.6602,426.875 1780.918,427.2266 Q1780.1953,427.5781 1779.6289,428.3594 Q1779.0625,429.1406 1779.0625,430.2148 L1779.0625,431.3672 Q1779.0625,432.6563 1780.1172,433.5156 Q1781.1719,434.375 1783.0469,434.375 Q1784.1602,434.375 1784.9414,434.1211 Q1785.3906,433.9844 1785.8984,433.5352 Q1786.2305,433.2813 1786.4063,433.2031 Q1786.582,433.125 1786.7969,433.125 Q1787.207,433.125 1787.5,433.457 Q1787.8125,433.7695 1787.8125,434.2188 Q1787.8125,434.6484 1787.3828,435.1563 Q1786.7578,435.8984 1785.7617,436.3086 Q1784.4531,436.875 1782.8516,436.875 Q1780.9766,436.875 1779.4727,436.1328 Q1778.2617,435.5469 1777.4023,434.2773 Q1776.5625,433.0078 1776.5625,431.5039 L1776.5625,430.1367 Q1776.5625,428.5742 1777.3047,427.207 Q1778.0664,425.8398 1779.375,425.1172 Q1780.7031,424.375 1782.1875,424.375 Q1783.0859,424.375 1783.8672,424.6875 Q1784.6484,425 1785.3125,425.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="147.5" x="1807.1875" y="436.1377">TestParameterResult</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1734.375" x2="1988.125" y1="450" y2="450"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="82.5" x="1740.625" y="469.2737">-Double value</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="80" x="1740.625" y="486.5686">-String metric</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="241.25" x="1740.625" y="503.8635">-MyReferenceValue myReferenceValue</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1734.375" x2="1988.125" y1="511.8848" y2="511.8848"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="108.75" x="1740.625" y="531.1584">+getResultValue()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="110" x="1740.625" y="548.4534">+getResultMetric()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="172.5" x="1740.625" y="565.7483">+getResultReferenceValue()</text><!--MD5=[0f6f7964b844a64b0496af0dda7914bd]
+class TestStore--><rect codeLine="56" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="129.1797" id="TestStore" style="stroke:#A80036;stroke-width:1.875;" width="195" x="1215" y="180"/><ellipse cx="1274.0625" cy="200" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1276.5625,195.625 Q1276.8164,195 1277.1094,194.6875 Q1277.4023,194.375 1277.7344,194.375 Q1278.3203,194.375 1278.6914,194.7266 Q1279.0625,195.0781 1279.0625,195.8984 L1279.0625,197.8516 Q1279.0625,198.6719 1278.7109,199.0234 Q1278.3594,199.375 1277.8125,199.375 Q1277.3242,199.375 1277.0117,199.1602 Q1276.6992,198.9453 1276.5625,198.3789 Q1276.5039,197.9883 1276.2891,197.7734 Q1275.8984,197.3633 1275.1953,197.1289 Q1274.4922,196.875 1273.7891,196.875 Q1272.9102,196.875 1272.168,197.2266 Q1271.4453,197.5781 1270.8789,198.3594 Q1270.3125,199.1406 1270.3125,200.2148 L1270.3125,201.3672 Q1270.3125,202.6563 1271.3672,203.5156 Q1272.4219,204.375 1274.2969,204.375 Q1275.4102,204.375 1276.1914,204.1211 Q1276.6406,203.9844 1277.1484,203.5352 Q1277.4805,203.2813 1277.6563,203.2031 Q1277.832,203.125 1278.0469,203.125 Q1278.457,203.125 1278.75,203.457 Q1279.0625,203.7695 1279.0625,204.2188 Q1279.0625,204.6484 1278.6328,205.1563 Q1278.0078,205.8984 1277.0117,206.3086 Q1275.7031,206.875 1274.1016,206.875 Q1272.2266,206.875 1270.7227,206.1328 Q1269.5117,205.5469 1268.6523,204.2773 Q1267.8125,203.0078 1267.8125,201.5039 L1267.8125,200.1367 Q1267.8125,198.5742 1268.5547,197.207 Q1269.3164,195.8398 1270.625,195.1172 Q1271.9531,194.375 1273.4375,194.375 Q1274.3359,194.375 1275.1172,194.6875 Q1275.8984,195 1276.5625,195.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="66.25" x="1299.6875" y="206.1377">TestStore</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1216.25" x2="1408.75" y1="220" y2="220"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="110" x="1222.5" y="239.2737">-list&lt;Test&gt; testList</text><line style="stroke:#A80036;stroke-width:1.875;" x1="1216.25" x2="1408.75" y1="247.2949" y2="247.2949"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="180" x="1222.5" y="266.5686">+getTestsReadyToDiagnose()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="140" x="1222.5" y="283.8635">+getTestByCode(code)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="146.25" x="1222.5" y="301.1584">+getTestParameters(tst)</text><!--MD5=[144698ec4d0188f6929a3b58a3eeb1f6]
+class TestMapper--><rect codeLine="69" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="84.5898" id="TestMapper" style="stroke:#A80036;stroke-width:1.875;" width="121.25" x="993.125" y="201.875"/><ellipse cx="1011.875" cy="221.875" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M1014.375,217.5 Q1014.6289,216.875 1014.9219,216.5625 Q1015.2148,216.25 1015.5469,216.25 Q1016.1328,216.25 1016.5039,216.6016 Q1016.875,216.9531 1016.875,217.7734 L1016.875,219.7266 Q1016.875,220.5469 1016.5234,220.8984 Q1016.1719,221.25 1015.625,221.25 Q1015.1367,221.25 1014.8242,221.0352 Q1014.5117,220.8203 1014.375,220.2539 Q1014.3164,219.8633 1014.1016,219.6484 Q1013.7109,219.2383 1013.0078,219.0039 Q1012.3047,218.75 1011.6016,218.75 Q1010.7227,218.75 1009.9805,219.1016 Q1009.2578,219.4531 1008.6914,220.2344 Q1008.125,221.0156 1008.125,222.0898 L1008.125,223.2422 Q1008.125,224.5313 1009.1797,225.3906 Q1010.2344,226.25 1012.1094,226.25 Q1013.2227,226.25 1014.0039,225.9961 Q1014.4531,225.8594 1014.9609,225.4102 Q1015.293,225.1563 1015.4688,225.0781 Q1015.6445,225 1015.8594,225 Q1016.2695,225 1016.5625,225.332 Q1016.875,225.6445 1016.875,226.0938 Q1016.875,226.5234 1016.4453,227.0313 Q1015.8203,227.7734 1014.8242,228.1836 Q1013.5156,228.75 1011.9141,228.75 Q1010.0391,228.75 1008.5352,228.0078 Q1007.3242,227.4219 1006.4648,226.1523 Q1005.625,224.8828 1005.625,223.3789 L1005.625,222.0117 Q1005.625,220.4492 1006.3672,219.082 Q1007.1289,217.7148 1008.4375,216.9922 Q1009.7656,216.25 1011.25,216.25 Q1012.1484,216.25 1012.9297,216.5625 Q1013.7109,216.875 1014.375,217.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="81.25" x="1029.375" y="228.0127">TestMapper</text><line style="stroke:#A80036;stroke-width:1.875;" x1="994.375" x2="1113.125" y1="241.875" y2="241.875"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="85" x="1000.625" y="261.1487">+toDTO(tests)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="77.5" x="1000.625" y="278.4436">+toDTO(test)</text><!--MD5=[a82d32c079496d6dca2681dc0633feb0]
+class TestParameterMapper--><rect codeLine="74" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="84.5898" id="TestParameterMapper" style="stroke:#A80036;stroke-width:1.875;" width="193.75" x="755.625" y="201.875"/><ellipse cx="774.375" cy="221.875" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M776.875,217.5 Q777.1289,216.875 777.4219,216.5625 Q777.7148,216.25 778.0469,216.25 Q778.6328,216.25 779.0039,216.6016 Q779.375,216.9531 779.375,217.7734 L779.375,219.7266 Q779.375,220.5469 779.0234,220.8984 Q778.6719,221.25 778.125,221.25 Q777.6367,221.25 777.3242,221.0352 Q777.0117,220.8203 776.875,220.2539 Q776.8164,219.8633 776.6016,219.6484 Q776.2109,219.2383 775.5078,219.0039 Q774.8047,218.75 774.1016,218.75 Q773.2227,218.75 772.4805,219.1016 Q771.7578,219.4531 771.1914,220.2344 Q770.625,221.0156 770.625,222.0898 L770.625,223.2422 Q770.625,224.5313 771.6797,225.3906 Q772.7344,226.25 774.6094,226.25 Q775.7227,226.25 776.5039,225.9961 Q776.9531,225.8594 777.4609,225.4102 Q777.793,225.1563 777.9688,225.0781 Q778.1445,225 778.3594,225 Q778.7695,225 779.0625,225.332 Q779.375,225.6445 779.375,226.0938 Q779.375,226.5234 778.9453,227.0313 Q778.3203,227.7734 777.3242,228.1836 Q776.0156,228.75 774.4141,228.75 Q772.5391,228.75 771.0352,228.0078 Q769.8242,227.4219 768.9648,226.1523 Q768.125,224.8828 768.125,223.3789 L768.125,222.0117 Q768.125,220.4492 768.8672,219.082 Q769.6289,217.7148 770.9375,216.9922 Q772.2656,216.25 773.75,216.25 Q774.6484,216.25 775.4297,216.5625 Q776.2109,216.875 776.875,217.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="153.75" x="791.875" y="228.0127">TestParameterMapper</text><line style="stroke:#A80036;stroke-width:1.875;" x1="756.875" x2="948.125" y1="241.875" y2="241.875"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="138.75" x="763.125" y="261.1487">+toDTO(testParameter)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="146.25" x="763.125" y="278.4436">+toDTO(testParameters)</text><!--MD5=[9fb704ffefcaf68bf1a361787afa998b]
+class TestDTO--><rect codeLine="83" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="94.5898" id="TestDTO" style="stroke:#A80036;stroke-width:1.875;" width="101.25" x="583.125" y="196.875"/><ellipse cx="601.875" cy="216.875" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M604.375,212.5 Q604.6289,211.875 604.9219,211.5625 Q605.2148,211.25 605.5469,211.25 Q606.1328,211.25 606.5039,211.6016 Q606.875,211.9531 606.875,212.7734 L606.875,214.7266 Q606.875,215.5469 606.5234,215.8984 Q606.1719,216.25 605.625,216.25 Q605.1367,216.25 604.8242,216.0352 Q604.5117,215.8203 604.375,215.2539 Q604.3164,214.8633 604.1016,214.6484 Q603.7109,214.2383 603.0078,214.0039 Q602.3047,213.75 601.6016,213.75 Q600.7227,213.75 599.9805,214.1016 Q599.2578,214.4531 598.6914,215.2344 Q598.125,216.0156 598.125,217.0898 L598.125,218.2422 Q598.125,219.5313 599.1797,220.3906 Q600.2344,221.25 602.1094,221.25 Q603.2227,221.25 604.0039,220.9961 Q604.4531,220.8594 604.9609,220.4102 Q605.293,220.1563 605.4688,220.0781 Q605.6445,220 605.8594,220 Q606.2695,220 606.5625,220.332 Q606.875,220.6445 606.875,221.0938 Q606.875,221.5234 606.4453,222.0313 Q605.8203,222.7734 604.8242,223.1836 Q603.5156,223.75 601.9141,223.75 Q600.0391,223.75 598.5352,223.0078 Q597.3242,222.4219 596.4648,221.1523 Q595.625,219.8828 595.625,218.3789 L595.625,217.0117 Q595.625,215.4492 596.3672,214.082 Q597.1289,212.7148 598.4375,211.9922 Q599.7656,211.25 601.25,211.25 Q602.1484,211.25 602.9297,211.5625 Q603.7109,211.875 604.375,212.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="61.25" x="619.375" y="223.0127">TestDTO</text><line style="stroke:#A80036;stroke-width:1.875;" x1="584.375" x2="683.125" y1="236.875" y2="236.875"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="73.75" x="590.625" y="256.1487">-String code</text><line style="stroke:#A80036;stroke-width:1.875;" x1="584.375" x2="683.125" y1="264.1699" y2="264.1699"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="67.5" x="590.625" y="283.4436">+getCode()</text><!--MD5=[77cd0d232cb0916388eba2b410e3de64]
+class TestParametersDTO--><rect codeLine="88" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="181.0645" id="TestParametersDTO" style="stroke:#A80036;stroke-width:1.875;" width="208.75" x="330.625" y="153.75"/><ellipse cx="361.1875" cy="173.75" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M363.6875,169.375 Q363.9414,168.75 364.2344,168.4375 Q364.5273,168.125 364.8594,168.125 Q365.4453,168.125 365.8164,168.4766 Q366.1875,168.8281 366.1875,169.6484 L366.1875,171.6016 Q366.1875,172.4219 365.8359,172.7734 Q365.4844,173.125 364.9375,173.125 Q364.4492,173.125 364.1367,172.9102 Q363.8242,172.6953 363.6875,172.1289 Q363.6289,171.7383 363.4141,171.5234 Q363.0234,171.1133 362.3203,170.8789 Q361.6172,170.625 360.9141,170.625 Q360.0352,170.625 359.293,170.9766 Q358.5703,171.3281 358.0039,172.1094 Q357.4375,172.8906 357.4375,173.9648 L357.4375,175.1172 Q357.4375,176.4063 358.4922,177.2656 Q359.5469,178.125 361.4219,178.125 Q362.5352,178.125 363.3164,177.8711 Q363.7656,177.7344 364.2734,177.2852 Q364.6055,177.0313 364.7813,176.9531 Q364.957,176.875 365.1719,176.875 Q365.582,176.875 365.875,177.207 Q366.1875,177.5195 366.1875,177.9688 Q366.1875,178.3984 365.7578,178.9063 Q365.1328,179.6484 364.1367,180.0586 Q362.8281,180.625 361.2266,180.625 Q359.3516,180.625 357.8477,179.8828 Q356.6367,179.2969 355.7773,178.0273 Q354.9375,176.7578 354.9375,175.2539 L354.9375,173.8867 Q354.9375,172.3242 355.6797,170.957 Q356.4414,169.5898 357.75,168.8672 Q359.0781,168.125 360.5625,168.125 Q361.4609,168.125 362.2422,168.4375 Q363.0234,168.75 363.6875,169.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="142.5" x="381.3125" y="179.8877">TestParametersDTO</text><line style="stroke:#A80036;stroke-width:1.875;" x1="331.875" x2="538.125" y1="193.75" y2="193.75"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="131.25" x="338.125" y="213.0237">-Parameter parameter</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="193.75" x="338.125" y="230.3186">-TestParameterResult testResult</text><line style="stroke:#A80036;stroke-width:1.875;" x1="331.875" x2="538.125" y1="238.3398" y2="238.3398"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="97.5" x="338.125" y="257.6135">+getParameter()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="161.25" x="338.125" y="274.9084">+getTestParameterResult()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="108.75" x="338.125" y="292.2034">+getResultValue()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="110" x="338.125" y="309.4983">+getResultMetric()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="172.5" x="338.125" y="326.7932">+getResultReferenceValue()</text><!--MD5=[d7b8916e3117ca4a3ffdab4f31ea783a]
+class WriteReportController--><rect codeLine="102" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="163.7695" id="WriteReportController" style="stroke:#A80036;stroke-width:1.875;" width="188.75" x="70.625" y="162.5"/><ellipse cx="89.375" cy="182.5" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M91.875,178.125 Q92.1289,177.5 92.4219,177.1875 Q92.7148,176.875 93.0469,176.875 Q93.6328,176.875 94.0039,177.2266 Q94.375,177.5781 94.375,178.3984 L94.375,180.3516 Q94.375,181.1719 94.0234,181.5234 Q93.6719,181.875 93.125,181.875 Q92.6367,181.875 92.3242,181.6602 Q92.0117,181.4453 91.875,180.8789 Q91.8164,180.4883 91.6016,180.2734 Q91.2109,179.8633 90.5078,179.6289 Q89.8047,179.375 89.1016,179.375 Q88.2227,179.375 87.4805,179.7266 Q86.7578,180.0781 86.1914,180.8594 Q85.625,181.6406 85.625,182.7148 L85.625,183.8672 Q85.625,185.1563 86.6797,186.0156 Q87.7344,186.875 89.6094,186.875 Q90.7227,186.875 91.5039,186.6211 Q91.9531,186.4844 92.4609,186.0352 Q92.793,185.7813 92.9688,185.7031 Q93.1445,185.625 93.3594,185.625 Q93.7695,185.625 94.0625,185.957 Q94.375,186.2695 94.375,186.7188 Q94.375,187.1484 93.9453,187.6563 Q93.3203,188.3984 92.3242,188.8086 Q91.0156,189.375 89.4141,189.375 Q87.5391,189.375 86.0352,188.6328 Q84.8242,188.0469 83.9648,186.7773 Q83.125,185.5078 83.125,184.0039 L83.125,182.6367 Q83.125,181.0742 83.8672,179.707 Q84.6289,178.3398 85.9375,177.6172 Q87.2656,176.875 88.75,176.875 Q89.6484,176.875 90.4297,177.1875 Q91.2109,177.5 91.875,178.125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="148.75" x="106.875" y="188.6377">WriteReportController</text><line style="stroke:#A80036;stroke-width:1.875;" x1="71.875" x2="258.125" y1="202.5" y2="202.5"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="120" x="78.125" y="221.7737">-Company company</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="85" x="78.125" y="239.0686">-Report report</text><line style="stroke:#A80036;stroke-width:1.875;" x1="71.875" x2="258.125" y1="247.0898" y2="247.0898"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="158.75" x="78.125" y="266.3635">+createReport(reportText)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="151.25" x="78.125" y="283.6584">+addReportToTest(code)</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="141.25" x="78.125" y="300.9534">+getTestsToDiagnose()</text><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="161.25" x="78.125" y="318.2483">+getTestParameters(code)</text><!--MD5=[71fba8c2abd557a2f7006580273aba3e]
+class WriteReportUI--><rect codeLine="119" fill="#FEFECE" filter="url(#f1fnjj94dqz3b)" height="40" id="WriteReportUI" style="stroke:#A80036;stroke-width:1.875;" width="136.25" x="2373.125" y="224.375"/><ellipse cx="2391.875" cy="244.375" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M2394.375,240 Q2394.6289,239.375 2394.9219,239.0625 Q2395.2148,238.75 2395.5469,238.75 Q2396.1328,238.75 2396.5039,239.1016 Q2396.875,239.4531 2396.875,240.2734 L2396.875,242.2266 Q2396.875,243.0469 2396.5234,243.3984 Q2396.1719,243.75 2395.625,243.75 Q2395.1367,243.75 2394.8242,243.5352 Q2394.5117,243.3203 2394.375,242.7539 Q2394.3164,242.3633 2394.1016,242.1484 Q2393.7109,241.7383 2393.0078,241.5039 Q2392.3047,241.25 2391.6016,241.25 Q2390.7227,241.25 2389.9805,241.6016 Q2389.2578,241.9531 2388.6914,242.7344 Q2388.125,243.5156 2388.125,244.5898 L2388.125,245.7422 Q2388.125,247.0313 2389.1797,247.8906 Q2390.2344,248.75 2392.1094,248.75 Q2393.2227,248.75 2394.0039,248.4961 Q2394.4531,248.3594 2394.9609,247.9102 Q2395.293,247.6563 2395.4688,247.5781 Q2395.6445,247.5 2395.8594,247.5 Q2396.2695,247.5 2396.5625,247.832 Q2396.875,248.1445 2396.875,248.5938 Q2396.875,249.0234 2396.4453,249.5313 Q2395.8203,250.2734 2394.8242,250.6836 Q2393.5156,251.25 2391.9141,251.25 Q2390.0391,251.25 2388.5352,250.5078 Q2387.3242,249.9219 2386.4648,248.6523 Q2385.625,247.3828 2385.625,245.8789 L2385.625,244.5117 Q2385.625,242.9492 2386.3672,241.582 Q2387.1289,240.2148 2388.4375,239.4922 Q2389.7656,238.75 2391.25,238.75 Q2392.1484,238.75 2392.9297,239.0625 Q2393.7109,239.375 2394.375,240 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="96.25" x="2409.375" y="250.5127">WriteReportUI</text><!--MD5=[670dbdf7395d3fcbb40104f0a070263e]
+link Company to Report--><!--MD5=[63d25d625ab355317a074a623d33bba8]
+link Report to Test--><!--MD5=[6ce345aff23e1f1a15733c2852634ecf]
+link Company to TestParameter--><!--MD5=[0e00e25ac6b8c14659aaff2cf7e5df08]
+link TestParameter to TestParameterResult--><!--MD5=[e08ac886f0c941798d54286e091bc17e]
+@startuml
+hide empty methods
+hide empty attributes
+'left to right direction
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Model {
+
+class Company {
+    -String designation
+    -TestStore testStore
+    +getTestStore()
+    +createReport(reportText)
+}
+
+class Report {
+    - String reportText
+    + Report(reportText)
+    + checkReportTextRules(reportText)
+    + countWords(reportText)
+    + toString()
+}
+
+class Test {
+    -String code
+    -Report diagnosisReport
+    -List<TestParameter> testParameters
+    +getParameters()
+    +hasSamplesAnalysed()
+    +addReport(report)
+}
+
+class TestParameter {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getParameterResult()
+}
+
+class TestParameterResult {
+    -Double value
+    -String metric
+    -MyReferenceValue myReferenceValue
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+}
+
+package Store {
+
+class TestStore {
+    -list<Test> testList
+    +getTestsReadyToDiagnose()
+    +getTestByCode(code)
+    +getTestParameters(tst)
+}
+
+}
+
+}
+
+package Mappers {
+
+class TestMapper {
+    +toDTO(tests)
+    +toDTO(test)
+}
+
+class TestParameterMapper {
+    +toDTO(testParameter)
+    +toDTO(testParameters)
+}
+
+}
+
+package DTO {
+
+class TestDTO {
+    -String code
+    +getCode()
+}
+
+class TestParametersDTO {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getTestParameterResult()
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+}
+
+package Controller {
+
+class WriteReportController {
+    -Company company
+    -Report report
+    +createReport(reportText)
+    +addReportToTest(code)
+    +getTestsToDiagnose()
+    +getTestParameters(code)
+}
+
+}
+
+}
+
+package UI {
+
+package Console {
+
+class WriteReportUI {
+}
+
+}
+
+}
+
+@enduml
+
+@startuml
+hide empty methods
+hide empty attributes
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Model {
+
+class Company {
+    -String designation
+    -TestStore testStore
+    +getTestStore()
+    +createReport(reportText)
+}
+
+class Report {
+    - String reportText
+    + Report(reportText)
+    + checkReportTextRules(reportText)
+    + countWords(reportText)
+    + toString()
+}
+
+class Test {
+    -String code
+    -Report diagnosisReport
+    -List<TestParameter> testParameters
+    +getParameters()
+    +hasSamplesAnalysed()
+    +addReport(report)
+}
+
+class TestParameter {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getParameterResult()
+}
+
+class TestParameterResult {
+    -Double value
+    -String metric
+    -MyReferenceValue myReferenceValue
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+}
+
+package Store {
+
+class TestStore {
+    -list<Test> testList
+    +getTestsReadyToDiagnose()
+    +getTestByCode(code)
+    +getTestParameters(tst)
+}
+
+}
+
+}
+
+package Mappers {
+
+class TestMapper {
+    +toDTO(tests)
+    +toDTO(test)
+}
+
+class TestParameterMapper {
+    +toDTO(testParameter)
+    +toDTO(testParameters)
+}
+
+}
+
+package DTO {
+
+class TestDTO {
+    -String code
+    +getCode()
+}
+
+class TestParametersDTO {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getTestParameterResult()
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+}
+
+package Controller {
+
+class WriteReportController {
+    -Company company
+    -Report report
+    +createReport(reportText)
+    +addReportToTest(code)
+    +getTestsToDiagnose()
+    +getTestParameters(code)
+}
+
+}
+
+}
+
+package UI {
+
+package Console {
+
+class WriteReportUI {
+}
+
+}
+
+}
+
+@enduml
+
+PlantUML version 1.2021.5(Sun Apr 25 12:20:28 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,45 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+hide empty attributes
+left to right direction
+
+class Company{
+- designation
+}
+
+class Employee {
+- employeeID
+- name
+- address
+- phoneNumber
+- e-Mail
+- socCode
+}
+
+class User {
+-name
+-email
+-password
+}
+
+class OrganizationRole {
+-description
+}
+
+class SpecialistDoctor{
+- doctorIndexNumber
+}
+
+Employee "*" -- "1" Company : employ <
+Employee "0..1" -- "1" User : relates to >
+Employee <|-- SpecialistDoctor
+Employee "*" -- "1" OrganizationRole : has/plays >
+Company "1" -- "*" OrganizationRole : comprehends >
+
+Company -[hidden]down-> Employee
+
+
+
+@enduml

@@ -1,0 +1,123 @@
+@startuml
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+participant ":CreateParameterUI" as UI
+participant ":CreateParameterController" as CTRL
+participant ":Company" as CMP
+participant "pcStore\n:ParameterCategoryStore" as PCSTORE
+participant ":CategoriesMapper" as PCMAPPER
+participant "lc\n:List<ParameterCategory>" as LC
+participant "listParameterCategoryDTO\n:List<ParameterCategoryDTO>" as LIST_DTO
+participant "objDTO\n: CategoriesDTO" as OBJ_DTO
+participant "prmStore\n:ParameterStore" as PRMSTORE
+participant "prm\n:Parameter" as PRM
+participant "pc\n:ParameterCategory" as PC
+
+activate ADM
+ADM -> UI : asks to create a new parameter
+loop while administrator wants to create one more parameter
+activate UI
+UI --> ADM : requests data(i.e., parameterCode, shortName, description)
+deactivate UI
+
+ADM -> UI : types requested data
+activate UI
+
+UI -> CTRL : lc = getParameterCategories()
+activate CTRL
+
+CTRL -> CMP : pcStore = getParameterCategoryStore()
+activate CMP
+|||
+deactivate CMP
+
+CTRL -> PCSTORE : lc = getParameterCategoriesStore()
+activate PCSTORE
+
+PCSTORE --> LC** : create()
+PCSTORE --> CTRL : lc
+deactivate PCSTORE
+
+CTRL -> PCMAPPER : toDTO(lc)
+activate PCMAPPER
+
+ref over PCMAPPER : US10_SD_CategoriesMapper_toDTO_List
+
+PCMAPPER --> CTRL : listCategoriesDto
+deactivate PCMAPPER
+
+CTRL --> UI : listCategoriesDto
+
+deactivate CTRL
+
+UI --> ADM : shows parameter categories list and asks to select one
+deactivate CMP
+deactivate UI
+
+ADM -> UI : selects a parameter category
+activate UI
+
+UI -> CTRL : createParameter(parameterCode, shortName, description, pcCode)
+activate CTRL
+
+CTRL -> CMP : pcStore = getParameterCategoryStore()
+activate CMP
+|||
+deactivate CMP
+
+CTRL -> PCSTORE : pc = getCategoryByCode(pcCode)
+activate PCSTORE
+|||
+deactivate PCSTORE
+
+CTRL -> CMP: prmStore = getParameterStore()
+activate CMP
+|||
+deactivate CMP
+CTRL -> PRMSTORE: prm = createParameter(parameterCode, shortName, description, pc)
+activate PRMSTORE
+
+PRMSTORE --> PRM**: create(parameterCode, shortName, description, pc)
+deactivate PRMSTORE
+/'CTRL -> PRMSTORE: validateParameter(prm)
+activate PRMSTORE
+|||
+deactivate PRMSTORE'/
+
+
+CTRL --> UI: result
+deactivate CTRL
+
+UI --> ADM: shows all data and requests confirmation
+deactivate UI
+
+ADM -> UI : confirms the data
+activate UI
+UI -> CTRL : saveParameter()
+activate CTRL
+
+CTRL -> PRMSTORE : saveParameter(parameter)
+activate PRMSTORE
+
+PRMSTORE -> PRMSTORE: validateParameter(parameter)
+activate PRMSTORE
+|||
+deactivate PRMSTORE
+PRMSTORE -> PRMSTORE: addParameter(parameter)
+activate PRMSTORE
+|||
+deactivate PRMSTORE
+
+CTRL --> UI: result
+deactivate PRMSTORE
+deactivate CTRL
+end
+
+UI --> ADM : informs operation success
+deactivate UI
+
+deactivate ADM
+
+@enduml

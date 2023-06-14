@@ -1,0 +1,107 @@
+@startuml
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+participant ":CreateTestTypeUI  " as UI
+participant ":CreateTestTypeController" as CTRL
+participant ":Company" as PLAT
+participant "store:ParameterCategory" as TEST_TYPE_STORE
+participant ": CategoryMapper" as MAPPER
+participant "objDto\n: CategoryDto" as OBJ_DTO
+/'participant ":Platform" as PLAT'/
+participant "store:TestTypeStore" as ORG
+participant "tt\n:TestType" as TAREFA
+
+
+activate ADM
+ADM -> UI : asks to specify a new test type
+activate UI
+UI --> ADM : requests data (code, description, collectingMethod)
+deactivate UI
+
+ADM -> UI : types requested data
+activate UI
+
+UI -> CTRL : categoriesList = getCategories()
+activate CTRL
+CTRL -> PLAT : storeTest = getTestTypeStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> TEST_TYPE_STORE : categoriesList = getCategories()
+activate TEST_TYPE_STORE
+deactivate TEST_TYPE_STORE
+
+
+CTRL -> MAPPER : toDTO(categoriesList)
+activate MAPPER
+MAPPER --> CTRL : listCategoriesDto
+deactivate MAPPER
+
+
+CTRL --> UI : listCategoriesDto
+deactivate CTRL
+
+
+loop while user adds categories
+UI --> ADM : shows available categories and request to select one
+deactivate PLAT
+deactivate UI
+
+ADM -> UI : selects requested data
+activate UI
+end
+UI -> CTRL : createTestType(code, description, collectingMethod, selectedCategoriesCodes)
+activate CTRL
+
+
+loop For each selected categorie code
+CTRL -> TEST_TYPE_STORE : selectedCategoriesList = getCategoriesByCode(selectedCategoriesCodes)
+activate TEST_TYPE_STORE
+|||
+deactivate TEST_TYPE_STORE
+end
+
+CTRL -> PLAT : TestTypeStore = getTestTypeStore()
+activate PLAT
+|||
+deactivate PLAT
+CTRL -> ORG: testType = createTestType(code, description, collectingMethod, selectedCategoriesList)
+activate ORG
+
+ORG --> TAREFA**: create(code, description, collectingMethod, selectedCategoriesList)
+deactivate ORG
+CTRL -> ORG: validateTestType(testType)
+activate ORG
+deactivate ORG
+CTRL --> UI: result
+
+UI --> ADM: show test type data and requests confirmation
+deactivate ORG
+deactivate PLAT
+deactivate CTRL
+deactivate UI
+
+ADM -> UI : confirms the data
+activate UI
+UI -> CTRL : saveTestType()
+activate CTRL
+
+CTRL -> ORG : saveTestType(testType)
+activate ORG
+
+ORG -> ORG: validateTestType(testType)
+ORG -> ORG: addTestType(testType)
+
+CTRL --> UI: result
+
+UI --> ADM : informs operation success
+deactivate ORG
+deactivate CTRL
+deactivate UI
+
+deactivate ADM
+
+@enduml

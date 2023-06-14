@@ -1,0 +1,234 @@
+@startuml
+autonumber
+'hide footbox
+actor "Administrator" as ADM
+
+participant ":RegisterNewCalUI  " as UI
+participant ":RegisterNewCalController" as CTRL
+/'participant "App" as _APP'/
+/'participant "app\n:App" as APP'/
+/'participant "session\n:UserSession" as SESSAO'/
+participant ":Company" as PLAT
+participant "storeTest\n:TestTypeStore" as TEST_TYPE_STORE
+participant "obj\n :TestType" as TEST_TYPE_OBJ
+participant ": TestTypeMapper" as MAPPER
+participant "listTestType\n: List<TestType>" as LIST
+participant "listTestTypeDto\n:List<TestTypeDto>" as LIST_DTO
+participant "objDto\n: TestTypeDto" as OBJ_DTO
+/'participant ":Platform" as PLAT'/
+/'participant ":Laboratory" as ORG'/
+/'participant "storeLab\n:LaboratoryStore" as LAB_STORE'/
+participant "calDto\n: ClinicalAnalysisLaboratoryDto" as CAL_DTO
+participant "cal\n:ClinicalAnalysisLaboratory" as TAREFA
+participant "selectedTT\n:List<TestType>" as CAT
+
+/'listTestType É O MESMO QUE totalTT?'/
+/'participant "totalTT\n:List<TestType>" as LIST_CAT'/
+
+
+activate ADM
+ADM -> UI : asks to register a new Clinical Analysis Laboratory
+activate UI
+UI --> ADM : requests data (laboratory ID, name, address, phone number, TIN number)
+deactivate UI
+
+ADM -> UI : types requested data
+activate UI
+
+UI -> CTRL : listTestType = getTestTypes()
+activate CTRL
+
+CTRL -> PLAT : storeTest = getTestTypeStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> TEST_TYPE_STORE : listTestType = getTestTypes()
+activate TEST_TYPE_STORE
+/'|||'/
+
+/'deactivate CTRL'/
+
+TEST_TYPE_STORE --> LIST** : create()
+
+TEST_TYPE_STORE --> CTRL : listTestType
+
+deactivate TEST_TYPE_STORE
+
+/'deactivate CTRL'/
+
+CTRL -> MAPPER : listTestTypeDto = toDTO(listTestType)
+activate MAPPER
+
+MAPPER --> LIST_DTO** : create()
+
+/'loop for each object in listTestType
+MAPPER -> LIST : obj = get(i)
+activate LIST
+deactivate LIST
+
+MAPPER -> MAPPER : objDto = toDTO(obj)
+activate MAPPER
+
+
+MAPPER --> OBJ_DTO** : create(code, description, collectingMethod, selectedCategories)
+deactivate MAPPER
+
+MAPPER -> LIST_DTO : add(objDto)
+activate LIST_DTO
+deactivate LIST_DTO
+end'/
+
+
+MAPPER --> CTRL : listTestTypeDto
+deactivate MAPPER
+
+
+CTRL --> UI : listTestTypeDto
+deactivate CTRL
+
+loop while user adds types of test
+UI --> ADM : shows types of test list and asks to select one
+deactivate PLAT
+deactivate UI
+
+ADM -> UI : selects type of test
+activate UI
+end
+
+
+UI -> CTRL : createClinicalAnalysisLaboratory(calDto)
+activate CTRL
+
+/'
+CTRL -> PLAT : storeTest = getTestTypeStore()
+activate PLAT
+|||
+deactivate PLAT
+
+
+
+CTRL -> TEST_TYPE_STORE : selectedTT = getTestTypesByCode(testTypesCodes)
+activate TEST_TYPE_STORE
+|||
+deactivate TEST_TYPE_STORE'/
+
+/'CTRL -> ORG : storeLab = getLaboratoryStore()
+activate ORG
+|||
+deactivate ORG'/
+
+/'
+CTRL -> _APP: app = getInstance()
+activate _APP
+|||
+deactivate _APP
+
+CTRL -> APP: session = getCurrentSession()
+activate APP
+|||
+deactivate APP
+
+CTRL -> SESSAO : answer = isLoggedInWithRole(USER_ROLE)
+activate SESSAO
+|||
+deactivate SESSAO'/
+
+
+/'ANTES ESTAVA email = getUserEmail()
+CTRL -> SESSAO: email = getUserId()
+activate SESSAO
+|||
+deactivate SESSAO
+
+/'org = getOrganizationByUserEmail(email)
+CTRL -> PLAT: cmp = getCompanyByUserId(email)
+activate PLAT
+|||
+deactivate PLAT'/
+
+note over CTRL, PLAT
+calDto has all required data, including the 'codes' of the selected test types
+end note
+CTRL -> PLAT: cal = createClinicalAnalysisLaboratory(calDto)
+activate PLAT
+
+PLAT -> CAL_DTO : testTypeCodes = getTestTypeCodes()
+activate CAL_DTO
+deactivate CAL_DTO
+
+PLAT -> TEST_TYPE_STORE : storeTest = getTestTypeStore()
+activate TEST_TYPE_STORE
+|||
+deactivate TEST_TYPE_STORE
+
+PLAT -> TEST_TYPE_STORE : selectedTT = getTestTypesByCode(testTypesCodes)
+activate TEST_TYPE_STORE
+|||
+deactivate TEST_TYPE_STORE
+
+
+PLAT -> CAL_DTO : laboratoryID = getLaboratoryID()
+activate CAL_DTO
+deactivate CAL_DTO
+
+PLAT -> CAL_DTO : name = getName()
+activate CAL_DTO
+deactivate CAL_DTO
+
+PLAT -> CAL_DTO : address = getAddress()
+activate CAL_DTO
+deactivate CAL_DTO
+
+PLAT -> CAL_DTO : phoneNumber = getPhoneNumber()
+activate CAL_DTO
+deactivate CAL_DTO
+
+PLAT -> CAL_DTO : numTIN = getNumTIN()
+activate CAL_DTO
+deactivate CAL_DTO
+
+/'PLAT -> CAL_DTO : selectedTT = getSelectedTT()
+activate CAL_DTO
+deactivate CAL_DTO'/
+
+PLAT --> TAREFA**: create(laboratoryID, name, address, phoneNumber, numTIN, selectedTT)
+PLAT -> PLAT: validateClinicalAnalysisLaboratory(cal)
+activate PLAT
+deactivate PLAT
+
+CTRL --> UI: result
+
+UI --> ADM: shows all data and requests confirmation
+deactivate PLAT
+deactivate PLAT
+deactivate CTRL
+deactivate UI
+
+ADM -> UI : confirms the data
+activate UI
+UI -> CTRL : saveClinicalAnalysisLaboratory()
+activate CTRL
+
+CTRL -> PLAT : saveClinicalAnalysisLaboratory(cal)
+activate PLAT
+
+PLAT -> PLAT: validateClinicalAnalysisLaboratory(cal)
+activate PLAT
+deactivate PLAT
+PLAT -> PLAT: addClinicalAnalysisLaboratory(cal)
+activate PLAT
+deactivate PLAT
+
+CTRL --> UI: result
+
+UI --> ADM : informs operation success
+deactivate PLAT
+deactivate CTRL
+deactivate UI
+
+deactivate ADM
+
+/'FALTA ACRESCENTAR DTO PARA O REGISTER NEW CAL!!!!!!!!!!!!'/
+
+@enduml

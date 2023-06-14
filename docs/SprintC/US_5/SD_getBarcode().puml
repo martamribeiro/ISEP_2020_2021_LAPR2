@@ -1,0 +1,40 @@
+@startuml
+title SD_getBarcode()
+
+autonumber
+
+participant ":RecordSamplesController" as CTRL
+participant ":Company" as COMPANY
+participant "api\n:ExternalAPI" as API
+participant ":BarcodeUtils" as BARCODE_UTILS
+participant "barcodeNumber\n:String" as NUMBER
+participant "myBarcode\n:MyBarcode" as MY_BARCODE
+participant "barcode\n:Barcode" as BARCODE
+
+activate CTRL
+CTRL -> CTRL : getBarcode()
+activate CTRL
+deactivate CTRL
+
+CTRL -> COMPANY : api = getExternalApi()
+activate COMPANY
+deactivate COMPANY
+
+CTRL -> BARCODE_UTILS : barcodeNumber = generateBarcodeNumber()
+activate BARCODE_UTILS
+deactivate BARCODE_UTILS
+
+CTRL -> API : getBarcode(barcodeNumber)
+activate API
+
+API --> MY_BARCODE** : create(barcode, barcodeNumber)
+
+API --> CTRL : myBarcode
+
+CTRL --> CTRL : myBarcode
+activate CTRL
+deactivate CTRL
+
+
+
+@enduml

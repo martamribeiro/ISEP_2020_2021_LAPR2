@@ -1,0 +1,35 @@
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+
+class Company {
+  -designation
+}
+
+class Parameter {
+  -code
+  -shortName
+  -description
+}
+
+class ParameterCategory {
+  -code
+  -name
+}
+
+class Administrator {
+
+}
+
+Company "1" -- "*" Parameter : capable of analysing >
+Company "1" -- "*" ParameterCategory : adopts >
+Company "1" -- "*" Administrator : know >
+Parameter "*" -- "1" ParameterCategory: presented under >
+ParameterCategory "*" -- "1" Administrator: created by >
+
+
+
+@enduml

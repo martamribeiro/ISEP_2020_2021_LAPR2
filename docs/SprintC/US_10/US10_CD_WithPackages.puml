@@ -1,0 +1,119 @@
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+package DTO {
+
+class CategoriesDto {
+    -String code
+    -String name
+    +CategoriesDto(name,code)
+    +getCode()
+}
+
+}
+
+package Mappers {
+
+class CategoriesMapper {
+    +toDTO(category)
+    +toDTO(categories)
+}
+
+}
+
+package Domain {
+
+package Store {
+
+class ParameterCategoryStore {
+    -List<ParameterCategory> parameterCategoriesList
+    +getParameterCategoriesStore()
+    +getCategoryByCode(code)
+}
+
+class ParameterStore {
+    -list<Parameter> prmList
+    +createParameter(parameterCode,shortName,description,pc)
+    +validateParameter(prm)
+    +saveParameter(prm)
+}
+
+}
+
+package Model {
+
+class Parameter {
+  -int CODE_LENGTH
+  -int NAME_MAX_LENGTH
+  -int DESCRIPTION_MAX_LENGTH
+  -String parameterCode
+  -String shortName
+  -String description
+  -ParameterCategory pc
+  +Parameter(parameterCode, shortName, description, pc)
+  +getPrmCode()
+  +checkParameterCategory(pc)
+  +checkParameterCodeRules(parameterCode)
+  +checkShortNameRules(shortName)
+  +checkDescriptionRules(description)
+  +equals(parameterObject)
+}
+
+class ParameterCategory {
+   -String code
+   -String name
+   +getCode()
+}
+
+class Company {
+  -String designation
+  -ParameterCategoryStore parameterCategoryStore
+  -ParameterStore parameterStore
+  +getParameterStore()
+  +getParameterCategoryStore()
+}
+
+}
+
+}
+
+package Controller {
+
+class CreateParameterController {
+  -Company company
+  -Parameter prm
+  +createParameter(parameterCode,shortName,description,pcCode)
+  +getParameterCategories()
+  +getParameterCategoriesDTO()
+  +saveParameter()
+}
+
+}
+
+package UI {
+
+class CreateParameterUI {
+}
+
+}
+
+CreateParameterUI ..> CreateParameterController
+CreateParameterController ..> Company
+CreateParameterController ..> ParameterCategoryStore
+CreateParameterController ..> ParameterStore
+CreateParameterController ..> CategoriesMapper
+CategoriesMapper ..> ParameterCategory
+CategoriesMapper ..> CategoriesDto
+CreateParameterUI ..> CategoriesDto
+CreateParameterController ..> CategoriesDto
+ParameterCategoryStore -- ParameterCategory : adopts >
+Company "1" -- "1" ParameterCategoryStore : uses >
+Company "1" -- "1" ParameterStore : uses >
+ParameterStore "1" -- "*" Parameter : capable of analysing >
+Parameter "*" -- "1" ParameterCategory : presented under >
+
+
+@enduml

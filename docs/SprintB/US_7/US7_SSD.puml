@@ -1,0 +1,32 @@
+@startuml
+autonumber
+actor Administrator as A
+
+activate A
+A -> ":System" : starts registering a new employee
+activate ":System"
+":System" --> A : asks to type the employee role
+deactivate ":System"
+
+A -> ":System" : types the intended role
+activate ":System"
+
+note over A, ":System"
+If the role chose is Specialist Doctor, it will be requested one more attribute: Doctor Index Number.
+end note
+":System" --> A : requests data (employeeId, organizationRole, name, address, phoneNumber, email, socCode)
+deactivate ":System"
+
+A -> ":System" : types requested data
+activate ":System"
+":System" --> A : shows all data and requests confirmation
+deactivate ":System"
+
+A -> ":System" : confirms the data
+activate ":System"
+":System" --> A : informs operation success
+deactivate ":System"
+
+deactivate A
+
+@enduml

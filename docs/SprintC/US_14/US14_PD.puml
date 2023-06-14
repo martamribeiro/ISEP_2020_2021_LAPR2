@@ -1,0 +1,127 @@
+@startuml
+hide empty methods
+hide empty attributes
+'left to right direction
+skinparam classAttributeIconSize 0
+
+package Core {
+
+package Domain {
+
+package Model {
+
+class Company {
+    -String designation
+    -TestStore testStore
+    +getTestStore()
+    +createReport(reportText)
+}
+
+class Report {
+    - String reportText
+    + Report(reportText)
+    + checkReportTextRules(reportText)
+    + countWords(reportText)
+    + toString()
+}
+
+class Test {
+    -String code
+    -Report diagnosisReport
+    -List<TestParameter> testParameters
+    +getParameters()
+    +hasSamplesAnalysed()
+    +addReport(report)
+}
+
+class TestParameter {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getParameterResult()
+}
+
+class TestParameterResult {
+    -Double value
+    -String metric
+    -MyReferenceValue myReferenceValue
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+}
+
+package Store {
+
+class TestStore {
+    -list<Test> testList
+    +getTestsReadyToDiagnose()
+    +getTestByCode(code)
+    +getTestParameters(tst)
+}
+
+}
+
+}
+
+package Mappers {
+
+class TestMapper {
+    +toDTO(tests)
+    +toDTO(test)
+}
+
+class TestParameterMapper {
+    +toDTO(testParameter)
+    +toDTO(testParameters)
+}
+
+}
+
+package DTO {
+
+class TestDTO {
+    -String code
+    +getCode()
+}
+
+class TestParametersDTO {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getTestParameterResult()
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+}
+
+package Controller {
+
+class WriteReportController {
+    -Company company
+    -Report report
+    +createReport(reportText)
+    +addReportToTest(code)
+    +getTestsToDiagnose()
+    +getTestParameters(code)
+}
+
+}
+
+}
+
+package UI {
+
+package Console {
+
+class WriteReportUI {
+}
+
+}
+
+}
+
+@enduml

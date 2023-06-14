@@ -1,0 +1,58 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Client {
+-String clientsCitizenCardNumber
+-String nhsNumber
+-Date birthDate
+-String sex
+-String tinNumber
+-String email
+-String name
+-String phoneNumber
++Client(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber )
+}
+
+class ClientStore{
++registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
++validateClient(cl)
++saveClient(cl)
+}
+
+
+class AuthFacade{
++addUser(String name, String email, String pwd)
++existsUser(String email)
+}
+
+
+
+class Company {
+-String designation
++getTestTypeStore()
+}
+
+
+
+
+
+class CreateTaskController {
+  +registerClient(clientsCitizenCardNumber, nhsNumber, birthDate \n, sex, tinNumber, email, name, phoneNumber)
+  +saveClient()
+}
+
+class CreateTaskUI {
+
+}
+
+CreateTaskUI ..> CreateTaskController
+CreateTaskController ..> Company
+CreateTaskController ..> AuthFacade
+CreateTaskController ..> ClientStore
+'/Client ..> UserSession'/
+Company "1" --> "*" Client : knows
+Company "1" -- "1" ClientStore : uses >
+Company  --  AuthFacade : knows >
+ClientStore ..> Client
+
+@enduml

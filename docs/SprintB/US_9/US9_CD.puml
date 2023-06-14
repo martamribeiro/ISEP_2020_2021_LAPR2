@@ -1,0 +1,76 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+class CreateTestTypeUI{
+}
+
+class CreateTestTypeController{
++createTestType(code, description, collectingMethod, selectedCategoriesCodes)
++saveTestType(tt)
++getCategories()
+}
+
+class TestType {
+- code : String
+- description : String
+- collectingMethod : String
++TestType(code, description, collectingMethod, selectedCategoriesCodes)
+}
+
+class ParameterCategoryStore {
++getParameterCategoriesStore()
++getCategoriesByCode(List<String> parameterCategoryCodes)
++getCategoryByCode(String code)
+}
+
+class ParameterCategory{
+- name
+- code
+}
+
+class Company {
+-designation : String
++getTestTypeStore()
++getParameterCategoryStore()
+}
+
+class TestTypeStore {
++createTestType(code, description, collectingMethod, selectedCategoriesCodes)
++validateTestType(tt)
++saveTestType(tt)
+}
+
+class CategoryMapper {
++List<CategoryDtoDto> toDTO(List<ParameterCategory> parameterCategories)
++CategoryDto toDTO(ParameterCategory tt)
+}
+
+
+class CategoryDto {
+-code
+-name
++CategoryDto(code, description, collectingMethod, selectedCategories)
+}
+
+CreateTestTypeUI ..> CreateTestTypeController
+CreateTestTypeUI ..> CategoryDto
+CategoryMapper ..> CategoryDto
+CategoryMapper ..> ParameterCategory
+CreateTestTypeController ..> Company
+CreateTestTypeController ..> CategoryMapper
+CreateTestTypeController ..> CategoryDto
+CreateTestTypeController ..> ParameterCategoryStore
+CreateTestTypeController ..> TestTypeStore
+TestTypeStore ..> TestType
+ParameterCategoryStore ..> ParameterCategory
+Company "1" -- "1" ParameterCategoryStore : uses >
+Company "1" -- "1" TestTypeStore : uses >
+TestType "1" -- "1..*" ParameterCategory : characterized by >
+Company "1" -- "*" TestType : conducts >
+Company "1" -- "*" ParameterCategory : capable of analysing >
+
+
+
+
+
+@enduml

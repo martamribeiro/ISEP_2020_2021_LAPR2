@@ -1,0 +1,68 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+hide empty methods
+hide empty attributes
+left to right direction
+
+class Company{
+- designation
+}
+
+'class FinalResult{}
+
+'class ChemicalResult{}
+
+'class Diagnosis{}
+
+class Report{
+- reportText
+}
+
+class SpecialistDoctor{
+- doctorIndexNumber
+}
+
+class Test{
+- NhsCode
+- code
+- dateOfTestRegistration
+}
+
+/'class TestType{
+- code
+- description
+- collectingMethod
+}'/
+
+class TestParameter{}
+
+class Parameter{
+- code
+- shortName
+- description
+}
+
+class TestParameterResult{
+- value
+- metric
+}
+
+class ReferenceValue{}
+
+Company "1" -- "*" Test : conducts >
+'ChemicalResult "1" -- "1" Test : presented under >
+Test "*" -- "1" SpecialistDoctor : analysed by >
+'SpecialistDoctor "1" -- "*" Diagnosis : makes >
+SpecialistDoctor "1" -- "*" Report : writes >
+'Diagnosis "1" -- "1" FinalResult : receives <
+'Report "1" -- "1" FinalResult : receives <
+Report "1" -- "1" Test : is of >
+'Test "*" -- "1" TestType : is of >
+Test "1" -- "1..*" TestParameter : requests analysis of >
+TestParameter "*" -- "1" Parameter : refers to >
+TestParameter "1" -- "0..1" TestParameterResult : contains >
+TestParameterResult "1" -- "1" ReferenceValue : records >
+
+
+@enduml

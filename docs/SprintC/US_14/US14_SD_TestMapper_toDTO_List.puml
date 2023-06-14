@@ -1,0 +1,35 @@
+@startuml
+title US14_SD_TestMapper_toDTO_List
+autonumber
+
+participant ":TestMapper" as TSTMAPPER
+participant "objDTO\n:TestsDTO" as OBJ_DTO
+participant "listTestsToDiagnose\n:List<Test>" as LT
+participant "listTestsToDiagnoseDTO\n:List<TestDTO>" as LIST_DTO
+
+[o-> TSTMAPPER : listTestsToDiagnoseDTO = toDTO(listTestsToDiagnose)
+activate TSTMAPPER
+
+loop for each object in listTestsToDiagnose
+TSTMAPPER --> LIST_DTO** : create()
+TSTMAPPER -> LT : obj = get(i)
+activate LT
+|||
+deactivate LT
+
+TSTMAPPER -> TSTMAPPER : objDTO = toDTO(obj)
+activate TSTMAPPER
+|||
+deactivate TSTMAPPER
+
+TSTMAPPER --> OBJ_DTO** : create(code, nhsCode, client, testType, testParameters, samples, dateOfTestRegistration, diagnosisReport)
+
+TSTMAPPER --> LT : add(objDTO)
+activate LT
+|||
+deactivate LT
+end
+
+[<-- TSTMAPPER : listTestsToDiagnoseDTO
+
+@enduml

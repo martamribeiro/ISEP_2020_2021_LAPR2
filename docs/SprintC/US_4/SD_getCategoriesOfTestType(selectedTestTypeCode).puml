@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+
+participant ":CreateTestController" as CTRL
+participant ":Company" as PLAT
+participant "store:TestType" as TEST_TYPE_STORE
+participant ": CategoryMapper" as PC_MAPPER
+activate CTRL
+CTRL -> PLAT : testTypeStore = getTestTypeStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> TEST_TYPE_STORE : ttCategoriesList = getCategoriesByTestTypeCode(selectedTestTypeCode)
+activate TEST_TYPE_STORE
+deactivate TEST_TYPE_STORE
+
+
+
+CTRL -> PC_MAPPER : toDTO(ttCategoriesList)
+activate PC_MAPPER
+PC_MAPPER --> CTRL : testTypesListDto
+deactivate PC_MAPPER
+
+
+@enduml

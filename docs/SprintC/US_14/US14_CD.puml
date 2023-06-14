@@ -1,0 +1,110 @@
+@startuml
+hide empty methods
+hide empty attributes
+left to right direction
+skinparam classAttributeIconSize 0
+
+class Company {
+    -String designation
+    -TestStore testStore
+    +getTestStore()
+    +createReport(reportText)
+}
+
+class Report {
+    - String reportText
+    + Report(reportText)
+    + checkReportTextRules(reportText)
+    + countWords(reportText)
+    + toString()
+}
+
+class Test {
+    -String code
+    -Report diagnosisReport
+    -List<TestParameter> testParameters
+    +getParameters()
+    +hasSamplesAnalysed()
+    +addReport(report)
+}
+
+class TestParameter {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getParameterResult()
+}
+
+class TestParameterResult {
+    -Double value
+    -String metric
+    -MyReferenceValue myReferenceValue
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+class TestStore {
+    -list<Test> testList
+    +getTestsReadyToDiagnose()
+    +getTestByCode(code)
+    +getTestParameters(tst)
+}
+
+class TestMapper {
+    +toDTO(tests)
+    +toDTO(test)
+}
+
+class TestParameterMapper {
+    +toDTO(testParameter)
+    +toDTO(testParameters)
+}
+
+class TestDTO {
+    -String code
+    +getCode()
+}
+
+class TestParametersDTO {
+    -Parameter parameter
+    -TestParameterResult testResult
+    +getParameter()
+    +getTestParameterResult()
+    +getResultValue()
+    +getResultMetric()
+    +getResultReferenceValue()
+}
+
+class WriteReportController {
+    -Company company
+    -Report report
+    +createReport(reportText)
+    +addReportToTest(code)
+    +getTestsToDiagnose()
+    +getTestParameters(code)
+}
+
+class WriteReportUI {
+}
+
+WriteReportUI ..> WriteReportController
+WriteReportUI ..> TestDTO
+WriteReportUI ..> TestParametersDTO
+WriteReportController ..> TestMapper
+WriteReportController ..> TestParameterMapper
+WriteReportController ..> Company
+WriteReportController ..> TestStore
+WriteReportController ..> TestDTO
+WriteReportController ..> TestParametersDTO
+TestStore "1" -> "*" Test : adopts >
+Company "1" --> "*" Report : knows >
+Report "1" --> "1" Test : is of >
+TestParameter "1..*" --> "1" Test : is of >
+TestParameterResult "1" --> "1" TestParameter : is of >
+TestMapper ..> Test
+TestParameterMapper ..> TestParameter
+TestMapper ..> TestDTO
+TestParameterMapper ..> TestParametersDTO
+
+@enduml

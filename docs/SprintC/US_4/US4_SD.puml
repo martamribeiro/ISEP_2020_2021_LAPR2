@@ -1,0 +1,189 @@
+@startuml
+autonumber
+'hide footbox
+actor "Receptionist" as ADM
+
+participant ":CreateTestUI  " as UI
+participant ":CreateTestController" as CTRL
+participant ":Company" as PLAT
+participant "store:Client" as CLIENT_STORE
+participant "store:TestType" as TEST_TYPE_STORE
+participant "store:Parameter" as PARAM_STORE
+
+/'participant ":Platform" as PLAT'/
+participant "store:TestStore" as ORG
+participant "currentCal\n:ClinicalAnalisysLaboratory" as CAL
+participant "tt\n:Test" as TAREFA
+participant ": TestParameter" as tp
+
+activate ADM
+ADM -> UI : asks to register a test to be performed to a registered client
+activate UI
+
+
+UI --> ADM : requests data (tinNumber, NHScode)
+deactivate UI
+
+
+ADM -> UI : types requested data
+activate UI
+UI -> CTRL : testTypesList = getTestTypes(clinicalAnalysisLabCode)
+activate CTRL
+ref over CTRL
+SD_getTestTypes(calCode)
+end
+CTRL --> UI : testTypesListDto
+deactivate CTRL
+UI -> ADM : shows test types and request to select one
+deactivate UI
+
+ADM -> UI : selects requested data
+activate UI
+
+UI -> CTRL : categories = getCategoriesListOfTestType(selectedTestTypeCode)
+activate CTRL
+ref over CTRL
+SD_getCategoriesOfTestType(selectedTestTypeCode)
+end
+
+CTRL --> UI : ttCategoriesListDto
+deactivate CTRL
+
+loop while user adds categories
+UI --> ADM : shows available categories and request to select one
+deactivate PLAT
+deactivate UI
+
+
+ADM -> UI : selects requested data
+activate UI
+UI -> UI : selectedCategoriesCodes.add(selectedCategoryCode)
+end
+
+UI -> CTRL : parameters = getParametersOfCategories(selectedCategoriesCodes)
+activate CTRL
+ref over CTRL
+SD_getParameterOfCategories(selectedCategoriesCodes)
+end
+
+CTRL --> UI : filteredParamsList
+deactivate CTRL
+
+loop while user adds parameters
+UI --> ADM : shows available parameters and request to select one
+deactivate PLAT
+deactivate UI
+
+
+ADM -> UI : selects requested data
+activate UI
+UI -> UI : selectedParamCodes.add(selectedParamCode)
+end
+
+UI -> CTRL : createTest(NHScode, tinNumber,\n selectedTestTypeCode, selectedParamCodes)
+activate CTRL
+CTRL -> PLAT : clientStore = getClientStore()
+activate PLAT
+|||
+deactivate PLAT
+
+
+CTRL -> CLIENT_STORE : associatedClient = getClientByTinNumber(tinNumber)
+activate CLIENT_STORE
+deactivate CLIENT_STORE
+
+
+
+CTRL -> PLAT : testTypeStore = getTestTypeStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> TEST_TYPE_STORE : selectedTestType = getTestTypeByCode(selectedTestTypeCode)
+activate TEST_TYPE_STORE
+deactivate TEST_TYPE_STORE
+
+CTRL -> PLAT : parameterStore = getParameterStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> PARAM_STORE : selectedParamsList = getParamsByCodes(selectedParamCodes)
+activate PARAM_STORE
+deactivate PARAM_STORE
+
+
+CTRL -> PLAT : testStore = getTestStore()
+activate PLAT
+PLAT -> ORG** : create()
+deactivate PLAT
+
+CTRL -> ORG : test = createTest(NHScode, associatedClient,\n selectedTestType, selectedParamsList)
+activate ORG
+ORG -> TAREFA** : createTest(NHScode, associatedClient,\n selectedTestType, selectedParamsList)
+deactivate ORG
+
+activate TAREFA
+TAREFA -> TAREFA : checkAttributes(NHScode, associatedClient)
+
+
+
+loop for each parameter of the list
+TAREFA -> tp**: testParameter =  create(parameter)
+TAREFA -> TAREFA: testParameters.add(testParameter)
+end
+
+TAREFA -> TAREFA : code = generateSequentialCode()
+
+
+
+
+TAREFA -> TAREFA : dateOfTestRegistration = generateNowDateAndTime ()
+deactivate TAREFA
+
+CTRL -> ORG : result = validateTest(test)
+activate ORG
+deactivate ORG
+
+
+
+CTRL --> UI : result
+deactivate CTRL
+UI --> ADM : shows Test data and requests confirmation
+deactivate PLAT
+deactivate UI
+
+
+ADM -> UI : confirms the data
+activate UI
+UI -> CTRL : saveTest()
+activate CTRL
+CTRL -> PLAT : testStore = getTestStore()
+activate PLAT
+|||
+deactivate PLAT
+
+CTRL -> ORG : saveTest(test)
+activate ORG
+
+ORG -> ORG: validateTest(test)
+ORG -> ORG: addTest(test)
+deactivate ORG
+
+CTRL -> CAL : currentCal.addTest(test)
+activate CAL
+
+CAL -> CAL : validateTest(test)
+
+deactivate CAL
+
+CTRL --> UI: result
+
+UI --> ADM : informs operation success
+deactivate ORG
+deactivate CTRL
+deactivate UI
+
+deactivate ADM
+
+@enduml

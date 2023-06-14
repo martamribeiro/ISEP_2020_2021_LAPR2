@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="520.2px" preserveAspectRatio="none" style="width:276px;height:520px;" version="1.1" viewBox="0 0 276 520" width="276px" zoomAndPan="magnify"><defs><filter height="300%" id="fijld72n7nzp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.2"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="2.4" dy="2.4" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2c2e2644034c00788261e03c85b06837]
+cluster Core--><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="9.6,64.8,33.6,64.8,37.8,78.9656,265.8,78.9656,265.8,516,9.6,516,9.6,64.8" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="9.6" x2="37.8" y1="78.9656" y2="78.9656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="20.4" x="12" y="74.7199">Core</text><!--MD5=[121a8bf1197281ab89ed693fab589f94]
+cluster Domain--><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="28.8,259.2,63.6,259.2,67.8,273.3656,246.6,273.3656,246.6,412.8,28.8,412.8,28.8,259.2" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="28.8" x2="67.8" y1="273.3656" y2="273.3656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="31.2" x="31.2" y="269.1199">Domain</text><!--MD5=[c29634d7cdbe8f1c1e88f2fe66ae73ec]
+cluster ThirdParty--><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="56.4,437.4,102.6,437.4,106.8,451.5656,108.6,451.5656,108.6,501.6,56.4,501.6,56.4,437.4" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="56.4" x2="106.8" y1="451.5656" y2="451.5656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="42.6" x="58.8" y="447.3199">ThirdParty</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="97.8,3.6,109.8,3.6,114,17.7656,118.2,17.7656,118.2,36.7312,97.8,36.7312,97.8,3.6" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="97.8" x2="114" y1="17.7656" y2="17.7656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="8.4" x="100.2" y="13.5199">UI</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="51.3,86.4,97.5,86.4,101.7,100.5656,105.9,100.5656,105.9,119.5313,51.3,119.5313,51.3,86.4" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="51.3" x2="101.7" y1="100.5656" y2="100.5656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="42.6" x="53.7" y="96.3199">Controller</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="193.8,285.6,223.8,285.6,228,299.7656,232.2,299.7656,232.2,318.7313,193.8,318.7313,193.8,285.6" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="193.8" x2="228" y1="299.7656" y2="299.7656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="26.4" x="196.2" y="295.5199">Model</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="187.2,365.4,218.4,365.4,222.6,379.5656,226.8,379.5656,226.8,398.5313,187.2,398.5313,187.2,365.4" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="187.2" x2="222.6" y1="379.5656" y2="379.5656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="27.6" x="189.6" y="375.3199">Stores</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="130.8,285.6,164.4,285.6,168.6,299.7656,172.8,299.7656,172.8,318.7313,130.8,318.7313,130.8,285.6" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="130.8" x2="168.6" y1="299.7656" y2="299.7656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="30" x="133.2" y="295.5199">Shared</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="57.3,365.4,98.7,365.4,102.9,379.5656,107.1,379.5656,107.1,398.5313,57.3,398.5313,57.3,365.4" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="57.3" x2="102.9" y1="379.5656" y2="379.5656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="37.8" x="59.7" y="375.3199">Adapters</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="54.9,285.6,101.1,285.6,105.3,299.7656,109.5,299.7656,109.5,318.7313,54.9,318.7313,54.9,285.6" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="54.9" x2="105.3" y1="299.7656" y2="299.7656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="42.6" x="57.3" y="295.5199">Interfaces</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="19.2,156,60,156,64.2,170.1656,68.4,170.1656,68.4,189.1313,19.2,189.1313,19.2,156" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="19.2" x2="64.2" y1="170.1656" y2="170.1656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="37.2" x="21.6" y="165.9199">Mappers</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="111.9,156,132.9,156,137.1,170.1656,141.3,170.1656,141.3,189.1313,111.9,189.1313,111.9,156" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="111.9" x2="137.1" y1="170.1656" y2="170.1656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="17.4" x="114.3" y="165.9199">DTO</text><polygon fill="#FFFFFF" filter="url(#fijld72n7nzp)" points="67.2,459,88.8,459,93,473.1656,97.2,473.1656,97.2,492.1312,67.2,492.1312,67.2,459" style="stroke:#000000;stroke-width:0.8999999999999999;"/><line style="stroke:#000000;stroke-width:0.8999999999999999;" x1="67.2" x2="93" y1="473.1656" y2="473.1656"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="18" x="69.6" y="468.9199">APIs</text><!--MD5=[388c1612b88ec01a25e4c9e549608083]
+link Controller to Mappers--><path d="M70.44,119.538 C65.334,129.57 58.734,142.542 53.382,153.066 " fill="none" id="Controller-to-Mappers" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="51.906,155.964,56.4962,152.2425,53.2682,153.2911,52.2196,150.063,51.906,155.964" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[b56077b83eea1bdcc34279ae4b4c8f8d]
+link Controller to DTO--><path d="M89.856,119.538 C96.954,129.654 106.152,142.764 113.574,153.336 " fill="none" id="Controller-to-DTO" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="115.416,155.964,114.2746,150.166,113.691,153.5095,110.3474,152.926,115.416,155.964" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[5eef8fc34ee0f8a6e9a4917deebd15c5]
+link Controller to Domain--><path d="M78.834,119.586 C78.972,129.972 79.128,143.784 79.2,156 C79.284,170.664 82.926,174.816 79.2,189 C71.34,218.91 56.04,220.71 45,249.6 C43.9793,252.2715 43.0386,255.057 42.1735,257.8897 C42.0654,258.2438 41.9584,258.5986 41.8526,258.9541 " fill="none" id="Controller-to-Domain" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="41.8526,258.9541,45.6932,254.463,42.7084,256.0787,41.0926,253.0938,41.8526,258.9541" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[e520cc194c2a0f527ea9a8a291e7735a]
+link Mappers to Domain--><path d="M42.528,189.102 C41.184,206.043 39,233.5365 37.1288,257.091 C37.0995,257.459 37.0703,257.8261 37.0413,258.1922 C37.0267,258.3752 37.0122,258.558 36.9977,258.7405 " fill="none" id="Mappers-to-Domain" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="36.9977,258.7405,39.8178,253.5475,37.2353,255.7499,35.0329,253.1674,36.9977,258.7405" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[7bfceed364607ce3b8cce1b3d5210487]
+link Mappers to DTO--><path d="M68.544,172.5 C81.966,172.5 95.388,172.5 108.816,172.5 " fill="none" id="Mappers-to-DTO" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="111.858,172.5,106.458,170.1,108.858,172.5,106.458,174.9,111.858,172.5" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[132c963044dc2a803644bb1c6fd2eeb1]
+link UI to Controller--><path d="M102.264,36.63 C97.458,49.962 90.588,69.036 85.482,83.19 " fill="none" id="UI-to-Controller" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="84.426,86.136,88.5196,81.8743,85.4464,83.3149,84.0058,80.2416,84.426,86.136" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[9ea89be3b33715d555650644e5bd9dde]
+link UI to DTO--><path d="M111.87,36.684 C113.472,43.788 115.224,52.272 116.4,60 C121.314,92.352 124.17,130.356 125.55,152.706 " fill="none" id="UI-to-DTO" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="125.742,155.892,127.8143,150.358,125.5623,152.8974,123.0229,150.6454,125.742,155.892" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[8db2d36dfcc6aadb263e2609429d2d71]
+link Model to Stores--><path d="M211.788,318.606 C210.828,331.146 209.49,348.684 208.47,362.028 " fill="none" id="Model-to-Stores" style="stroke:#A80036;stroke-width:0.6;"/><polygon fill="#A80036" points="208.23,365.148,211.0394,359.9492,208.4614,362.1569,206.2537,359.579,208.23,365.148" style="stroke:#A80036;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="24" x="210.6" y="345.2971">uses &gt;</text><!--MD5=[e4260d37eac002eaed16f3dbd7488749]
+reverse link Interfaces to Adapters--><path d="M82.2,330.792 C82.2,342.318 82.2,355.254 82.2,365.148 " fill="none" id="Interfaces-backto-Adapters" style="stroke:#A80036;stroke-width:0.6;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="78,330.606,82.2,318.606,86.4,330.606,78,330.606" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[50a3f65e1c55b1f4fbf6f3ec54f8479b]
+link Adapters to APIs--><path d="M82.2,398.592 C82.2,414.558 82.2,439.02 82.2,455.928 " fill="none" id="Adapters-to-APIs" style="stroke:#A80036;stroke-width:0.6;"/><polygon fill="#A80036" points="82.2,458.988,84.6,453.588,82.2,455.988,79.8,453.588,82.2,458.988" style="stroke:#A80036;stroke-width:0.6;"/><!--MD5=[e89a066bd56ab0b7f3b1a0f1268b95c9]
+@startuml
+
+skinparam classAttributeIconSize 0
+/'hide empty methods
+hide empty attributes'/
+
+
+'PACKAGES
+package UI {
+
+}
+
+package Core {
+
+
+package Controller {
+
+}
+
+package Domain {
+
+package Model {
+
+}
+
+
+package Stores {
+
+}
+
+package Shared {
+
+}
+
+
+
+package Adapters {
+
+}
+
+package Interfaces {
+
+}
+
+}
+
+
+
+package Mappers {
+
+}
+
+package DTO {
+
+}
+
+package ThirdParty {
+
+package APIs {
+
+}
+
+
+}
+
+}
+
+Controller ..> Mappers
+Controller ..> DTO
+Controller ..> Domain
+Mappers ...> Domain
+Mappers .> DTO
+UI ..> Controller
+UI ..> DTO
+Model - -> Stores : uses >
+Interfaces <|.. Adapters
+Adapters - -> APIs
+
+
+
+@enduml
+
+@startuml
+
+skinparam classAttributeIconSize 0
+
+
+package UI {
+
+}
+
+package Core {
+
+
+package Controller {
+
+}
+
+package Domain {
+
+package Model {
+
+}
+
+
+package Stores {
+
+}
+
+package Shared {
+
+}
+
+
+
+package Adapters {
+
+}
+
+package Interfaces {
+
+}
+
+}
+
+
+
+package Mappers {
+
+}
+
+package DTO {
+
+}
+
+package ThirdParty {
+
+package APIs {
+
+}
+
+
+}
+
+}
+
+Controller ..> Mappers
+Controller ..> DTO
+Controller ..> Domain
+Mappers ...> Domain
+Mappers .> DTO
+UI ..> Controller
+UI ..> DTO
+Model - -> Stores : uses >
+Interfaces <|.. Adapters
+Adapters - -> APIs
+
+
+
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 09:49:39 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>
